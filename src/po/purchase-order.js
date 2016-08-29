@@ -1,6 +1,5 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
-var Supplier = require('../core/supplier');
 var Buyer = require('../core/buyer');
 var PurchaseOrderItem = require('../po/purchase-order-item');
 
