@@ -1,7 +1,7 @@
 require("should");
 var validatePurchaseOrder = require('./purchase-order-validator');
 var validateSupplier = require('../core/supplier-validator');
-var validateStandardQuality = require('./standard-quality-test-validator');
+var validateStandardQuality = require('./standard-quality-test-percentage-validator');
 
 standard-quality-test-percentage-validator
 
