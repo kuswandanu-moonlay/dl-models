@@ -1,5 +1,9 @@
 require("should");
 var validatePurchaseOrder = require('./purchase-order-validator');
+var validateSupplier = require('../core/supplier-validator');
+var validateStandardQuality = require('./standard-quality-test-validator');
+
+standard-quality-test-percentage-validator
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -38,6 +42,13 @@ module.exports = function (data) {
 
     data.should.have.property('currency');
     data.currency.should.instanceOf(String);
+
+    data.should.have.property('standardQuality');
+    data.standardQuality.should.instanceof(Object);
+    validateStandardQuality(data.standardQuality);
+
+    data.should.have.property('otherTest');
+    data.otherTest.should.instanceOf(String);
 
     data.should.have.property('items');
     data.items.should.instanceOf(Array);

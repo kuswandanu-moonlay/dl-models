@@ -2,6 +2,7 @@
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../core/supplier');
 var PurchaseOrder = require('../po/purchase-order');
+var StandardQualityTestPercentage = require('./standard-quality-test-percentage');
 
 module.exports = class PurchaseOrderGroup extends BaseModel {
     constructor(source,type) {
@@ -22,6 +23,8 @@ module.exports = class PurchaseOrderGroup extends BaseModel {
         this.paymentDue = 0;
         this.description = '';
         this.currency = '';
+        this.standardQuality = new StandardQualityTestPercentage();
+        this.otherTest = ''
         this.items = [];
         
         this.copy(source);
