@@ -1,5 +1,4 @@
 require("should");
-var validateSupplier = require('../core/supplier-validator');
 var validateBuyer  = require('../core/buyer-validator');
 var validatePurchaseOrderItem = require('./purchase-order-item-validator');
 
