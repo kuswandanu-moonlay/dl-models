@@ -1,5 +1,6 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
+var Supplier = require('../core/supplier');
 var PurchaseOrder = require('../po/purchase-order');
 
 module.exports = class PurchaseOrderGroup extends BaseModel {
