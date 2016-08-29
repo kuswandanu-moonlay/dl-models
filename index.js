@@ -8,7 +8,7 @@ module.exports = {
         Textile: require('./src/core/textile'),
         Accessories: require('./src/core/accessories'),
         Sparepart: require('./src/core/sparepart'),
-        UoM: require('./src/core/UoM').UoM,
+        UoM: require('./src/core/UoM'),
         UoM_Template: require('./src/core/UoM').UoM_Template,
         GeneralMerchandise: require('./src/core/general-merchandise')
     },
