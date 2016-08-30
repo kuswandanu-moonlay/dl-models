@@ -12,6 +12,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.dealMeasurement = '';
         this.defaultQuantity = 0;
         this.defaultMeasurement = '';
+        this.realizationQuantity = 0;
         this.product = new Product();
         
         this.copy(source);
