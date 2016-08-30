@@ -20,7 +20,9 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.buyerId = {};
         this.buyer = new Buyer();
         this.supplierId = {};
-        this.supplier = new Supplier();
+        this.supplier = null;
+        this.paymentDue = 0;
+        this.currency = '';
         this.PODLNo = '';
         this.items = [];
         this.copy(source);
