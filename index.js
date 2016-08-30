@@ -29,11 +29,9 @@ module.exports = {
         POGarmentJobOrderFabric: require('./src/po/purchase-order-garment-job-order-fabric')
 
     },
-     suratJalan: {
-                SuratJalan: require("./src/surat-jalan/surat-jalan"),
-                SuratJalanPOItem: require("./src/surat-jalan/surat-jalan-po-item"),
-                SuratJalanProductItem: require("./src/surat-jalan/surat-jalan-product-item")
-        },
+    suratJalan: {
+        SuratJalan: require("./src/surat-jalan/surat-jalan")
+    },
     map: require('./src/map'),
     validator: require('./src/validator')
 }

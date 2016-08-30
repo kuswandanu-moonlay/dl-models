@@ -1,6 +1,6 @@
 require("should");
 var validateSupplier = require('../core/supplier-validator');
-var validateSuratJalanPOItem = require('./surat-jalan-po-item-validator');
+var validatePurchaseOrder = require('../po/purchase-order-validator');
 
 module.exports = function (data) {
     data.should.have.property('SJNo');
@@ -28,6 +28,6 @@ module.exports = function (data) {
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
     for (var item of data.items) {
-        validateSuratJalanPOItem(item);
+        validatePurchaseOrder(item);
     }
 }

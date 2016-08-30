@@ -12,8 +12,6 @@ module.exports = {
                 PurchaseOrderGroup: require("./po/purchase-order-group-validator")
         },
         suratJalan: {
-                SuratJalan: require("./surat-jalan/surat-jalan-validator"),
-                SuratJalanPOItem: require("./surat-jalan/surat-jalan-po-item-validator"),
-                SuratJalanProductItem: require("./surat-jalan/surat-jalan-product-item-validator")
+                SuratJalan: require("./surat-jalan/surat-jalan-validator")
         }
 };
