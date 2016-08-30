@@ -15,6 +15,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.PRNo = '';
         this.PONo = '';
         this.RefPONo = '';
+        this.linkedPONo = '';
         this.article = '';
         this.buyerId = {};
         this.buyer = new Buyer();
