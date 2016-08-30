@@ -19,6 +19,8 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.article = '';
         this.buyerId = {};
         this.buyer = new Buyer();
+        this.supplierId = {};
+        this.supplier = new Supplier();
         this.PODLNo = '';
         this.items = [];
         this.copy(source);
