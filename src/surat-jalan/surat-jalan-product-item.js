@@ -8,6 +8,6 @@ module.exports = class SuratJalanProductItem {
         this.totalPO = 0;
         this.totalSJ = 0;
         this.unit = '';
-        this.price = '';
+        this.price = 0;
     }
 }
