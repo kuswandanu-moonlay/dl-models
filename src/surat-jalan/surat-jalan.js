@@ -2,7 +2,7 @@
 
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../core/supplier');
-var SuratJalanPOItem = require('../surat-jalan/surat-jalan-po-item');
+var PurchaseOrderItem = require('../po/purchase-order');
 
 module.exports = class SuratJalan extends BaseModel {
     constructor(source) {
@@ -21,7 +21,7 @@ module.exports = class SuratJalan extends BaseModel {
 
         var _items = [];
         for (var item of this.items) {
-            _items.push(new SuratJalanPOItem(item));
+            _items.push(new PurchaseOrderItem(item));
         }
         this.item = _items;
     }
