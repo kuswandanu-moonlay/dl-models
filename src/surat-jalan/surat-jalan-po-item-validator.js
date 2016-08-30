@@ -2,20 +2,26 @@ require("should");
 var validateSuratJalanProductItem = require('./surat-jalan-product-item-validator');
 
 module.exports = function (data) {
-    data.should.have.property('planPO');
-    data.planPO.should.instanceOf(String);
+    data.should.have.property('PRNo');
+    data.PRNo.should.instanceOf(String);
     
-    data.should.have.property('poPembelian');
-    data.poPembelian.should.instanceOf(String);
+    data.should.have.property('PONo');
+    data.PONo.should.instanceOf(String);
+    
+    data.should.have.property('RONo');
+    data.RONo.should.instanceOf(String);
     
     data.should.have.property('article');
     data.article.should.instanceOf(String);
     
-    data.should.have.property('totalPO');
-    data.totalPO.should.instanceOf(Number);
+    data.should.have.property('konveksi');
+    data.konveksi.should.instanceOf(String);
     
-    data.should.have.property('totalSJ');
-    data.totalSJ.should.instanceOf(Number);
+    data.should.have.property('currency');
+    data.currency.should.instanceOf(String);
+    
+    data.should.have.property('dueDate');
+    data.dueDate.should.instanceOf(Date);
     
     data.should.have.property('items');
     data.items.should.instanceOf(Array);

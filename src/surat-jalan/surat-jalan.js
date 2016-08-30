@@ -11,14 +11,11 @@ module.exports = class SuratJalan extends BaseModel {
         //Define Properties
         this.SJNo = '';
         this.SJDate = new Date();
-        this.ProductArriveDate = new Date();
+        this.productArriveDate = new Date();
         this.supplierId = {};
         this.supplier = new Supplier();
-        this.pps = false;
         this.deliveryType = '';
         this.deliveryNo = '';
-        this.totalQty = 0;
-        this.totalAmount = 0;
         this.items = [];
         this.copy(source);
 

@@ -7,5 +7,7 @@ module.exports = class SuratJalanProductItem {
         this.description = '';
         this.totalPO = 0;
         this.totalSJ = 0;
+        this.unit = '';
+        this.price = '';
     }
 }

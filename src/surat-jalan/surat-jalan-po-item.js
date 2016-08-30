@@ -3,11 +3,13 @@ var SuratJalanProductItem = require('../surat-jalan/surat-jalan-product-item');
 
 module.exports = class SuratJalanPOItem {
     constructor(source) {
-        this.planPO = '';
-        this.poPembelian = '';
+        this.PRNo = '';
+        this.PONo = '';
+        this.RONo = '';
         this.article = '';
-        this.totalPO = 0;
-        this.totalSJ = 0;
+        this.konveksi = '';
+        this.currency = '';
+        this.dueDate = new Date();
         this.items = [];
         var _items = [];
         for (var item of this.items) {
