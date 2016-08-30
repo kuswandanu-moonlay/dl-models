@@ -3,6 +3,9 @@ var validateSupplier = require('../core/supplier-validator');
 var validatePurchaseOrder = require('../po/purchase-order-validator');
 
 module.exports = function (data) {
+    data.should.have.property('RefSJNo');
+    data.RefSJNo.should.instanceOf(String);
+    
     data.should.have.property('SJNo');
     data.SJNo.should.instanceOf(String);
 

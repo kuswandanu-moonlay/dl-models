@@ -9,6 +9,7 @@ module.exports = class SuratJalan extends BaseModel {
         super('surat-jalan', '1.0.0');
 
         //Define Properties
+        this.RefSJNo = '';
         this.SJNo = '';
         this.SJDate = new Date();
         this.productArriveDate = new Date();
