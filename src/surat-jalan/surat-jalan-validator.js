@@ -28,6 +28,9 @@ module.exports = function (data) {
     data.should.have.property('deliveryNo');
     data.deliveryNo.should.instanceOf(String);
 
+    data.should.have.property('isPosted');
+    data.isPosted.should.instanceOf(Boolean);
+    
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
     for (var item of data.items) {
