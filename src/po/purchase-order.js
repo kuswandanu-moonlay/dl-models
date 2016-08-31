@@ -24,6 +24,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.supplier = null;
         this.paymentDue = 0;
         this.currency = '';
+        this.shipmentDate = new Date();
         this.PODLNo = '';
         this.items = [];
         this.copy(source);
