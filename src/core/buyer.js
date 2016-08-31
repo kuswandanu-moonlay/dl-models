@@ -10,6 +10,7 @@ module.exports = class Buyer extends BaseModel {
         this.code = '';
         this.name = '';
         this.address = '';
+        this.country = '';
         this.contact = '';
         this.tempo = '';
 
