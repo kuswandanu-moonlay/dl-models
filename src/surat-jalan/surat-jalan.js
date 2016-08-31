@@ -2,7 +2,7 @@
 
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../core/supplier');
-var PurchaseOrderItem = require('../po/purchase-order');
+var PurchaseOrder= require('../po/purchase-order');
 
 module.exports = class SuratJalan extends BaseModel {
     constructor(source) {
@@ -17,12 +17,13 @@ module.exports = class SuratJalan extends BaseModel {
         this.supplier = new Supplier();
         this.deliveryType = '';
         this.deliveryNo = '';
+        this.isPosted=false;
         this.items = [];
         this.copy(source);
 
         var _items = [];
         for (var item of this.items) {
-            _items.push(new PurchaseOrderItem(item));
+            _items.push(new PurchaseOrder(item));
         }
         this.item = _items;
     }
