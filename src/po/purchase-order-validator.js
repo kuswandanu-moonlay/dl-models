@@ -2,6 +2,7 @@ require("should");
 var validateBuyer  = require('../core/buyer-validator');
 var validateSupplier = require('../core/supplier-validator');
 var validatePurchaseOrderItem = require('./purchase-order-item-validator');
+var validateStandardQuality = require('./standard-quality-test-percentage-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -38,7 +39,19 @@ module.exports = function (data) {
     data.should.have.property('supplier');
     data.supplier.should.instanceof(Object);
     validateSupplier(data.supplier);
+    
+    data.should.have.property('usePPn');
+    data.usePPn.should.instanceOf(Boolean);
 
+    data.should.have.property('usePPh');
+    data.usePPh.should.instanceOf(Boolean);
+
+    data.should.have.property('deliveryDate');
+    data.deliveryDate.should.instanceOf(Date);
+
+    data.should.have.property('deliveryFeeByBuyer');
+    data.deliveryFeeByBuyer.should.instanceOf(Boolean);
+    
     data.should.have.property('paymentDue');
     data.paymentDue.should.instanceOf(Number);
 
@@ -50,6 +63,13 @@ module.exports = function (data) {
     
     data.should.have.property('PODLNo');
     data.PODLNo.should.instanceOf(String);
+    
+    data.should.have.property('standardQuality');
+    data.standardQuality.should.instanceof(Object);
+    validateStandardQuality(data.standardQuality);
+
+    data.should.have.property('otherTest');
+    data.otherTest.should.instanceOf(String);
 
     data.should.have.property('items');
     data.items.should.instanceOf(Array);

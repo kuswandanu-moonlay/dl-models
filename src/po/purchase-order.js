@@ -10,7 +10,7 @@ module.exports = class PurchaseOrder extends BaseModel {
 
         super(type, '1.0.0');
 
-        //Define properties
+        // Define properties
         this.iso = '';
         this.RONo = '';
         this.PRNo = '';
@@ -20,12 +20,21 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.article = '';
         this.buyerId = {};
         this.buyer = new Buyer();
+        this.shipmentDate = new Date();
+        
+        // copy from PODL
         this.supplierId = {};
         this.supplier = null;
+        this.usePPn = false;
+        this.usePPh = false;
+        this.deliveryDate = new Date();
+        this.deliveryFeeByBuyer = false;
         this.paymentDue = 0;
         this.currency = '';
-        this.shipmentDate = new Date();
         this.PODLNo = '';
+        this.standardQuality = new StandardQualityTestPercentage();
+        this.otherTest = ''
+        
         this.items = [];
         this.copy(source);
 
