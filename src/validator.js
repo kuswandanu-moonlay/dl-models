@@ -9,8 +9,7 @@ module.exports = {
         po: {
                 PurchaseOrder: require("./po/purchase-order-validator"),
                 PurchaseOrderItem: require("./po/purchase-order-item-validator"),
-                PurchaseOrderGroup: require("./po/purchase-order-group-validator"),
-                PurchaseOrderTextile: require("./po/purchase-order-textile-validator")
+                PurchaseOrderGroup: require("./po/purchase-order-group-validator")
         },
         suratJalan: {
                 SuratJalan: require("./surat-jalan/surat-jalan-validator")

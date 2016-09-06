@@ -36,6 +36,15 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.standardQuality = new StandardQualityTestPercentage();
         this.otherTest = ''
         
+        //--------new field for PO Textile
+        
+        this.unit = '';
+        this.PRDate = new Date();
+        this.category = '';
+        this.requestDate = new Date();
+        this.staffName = '';
+        this.receivedDate = new Date();
+         //---------
         this.items = [];
         this.copy(source);
 
