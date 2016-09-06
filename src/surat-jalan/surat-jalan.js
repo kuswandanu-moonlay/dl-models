@@ -25,6 +25,6 @@ module.exports = class SuratJalan extends BaseModel {
         for (var item of this.items) {
             _items.push(new PurchaseOrder(item));
         }
-        this.item = _items;
+        this.items = _items;
     }
 }
