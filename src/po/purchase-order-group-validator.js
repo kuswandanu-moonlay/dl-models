@@ -48,6 +48,12 @@ module.exports = function (data) {
     data.should.have.property('otherTest');
     data.otherTest.should.instanceOf(String);
 
+    data.should.have.property('rate');
+    data.rate.should.instanceOf(Number);
+    
+    data.should.have.property('planDeliveryDate');
+    data.planDeliveryDate.should.instanceOf(Date);
+    
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
 

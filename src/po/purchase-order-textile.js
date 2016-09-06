@@ -11,6 +11,6 @@ module.exports = class POTextile extends PurchaseOrder {
         this.category = '';
         this.requestDate = new Date();
         this.staffName = '';
-        this.receiveDate = new Date();
+        this.receivedDate = new Date();
     }
 }

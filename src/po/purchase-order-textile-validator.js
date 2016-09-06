@@ -19,7 +19,7 @@ module.exports = function (data) {
     data.should.have.property('staffName');
     data.staffName.should.instanceOf(String);
     
-    data.should.have.property('receiveDate');
-    data.receiveDate.should.instanceOf(Date);
+    data.should.have.property('receivedDate');
+    data.receivedDate.should.instanceOf(Date);
     
 }

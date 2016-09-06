@@ -23,8 +23,11 @@ module.exports = class PurchaseOrderGroup extends BaseModel {
         this.paymentDue = 0;
         this.description = '';
         this.currency = '';
+        this.rate=0; //rate sesuai currency
+        this.planDeliveryDate = new Date(); //Tanggal rencana kirim
         this.standardQuality = new StandardQualityTestPercentage();
         this.otherTest = ''
+        this.orderedDate = new Date();
         this.items = [];
         
         this.copy(source);
