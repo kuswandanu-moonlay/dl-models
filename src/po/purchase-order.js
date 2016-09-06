@@ -25,7 +25,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         
         // copy from PODL
         this.supplierId = {};
-        this.supplier = null;
+        this.supplier = new Supplier();
         this.usePPn = false;
         this.usePPh = false;
         this.deliveryDate = new Date();

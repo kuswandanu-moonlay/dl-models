@@ -5,9 +5,6 @@ var validatePurchaseOrderItem = require('./purchase-order-item-validator');
 var validateStandardQuality = require('./standard-quality-test-percentage-validator');
 
 module.exports = function (data) {
-    data.should.not.equal(null);
-    data.should.instanceOf(Object);
-    
     data.should.have.property('iso');
     data.iso.should.instanceOf(String);
     
