@@ -25,6 +25,7 @@ module.exports = {
             POGarmentAccessories: 'po-garment-accessories',
             POGarmentSparepart: 'po-garment-sparepart',
             POGarmentGeneral: 'po-garment-general',
+            POTextile: 'po-textile',
             POTextileSparepart: 'po-textile-sparepart',
             POTextileGeneralATK: 'po-textile-general-atk',
             POTextileGeneralOtherATK: 'po-textile-general-other-atk',
