@@ -32,6 +32,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.deliveryFeeByBuyer = false;
         this.paymentDue = 0;
         this.currency = '';
+        this.rate=0; //rate sesuai currency
         this.PODLNo = '';
         this.standardQuality = new StandardQualityTestPercentage();
         this.otherTest = ''

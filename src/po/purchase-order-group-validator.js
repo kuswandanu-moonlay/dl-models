@@ -53,6 +53,9 @@ module.exports = function (data) {
     
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
+    
+    data.should.have.property('ispost');
+    data.ispost.should.instanceOf(Boolean);
 
     for (var item of data.items) {
         validatePurchaseOrder(item);

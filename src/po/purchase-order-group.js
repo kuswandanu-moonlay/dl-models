@@ -26,7 +26,8 @@ module.exports = class PurchaseOrderGroup extends BaseModel {
         this.rate=0; //rate sesuai currency
         this.standardQuality = new StandardQualityTestPercentage();
         this.otherTest = ''
-        this.orderedDate = new Date();
+        this.ispost=false;
+        this.PODate = new Date();
         this.items = [];
         
         this.copy(source);
