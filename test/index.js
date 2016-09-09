@@ -8,7 +8,7 @@ var test = function (name, path) {
 test('@buyer', './buyer');
 test('@supplier', './supplier');
 test('@product', './product');
-test('@uom', './UoM');
+test('@uom', './uom');
 test('@PurchaseOrder', './purchase-order-test');
 test('@PurchaseOrderGroup', './purchase-order-group-test');
 test('@SuratJalan', './surat-jalan-test');
