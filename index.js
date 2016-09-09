@@ -12,6 +12,9 @@ module.exports = {
         UoM_Template: require('./src/core/UoM').UoM_Template,
         GeneralMerchandise: require('./src/core/general-merchandise')
     },
+    costCalculation:{
+        CostCalculation: require("./src/cost-calculation/cost-calculation")
+    },
     po: {
         PurchaseOrderItem: require('./src/po/purchase-order-item'),
         PurchaseOrder: require('./src/po/purchase-order'),
