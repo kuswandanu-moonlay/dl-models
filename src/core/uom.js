@@ -11,12 +11,12 @@ var BaseModel = require('capital-models').BaseModel;
 //     }
 // }
 
-// class UoM extends BaseModel {
+// class uom extends BaseModel {
 //     constructor(source) {
-//         super('UoM', '1.0.0');
+//         super('uom', '1.0.0');
 
 //         this.category = '';
-//         this.default = new UoM_Template();      // To determine default value of each UoM Category, and used to validate each Unit.  
+//         this.default = new UoM_Template();      // To determine default value of each uom Category, and used to validate each Unit.  
 //         this.units = [];
 
 //         this.copy(source);
@@ -30,12 +30,12 @@ var BaseModel = require('capital-models').BaseModel;
 // }
 
 // module.exports = {
-//     UoM: UoM,
+//     uom: uom,
 //     UoM_Template: UoM_Template
 // }
-module.exports = class UoM extends BaseModel{
+module.exports = class uom extends BaseModel{
     constructor(source){
-        super('UoM', '1.0.0');
+        super('uom', '1.0.0');
         this.unit = '';
         this.copy(source);
     }

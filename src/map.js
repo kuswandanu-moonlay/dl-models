@@ -6,14 +6,14 @@ module.exports = {
             Accessories: 'accessories',
             Buyer: 'buyers',
             Supplier: 'suppliers',
-            UoM: 'unit-of-measurements',
+            uom: 'unit-of-measurements',
             Sparepart:'spareparts',
             GeneralMerchandise:'general-merchandises'
         },
         collection:{
             Buyer: 'buyers',
             Supplier: 'suppliers',
-            UoM: 'unit-of-measurements',
+            uom: 'unit-of-measurements',
             Product: 'products'
         }
     },
