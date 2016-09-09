@@ -8,7 +8,7 @@ module.exports = {
         Textile: require('./src/core/textile'),
         Accessories: require('./src/core/accessories'),
         Sparepart: require('./src/core/sparepart'),
-        uom: require('./src/core/uom'),
+        Uom: require('./src/core/uom'),
         GeneralMerchandise: require('./src/core/general-merchandise')
     },
     po: {
