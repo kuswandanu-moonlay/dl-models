@@ -29,7 +29,8 @@ module.exports = {
         POTextileGeneralATK: require('./src/po/purchase-order-textile-general-atk'),
         POGarmentJobOrderAccessories: require('./src/po/purchase-order-garment-job-order-accessories'),
         POTekstilGeneralOtherATK: require('./src/po/purchase-order-textile-general-other-atk'),
-        POGarmentJobOrderFabric: require('./src/po/purchase-order-garment-job-order-fabric')
+        POGarmentJobOrderFabric: require('./src/po/purchase-order-garment-job-order-fabric'),
+        POTextile: require('./src/po/purchase-order-textile')
 
     },
     suratJalan: {

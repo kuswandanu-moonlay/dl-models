@@ -12,7 +12,7 @@ module.exports = class SuratJalan extends BaseModel {
         this.RefSJNo = '';
         this.SJNo = '';
         this.SJDate = new Date();
-        this.productArriveDate = new Date();
+        this.arrivalDate = new Date();
         this.supplierId = {};
         this.supplier = new Supplier();
         this.deliveryType = '';
@@ -25,6 +25,6 @@ module.exports = class SuratJalan extends BaseModel {
         for (var item of this.items) {
             _items.push(new PurchaseOrder(item));
         }
-        this.item = _items;
+        this.items = _items;
     }
 }
