@@ -85,7 +85,17 @@ module.exports = function (data) {
 
     data.should.have.property('receivedDate');
     data.receivedDate.should.instanceOf(Date);
-
+    
+    
+    data.should.have.property('ppn');
+    data.ppn.should.instanceOf(Number);
+    
+    data.should.have.property('PODate');
+    data.PODate.should.instanceOf(Date);
+    
+    data.should.have.property('ispost');
+    data.ispost.should.instanceOf(Boolean);
+    
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
     for (var item of data.items) {

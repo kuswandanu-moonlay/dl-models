@@ -1,6 +1,7 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
 var Product = require('../core/product');
+var uom = require('../core/uom');
 
 module.exports = class PurchaseOrderItem extends BaseModel {
     constructor(source, type) {
@@ -9,9 +10,9 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.price = 0;
         this.description = '';
         this.dealQuantity = 0;
-        this.dealMeasurement = '';
+        this.dealMeasurement = new uom();
         this.defaultQuantity = 0;
-        this.defaultMeasurement = '';
+        this.defaultMeasurement = new uom();
         this.realizationQuantity = 0;
         this.product = new Product();
         
