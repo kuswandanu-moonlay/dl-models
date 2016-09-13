@@ -26,6 +26,8 @@ module.exports = class PurchaseOrder extends BaseModel {
         // copy from PODL
         this.supplierId = {};
         this.supplier = new Supplier();
+        this.termOfPayment = '';
+        this.ppn = 10;
         this.usePPn = false;
         this.usePPh = false;
         this.deliveryDate = new Date();
@@ -35,6 +37,8 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.rate=0; //rate sesuai currency
         this.PODLNo = '';
         this.standardQuality = new StandardQualityTestPercentage();
+        this.ispost=false;
+        this.PODate = new Date();
         this.otherTest = ''
         
         //--------new field for PO Textile

@@ -15,13 +15,13 @@ module.exports = function (data) {
     data.dealQuantity.should.instanceOf(Number);
 
     data.should.have.property('dealMeasurement');
-    data.dealMeasurement.should.instanceOf(String);
+    data.dealMeasurement.should.instanceOf(Object);
 
     data.should.have.property('defaultMeasurementQuantity');
     data.defaultMeasurementQuantity.should.instanceOf(Number);
 
     data.should.have.property('defaultMeasurement');
-    data.defaultMeasurement.should.instanceOf(String);
+    data.defaultMeasurement.should.instanceOf(Object);
     
     data.should.have.property('product');
     data.product.should.instanceof(Object);
