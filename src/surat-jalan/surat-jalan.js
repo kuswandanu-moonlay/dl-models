@@ -19,6 +19,7 @@ module.exports = class SuratJalan extends BaseModel {
         this.deliveryNo = '';
         this.isPosted=false;
         this.items = [];
+        this.description = '';
         this.copy(source);
 
         var _items = [];

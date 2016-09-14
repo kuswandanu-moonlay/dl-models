@@ -9,7 +9,7 @@ module.exports = function (data) {
     data.quantity.should.instanceOf(Number);
 
     data.should.have.property('description');
-    data.description.should.instanceOf(Number);
+    data.description.should.instanceOf(String);
 
     data.should.have.property('dealQuantity');
     data.dealQuantity.should.instanceOf(Number);
