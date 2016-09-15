@@ -12,3 +12,4 @@ test('@uom', './uom');
 test('@PurchaseOrder', './purchase-order-test');
 test('@PurchaseOrderGroup', './purchase-order-group-test');
 test('@SuratJalan', './surat-jalan-test');
+test('@PurchaseOrderTextile', './purchase-order-textile-test');

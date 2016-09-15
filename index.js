@@ -12,6 +12,7 @@ module.exports = {
         GeneralMerchandise: require('./src/core/general-merchandise')
     },
     po: {
+        DOItem: require('./src/po/delivery-order-item'),
         PurchaseOrderItem: require('./src/po/purchase-order-item'),
         PurchaseOrder: require('./src/po/purchase-order'),
         PurchaseOrderGroup: require('./src/po/purchase-order-group'),
