@@ -4,7 +4,7 @@ var Supplier = require('../core/supplier');
 var Buyer = require('../core/buyer');
 var PurchaseOrderItem = require('../po/purchase-order-item');
 var StandardQualityTestPercentage = require('./standard-quality-test-percentage');
-var DODetail = require('./delivery-order-detail');
+var DOItem = require('./delivery-order-item');
 
 module.exports = class PurchaseOrder extends BaseModel {
     constructor(source, type) {
@@ -59,7 +59,7 @@ module.exports = class PurchaseOrder extends BaseModel {
             this.DOitems = [];
             var _DOItems = [];
             for (var item of this.DOitems) {
-                _DOItems.push(new DODetail(item));
+                _DOItems.push(new DOItem(item));
             }
             this.DOitems = _DOItems;
             

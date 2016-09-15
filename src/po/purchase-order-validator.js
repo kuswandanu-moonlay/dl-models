@@ -3,7 +3,7 @@ var validateBuyer = require('../core/buyer-validator');
 var validateSupplier = require('../core/supplier-validator');
 var validatePurchaseOrderItem = require('./purchase-order-item-validator');
 var validateStandardQuality = require('./standard-quality-test-percentage-validator');
-var validateDODetails = require('./delivery-order-detail-validator');
+var validateDODetails = require('./delivery-order-item-validator');
 
 module.exports = function (data) {
     data.should.have.property('iso');
