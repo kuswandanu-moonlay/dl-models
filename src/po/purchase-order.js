@@ -4,15 +4,7 @@ var Supplier = require('../core/supplier');
 var Buyer = require('../core/buyer');
 var PurchaseOrderItem = require('../po/purchase-order-item');
 var StandardQualityTestPercentage = require('./standard-quality-test-percentage');
-
-class DODetail{
-    constructor(source){
-        this.SJNo = '';
-        this.SJDate = new Date();
-        this.realizationQuantity = 0;
-    }
-}
-
+var DODetail = require('./delivery-order-detail');
 
 module.exports = class PurchaseOrder extends BaseModel {
     constructor(source, type) {
