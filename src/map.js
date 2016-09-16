@@ -9,7 +9,9 @@ module.exports = {
             Buyer: 'buyers',
             Supplier: 'suppliers',
             uom: 'unit-of-measurements',
-            Product: 'products'
+            Product: 'products',
+            Unit:'unit',
+            Category:'category'
         }
     },
     purchasing: {

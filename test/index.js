@@ -4,6 +4,5 @@ var test = function(name, path) {
     })
 }
 
-
 test('@master', './master-test');
 test('@purchasing', './purchasing-test');
