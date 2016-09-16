@@ -9,7 +9,7 @@ module.exports = class Unit extends BaseModel {
         // Define properties.  
         this.code = '';
         this.division = '';
-        this.subdivision = ''; 
+        this.subDivision = ''; 
         this.description='';
 
         this.copy(source);

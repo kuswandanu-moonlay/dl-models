@@ -5,9 +5,8 @@ var uom = require('./uom');
 
 
 module.exports = class Product extends BaseModel {
-    constructor(type, source) {
-        type = type || 'product';
-        super(type, '1.0.0');
+    constructor(source, type) {
+        super(type || 'product', '1.0.0');
 
         //Define properties
         this.code = '';
