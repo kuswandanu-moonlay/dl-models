@@ -1,8 +1,7 @@
 
 module.exports = { 
     master: {
-        Product: require('./src/master/product'),
-        Fabric: require('./src/master/fabric'),
+        Product: require('./src/master/product'), 
         Buyer: require('./src/master/buyer'),
         Supplier: require('./src/master/supplier'),
         Uom: require('./src/master/uom'),
