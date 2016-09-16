@@ -9,7 +9,9 @@ module.exports = {
         Accessories: require('./src/core/accessories'),
         Sparepart: require('./src/core/sparepart'),
         Uom: require('./src/core/uom'),
-        GeneralMerchandise: require('./src/core/general-merchandise')
+        GeneralMerchandise: require('./src/core/general-merchandise'),
+        Unit: require('./src/core/unit'),
+        Category: require('./src/core/category'),
     },
     po: {
         PurchaseOrderItem: require('./src/po/purchase-order-item'),
