@@ -10,8 +10,8 @@ module.exports = function (data) {
     data.should.have.property('division');
     data.division.should.be.String();
 
-    data.should.have.property('subdivision');
-    data.subdivision.should.be.String();
+    data.should.have.property('subDivision');
+    data.subDivision.should.be.String();
 
     data.should.have.property('description');
     data.description.should.be.String(); 
