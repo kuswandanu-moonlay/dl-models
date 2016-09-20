@@ -1,39 +1,28 @@
 module.exports = {
-    core: {
-        type:{
-            Fabric: 'fabrics',
-            Textile: 'textiles',
-            Accessories: 'accessories',
-            Buyer: 'buyers',
-            Supplier: 'suppliers',
-            UoM: 'unit-of-measurements',
-            Sparepart:'spareparts',
-            GeneralMerchandise:'general-merchandises'
+    master: {
+        type: { 
+            Buyer: 'buyer',
+            Supplier: 'supplier',
+            uom: 'unit-of-measurement'
         },
-        collection:{
+        collection: {
             Buyer: 'buyers',
             Supplier: 'suppliers',
-            UoM: 'unit-of-measurements',
-            Product: 'products'
+            uom: 'unit-of-measurements',
+            Product: 'products',
+            Unit:'unit',
+            Category:'category'
         }
     },
-    po:{
-        type:{
-            POGarmentJobOrderFabric: 'po-garment-job-order-fabric',
-            POGarmentJobOrderAccessories: 'po-garment-job-order-accessories',
-            POGarmentFabric: 'po-garment-fabric',
-            POGarmentAccessories: 'po-garment-accessories',
-            POGarmentSparepart: 'po-garment-sparepart',
-            POGarmentGeneral: 'po-garment-general',
-            POTextile: 'po-textile',
-            POTextileSparepart: 'po-textile-sparepart',
-            POTextileGeneralATK: 'po-textile-general-atk',
-            POTextileGeneralOtherATK: 'po-textile-general-other-atk',
-            POTextileJobOrderExternal: 'po-textile-job-order-external'
+    purchasing: {
+        type: {
+            PurchaseOrder: 'purchase-order',
+            DeliveryOrder: 'delivery-order',
         },
-        collection:{
-            PurchaseOrder:'purchase-orders',
-            PurchaseOrderGroup:'purchase-order-groups'
+        collection: {
+            PurchaseOrder: 'purchase-orders',
+            PurchaseOrderExternal: 'purchase-order-externals',
+            DeliveryOrder: 'delivery-orders',
         }
     }
 }

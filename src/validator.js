@@ -1,17 +1,16 @@
-module.exports = {
-        core: {
-                product: require("./core/product-validator"),
-                buyer: require("./core/buyer-validator"),
-                supplier: require("./core/supplier-validator"),
-                UoM: require("./core/UoM-validator"),
-                UoMTemplate: require("./core/UoM-template-validator")
+module.exports = {  
+        master: {
+                product: require("./master/product-validator"), 
+                buyer: require("./master/buyer-validator"),
+                supplier: require("./master/supplier-validator"),
+                uom: require("./master/uom-validator"), 
+                unit: require("./master/unit-validator"), 
+                category: require("./master/category-validator"), 
         },
-        po: {
-                PurchaseOrder: require("./po/purchase-order-validator"),
-                PurchaseOrderItem: require("./po/purchase-order-item-validator"),
-                PurchaseOrderGroup: require("./po/purchase-order-group-validator")
-        },
-        suratJalan: {
-                SuratJalan: require("./surat-jalan/surat-jalan-validator")
+        purchasing: {
+                purchaseOrder: require("./purchasing/purchase-order-validator"),
+                purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),
+                purchaseOrderExternal: require("./purchasing/purchase-order-external-validator"),
+                deliveryOrder: require("./purchasing/delivery-order-validator")
         }
 };
