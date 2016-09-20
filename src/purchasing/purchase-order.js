@@ -22,6 +22,8 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.buyer = new Buyer();
         this.purchaseOrderExternalId = {};
         this.purchaseOrderExternal = {};
+        this.sourcePurchaseOrderId = null;
+        this.sourcePurchaseOrder = null;
         this.supplierId = {};
         this.supplier = new Supplier();
 
