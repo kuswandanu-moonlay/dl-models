@@ -48,6 +48,9 @@ module.exports = function (data) {
     
     data.should.have.property('actualDeliveryDate');
     data.actualDeliveryDate.should.instanceof(Date);
+    
+    data.should.have.property('isPosted');
+    data.isPosted.should.instanceOf(Boolean);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);

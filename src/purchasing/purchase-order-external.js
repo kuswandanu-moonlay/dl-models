@@ -30,7 +30,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.date = new Date();
         this.expectedDeliveryDate = new Date();
         this.actualDeliveryDate = new Date();
-        
+        this.isPosted = false;
         this.remark = ''; 
         this.items = [];
 
