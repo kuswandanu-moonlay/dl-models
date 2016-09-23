@@ -9,6 +9,9 @@ module.exports = function (data) {
     data.should.have.property('no');
     data.no.should.be.String();
 
+    data.should.have.property('refNo');
+    data.refNo.should.be.String();
+
     data.should.have.property('supplierId');
     data.supplierId.should.instanceof(Object);
 
@@ -48,6 +51,9 @@ module.exports = function (data) {
     
     data.should.have.property('actualDeliveryDate');
     data.actualDeliveryDate.should.instanceof(Date);
+    
+    data.should.have.property('isPosted');
+    data.isPosted.should.instanceOf(Boolean);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
