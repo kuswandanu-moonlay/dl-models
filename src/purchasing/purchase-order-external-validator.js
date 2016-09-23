@@ -9,6 +9,9 @@ module.exports = function (data) {
     data.should.have.property('no');
     data.no.should.be.String();
 
+    data.should.have.property('refNo');
+    data.refNo.should.be.String();
+
     data.should.have.property('supplierId');
     data.supplierId.should.instanceof(Object);
 

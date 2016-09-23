@@ -12,6 +12,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
 
         //Define properties
         this.no = '';
+        this.refNo = '';
         this.supplierId = {};
         this.supplier = new Supplier();
         
