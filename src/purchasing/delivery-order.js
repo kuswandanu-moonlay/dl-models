@@ -2,7 +2,7 @@
 
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
-var PurchaseOrder= require('../purchasing/purchase-order');
+var DeliveryOrderItem= require('./delivery-order-item'); 
 
 module.exports = class DeliveryOrder extends BaseModel {
     constructor(source) {
@@ -19,6 +19,6 @@ module.exports = class DeliveryOrder extends BaseModel {
         this.items = [];
         this.copy(source);
 
-        this.items = (this.items || []).map(item => new PurchaseOrder(item)); 
+        this.items = (this.items || []).map(item => new DeliveryOrderItem(item)); 
     }
 }

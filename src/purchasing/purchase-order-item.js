@@ -18,6 +18,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.realizationQuantity = 0;
         
         this.pricePerDealUnit = 0;
+        this.conversion = '';
         this.remark = '';
         
         this.fulfillments = [];
