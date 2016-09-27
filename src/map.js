@@ -1,4 +1,15 @@
 module.exports = {
+    auth: {
+        type: { 
+            Account: 'buyer',
+            Profile: 'supplier',
+            Role: 'unit-of-measurement'
+        },
+        collection: {
+            Account: 'accounts',
+            Role: 'roles'
+        }
+    },
     master: {
         type: { 
             Buyer: 'buyer',
