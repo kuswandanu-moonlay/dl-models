@@ -13,4 +13,7 @@ module.exports = function (data) {
 
     data.should.have.property('rate');
     data.rate.should.instanceOf(Number);
+
+    data.should.have.property('description');
+    data.description.should.instanceOf(String);
 }
