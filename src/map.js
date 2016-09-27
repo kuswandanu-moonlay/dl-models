@@ -3,7 +3,8 @@ module.exports = {
         type: { 
             Buyer: 'buyer',
             Supplier: 'supplier',
-            uom: 'unit-of-measurement'
+            uom: 'unit-of-measurement',
+            Currency: 'currency'
         },
         collection: {
             Buyer: 'buyers',

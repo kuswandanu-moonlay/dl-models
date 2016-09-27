@@ -5,7 +5,8 @@ module.exports = {
                 supplier: require("./master/supplier-validator"),
                 uom: require("./master/uom-validator"), 
                 unit: require("./master/unit-validator"), 
-                category: require("./master/category-validator"), 
+                category: require("./master/category-validator"),
+                currency: require("./master/currency-validator"), 
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
