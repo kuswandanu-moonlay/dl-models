@@ -12,6 +12,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
 
         //Define properties
         this.no = '';
+        this.refNo = '';
         this.supplierId = {};
         this.supplier = new Supplier();
         
@@ -30,7 +31,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.date = new Date();
         this.expectedDeliveryDate = new Date();
         this.actualDeliveryDate = new Date();
-        
+        this.isPosted = false;
         this.remark = ''; 
         this.items = [];
 
