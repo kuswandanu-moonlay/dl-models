@@ -1,9 +1,9 @@
 module.exports = {
     auth: {
         type: { 
-            Account: 'buyer',
-            Profile: 'supplier',
-            Role: 'unit-of-measurement'
+            Account: 'account',
+            Profile: 'profile',
+            Role: 'role'
         },
         collection: {
             Account: 'accounts',
