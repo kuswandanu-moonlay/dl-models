@@ -10,6 +10,7 @@ module.exports = class Currency extends BaseModel {
         this.code = '';
         this.symbol = '';
         this.rate = 1;  
+        this.description='';
 
         this.copy(source);
     }

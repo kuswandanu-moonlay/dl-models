@@ -23,7 +23,8 @@ module.exports = {
             uom: 'unit-of-measurements',
             Product: 'products',
             Unit:'unit',
-            Category:'category'
+            Category:'category',
+            Currency:'currency'
         }
     },
     purchasing: {
