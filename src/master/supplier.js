@@ -12,6 +12,8 @@ module.exports = class Supplier extends BaseModel {
         this.contact = '';
         this.PIC='';
         this.import = true;
+        this.NPWP='';
+        this.serialNumber='';
 
         this.copy(source);
     }

@@ -22,4 +22,10 @@ module.exports = function (data) {
     data.should.have.property('import');
     data.import.should.be.Boolean();
 
+    data.should.have.property('NPWP');
+    data.NPWP.should.instanceof(String);
+
+    data.should.have.property('serialNumber');
+    data.serialNumber.should.instanceof(String);
+
 }
