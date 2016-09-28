@@ -12,6 +12,7 @@ module.exports = class DeliveryOrder extends BaseModel {
         this.no = '';
         this.refNo = '';
         this.date = new Date(); 
+        this.supplierDOdate = new Date(); 
         this.supplierId = {};
         this.supplier = new Supplier(); 
         this.isPosted=false;
