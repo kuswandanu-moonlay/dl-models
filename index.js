@@ -1,12 +1,17 @@
-
-module.exports = { 
+module.exports = {
+    auth: {
+        Account: require('./src/auth/account'),
+        Profile: require('./src/auth/profile'),
+        Role: require('./src/auth/role')
+    },
     master: {
-        Product: require('./src/master/product'), 
+        Product: require('./src/master/product'),
         Buyer: require('./src/master/buyer'),
         Supplier: require('./src/master/supplier'),
         Uom: require('./src/master/uom'),
         Unit: require('./src/master/unit'),
-        Category: require('./src/master/category'), 
+        Category: require('./src/master/category'),
+        Currency: require('./src/master/currency')
     },
     // costCalculation:{
     //     CostCalculation: require("./src/cost-calculation/cost-calculation")
@@ -37,7 +42,7 @@ module.exports = {
         PurchaseOrder: require('./src/purchasing/purchase-order'),
         PurchaseOrderExternal: require('./src/purchasing/purchase-order-external'),
         QualityStandard: require('./src/purchasing/quality-standard'),
-        DeliveryOrder:require('./src/purchasing/delivery-order')
+        DeliveryOrder: require('./src/purchasing/delivery-order')
     },
     map: require('./src/map'),
     validator: require('./src/validator')

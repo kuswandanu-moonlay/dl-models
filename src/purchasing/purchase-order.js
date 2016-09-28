@@ -12,7 +12,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         // Define properties
         this.no = '';
         this.refNo = '';
-        this.iso = '';
+        this.iso = 'FM-6.00-06-005';
 
         this.realizationOrderId = {};
         this.realizationOrder = {};

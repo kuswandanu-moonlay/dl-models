@@ -1,9 +1,21 @@
 module.exports = {
+    auth: {
+        type: { 
+            Account: 'account',
+            Profile: 'profile',
+            Role: 'role'
+        },
+        collection: {
+            Account: 'accounts',
+            Role: 'roles'
+        }
+    },
     master: {
         type: { 
             Buyer: 'buyer',
             Supplier: 'supplier',
-            uom: 'unit-of-measurement'
+            uom: 'unit-of-measurement',
+            Currency: 'currency'
         },
         collection: {
             Buyer: 'buyers',
@@ -11,7 +23,8 @@ module.exports = {
             uom: 'unit-of-measurements',
             Product: 'products',
             Unit:'unit',
-            Category:'category'
+            Category:'category',
+            Currency:'currency'
         }
     },
     purchasing: {
