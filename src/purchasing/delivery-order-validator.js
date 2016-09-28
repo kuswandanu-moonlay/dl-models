@@ -12,8 +12,8 @@ module.exports = function (data) {
     data.should.have.property('date');
     data.date.should.instanceOf(Date);
 
-    data.should.have.property('supplierDOdate');
-    data.supplierDOdate.should.instanceOf(Date);
+    data.should.have.property('supplierDoDate');
+    data.supplierDoDate.should.instanceOf(Date);
 
 
     data.should.have.property('supplierId');
