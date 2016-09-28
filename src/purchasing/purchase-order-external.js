@@ -33,6 +33,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.expectedDeliveryDate = new Date();
         this.actualDeliveryDate = new Date();
         this.isPosted = false;
+        this.isClosed=false;
         this.remark = ''; 
         this.items = [];
 
