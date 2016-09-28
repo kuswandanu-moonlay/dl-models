@@ -34,6 +34,6 @@ module.exports = function (data) {
     validateProduct(data.product);
     
     data.should.have.property('conversion');
-    data.conversion.should.instanceOf(String);
+    data.conversion.should.instanceOf(Number);
     
 }

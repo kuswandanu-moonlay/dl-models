@@ -1,6 +1,7 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
+var Currency = require('../master/currency');
 var PurchaseOrder = require('../purchasing/purchase-order');
 var QualityStandard = require('./quality-standard');
 
@@ -18,7 +19,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         
 
         this.freightCostBy = '';
-        this.currency = '';
+        this.currency = new Currency();
         this.currencyRate = 1;
 
         this.paymentMethod = '';
