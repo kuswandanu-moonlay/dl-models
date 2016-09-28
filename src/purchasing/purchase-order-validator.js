@@ -93,9 +93,6 @@ module.exports = function (data) {
     
     data.should.have.property('actualDeliveryDate');
     data.actualDeliveryDate.should.instanceof(Date);
-
-    data.should.have.property('conversion');
-    data.conversion.should.instanceOf(String);
     
     data.should.have.property('isPosted');
     data.isPosted.should.instanceOf(Boolean);
