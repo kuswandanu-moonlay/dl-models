@@ -36,4 +36,7 @@ module.exports = function (data) {
     data.should.have.property('conversion');
     data.conversion.should.instanceOf(Number);
     
+    data.should.have.property('isClosed');
+    data.isClosed.should.instanceOf(Boolean);
+    
 }

@@ -19,6 +19,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         
         this.pricePerDealUnit = 0;
         this.conversion = 1;
+        this.isClosed=false;
         this.remark = '';
         
         this.fulfillments = [];
