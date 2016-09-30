@@ -2,6 +2,7 @@
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
 var Buyer = require('../master/buyer');
+var Currency = require('../master/currency');
 var PurchaseOrderItem = require('./purchase-order-item');
 var map = require('../map');
 
@@ -34,7 +35,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.category = {};
 
         this.freightCostBy = '';
-        this.currency = '';
+        this.currency = new Currency();
         this.currencyRate = 1;
 
         this.paymentMethod = '';
