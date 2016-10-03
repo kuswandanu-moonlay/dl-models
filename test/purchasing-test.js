@@ -1,6 +1,6 @@
 var validate = require('../src/validator').purchasing;
 
-it("#1. Purchase Order External should valid", function() {
+it("#01. Purchase Order External should valid", function() {
     var PurchaseOrderExternal = require('../src/purchasing/purchase-order-external');
     validate.purchaseOrderExternal(new PurchaseOrderExternal());
 });
@@ -13,5 +13,10 @@ it("#02. Purchase Order should valid", function () {
 it("#03. Delivery Order should valid", function () {
     var DeliveryOrder = require('../src/purchasing/delivery-order');
     validate.deliveryOrder(new DeliveryOrder());
+});
+
+it("#04. Unit Receipt Note should valid", function () {
+    var UnitReceiptNote = require('../src/purchasing/unit-receipt-note');
+    validate.unitReceiptNote(new UnitReceiptNote());
 });
 
