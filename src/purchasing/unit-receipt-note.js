@@ -4,6 +4,7 @@ var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
 var Unit = require('../master/unit');
 var UnitReceiptNoteItem= require('./unit-receipt-note-item'); 
+var DeliveryOrder = require('../purchasing/delivery-order');
 
 module.exports = class UnitReceiptNote extends BaseModel {
     constructor(source) {
@@ -16,6 +17,8 @@ module.exports = class UnitReceiptNote extends BaseModel {
         this.date = new Date();  
         this.supplierId = {};
         this.supplier = new Supplier();
+        this.deliveryOrderId = {};
+        this.deliveryOrder = new DeliveryOrder();
         this.remark = '';
         this.items = [];
         this.copy(source);
