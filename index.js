@@ -18,7 +18,8 @@ module.exports = {
         PurchaseOrder: require('./src/purchasing/purchase-order'),
         PurchaseOrderExternal: require('./src/purchasing/purchase-order-external'),
         QualityStandard: require('./src/purchasing/quality-standard'),
-        DeliveryOrder: require('./src/purchasing/delivery-order')
+        DeliveryOrder: require('./src/purchasing/delivery-order'),
+        UnitReceiptNote: require('./src/purchasing/unit-receipt-note')
     },
     map: require('./src/map'),
     validator: require('./src/validator')

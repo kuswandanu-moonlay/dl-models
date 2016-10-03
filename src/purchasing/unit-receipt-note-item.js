@@ -2,7 +2,6 @@
 var BaseModel = require('capital-models').BaseModel;
 var Product = require('../master/product');
 var uom = require('../master/uom');
-var DeliveryOrder = require('../purchasing/delivery-order');
 
 module.exports = class UnitReceiptNoteItem extends BaseModel {
     constructor(source) {
