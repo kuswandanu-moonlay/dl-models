@@ -2,6 +2,7 @@
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
 var Currency = require('../master/currency');
+var Vat = require('../master/vat');
 var PurchaseOrder = require('../purchasing/purchase-order');
 var QualityStandard = require('./quality-standard');
 
@@ -25,6 +26,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.paymentMethod = '';
         this.paymentDueDays = 30;
 
+        this.vat = new Vat();
         this.useVat = false;
         this.vatRate = 0;
         this.useIncomeTax = false;
