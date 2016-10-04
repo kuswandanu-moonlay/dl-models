@@ -21,7 +21,8 @@ module.exports = {
         DeliveryOrder: require('./src/purchasing/delivery-order'),
         DeliveryOrderItem: require('./src/purchasing/delivery-order-item'),
         DeliveryOrderItemFulfillment: require('./src/purchasing/delivery-order-item-fulfillment'),
-        UnitReceiptNote: require('./src/purchasing/unit-receipt-note')
+        UnitReceiptNote: require('./src/purchasing/unit-receipt-note'),
+        UnitReceiptNoteItem: require('./src/purchasing/unit-receipt-note-item')
     },
     map: require('./src/map'),
     validator: require('./src/validator')
