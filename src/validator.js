@@ -13,6 +13,7 @@ module.exports = {
                 unit: require("./master/unit-validator"), 
                 category: require("./master/category-validator"),
                 currency: require("./master/currency-validator"), 
+                vat: require("./master/vat-validator")
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

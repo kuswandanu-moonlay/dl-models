@@ -34,3 +34,8 @@ it("#07. Currency should valid", function () {
     var Currency = require('../src/master/currency');
     validate.currency(new Currency());
 })
+
+it("#08. Vat should valid", function () {
+    var Vat = require('../src/master/vat');
+    validate.vat(new Vat());
+})

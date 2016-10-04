@@ -1,6 +1,6 @@
 var validate = require('../src/validator').purchasing;
 
-it("#1. Purchase Order External should valid", function() {
+it("#01. Purchase Order External should valid", function() {
     var PurchaseOrderExternal = require('../src/purchasing/purchase-order-external');
     validate.purchaseOrderExternal(new PurchaseOrderExternal());
 });

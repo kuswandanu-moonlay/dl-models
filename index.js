@@ -11,7 +11,8 @@ module.exports = {
         Uom: require('./src/master/uom'),
         Unit: require('./src/master/unit'),
         Category: require('./src/master/category'),
-        Currency: require('./src/master/currency')
+        Currency: require('./src/master/currency'),
+        Vat: require('./src/master/vat')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),

@@ -1,6 +1,6 @@
 module.exports = {
     auth: {
-        type: { 
+        type: {
             Account: 'account',
             Profile: 'profile',
             Role: 'role'
@@ -11,20 +11,22 @@ module.exports = {
         }
     },
     master: {
-        type: { 
+        type: {
             Buyer: 'buyer',
             Supplier: 'supplier',
             uom: 'unit-of-measurement',
-            Currency: 'currency'
+            Currency: 'currency',
+            Vat: 'vat'
         },
         collection: {
             Buyer: 'buyers',
             Supplier: 'suppliers',
             uom: 'unit-of-measurements',
             Product: 'products',
-            Unit:'unit',
-            Category:'category',
-            Currency:'currency'
+            Unit: 'unit',
+            Category: 'category',
+            Currency: 'currency',
+            Vat: 'vat'
         }
     },
     purchasing: {

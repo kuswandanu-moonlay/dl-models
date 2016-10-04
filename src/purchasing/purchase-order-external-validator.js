@@ -2,6 +2,7 @@ require("should");
 var validatePurchaseOrder = require('./purchase-order-validator');
 var validateSupplier = require('../master/supplier-validator');
 var validateCurrency = require('../master/currency-validator');
+var validateVat = require('../master/vat-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -24,7 +25,7 @@ module.exports = function (data) {
     data.freightCostBy.should.instanceOf(String);
 
     data.should.have.property('currency');
-    data.supplier.should.instanceof(Object);
+    data.currency.should.instanceof(Object);
     validateCurrency(data.currency);
 
     data.should.have.property('currencyRate');
@@ -38,6 +39,10 @@ module.exports = function (data) {
    
     data.should.have.property('useVat');
     data.useVat.should.instanceOf(Boolean);
+
+    data.should.have.property('vat');
+    data.vat.should.instanceof(Object);
+    validateVat(data.vat);
 
     data.should.have.property('vatRate');
     data.vatRate.should.instanceOf(Number);
