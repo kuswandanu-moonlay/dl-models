@@ -19,7 +19,11 @@ module.exports = {
         PurchaseOrder: require('./src/purchasing/purchase-order'),
         PurchaseOrderExternal: require('./src/purchasing/purchase-order-external'),
         QualityStandard: require('./src/purchasing/quality-standard'),
-        DeliveryOrder: require('./src/purchasing/delivery-order')
+        DeliveryOrder: require('./src/purchasing/delivery-order'),
+        DeliveryOrderItem: require('./src/purchasing/delivery-order-item'),
+        DeliveryOrderItemFulfillment: require('./src/purchasing/delivery-order-item-fulfillment'),
+        UnitReceiptNote: require('./src/purchasing/unit-receipt-note'),
+        UnitReceiptNoteItem: require('./src/purchasing/unit-receipt-note-item')
     },
     map: require('./src/map'),
     validator: require('./src/validator')
