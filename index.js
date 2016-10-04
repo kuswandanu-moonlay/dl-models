@@ -12,7 +12,7 @@ module.exports = {
         Unit: require('./src/master/unit'),
         Category: require('./src/master/category'),
         Currency: require('./src/master/currency'),
-        Vat: require('./src/master/currency')
+        Vat: require('./src/master/vat')
     },
     // costCalculation:{
     //     CostCalculation: require("./src/cost-calculation/cost-calculation")
