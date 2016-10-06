@@ -18,6 +18,10 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.realizationQuantity = 0;
         
         this.pricePerDealUnit = 0;
+        
+        this.currency = new Currency();
+        this.currencyRate = 1;
+        
         this.conversion = 1;
         this.isClosed=false;
         this.remark = '';
