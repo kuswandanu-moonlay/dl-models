@@ -2,6 +2,7 @@
 var BaseModel = require('capital-models').BaseModel;
 var Product = require('../master/product');
 var uom = require('../master/uom');
+var Currency = require('../master/currency');
 
 module.exports = class PurchaseOrderItem extends BaseModel {
     constructor(source, type) {
