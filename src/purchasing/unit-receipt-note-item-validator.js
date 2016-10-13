@@ -13,4 +13,7 @@ module.exports = function (data) {
     data.should.have.property('deliveredUom');
     data.deliveredUom.should.instanceOf(Object);
     validateUom(data.deliveredUom);
+    
+    data.should.have.property('remark');
+    data.remark.should.instanceOf(String);
 }
