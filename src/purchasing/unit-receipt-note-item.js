@@ -10,7 +10,8 @@ module.exports = class UnitReceiptNoteItem extends BaseModel {
         this.deliveredQuantity = 0;
         this.deliveredUom = new uom();
         this.purchaseOrderQuantity = 0;
-        this.PrNo='';
+        this.purchaseOrderId = {};
+        this.purchaseOrder = {};
         this.remark = '';
         this.copy(source);
     }
