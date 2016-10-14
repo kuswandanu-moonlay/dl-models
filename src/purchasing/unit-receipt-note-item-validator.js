@@ -13,6 +13,12 @@ module.exports = function (data) {
     data.should.have.property('deliveredUom');
     data.deliveredUom.should.instanceOf(Object);
     validateUom(data.deliveredUom);
+
+    data.should.have.property('purchaseOrderQuantity');
+    data.purchaseOrderQuantity.should.instanceOf(Number);
+    
+    data.should.have.property('PrNo');
+    data.PrNo.should.instanceOf(String);
     
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
