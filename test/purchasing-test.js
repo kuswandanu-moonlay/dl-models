@@ -15,3 +15,8 @@ it("#03. Delivery Order should valid", function () {
     validate.deliveryOrder(new DeliveryOrder());
 });
 
+it("#04. Unit Receipt Note should valid", function () {
+    var UnitReceiptNote = require('../src/purchasing/unit-receipt-note');
+    validate.unitReceiptNote(new UnitReceiptNote());
+});
+
