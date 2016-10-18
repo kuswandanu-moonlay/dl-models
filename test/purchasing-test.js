@@ -20,3 +20,9 @@ it("#04. Unit Receipt Note should valid", function () {
     validate.unitReceiptNote(new UnitReceiptNote());
 });
 
+it("#05. Unit Payment Price Correction Note should valid", function () {
+    var UnitPaymentPriceCorrectionNoteItem = require('../src/purchasing/unit-payment-price-correction-note');
+    validate.unitPaymentPriceCorrectionNoteItem(new UnitPaymentPriceCorrectionNoteItem());
+});
+
+

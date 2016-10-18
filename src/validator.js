@@ -20,6 +20,7 @@ module.exports = {
                 purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),
                 purchaseOrderExternal: require("./purchasing/purchase-order-external-validator"),
                 deliveryOrder: require("./purchasing/delivery-order-validator"),
-                unitReceiptNote: require("./purchasing/unit-receipt-note-validator")
+                unitReceiptNote: require("./purchasing/unit-receipt-note-validator"),
+                unitPaymentPriceCorrectionNoteItem: require("./purchasing/unit-payment-price-correction-note-validator")
         }
 };
