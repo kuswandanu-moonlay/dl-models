@@ -18,12 +18,18 @@ module.exports = function (data) {
     data.should.have.property('purchaseRequest');
     data.purchaseRequest.should.instanceof(Object);
     
+    data.should.have.property('productId');
+    data.productId.should.instanceof(Object);
+    
     data.should.have.property('product');
     data.product.should.instanceof(Object);
     validateProduct(data.product);
     
     data.should.have.property('quantity');
     data.quantity.should.instanceof(Number);
+    
+    data.should.have.property('uomId');
+    data.uomId.should.instanceof(Object);
     
     data.should.have.property('uom');
     data.uom.should.instanceof(Object);
