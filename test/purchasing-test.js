@@ -20,3 +20,7 @@ it("#04. Unit Receipt Note should valid", function () {
     validate.unitReceiptNote(new UnitReceiptNote());
 });
 
+it("#05. Unit Payment Order should valid", function () {
+    var UnitPaymentOrder = require('../src/purchasing/unit-payment-order');
+    validate.UnitPaymentOrder(new UnitPaymentOrder());
+});
