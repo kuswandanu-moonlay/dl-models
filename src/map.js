@@ -33,12 +33,14 @@ module.exports = {
         type: {
             PurchaseOrder: 'purchase-order',
             DeliveryOrder: 'delivery-order',
+            UnitPaymentOrder:'unit-payment-order',
         },
         collection: {
             PurchaseOrder: 'purchase-orders',
             PurchaseOrderExternal: 'purchase-order-externals',
             DeliveryOrder: 'delivery-orders',
             UnitReceiptNote: 'unit-receipt-notes',
+            UnitPaymentOrder:'unit-payment-orders',
         }
     }
 }
