@@ -20,8 +20,6 @@ module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
         this.uom = new Uom();
         this.pricePerUnit=0;
         this.priceTotal=0;
-        this.currency = new Currency();
-        this.currencyRate = 1;
         this.copy(source);
     }
 }
