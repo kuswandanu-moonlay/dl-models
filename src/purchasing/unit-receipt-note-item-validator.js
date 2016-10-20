@@ -17,6 +17,9 @@ module.exports = function (data) {
 
     data.should.have.property('purchaseOrderQuantity');
     data.purchaseOrderQuantity.should.instanceOf(Number);
+
+    data.should.have.property('pricePerDealUnit');
+    data.pricePerDealUnit.should.instanceOf(Number);
     
     data.should.have.property('purchaseOrder');
     data.purchaseOrder.should.instanceOf(Object);
