@@ -18,9 +18,14 @@ it("#03. Delivery Order should valid", function () {
 it("#04. Unit Receipt Note should valid", function () {
     var UnitReceiptNote = require('../src/purchasing/unit-receipt-note');
     validate.unitReceiptNote(new UnitReceiptNote());
+}); 
+ 
+it("#05. Unit Payment Price Correction Note should valid", function () {
+    var unitPaymentPriceCorrectionNote = require('../src/purchasing/unit-payment-price-correction-note');
+    validate.unitPaymentPriceCorrectionNote(new unitPaymentPriceCorrectionNote());
 });
 
-it("#05. Unit Payment Order should valid", function () {
+it("#06. Unit Payment Order should valid", function () { 
     var UnitPaymentOrder = require('../src/purchasing/unit-payment-order');
     validate.UnitPaymentOrder(new UnitPaymentOrder());
 });

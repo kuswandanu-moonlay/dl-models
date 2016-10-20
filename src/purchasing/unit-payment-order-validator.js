@@ -31,17 +31,20 @@ module.exports = function (data) {
     data.should.have.property('invoceDate');
     data.invoceDate.should.instanceOf(Date);
 
-    data.should.have.property('incomeTaxCorrectionNo');
-    data.incomeTaxCorrectionNo.should.instanceOf(String);
+    data.should.have.property('incomeTaxNo');
+    data.incomeTaxNo.should.instanceOf(String);
 
-    data.should.have.property('incomeTaxCorrectionDate');
-    data.incomeTaxCorrectionDate.should.instanceOf(Date);
+    data.should.have.property('incomeTaxDate');
+    data.incomeTaxDate.should.instanceOf(Date);
 
-    data.should.have.property('vatCorrectionNo');
-    data.vatCorrectionNo.should.instanceOf(String);
+    data.should.have.property('vatNo');
+    data.vatNo.should.instanceOf(String);
 
-    data.should.have.property('vatCorrectionDate');
-    data.vatCorrectionDate.should.instanceOf(Date);
+    data.should.have.property('vatDate');
+    data.vatDate.should.instanceOf(Date);  
+
+    data.should.have.property('dueDate');
+    data.dueDate.should.instanceOf(Date);  
 
     data.should.have.property('vatRate');
     data.vatRate.should.instanceOf(Number);

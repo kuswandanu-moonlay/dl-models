@@ -39,8 +39,9 @@ module.exports = {
             PurchaseOrder: 'purchase-orders',
             PurchaseOrderExternal: 'purchase-order-externals',
             DeliveryOrder: 'delivery-orders',
-            UnitReceiptNote: 'unit-receipt-notes',
-            UnitPaymentOrder:'unit-payment-orders',
+            UnitReceiptNote: 'unit-receipt-notes', 
+            UnitPaymentPriceCorrectionNote:'unit-payment-price-correction-notes',
+            UnitPaymentOrder:'unit-payment-orders' 
         }
     }
 }
