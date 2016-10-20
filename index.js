@@ -25,7 +25,9 @@ module.exports = {
         UnitReceiptNote: require('./src/purchasing/unit-receipt-note'),
         UnitReceiptNoteItem: require('./src/purchasing/unit-receipt-note-item'),
         UnitPaymentPriceCorrectionNote: require('./src/purchasing/unit-payment-price-correction-note'),
-        UnitPaymentPriceCorrectionNoteItem: require('./src/purchasing/unit-payment-price-correction-note-item')
+        UnitPaymentPriceCorrectionNoteItem: require('./src/purchasing/unit-payment-price-correction-note-item'),
+        UnitPaymentOrder: require('./src/purchasing/unit-payment-order'),
+        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item')
     },
     map: require('./src/map'),
     validator: require('./src/validator')
