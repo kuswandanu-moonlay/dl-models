@@ -2,6 +2,7 @@ require("should");
 var validateProduct = require('../master/product-validator');
 var validateUom = require('../master/uom-validator');
 var validatePurchaseOrder = require('./purchase-order-validator');
+var validateCurrency = require('../master/currency-validator');
 
 module.exports = function (data) {
     data.should.have.property('product');
@@ -20,6 +21,13 @@ module.exports = function (data) {
 
     data.should.have.property('pricePerDealUnit');
     data.pricePerDealUnit.should.instanceOf(Number);
+    
+    data.should.have.property('currency');
+    data.currency.should.instanceof(Object);
+    validateCurrency(data.currency);
+
+    data.should.have.property('currencyRate');
+    data.currencyRate.should.instanceOf(Number);
     
     data.should.have.property('purchaseOrder');
     data.purchaseOrder.should.instanceOf(Object);
