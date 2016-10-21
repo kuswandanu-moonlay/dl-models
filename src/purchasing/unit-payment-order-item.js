@@ -9,5 +9,6 @@ module.exports = class UnitPaymentOrderItem extends BaseModel {
         //Define Properties
         this.unitReceiptNoteId= {};
         this.unitReceiptNote= new UnitReceiptNote(); 
+        this.copy(source);
     }
 }
