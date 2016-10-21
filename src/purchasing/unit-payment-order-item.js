@@ -8,7 +8,7 @@ module.exports = class UnitPaymentOrderItem extends BaseModel {
         super('unit-payment-order-item', '1.0.0');
         //Define Properties
         this.unitReceiptNoteId= {};
-        this.unitReceiptNote= new UnitReceiptNote(); 
-        this.copy(source);
+        this.unitReceiptNote= new UnitReceiptNote();  
+        this.copy(source); 
     }
 }
