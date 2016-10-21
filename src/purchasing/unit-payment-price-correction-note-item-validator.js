@@ -3,6 +3,7 @@ require("should");
 var validatePurchaseOrderExternal = require('../purchasing/purchase-order-external-validator');
 var validateProduct = require('../master/product-validator');
 var validateUom = require('../master/uom-validator');
+var validateCurrency = require('../master/currency-validator');
 
 module.exports = function (data) {
     data.should.have.property('purchaseOrderExternalId');
@@ -40,4 +41,11 @@ module.exports = function (data) {
     
     data.should.have.property('priceTotal');
     data.priceTotal.should.instanceof(Number);
+    
+    data.should.have.property('currency');
+    data.currency.should.instanceof(Object);
+    validateCurrency(data.currency);
+
+    data.should.have.property('currencyRate');
+    data.currencyRate.should.instanceOf(Number);
 }
