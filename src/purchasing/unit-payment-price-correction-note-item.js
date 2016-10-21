@@ -3,6 +3,7 @@ var BaseModel = require('capital-models').BaseModel;
 var PurchaseOrderExternal = require('../purchasing/purchase-order-external');
 var Product = require('../master/product');
 var Uom = require('../master/uom');
+var Currency = require('../master/currency');
 
 module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
     constructor(source) {

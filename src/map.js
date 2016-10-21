@@ -45,7 +45,7 @@ module.exports = {
             UnitReceiptNote: 'unit-receipt-notes',
             PurchaseRequest: 'purchase-requests',
             UnitPaymentPriceCorrectionNote:'unit-payment-price-correction-notes',
-            UnitPaymentOrder:'unit-payment-orders' 
+            UnitPaymentOrder:'unit-payment-orders'
         }
     }
 }
