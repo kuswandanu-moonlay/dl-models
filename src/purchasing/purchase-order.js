@@ -40,7 +40,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.currencyRate = 1;
 
         this.paymentMethod = '';
-        this.paymentDueDays = 0;
+        this.paymentDueDays = 30;
 
         this.vat = new Vat();
         this.useVat = false;
