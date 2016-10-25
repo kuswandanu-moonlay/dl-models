@@ -24,7 +24,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.currencyRate = 1;
 
         this.paymentMethod = '';
-        this.paymentDueDays = 30;
+        this.paymentDueDays = 0;
 
         this.vat = new Vat();
         this.useVat = false;
