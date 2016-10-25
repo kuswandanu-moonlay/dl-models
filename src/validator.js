@@ -12,8 +12,9 @@ module.exports = {
                 uom: require("./master/uom-validator"),
                 unit: require("./master/unit-validator"),
                 category: require("./master/category-validator"),
-                currency: require("./master/currency-validator"),
-                vat: require("./master/vat-validator")
+                currency: require("./master/currency-validator"), 
+                vat: require("./master/vat-validator"),
+                budget: require('./master/budget-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -24,6 +25,8 @@ module.exports = {
                 unitPaymentPriceCorrectionNote: require("./purchasing/unit-payment-price-correction-note-validator"),
                 unitPaymentPriceCorrectionNoteItem: require("./purchasing/unit-payment-price-correction-note-item-validator"),
                 UnitPaymentOrder: require("./purchasing/unit-payment-order-validator"),
-                UnitPaymentOrderItem: require("./purchasing/unit-payment-order-item-validator")
+                UnitPaymentOrderItem: require("./purchasing/unit-payment-order-item-validator"),
+                purchaseRequest: require("./purchasing/purchase-request-validator"),
+                purchaseRequestItem: require("./purchasing/purchase-request-item-validator")
         }
 };

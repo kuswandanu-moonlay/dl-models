@@ -25,7 +25,7 @@ it("#05. Unit Payment Price Correction Note should valid", function () {
     validate.unitPaymentPriceCorrectionNote(new unitPaymentPriceCorrectionNote());
 });
 
-it("#06. Unit Payment Order should valid", function () { 
+it("#06. Unit Payment Order should valid", function () {
     var UnitPaymentOrder = require('../src/purchasing/unit-payment-order');
     validate.UnitPaymentOrder(new UnitPaymentOrder());
 });
