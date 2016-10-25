@@ -30,13 +30,13 @@ module.exports = function (data) {
 
     data.should.have.property('currencyRate');
     data.currencyRate.should.instanceOf(Number);
-    
+
     data.should.have.property('paymentMethod');
     data.paymentMethod.should.instanceOf(String);
 
     data.should.have.property('paymentDueDays');
     data.paymentDueDays.should.instanceOf(Number);
-   
+
     data.should.have.property('useVat');
     data.useVat.should.instanceOf(Boolean);
 
@@ -52,13 +52,13 @@ module.exports = function (data) {
 
     data.should.have.property('date');
     data.date.should.instanceof(Date);
-    
+
     data.should.have.property('expectedDeliveryDate');
     data.expectedDeliveryDate.should.instanceof(Date);
-    
+
     data.should.have.property('actualDeliveryDate');
     data.actualDeliveryDate.should.instanceof(Date);
-    
+
     data.should.have.property('isPosted');
     data.isPosted.should.instanceOf(Boolean);
 
@@ -67,9 +67,9 @@ module.exports = function (data) {
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
-    
+
     data.should.have.property('items');
-    data.items.should.instanceOf(Array); 
+    data.items.should.instanceOf(Array);
     for (var item of data.items) {
         validatePurchaseOrder(item);
     }

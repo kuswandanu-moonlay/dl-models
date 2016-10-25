@@ -3,6 +3,7 @@ var validatePurchaseOrderItem = require('./purchase-order-item-validator');
 var validateBuyer = require('../master/buyer-validator');
 var validateSupplier = require('../master/supplier-validator');
 var validateCurrency = require('../master/currency-validator');
+var validateVat = require('../master/vat-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -78,6 +79,10 @@ module.exports = function (data) {
     data.should.have.property('paymentDueDays');
     data.paymentDueDays.should.instanceOf(Number);
    
+   data.should.have.property('vat');
+    data.vat.should.instanceof(Object);
+    validateVat(data.vat);
+    
     data.should.have.property('useVat');
     data.useVat.should.instanceOf(Boolean);
 
