@@ -5,9 +5,10 @@ var Buyer = require('../master/buyer');
 var Currency = require('../master/currency');
 var PurchaseOrderItem = require('./purchase-order-item');
 var map = require('../map');
+var Vat = require('../master/vat');
 
 module.exports = class PurchaseOrder extends BaseModel {
-    constructor(source, type) { 
+    constructor(source, type) {
         super(type || map.purchasing.type.PurchaseOrder, '1.0.0');
 
         // Define properties
@@ -30,7 +31,7 @@ module.exports = class PurchaseOrder extends BaseModel {
 
         this.unitId = {};
         this.unit = {};
-        
+
         this.categoryId = {};
         this.category = {};
 
@@ -41,16 +42,17 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.paymentMethod = '';
         this.paymentDueDays = 30;
 
+        this.vat = new Vat();
         this.useVat = false;
         this.vatRate = 0;
         this.useIncomeTax = false;
-         
+
         this.date = new Date();
         this.expectedDeliveryDate = new Date();
         this.actualDeliveryDate = new Date();
-        
+
         this.isPosted = false;
-        this.isClosed=false;
+        this.isClosed = false;
         this.remark = '';
         this.items = [];
 
