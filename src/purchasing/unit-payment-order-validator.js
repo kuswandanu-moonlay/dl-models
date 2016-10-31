@@ -3,7 +3,7 @@ var validateSupplier = require('../master/supplier-validator');
 var validateUnit = require('../master/unit-validator');
 var validateCurrency = require('../master/currency-validator');
 var validateUnitPaymentOrderItem = require('./unit-payment-order-item-validator');
-var validateVat=require('../master/vat-validator');
+var validateVat = require('../master/vat-validator');
 
 module.exports = function (data) {
     data.should.have.property('no');
@@ -54,6 +54,12 @@ module.exports = function (data) {
 
     data.should.have.property('incomeTaxDate');
     data.incomeTaxDate.should.instanceOf(Date);
+
+    data.should.have.property('useIncomeTax');
+    data.useIncomeTax.should.instanceOf(Boolean);
+
+    data.should.have.property('useVat');
+    data.useVat.should.instanceOf(Boolean);
 
     data.should.have.property('vatNo');
     data.vatNo.should.instanceOf(String);
