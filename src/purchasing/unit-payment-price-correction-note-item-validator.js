@@ -1,23 +1,17 @@
 require("should");
 
-var validatePurchaseOrderExternal = require('../purchasing/purchase-order-external-validator');
 var validateProduct = require('../master/product-validator');
 var validateUom = require('../master/uom-validator');
 var validateCurrency = require('../master/currency-validator');
+var validatePurchaseOrder = require('./purchase-order-validator');
 
 module.exports = function (data) {
-    data.should.have.property('purchaseOrderExternalId');
-    data.purchaseOrderExternalId.should.instanceOf(Object);
+    data.should.have.property('purchaseOrderId');
+    data.purchaseOrderId.should.instanceof(Object);
     
-    data.should.have.property('purchaseOrderExternal');
-    data.purchaseOrderExternal.should.instanceOf(Object);
-    validatePurchaseOrderExternal(data.purchaseOrderExternal);
-    
-    data.should.have.property('purchaseRequestId');
-    data.purchaseRequestId.should.instanceof(Object);
-    
-    data.should.have.property('purchaseRequest');
-    data.purchaseRequest.should.instanceof(Object);
+    data.should.have.property('purchaseOrder');
+    data.purchaseOrder.should.instanceof(Object);
+    validatePurchaseOrder(data.purchaseOrder);
     
     data.should.have.property('productId');
     data.productId.should.instanceof(Object);
