@@ -35,6 +35,9 @@ module.exports = function (data) {
     data.should.have.property('unitCoverLetterNo');
     data.unitCoverLetterNo.should.instanceof(String);
     
+    data.should.have.property('priceCorrectionType');
+    data.priceCorrectionType.should.instanceof(String);
+    
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
     
