@@ -12,8 +12,8 @@ module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
         //Define Properties
         this.purchaseOrderExternalId = {};
         this.purchaseOrderExternal = new PurchaseOrderExternal();
-        this.purchaseRequestId = {};
-        this.purchaseRequest = {};
+        this.purchaseOrderId = {};
+        this.purchaseOrder = {};
         this.productId = {};
         this.product = new Product();
         this.quantity=0;
