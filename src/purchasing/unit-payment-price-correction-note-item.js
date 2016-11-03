@@ -21,7 +21,7 @@ module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
         this.priceTotal = 0;
         this.currency = new Currency();
         this.currencyRate = 1;
-        this.unitPaymentOrderNo = "";
+        this.unitReceiptNoteNo = "";
         this.copy(source);
     }
 }
