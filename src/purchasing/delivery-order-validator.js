@@ -1,6 +1,6 @@
 require("should");
 var validateSupplier = require('../master/supplier-validator');
-var validatePurchaseOrder = require('../purchasing/purchase-order-validator');
+var validateDeliveryOrderItem = require('../purchasing/delivery-order-item-validator');
 
 module.exports = function (data) {
     data.should.have.property('no');
@@ -31,7 +31,7 @@ module.exports = function (data) {
 
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
-    // for (var item of data.items) {
-    //     validatePurchaseOrder(item);
-    // }
+    for (var item of data.items) {
+        validateDeliveryOrderItem(item);
+    }
 }
