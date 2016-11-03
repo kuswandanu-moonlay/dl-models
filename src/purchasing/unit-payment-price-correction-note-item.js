@@ -14,13 +14,14 @@ module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
         this.purchaseOrder = {};
         this.productId = {};
         this.product = new Product();
-        this.quantity=0;
+        this.quantity = 0;
         this.uomId = {};
         this.uom = new Uom();
-        this.pricePerUnit=0;
-        this.priceTotal=0;
+        this.pricePerUnit = 0;
+        this.priceTotal = 0;
         this.currency = new Currency();
         this.currencyRate = 1;
+        this.unitPaymentOrderNo = "";
         this.copy(source);
     }
 }
