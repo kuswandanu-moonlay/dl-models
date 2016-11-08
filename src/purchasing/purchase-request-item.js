@@ -5,7 +5,7 @@ var uom = require('../master/uom');
 
 module.exports = class PurchaseOrderItem extends BaseModel {
     constructor(source, type) {
-        super(type || 'purchase-order-item', '1.0.0');
+        super(type || 'purchase-request-item', '1.0.0');
 
         this.product = new Product();
         this.quantity=0;
