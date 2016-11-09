@@ -42,4 +42,7 @@ module.exports = function (data) {
 
     data.should.have.property('currencyRate');
     data.currencyRate.should.instanceOf(Number);
+
+    data.should.have.property('unitReceiptNoteNo');
+    data.unitReceiptNoteNo.should.instanceOf(String);
 }

@@ -20,6 +20,7 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.category = {};
 
         this.isPosted = false;
+        this.isUsed = false;
         this.remark = '';
 
         this.items = [];
