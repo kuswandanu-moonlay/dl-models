@@ -28,7 +28,7 @@ module.exports = function (data) {
     data.deliveredQuantity.should.instanceOf(Number);
 
     data.should.have.property('realizationQuantity');
-    data.realizationQuantity.should.instanceOf(Number);
+    data.realizationQuantity.should.instanceOf(Array);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
