@@ -9,6 +9,9 @@ module.exports = function (data) {
     data.should.have.property('purchaseOrderExternal');
     data.purchaseOrderExternal.should.instanceOf(Object);
     validatePurchaseOrderExternal(data.purchaseOrderExternal);
+    
+    data.should.have.property('isClosed');
+    data.isClosed.should.instanceOf(Boolean);
 
     data.should.have.property('fulfillments');
     data.fulfillments.should.instanceOf(Array);
