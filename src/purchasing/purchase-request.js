@@ -11,6 +11,8 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.no='';
         this.date = new Date();
         this.expectedDeliveryDate = new Date();
+        
+        this.budgetId = {};
         this.budget = new Budget();
 
         this.unitId = {};
