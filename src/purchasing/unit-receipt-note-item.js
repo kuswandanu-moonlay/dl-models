@@ -6,7 +6,7 @@ var Currency = require('../master/currency');
 
 module.exports = class UnitReceiptNoteItem extends BaseModel {
     constructor(source) {
-        super('unit-receipt-note', '1.0.0');
+        super('unit-receipt-note-item', '1.0.0');
         this.product = new Product();
         this.deliveredQuantity = 0;
         this.deliveredUom = new uom();

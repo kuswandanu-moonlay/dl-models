@@ -11,6 +11,8 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.no='';
         this.date = new Date();
         this.expectedDeliveryDate = new Date();
+        
+        this.budgetId = {};
         this.budget = new Budget();
 
         this.unitId = {};
@@ -24,6 +26,9 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.remark = '';
 
         this.items = [];
+        
+        this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
+        
         this.copy(source);
 
         this.items = (this.items || []).map(item => new PurchaseRequestItem(item));
