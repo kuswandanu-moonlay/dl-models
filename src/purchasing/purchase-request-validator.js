@@ -50,6 +50,6 @@ module.exports = function (data) {
         validatePurchaseRequestItem(item);
     }
     
-    data.should.have.property('purchaseOrders');
-    data.purchaseOrders.should.instanceof(Array); 
+    data.should.have.property('purchaseOrderIds');
+    data.purchaseOrderIds.should.instanceof(Array); 
 }

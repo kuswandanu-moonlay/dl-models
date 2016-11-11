@@ -12,7 +12,7 @@ module.exports = class PurchaseRequestItem extends BaseModel {
         this.quantity = 0;
         this.uom = new uom();
         
-        this.purchaseOrders = []; //simpan Id purchase-order yang memuat pr-item ini;
+        this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
 
         this.remark = '';
 

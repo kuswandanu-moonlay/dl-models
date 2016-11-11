@@ -23,6 +23,6 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
     
-    data.should.have.property('purchaseOrders');
-    data.purchaseOrders.should.instanceof(Array); 
+    data.should.have.property('purchaseOrderIds');
+    data.purchaseOrderIds.should.instanceof(Array); 
 }

@@ -2,14 +2,13 @@
 
 var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class Unit extends BaseModel {
+module.exports = class Division extends BaseModel {
     constructor(source) {
-        super('unit', '1.0.0');
+        super('division', '1.0.0');
 
         // Define properties.  
         this.code = '';
-        this.divisionId = {};
-        this.name = ''; 
+        this.name = '';  
         this.description='';
 
         this.copy(source);
