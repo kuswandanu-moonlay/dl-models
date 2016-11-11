@@ -17,7 +17,8 @@ module.exports = {
             uom: 'unit-of-measurement',
             Currency: 'currency',
             Vat: 'vat',
-            Budget: 'budget'
+            Budget: 'budget',
+            Machine: 'machine'
         },
         collection: {
             Buyer: 'buyers',
@@ -28,7 +29,8 @@ module.exports = {
             Category: 'category',
             Currency: 'currency',
             Vat: 'vat',
-            Budget: 'budgets'
+            Budget: 'budgets',
+            Machine: 'machines'
         }
     },
     purchasing: {
