@@ -9,6 +9,7 @@ module.exports = class Unit extends BaseModel {
         // Define properties.  
         this.code = '';
         this.divisionId = {};
+        this.division = {};
         this.name = ''; 
         this.description='';
 
