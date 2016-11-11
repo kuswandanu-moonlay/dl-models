@@ -9,11 +9,12 @@ module.exports = {
         Buyer: require('./src/master/buyer'),
         Supplier: require('./src/master/supplier'),
         Uom: require('./src/master/uom'),
+        Division: require('./src/master/division'),
         Unit: require('./src/master/unit'),
         Category: require('./src/master/category'),
         Currency: require('./src/master/currency'),
         Vat: require('./src/master/vat'),
-        Budget:require('./src/master/budget')
+        Budget: require('./src/master/budget')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
