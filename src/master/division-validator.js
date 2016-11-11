@@ -7,15 +7,9 @@ module.exports = function (data) {
     data.should.have.property('code');
     data.code.should.be.String();
 
-    data.should.have.property('divisionId');
-    data.divisionId.should.be.Object();
-    
-    data.should.have.property('division');
-    data.division.should.be.Object();
-
     data.should.have.property('name');
     data.name.should.be.String();
-
+ 
     data.should.have.property('description');
     data.description.should.be.String(); 
     

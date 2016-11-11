@@ -14,6 +14,9 @@ module.exports = function (data) {
     
     data.should.have.property('expectedDeliveryDate');
     data.expectedDeliveryDate.should.instanceof(Date);
+ 
+    data.should.have.property('budgetId');
+    data.budgetId.should.instanceof(Object);
 
     data.should.have.property('budget');
     data.budget.should.instanceof(Object);
@@ -46,4 +49,7 @@ module.exports = function (data) {
     for (var item of data.items) {
         validatePurchaseRequestItem(item);
     }
+    
+    data.should.have.property('purchaseOrderIds');
+    data.purchaseOrderIds.should.instanceof(Array); 
 }
