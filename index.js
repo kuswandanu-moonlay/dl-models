@@ -9,6 +9,7 @@ module.exports = {
         Buyer: require('./src/master/buyer'),
         Supplier: require('./src/master/supplier'),
         Uom: require('./src/master/uom'),
+        Division: require('./src/master/division'),
         Unit: require('./src/master/unit'),
         Category: require('./src/master/category'),
         Currency: require('./src/master/currency'),

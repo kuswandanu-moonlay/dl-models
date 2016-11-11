@@ -9,7 +9,10 @@ module.exports = function (data) {
     data.should.have.property('uom');
     data.uom.should.instanceof(Object);
     validateUom(data.uom);
-    
+     
+    data.should.have.property('productId');
+    data.productId.should.instanceof(Object);
+
     data.should.have.property('product');
     data.product.should.instanceof(Object);
     validateProduct(data.product);
@@ -19,4 +22,7 @@ module.exports = function (data) {
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
+    
+    data.should.have.property('purchaseOrderIds');
+    data.purchaseOrderIds.should.instanceof(Array); 
 }

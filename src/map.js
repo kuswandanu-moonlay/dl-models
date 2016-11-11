@@ -25,12 +25,13 @@ module.exports = {
             Supplier: 'suppliers',
             uom: 'unit-of-measurements',
             Product: 'products',
-            Unit: 'unit',
-            Category: 'category',
-            Currency: 'currency',
-            Vat: 'vat',
-            Budget: 'budgets',
-            Machine: 'machines'
+            Machine: 'machines',
+            Division: 'divisions',
+            Unit: 'units',
+            Category: 'categories',
+            Currency: 'currencies',
+            Vat: 'vats',
+            Budget: 'budgets'
         }
     },
     purchasing: {

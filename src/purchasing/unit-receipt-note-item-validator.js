@@ -31,7 +31,7 @@ module.exports = function (data) {
     
     data.should.have.property('purchaseOrder');
     data.purchaseOrder.should.instanceOf(Object);
-    validateProduct(data.purchaseOrder);
+    validatePurchaseOrder(data.purchaseOrder);
     
     data.should.have.property('purchaseOrderId');
     data.purchaseOrderId.should.instanceof(Object);
