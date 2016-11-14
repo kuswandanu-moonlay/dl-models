@@ -28,6 +28,6 @@ module.exports = function (data) {
     data.should.have.property('year');
     data.year.should.instanceOf(Number);
     
-    data.should.have.property('machineCondition');
-    data.machineCondition.should.instanceOf(String);
+    data.should.have.property('condition');
+    data.condition.should.instanceOf(String);
 }
