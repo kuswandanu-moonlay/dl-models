@@ -15,7 +15,8 @@ module.exports = {
         Currency: require('./src/master/currency'),
         Vat: require('./src/master/vat'),
         Budget:require('./src/master/budget'),
-        Machine:require('./src/master/machine')
+        Machine:require('./src/master/machine'),
+        UsterClassification:require('./src/master/uster-classification')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -33,6 +34,13 @@ module.exports = {
         UnitPaymentPriceCorrectionNoteItem: require('./src/purchasing/unit-payment-price-correction-note-item'),
         UnitPaymentOrder: require('./src/purchasing/unit-payment-order'),
         UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item')
+    },
+    production:{
+        spinning:{
+            winding:{
+                SpinningProductQuality: require('./src/production/spinning/winding/spinning-product-quality')
+            }
+        }
     },
     map: require('./src/map'),
     validator: require('./src/validator')
