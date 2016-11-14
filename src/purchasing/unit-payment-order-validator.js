@@ -9,12 +9,11 @@ module.exports = function (data) {
     data.should.have.property('no');
     data.no.should.instanceOf(String);
 
-    data.should.have.property('unitId');
-    data.unitId.should.instanceof(Object);
+    data.should.have.property('divisionId');
+    data.divisionId.should.instanceof(Object);
 
-    data.should.have.property('unit');
-    data.unit.should.instanceof(Object);
-    validateUnit(data.unit);
+    data.should.have.property('division');
+    data.division.should.instanceof(Object); 
 
     data.should.have.property('categoryId');
     data.categoryId.should.instanceof(Object);

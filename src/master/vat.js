@@ -8,7 +8,7 @@ module.exports = class Vat extends BaseModel {
 
         // Define properties.   
         this.name = '';
-        this.rate = 1;
+        this.rate = 0;
         this.description = '';
         this.copy(source);
     }

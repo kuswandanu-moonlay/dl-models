@@ -17,13 +17,15 @@ module.exports = {
             uom: 'unit-of-measurement',
             Currency: 'currency',
             Vat: 'vat',
-            Budget: 'budget'
+            Budget: 'budget',
+            Machine: 'machine'
         },
         collection: {
             Buyer: 'buyers',
             Supplier: 'suppliers',
             uom: 'unit-of-measurements',
             Product: 'products',
+            Machine: 'machines',
             Division: 'divisions',
             Unit: 'units',
             Category: 'categories',

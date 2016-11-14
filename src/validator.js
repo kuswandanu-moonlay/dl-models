@@ -15,7 +15,8 @@ module.exports = {
                 category: require("./master/category-validator"),
                 currency: require("./master/currency-validator"), 
                 vat: require("./master/vat-validator"),
-                budget: require('./master/budget-validator')
+                budget: require('./master/budget-validator'),
+                machine: require('./master/machine-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
