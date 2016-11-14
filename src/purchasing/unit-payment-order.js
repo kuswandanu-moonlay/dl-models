@@ -1,6 +1,5 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
-var Unit = require('../master/unit');
 var Vat = require('../master/vat');
 var Category = require('../master/category');
 var Currency = require('../master/currency');
@@ -11,8 +10,8 @@ module.exports = class UnitPaymentOrder extends BaseModel {
         super('unit-payment-order', '1.0.0');
         //Define Properties
         this.no = '';
-        this.unitId = {};
-        this.unit = new Unit();
+        this.divisionId = {};
+        this.division = {};
         this.date = new Date();
         this.categoryId = {};
         this.category = new Category();
@@ -25,8 +24,8 @@ module.exports = class UnitPaymentOrder extends BaseModel {
         this.invoceDate = new Date();
         this.incomeTaxNo = '';
         this.incomeTaxDate = new Date();
-        this.useVat=false;
-        this.useIncomeTax=false;
+        this.useVat = false;
+        this.useIncomeTax = false;
         this.vatNo = '';
         this.vatDate = new Date();
         this.dueDate = new Date();
