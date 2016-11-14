@@ -1,6 +1,7 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
+var Unit = require('./unit');
 
 module.exports = class Machine extends BaseModel {
     constructor(source) {
@@ -9,11 +10,12 @@ module.exports = class Machine extends BaseModel {
         // Define properties.  
         this.code = '';
         this.name = '';
-        this.unit = '';
+        this.unitId = {};
+        this.unit = new Unit();
         this.process = '';
         this.manufacture = '';
         this.year = 1900;
-        this.machineCondition = '';
+        this.condition = '';
 
         this.copy(source);
     }
