@@ -20,6 +20,7 @@ module.exports = class UnitPaymentPriceCorrectionNote extends BaseModel {
         this.vatTaxCorrectionDate = new Date();
         this.unitCoverLetterNo = '';
         this.priceCorrectionType='';
+        this.releaseOrderNoteNo='';
         this.remark = '';
         this.items = [];
         this.copy(source);

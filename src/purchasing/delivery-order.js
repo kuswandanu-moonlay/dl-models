@@ -16,6 +16,7 @@ module.exports = class DeliveryOrder extends BaseModel {
         this.supplierId = {};
         this.supplier = new Supplier(); 
         this.isPosted=false;
+        this.isClosed = false;
         this.remark = '';
         this.items = [];
         this.copy(source);
