@@ -5,6 +5,9 @@ module.exports = function(data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
+    data.should.have.property('threadName');
+    data.threadName.should.be.String();
+
     data.should.have.property('productId');
     data.productId.should.instanceof(Object);
 
