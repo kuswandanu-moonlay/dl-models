@@ -5,9 +5,9 @@ var Product = require('../master/product');
 var Uom = require('../master/uom');
 var Currency = require('../master/currency');
 
-module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
+module.exports = class UnitPaymentCorrectionNoteItem extends BaseModel {
     constructor(source) {
-        super('unit-payment-price-correction-note-item', '1.0.0');
+        super('unit-payment-correction-note-item', '1.0.0');
 
         //Define Properties
         this.purchaseOrderId = {};
