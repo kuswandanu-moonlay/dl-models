@@ -20,13 +20,6 @@ module.exports = function (data) {
     data.should.have.property('machineId');
     data.machineId.should.instanceof(Object);
 
-    data.should.have.property('thread');
-    data.thread.should.instanceof(Object);
-    validateProduct(data.thread);
-
-    data.should.have.property('productId');
-    data.productId.should.instanceof(Object);
-
     data.should.have.property('U');
     data.U.should.instanceOf(Number);
 
