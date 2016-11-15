@@ -16,7 +16,8 @@ module.exports = {
                 currency: require("./master/currency-validator"), 
                 vat: require("./master/vat-validator"),
                 budget: require('./master/budget-validator'),
-                machine: require('./master/machine-validator')
+                machine: require('./master/machine-validator'),
+                usterClassification: require('./master/uster-classification-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -30,5 +31,12 @@ module.exports = {
                 UnitPaymentOrderItem: require("./purchasing/unit-payment-order-item-validator"),
                 purchaseRequest: require("./purchasing/purchase-request-validator"),
                 purchaseRequestItem: require("./purchasing/purchase-request-item-validator")
+        },
+        production: {
+                spinning:{
+                        winding:{
+                                windingQualitySampling : require("./production/spinning/winding/winding-quality-sampling-validator")
+                        }
+                }
         }
 };

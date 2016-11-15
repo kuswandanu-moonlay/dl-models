@@ -7,3 +7,4 @@ var test = function(name, path) {
 test('@auth', './auth-test');
 test('@master', './master-test');
 test('@purchasing', './purchasing-test');
+test('@production', './production-test');

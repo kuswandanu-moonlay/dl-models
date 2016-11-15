@@ -50,5 +50,17 @@ module.exports = {
             UnitPaymentCorrectionNote:'unit-payment-correction-notes',
             UnitPaymentOrder:'unit-payment-orders'
         }
+    },
+    production:{
+        spinning : {
+            winding : {
+                type:{
+                    WindingQualitySampling : 'winding-quality-sampling'
+                },
+                collection:{
+                    WindingQualitySampling : 'winding-quality-sampling'
+                }
+            }
+        }
     }
 }
