@@ -58,7 +58,7 @@ module.exports = {
                     WindingQualitySampling : 'winding-quality-sampling'
                 },
                 collection:{
-                    WindingQualitySampling : 'winding-quality-sampling'
+                    WindingQualitySampling : 'winding-quality-samplings'
                 }
             }
         }
