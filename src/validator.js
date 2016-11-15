@@ -35,7 +35,7 @@ module.exports = {
         production: {
                 spinning:{
                         winding:{
-                                spinningProductQuality : require("./production/spinning/winding/spinning-product-quality-validator")
+                                windingQualitySampling : require("./production/spinning/winding/winding-quality-sampling-validator")
                         }
                 }
         }

@@ -5,9 +5,9 @@ var Machine = require('../../../master/machine');
 var Product = require('../../../master/product');
 var UsterClassification = require('../../../master/uster-classification');
 
-module.exports = class SpinningProductQuality extends BaseModel {
+module.exports = class WindingQualitySampling extends BaseModel {
     constructor(source) {
-        super('spinning-product-quality', '1.0.0');
+        super('winding-quality-sampling', '1.0.0');
 
         // Define properties.
         this.spinning = '';
