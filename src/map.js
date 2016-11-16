@@ -31,7 +31,8 @@ module.exports = {
             Category: 'categories',
             Currency: 'currencies',
             Vat: 'vats',
-            Budget: 'budgets'
+            Budget: 'budgets',
+            UsterClassification: 'uster-classifications'
         }
     },
     purchasing: {
