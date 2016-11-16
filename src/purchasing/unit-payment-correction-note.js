@@ -1,11 +1,11 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
-var UnitPaymentPriceCorrectionNoteItem = require('./unit-payment-price-correction-note-item');
+var UnitPaymentCorrectionNoteItem = require('./unit-payment-correction-note-item');
 
-module.exports = class UnitPaymentPriceCorrectionNote extends BaseModel {
+module.exports = class UnitPaymentCorrectionNote extends BaseModel {
     constructor(source) {
-        super('unit-payment-price-correction-note', '1.0.0');
+        super('unit-payment-correction-note', '1.0.0');
 
         //Define Properties
         this.no = '';
@@ -25,6 +25,6 @@ module.exports = class UnitPaymentPriceCorrectionNote extends BaseModel {
         this.items = [];
         this.copy(source);
 
-        this.items = (this.items || []).map(item => new UnitPaymentPriceCorrectionNoteItem(item));
+        this.items = (this.items || []).map(item => new UnitPaymentCorrectionNoteItem(item));
     }
 }
