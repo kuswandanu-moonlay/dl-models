@@ -29,7 +29,8 @@ module.exports = {
             Category: 'categories',
             Currency: 'currencies',
             Vat: 'vats',
-            Budget: 'budgets'
+            Budget: 'budgets',
+            ThreadSpecification : 'thread-specifications'
         }
     },
     purchasing: {
