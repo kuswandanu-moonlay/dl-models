@@ -1,5 +1,5 @@
 require("should");
-var validateUnitPaymentPriceCorrectionNoteItem = require('../purchasing/unit-payment-price-correction-note-item-validator');
+var validateUnitPaymentCorrectionNoteItem = require('../purchasing/unit-payment-correction-note-item-validator');
 
 module.exports = function (data) {
     data.should.have.property('no');
@@ -38,12 +38,15 @@ module.exports = function (data) {
     data.should.have.property('priceCorrectionType');
     data.priceCorrectionType.should.instanceof(String);
     
+    data.should.have.property('releaseOrderNoteNo');
+    data.releaseOrderNoteNo.should.instanceof(String);
+    
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
     
     data.should.have.property('items');
     data.items.should.instanceOf(Array); 
     for (var item of data.items) {
-        validateUnitPaymentPriceCorrectionNoteItem(item);
+        validateUnitPaymentCorrectionNoteItem(item);
     }
 }

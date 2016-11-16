@@ -15,7 +15,9 @@ module.exports = {
         Currency: require('./src/master/currency'),
         Vat: require('./src/master/vat'),
         Budget: require('./src/master/budget'),
-        ThreadSpecification: require('./src/master/thread-specification')
+        ThreadSpecification: require('./src/master/thread-specification'),
+        Machine:require('./src/master/machine'),
+        UsterClassification:require('./src/master/uster-classification')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -29,10 +31,17 @@ module.exports = {
         UnitReceiptNoteItem: require('./src/purchasing/unit-receipt-note-item'),
         PurchaseRequestItem: require('./src/purchasing/purchase-request-item'),
         PurchaseRequest: require('./src/purchasing/purchase-request'),
-        UnitPaymentPriceCorrectionNote: require('./src/purchasing/unit-payment-price-correction-note'),
-        UnitPaymentPriceCorrectionNoteItem: require('./src/purchasing/unit-payment-price-correction-note-item'),
+        UnitPaymentCorrectionNote: require('./src/purchasing/unit-payment-correction-note'),
+        UnitPaymentCorrectionNoteItem: require('./src/purchasing/unit-payment-correction-note-item'),
         UnitPaymentOrder: require('./src/purchasing/unit-payment-order'),
         UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item')
+    },
+    production:{
+        spinning:{
+            winding:{
+                WindingQualitySampling: require('./src/production/spinning/winding/winding-quality-sampling')
+            }
+        }
     },
     map: require('./src/map'),
     validator: require('./src/validator')

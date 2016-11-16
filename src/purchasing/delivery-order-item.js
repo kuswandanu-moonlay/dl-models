@@ -11,6 +11,7 @@ module.exports = class DeliveryOrderItem extends BaseModel {
         //Define Properties 
         this.purchaseOrderExternalId = {};
         this.purchaseOrderExternal = new PurchaseOrderExternal();
+        this.isClosed = false;
 
         this.fulfillments = [];
         this.copy(source);

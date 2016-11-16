@@ -17,20 +17,23 @@ module.exports = {
             uom: 'unit-of-measurement',
             Currency: 'currency',
             Vat: 'vat',
-            Budget: 'budget'
+            Budget: 'budget',
+            Machine: 'machine'
         },
         collection: {
             Buyer: 'buyers',
             Supplier: 'suppliers',
             uom: 'unit-of-measurements',
             Product: 'products',
+            Machine: 'machines',
             Division: 'divisions',
             Unit: 'units',
             Category: 'categories',
             Currency: 'currencies',
             Vat: 'vats',
             Budget: 'budgets',
-            ThreadSpecification : 'thread-specifications'
+            ThreadSpecification : 'thread-specifications',
+            UsterClassification: 'uster-classifications'
         }
     },
     purchasing: {
@@ -46,8 +49,20 @@ module.exports = {
             DeliveryOrder: 'delivery-orders',
             UnitReceiptNote: 'unit-receipt-notes',
             PurchaseRequest: 'purchase-requests',
-            UnitPaymentPriceCorrectionNote:'unit-payment-price-correction-notes',
+            UnitPaymentCorrectionNote:'unit-payment-correction-notes',
             UnitPaymentOrder:'unit-payment-orders'
+        }
+    },
+    production:{
+        spinning : {
+            winding : {
+                type:{
+                    WindingQualitySampling : 'winding-quality-sampling'
+                },
+                collection:{
+                    WindingQualitySampling : 'winding-quality-samplings'
+                }
+            }
         }
     }
 }

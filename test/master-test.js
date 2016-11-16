@@ -39,3 +39,13 @@ it("#08. Vat should valid", function () {
     var Vat = require('../src/master/vat');
     validate.vat(new Vat());
 })
+
+it("#09. Machine should valid", function () {
+    var Machine = require('../src/master/machine');
+    validate.machine(new Machine());
+})
+
+it("#10. Uster Classification should valid", function () {
+    var UsterClassification = require('../src/master/uster-classification');
+    validate.usterClassification(new UsterClassification());
+})
