@@ -14,6 +14,7 @@ module.exports = class WindingQualitySampling extends BaseModel {
         this.date = new Date();
         this.machineId = {}; 
         this.machine = new Machine();
+        this.threadName = '';
         this.U = 0;
         this.thin = 0;
         this.thick = 0;
