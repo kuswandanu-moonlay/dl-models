@@ -14,7 +14,8 @@ module.exports = {
         Category: require('./src/master/category'),
         Currency: require('./src/master/currency'),
         Vat: require('./src/master/vat'),
-        Budget: require('./src/master/budget')
+        Budget: require('./src/master/budget'),
+        ThreadSpecification: require('./src/master/thread-specification')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
