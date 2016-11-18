@@ -17,7 +17,8 @@ module.exports = {
         Budget: require('./src/master/budget'),
         ThreadSpecification: require('./src/master/thread-specification'),
         Machine:require('./src/master/machine'),
-        UsterClassification:require('./src/master/uster-classification')
+        UsterClassification:require('./src/master/uster-classification'),
+        LotMachine:require('./src/master/lot-machine')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -39,7 +40,8 @@ module.exports = {
     production:{
         spinning:{
             winding:{
-                WindingQualitySampling: require('./src/production/spinning/winding/winding-quality-sampling')
+                WindingQualitySampling: require('./src/production/spinning/winding/winding-quality-sampling'),
+                WindingProductionOutput: require('./src/production/spinning/winding/winding-production-output')
             }
         }
     },
