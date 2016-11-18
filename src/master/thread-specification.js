@@ -1,7 +1,7 @@
 'use strict'
 
 var BaseModel = require("capital-models").BaseModel;
-var Product = require('../master/product');
+var Product = require('./product');
 
 module.exports = class ThreadSpecification extends BaseModel {
     constructor(source) {

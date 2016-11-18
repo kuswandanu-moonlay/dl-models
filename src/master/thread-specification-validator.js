@@ -1,5 +1,5 @@
 require("should");
-var validateProduct = require('../master/product-validator');
+var validateProduct = require('./product-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
