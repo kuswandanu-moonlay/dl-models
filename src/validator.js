@@ -17,7 +17,7 @@ module.exports = {
                 vat: require("./master/vat-validator"),
                 budget: require('./master/budget-validator'),
                 machine: require('./master/machine-validator'),
-                usterClassification: require('./master/uster-classification-validator')
+                uster: require('./master/uster-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

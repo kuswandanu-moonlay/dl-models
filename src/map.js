@@ -18,7 +18,8 @@ module.exports = {
             Currency: 'currency',
             Vat: 'vat',
             Budget: 'budget',
-            Machine: 'machine'
+            Machine: 'machine',
+            Uster: 'uster'
         },
         collection: {
             Buyer: 'buyers',
@@ -32,7 +33,7 @@ module.exports = {
             Currency: 'currencies',
             Vat: 'vats',
             Budget: 'budgets',
-            UsterClassification: 'uster-classifications'
+            Uster: 'usters'
         }
     },
     purchasing: {

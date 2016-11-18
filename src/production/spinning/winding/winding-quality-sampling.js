@@ -3,7 +3,7 @@
 var BaseModel = require('capital-models').BaseModel;
 var Machine = require('../../../master/machine');
 var Product = require('../../../master/product');
-var UsterClassification = require('../../../master/uster-classification');
+var Uster = require('../../../master/uster');
 
 module.exports = class WindingQualitySampling extends BaseModel {
     constructor(source) {
@@ -14,16 +14,16 @@ module.exports = class WindingQualitySampling extends BaseModel {
         this.date = new Date();
         this.machineId = {}; 
         this.machine = new Machine();
-        this.threadName = '';
         this.U = 0;
         this.thin = 0;
         this.thick = 0;
         this.neps = 0;
         this.ipi = 0;
         this.usterId = {};
-        this.uster = new UsterClassification();
+        this.uster = new Uster();
         this.sys = 0;
         this.elongation = 0;
+        this.grade = '';
 
         this.copy(source);
     }
