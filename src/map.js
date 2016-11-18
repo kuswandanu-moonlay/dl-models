@@ -33,7 +33,8 @@ module.exports = {
             Vat: 'vats',
             Budget: 'budgets',
             ThreadSpecification : 'thread-specifications',
-            UsterClassification: 'uster-classifications'
+            UsterClassification: 'uster-classifications',
+            LotMachine: 'lot-machines'
         }
     },
     purchasing: {
@@ -57,10 +58,12 @@ module.exports = {
         spinning : {
             winding : {
                 type:{
-                    WindingQualitySampling : 'winding-quality-sampling'
+                    WindingQualitySampling : 'winding-quality-sampling',
+                    WindingProductionOutput : 'winding-production-output'
                 },
                 collection:{
-                    WindingQualitySampling : 'winding-quality-samplings'
+                    WindingQualitySampling : 'winding-quality-samplings',
+                    WindingProductionOutput : 'winding-production-outputs'
                 }
             }
         }
