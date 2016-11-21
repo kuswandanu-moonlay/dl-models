@@ -46,6 +46,6 @@ it("#09. Machine should valid", function () {
 })
 
 it("#10. Uster Classification should valid", function () {
-    var UsterClassification = require('../src/master/uster-classification');
-    validate.usterClassification(new UsterClassification());
+    var Uster = require('../src/master/uster');
+    validate.uster(new Uster());
 })

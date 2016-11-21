@@ -16,6 +16,7 @@ module.exports = {
         Vat: require('./src/master/vat'),
         Budget:require('./src/master/budget'),
         Machine:require('./src/master/machine'),
+        Uster:require('./src/master/uster'),
         UsterClassification:require('./src/master/uster-classification')
     },
     purchasing: {

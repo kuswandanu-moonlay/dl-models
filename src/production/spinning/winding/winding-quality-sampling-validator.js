@@ -1,7 +1,7 @@
 require("should");
 var validateMachine = require('../../../master/machine-validator');
 var validateProduct = require('../../../master/product-validator');
-var validateUsterClassification = require('../../../master/uster-classification-validator');
+var validateUster = require('../../../master/uster-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -20,9 +20,6 @@ module.exports = function (data) {
     data.should.have.property('machineId');
     data.machineId.should.instanceof(Object);
     
-    data.should.have.property('threadName');
-    data.threadName.should.be.String();
-    
     data.should.have.property('U');
     data.U.should.instanceOf(Number);
 
@@ -40,7 +37,7 @@ module.exports = function (data) {
 
     data.should.have.property('uster');
     data.uster.should.instanceof(Object);
-    validateUsterClassification(data.uster);
+    validateUster(data.uster);
 
     data.should.have.property('usterId');
     data.usterId.should.instanceof(Object);
@@ -50,5 +47,8 @@ module.exports = function (data) {
 
     data.should.have.property('elongation');
     data.elongation.should.instanceOf(Number);
+    
+    data.should.have.property('grade');
+    data.grade.should.be.String();
 
 }
