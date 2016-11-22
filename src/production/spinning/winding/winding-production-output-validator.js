@@ -1,6 +1,8 @@
 require("should");
 var validateMachine = require('../../../master/machine-validator');
 var validateProduct = require('../../../master/product-validator');
+var validateLotMachine = require('../../../master/machine-validator');
+var validateThreadSpecification = require('../../../master/thread-specification');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -28,10 +30,21 @@ module.exports = function (data) {
 
     data.should.have.property('machineId');
     data.machineId.should.instanceof(Object);
-    
-    data.should.have.property('threadName');
-    data.threadName.should.be.String();
 
+    data.should.have.property('lotMachine');
+    data.lotMachine.should.instanceof(Object);
+    validateLotMachine(data.lotMachine);
+
+    data.should.have.property('lotMachineId');
+    data.lotMachineId.should.instanceof(Object);
+
+    data.should.have.property('threadSpecification');
+    data.threadSpecification.should.instanceof(Object);
+    validateThreadSpecification(data.threadSpecification);
+
+    data.should.have.property('threadSpecificationId');
+    data.threadSpecificationId.should.instanceof(Object);
+    
     data.should.have.property('threadWeight');
     data.threadWeight.should.instanceOf(Number);
 
