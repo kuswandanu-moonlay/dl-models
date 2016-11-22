@@ -9,7 +9,6 @@ module.exports = class ThreadSpecification extends BaseModel {
 
         this.productId = {};
         this.product = new Product();
-        this.threadName='';
         this.rpm=0;
         this.spindle=0;
         this.tpi=0;
