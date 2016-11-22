@@ -18,7 +18,8 @@ module.exports = {
             Currency: 'currency',
             Vat: 'vat',
             Budget: 'budget',
-            Machine: 'machine'
+            Machine: 'machine',
+            Uster: 'uster'
         },
         collection: {
             Buyer: 'buyers',
@@ -35,7 +36,8 @@ module.exports = {
             ThreadSpecification : 'thread-specifications',
             UsterClassification: 'uster-classifications',
             LotMachine: 'lot-machines',
-            YarnEquivalentConvertion: 'yarn-equivalent-convertions'
+            YarnEquivalentConversion: 'yarn-equivalent-conversions',
+            Uster: 'usters'
         }
     },
     purchasing: {

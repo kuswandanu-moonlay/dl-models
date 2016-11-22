@@ -17,9 +17,10 @@ module.exports = {
         Budget: require('./src/master/budget'),
         ThreadSpecification: require('./src/master/thread-specification'),
         Machine:require('./src/master/machine'),
-        UsterClassification:require('./src/master/uster-classification'),
         LotMachine:require('./src/master/lot-machine'),
-        YarnEquivalentConvertion:require('./src/master/yarn-equivalent-convertion')
+        YarnEquivalentConversion:require('./src/master/yarn-equivalent-conversion'),
+        Uster:require('./src/master/uster'),
+        UsterClassification:require('./src/master/uster-classification')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
