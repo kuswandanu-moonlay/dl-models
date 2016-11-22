@@ -18,7 +18,8 @@ module.exports = {
         ThreadSpecification: require('./src/master/thread-specification'),
         Machine:require('./src/master/machine'),
         UsterClassification:require('./src/master/uster-classification'),
-        LotMachine:require('./src/master/lot-machine')
+        LotMachine:require('./src/master/lot-machine'),
+        YarnEquivalentConvertion:require('./src/master/yarn-equivalent-convertion')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
