@@ -10,7 +10,6 @@ module.exports = class LotMachine extends BaseModel {
 
         this.product= new Product();
         this.productId={};
-        this.threadName='';
         this.lot='';
         this.rpm=0;
         this.machine=new Machine();

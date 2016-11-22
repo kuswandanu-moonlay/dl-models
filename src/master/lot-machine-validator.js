@@ -13,9 +13,6 @@ module.exports = function (data) {
     data.product.should.instanceof(Object);
     validateProduct(data.product);
 
-    data.should.have.property('threadName');
-    data.threadName.should.be.String(); 
-
     data.should.have.property('rpm');
     data.rpm.should.instanceof(Number);
 
