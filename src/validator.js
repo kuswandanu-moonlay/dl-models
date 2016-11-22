@@ -19,7 +19,8 @@ module.exports = {
                 threadSpecification: require('./master/thread-specification-validator'),
                 machine: require('./master/machine-validator'),
                 usterClassification: require('./master/uster-classification-validator'),
-                lotMachine: require('./master/lot-machine-validator')
+                lotMachine: require('./master/lot-machine-validator'),
+                yarnEquivalentConvertion: require('./master/yarn-equivalent-convertion-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
