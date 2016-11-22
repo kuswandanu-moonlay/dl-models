@@ -34,7 +34,8 @@ module.exports = {
             Budget: 'budgets',
             ThreadSpecification : 'thread-specifications',
             UsterClassification: 'uster-classifications',
-            LotMachine: 'lot-machines'
+            LotMachine: 'lot-machines',
+            YarnEquivalentConvertion: 'yarn-equivalent-convertions'
         }
     },
     purchasing: {
