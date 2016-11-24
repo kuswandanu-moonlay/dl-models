@@ -14,8 +14,11 @@ module.exports = {
         Category: require('./src/master/category'),
         Currency: require('./src/master/currency'),
         Vat: require('./src/master/vat'),
-        Budget:require('./src/master/budget'),
+        Budget: require('./src/master/budget'),
+        ThreadSpecification: require('./src/master/thread-specification'),
         Machine:require('./src/master/machine'),
+        LotMachine:require('./src/master/lot-machine'),
+        YarnEquivalentConversion:require('./src/master/yarn-equivalent-conversion'),
         Uster:require('./src/master/uster'),
         UsterClassification:require('./src/master/uster-classification')
     },
@@ -39,8 +42,10 @@ module.exports = {
     production:{
         spinning:{
             winding:{
-                WindingQualitySampling: require('./src/production/spinning/winding/winding-quality-sampling')
-            }
+                WindingQualitySampling: require('./src/production/spinning/winding/winding-quality-sampling'),
+                WindingProductionOutput: require('./src/production/spinning/winding/winding-production-output')
+            },
+            DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
         }
     },
     map: require('./src/map'),
