@@ -16,7 +16,11 @@ module.exports = {
                 currency: require("./master/currency-validator"), 
                 vat: require("./master/vat-validator"),
                 budget: require('./master/budget-validator'),
+                threadSpecification: require('./master/thread-specification-validator'),
                 machine: require('./master/machine-validator'),
+                usterClassification: require('./master/uster-classification-validator'),
+                lotMachine: require('./master/lot-machine-validator'),
+                yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
                 uster: require('./master/uster-validator')
         },
         purchasing: {
@@ -35,7 +39,8 @@ module.exports = {
         production: {
                 spinning:{
                         winding:{
-                                windingQualitySampling : require("./production/spinning/winding/winding-quality-sampling-validator")
+                                windingQualitySampling : require("./production/spinning/winding/winding-quality-sampling-validator"),
+                                windingProductionOutput : require("./production/spinning/winding/winding-production-output-validator")
                         }
                 }
         }
