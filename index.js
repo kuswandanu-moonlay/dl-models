@@ -44,7 +44,8 @@ module.exports = {
             winding:{
                 WindingQualitySampling: require('./src/production/spinning/winding/winding-quality-sampling'),
                 WindingProductionOutput: require('./src/production/spinning/winding/winding-production-output')
-            }
+            },
+            DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
         }
     },
     map: require('./src/map'),

@@ -42,6 +42,7 @@ module.exports = {
                                 windingQualitySampling : require("./production/spinning/winding/winding-quality-sampling-validator"),
                                 windingProductionOutput : require("./production/spinning/winding/winding-production-output-validator")
                         }
-                }
+                },
+                dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         }
 };
