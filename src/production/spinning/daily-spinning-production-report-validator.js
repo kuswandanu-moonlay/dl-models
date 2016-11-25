@@ -1,5 +1,5 @@
 require("should");
-var validateUnit = require('../../../master/unit-validator');
+var validateUnit = require('../../master/unit-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);

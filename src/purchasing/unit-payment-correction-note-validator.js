@@ -32,8 +32,8 @@ module.exports = function (data) {
     data.should.have.property('vatTaxCorrectionDate');
     data.vatTaxCorrectionDate.should.instanceof(Date);
     
-    data.should.have.property('unitCoverLetterNo');
-    data.unitCoverLetterNo.should.instanceof(String);
+    data.should.have.property('returNoteNo');
+    data.returNoteNo.should.instanceof(String);
     
     data.should.have.property('priceCorrectionType');
     data.priceCorrectionType.should.instanceof(String);
