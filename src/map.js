@@ -68,6 +68,12 @@ module.exports = {
                     WindingQualitySampling : 'winding-quality-samplings',
                     WindingProductionOutput : 'winding-production-outputs'
                 }
+            },
+            type : {
+                DailySpinningProductionReport : 'daily-spinning-production-report'
+            },
+            collection: {
+                DailySpinningProductionReport : 'daily-spinning-production-report'
             }
         }
     }
