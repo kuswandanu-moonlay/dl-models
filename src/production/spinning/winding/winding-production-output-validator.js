@@ -1,6 +1,7 @@
 require("should");
 var validateMachine = require('../../../master/machine-validator');
 var validateProduct = require('../../../master/product-validator');
+var validateUnit = require('../../../master/unit-validator');
 var validateLotMachine = require('../../../master/machine-validator');
 var validateThreadSpecification = require('../../../master/thread-specification');
 
@@ -8,8 +9,12 @@ module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
-    data.should.have.property('spinning');
-    data.spinning.should.be.String();
+    data.should.have.property('unitId');
+    data.unitId.should.instanceof(Object);
+
+    data.should.have.property('unit');
+    data.unit.should.instanceof(Object);
+    validateUnit(data.unit);
 
     data.should.have.property('date');
     data.date.should.instanceOf(Date);

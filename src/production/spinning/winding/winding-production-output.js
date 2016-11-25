@@ -3,6 +3,7 @@
 var BaseModel = require('capital-models').BaseModel;
 var Machine = require('../../../master/machine');
 var Product = require('../../../master/product');
+var Unit = require('../../../master/unit');
 var LotMachine = require('../../../master/lot-machine');
 var ThreadSpecification = require('../../../master/thread-specification');
 
@@ -10,7 +11,8 @@ module.exports = class WindingProductionOutput extends BaseModel {
     constructor(source) {
         super('winding-production-output', '1.0.0');
 
-        this.spinning='';
+        this.unitId={};
+        this.unit= new Unit();
         this.date=new Date();
         this.shift='';
         this.machineId={};
