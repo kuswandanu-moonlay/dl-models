@@ -12,7 +12,7 @@ module.exports = class WindingProductionOutput extends BaseModel {
         super('winding-production-output', '1.0.0');
 
         this.unitId={};
-        this.unit= new Unit();
+        this.unit=new Unit();
         this.date=new Date();
         this.shift='';
         this.machineId={};
