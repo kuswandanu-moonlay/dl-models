@@ -33,6 +33,10 @@ module.exports = {
             Currency: 'currencies',
             Vat: 'vats',
             Budget: 'budgets',
+            ThreadSpecification : 'thread-specifications',
+            UsterClassification: 'uster-classifications',
+            LotMachine: 'lot-machines',
+            YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters'
         }
     },
@@ -57,11 +61,19 @@ module.exports = {
         spinning : {
             winding : {
                 type:{
-                    WindingQualitySampling : 'winding-quality-sampling'
+                    WindingQualitySampling : 'winding-quality-sampling',
+                    WindingProductionOutput : 'winding-production-output'
                 },
                 collection:{
-                    WindingQualitySampling : 'winding-quality-samplings'
+                    WindingQualitySampling : 'winding-quality-samplings',
+                    WindingProductionOutput : 'winding-production-outputs'
                 }
+            },
+            type : {
+                DailySpinningProductionReport : 'daily-spinning-production-report'
+            },
+            collection: {
+                DailySpinningProductionReport : 'daily-spinning-production-report'
             }
         }
     }

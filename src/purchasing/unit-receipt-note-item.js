@@ -16,6 +16,7 @@ module.exports = class UnitReceiptNoteItem extends BaseModel {
         this.currencyRate = 1;
         this.purchaseOrderId = {};
         this.purchaseOrder = {};
+        this.correction=[];
         this.remark = '';
         this.copy(source);
     }

@@ -35,6 +35,9 @@ module.exports = function (data) {
     
     data.should.have.property('purchaseOrderId');
     data.purchaseOrderId.should.instanceof(Object);
+
+    data.should.have.property('correction');
+    data.correction.should.instanceOf(Array);
     
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
