@@ -4,13 +4,15 @@ var BaseModel = require('capital-models').BaseModel;
 var Machine = require('../../../master/machine');
 var Product = require('../../../master/product');
 var Uster = require('../../../master/uster');
+var Unit = require('../../../master/unit');
 
 module.exports = class WindingQualitySampling extends BaseModel {
     constructor(source) {
         super('winding-quality-sampling', '1.0.0');
 
         // Define properties.
-        this.spinning = '';
+        this.unitId = {};
+        this.spinning = new Unit();
         this.date = new Date();
         this.machineId = {}; 
         this.machine = new Machine();
