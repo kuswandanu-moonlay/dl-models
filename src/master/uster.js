@@ -17,4 +17,4 @@ module.exports = class Uster extends BaseModel {
 
         this.classifications = (this.classifications || []).map(classification => new Classification(classification)); 
     }
-};
+}

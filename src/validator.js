@@ -20,7 +20,7 @@ module.exports = {
                 machine: require('./master/machine-validator'),
                 usterClassification: require('./master/uster-classification-validator'),
                 lotMachine: require('./master/lot-machine-validator'),
-                yarnEquivalentConvertion: require('./master/yarn-equivalent-convertion-validator'),
+                yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
                 uster: require('./master/uster-validator')
         },
         purchasing: {

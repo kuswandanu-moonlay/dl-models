@@ -7,7 +7,7 @@ module.exports = class YarnEquivalentConversion extends BaseModel {
         super('yarn-equivalent-conversion', '1.0.0'); 
 
         this.ne=0;
-        this.convertionRatio=0;
+        this.conversionRatio=0;
 
         this.copy(source);
     }

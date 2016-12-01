@@ -18,7 +18,7 @@ module.exports = {
         ThreadSpecification: require('./src/master/thread-specification'),
         Machine:require('./src/master/machine'), 
         LotMachine:require('./src/master/lot-machine'),
-        YarnEquivalentConvertion:require('./src/master/yarn-equivalent-convertion'), 
+        YarnEquivalentConversion:require('./src/master/yarn-equivalent-conversion'), 
         Uster:require('./src/master/uster'),
         UsterClassification:require('./src/master/uster-classification')
     },
