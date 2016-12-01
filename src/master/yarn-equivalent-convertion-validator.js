@@ -7,8 +7,6 @@ module.exports = function (data) {
     data.should.have.property('ne');
     data.ne.should.instanceOf(Number);
 
-    data.should.have.property('conversionRatio');
-    data.conversionRatio.should.instanceOf(Number);
-
-
-}
+    data.should.have.property('convertionRatio');
+    data.convertionRatio.should.instanceOf(Number);
+};

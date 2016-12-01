@@ -14,7 +14,7 @@ module.exports = {
         type: {
             Buyer: 'buyer',
             Supplier: 'supplier',
-            uom: 'unit-of-measurement',
+            Uom: 'unit-of-measurement',
             Currency: 'currency',
             Vat: 'vat',
             Budget: 'budget',
@@ -36,7 +36,7 @@ module.exports = {
             ThreadSpecification : 'thread-specifications',
             UsterClassification: 'uster-classifications',
             LotMachine: 'lot-machines',
-            YarnEquivalentConversion: 'yarn-equivalent-conversions',
+            YarnEquivalentConvertion: 'yarn-equivalent-convertions',
             Uster: 'usters'
         }
     },
