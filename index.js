@@ -20,7 +20,8 @@ module.exports = {
         LotMachine:require('./src/master/lot-machine'),
         YarnEquivalentConversion:require('./src/master/yarn-equivalent-conversion'), 
         Uster:require('./src/master/uster'),
-        UsterClassification:require('./src/master/uster-classification')
+        UsterClassification:require('./src/master/uster-classification'),
+        LampStandard:require('./src/master/lamp-standard')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),

@@ -49,3 +49,8 @@ it("#10. Uster Classification should valid", function () {
     var Uster = require('../src/master/uster');
     validate.uster(new Uster());
 })
+
+it("#11. Lamp Standard should valid", function () {
+    var LampStandard = require('../src/master/lamp-standard');
+    validate.lampStandard(new LampStandard());
+})
