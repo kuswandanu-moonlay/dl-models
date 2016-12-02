@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 var uom = require('./uom');
@@ -20,4 +20,4 @@ module.exports = class Product extends BaseModel {
 
         this.copy(source);
     }
-}
+};

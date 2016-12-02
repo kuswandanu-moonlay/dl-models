@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 var Machine = require('../../../master/machine');
@@ -30,4 +30,4 @@ module.exports = class WindingProductionOutput extends BaseModel {
 
         this.copy(source);
     }
-}
+};

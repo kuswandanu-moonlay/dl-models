@@ -21,4 +21,4 @@ module.exports = function (data) {
     
     data.should.have.property('purchaseOrderIds');
     data.purchaseOrderIds.should.instanceof(Array); 
-}
+};

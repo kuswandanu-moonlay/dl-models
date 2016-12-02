@@ -115,4 +115,4 @@ module.exports = function (data) {
     for (var item of data.items) {
         validatePurchaseOrderItem(item);
     }
-}
+};

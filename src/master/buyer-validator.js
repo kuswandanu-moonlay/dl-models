@@ -21,4 +21,4 @@ module.exports = function (data) {
 
     data.should.have.property('tempo');
     data.tempo.should.instanceOf(String);
-}
+};

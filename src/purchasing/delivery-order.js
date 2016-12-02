@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
@@ -23,4 +23,4 @@ module.exports = class DeliveryOrder extends BaseModel {
 
         this.items = (this.items || []).map(item => new DeliveryOrderItem(item)); 
     }
-}
+};

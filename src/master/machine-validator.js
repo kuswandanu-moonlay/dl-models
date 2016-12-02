@@ -30,4 +30,4 @@ module.exports = function (data) {
     
     data.should.have.property('condition');
     data.condition.should.instanceOf(String);
-}
+};

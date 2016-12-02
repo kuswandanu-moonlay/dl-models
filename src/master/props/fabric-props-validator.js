@@ -15,4 +15,4 @@ module.exports = function (data) {
 
     data.should.have.property('yarn');
     data.yarn.should.instanceOf(String);
-}
+};

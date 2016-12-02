@@ -28,4 +28,4 @@ module.exports = function (data) {
     data.should.have.property('serialNumber');
     data.serialNumber.should.instanceof(String);
 
-}
+};

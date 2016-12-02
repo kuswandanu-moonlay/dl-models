@@ -20,4 +20,4 @@ module.exports = function (data) {
 
     data.should.have.property('tpi');
     data.tpi.should.instanceof(Number);
-}
+};

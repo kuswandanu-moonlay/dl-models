@@ -45,4 +45,4 @@ module.exports = function (data) {
 
     data.should.have.property('unitReceiptNoteNo');
     data.unitReceiptNoteNo.should.instanceOf(String);
-}
+};
