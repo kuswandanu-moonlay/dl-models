@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 var Unit = require('./unit');
@@ -19,4 +19,4 @@ module.exports = class Machine extends BaseModel {
 
         this.copy(source);
     }
-}
+};

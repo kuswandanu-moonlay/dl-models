@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 
@@ -13,4 +13,4 @@ module.exports = class Role extends BaseModel {
 
         this.copy(source);
     }
-}
+};

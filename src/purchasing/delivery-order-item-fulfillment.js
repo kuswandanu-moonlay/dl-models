@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 var uom = require('../master/uom');
@@ -19,4 +19,4 @@ module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
 
         this.copy(source);
     }
-}
+};

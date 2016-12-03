@@ -19,4 +19,4 @@ module.exports = function (data) {
     data.should.have.property('description');
     data.description.should.be.String(); 
     
-}
+};

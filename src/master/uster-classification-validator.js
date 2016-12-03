@@ -18,4 +18,4 @@ module.exports = function(data) {
 
     data.should.have.property('grade');
     data.grade.should.be.String();
-}
+};

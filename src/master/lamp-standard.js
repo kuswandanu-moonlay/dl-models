@@ -2,15 +2,13 @@
 
 var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class Unit extends BaseModel {
+module.exports = class LampStandard extends BaseModel {
     constructor(source) {
-        super('unit', '1.0.0');
+        super('lamp-standard', '1.0.0');
 
         // Define properties.  
         this.code = '';
-        this.divisionId = {};
-        this.division = {};
-        this.name = ''; 
+        this.name = '';  
         this.description='';
 
         this.copy(source);

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 var Unit = require('../../master/unit');
@@ -70,4 +70,4 @@ module.exports = class DailySpinningProductionReport extends BaseModel {
             return prev + curr;
         }, 0);   
     }
-}
+};

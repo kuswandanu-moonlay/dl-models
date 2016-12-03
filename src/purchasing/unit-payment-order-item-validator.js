@@ -11,4 +11,4 @@ module.exports = function (data) {
     data.unitReceiptNote.should.instanceof(Object);
     validateUnitReceiptNote(data.unit); 
    
-}
+};

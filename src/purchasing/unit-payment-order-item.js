@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var BaseModel = require('capital-models').BaseModel; 
 var UnitReceiptNote= require('./unit-receipt-note'); 
 var Product = require('../master/product');
@@ -11,4 +11,4 @@ module.exports = class UnitPaymentOrderItem extends BaseModel {
         this.unitReceiptNote= new UnitReceiptNote();  
         this.copy(source); 
     }
-}
+};

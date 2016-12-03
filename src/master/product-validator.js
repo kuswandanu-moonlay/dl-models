@@ -29,4 +29,4 @@ module.exports = function(data) {
 
     data.should.have.property('properties');
     data.properties.should.be.Array();
-}
+};

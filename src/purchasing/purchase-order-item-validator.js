@@ -53,4 +53,4 @@ module.exports = function (data) {
     data.should.have.property('useIncomeTax');
     data.useIncomeTax.should.instanceOf(Boolean);
     
-}
+};
