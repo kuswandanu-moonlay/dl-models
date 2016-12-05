@@ -21,7 +21,8 @@ module.exports = {
         YarnEquivalentConversion:require('./src/master/yarn-equivalent-conversion'), 
         Uster:require('./src/master/uster'),
         UsterClassification:require('./src/master/uster-classification'),
-        LampStandard:require('./src/master/lamp-standard')
+        LampStandard:require('./src/master/lamp-standard'),
+        AccountBank:require('./src/master/account-bank')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),

@@ -38,7 +38,8 @@ module.exports = {
             LotMachine: 'lot-machines',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
-            LampStandard : 'lamp-standards'
+            LampStandard : 'lamp-standards',
+            AccountBank : 'account-banks'
         }
     },
     purchasing: {
