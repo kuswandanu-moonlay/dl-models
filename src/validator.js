@@ -22,7 +22,8 @@ module.exports = {
                 lotMachine: require('./master/lot-machine-validator'),
                 yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
                 uster: require('./master/uster-validator'),
-                lampStandard: require('./master/lamp-standard-validator')
+                lampStandard: require('./master/lamp-standard-validator'),
+                accountBank : require('./master/account-bank-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
