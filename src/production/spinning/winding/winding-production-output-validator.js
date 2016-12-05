@@ -61,4 +61,4 @@ module.exports = function (data) {
 
     data.should.have.property('drum');
     data.drum.should.instanceOf(Number);
-}
+};

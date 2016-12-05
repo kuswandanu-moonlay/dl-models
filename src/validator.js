@@ -21,7 +21,8 @@ module.exports = {
                 usterClassification: require('./master/uster-classification-validator'),
                 lotMachine: require('./master/lot-machine-validator'),
                 yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
-                uster: require('./master/uster-validator')
+                uster: require('./master/uster-validator'),
+                lampStandard: require('./master/lamp-standard-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

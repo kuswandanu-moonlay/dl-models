@@ -37,7 +37,8 @@ module.exports = {
             UsterClassification: 'uster-classifications',
             LotMachine: 'lot-machines',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
-            Uster: 'usters'
+            Uster: 'usters',
+            LampStandard : 'lamp-standards'
         }
     },
     purchasing: {

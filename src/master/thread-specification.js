@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require("capital-models").BaseModel;
 var Product = require('./product');
@@ -15,4 +15,4 @@ module.exports = class ThreadSpecification extends BaseModel {
 
         this.copy(source);
     }
-}
+};

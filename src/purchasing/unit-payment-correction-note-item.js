@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var BaseModel = require('capital-models').BaseModel;
 var PurchaseOrderExternal = require('../purchasing/purchase-order-external');
 var Product = require('../master/product');
@@ -24,4 +24,4 @@ module.exports = class UnitPaymentCorrectionNoteItem extends BaseModel {
         this.unitReceiptNoteNo = "";
         this.copy(source);
     }
-}
+};

@@ -41,4 +41,4 @@ module.exports = function (data) {
     
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
-}
+};

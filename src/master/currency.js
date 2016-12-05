@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 
@@ -14,4 +14,4 @@ module.exports = class Currency extends BaseModel {
 
         this.copy(source);
     }
-}
+};

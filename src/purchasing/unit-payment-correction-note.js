@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../master/supplier');
 var UnitPaymentCorrectionNoteItem = require('./unit-payment-correction-note-item');
@@ -27,4 +27,4 @@ module.exports = class UnitPaymentCorrectionNote extends BaseModel {
 
         this.items = (this.items || []).map(item => new UnitPaymentCorrectionNoteItem(item));
     }
-}
+};

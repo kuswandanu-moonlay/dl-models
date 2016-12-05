@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
 var Classification = require('./uster-classification');
@@ -17,4 +17,4 @@ module.exports = class Uster extends BaseModel {
 
         this.classifications = (this.classifications || []).map(classification => new Classification(classification)); 
     }
-}
+};

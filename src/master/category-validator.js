@@ -12,4 +12,4 @@ module.exports = function (data) {
 
     data.should.have.property('codeRequirement');
     data.codeRequirement.should.instanceOf(String);
-}
+};
