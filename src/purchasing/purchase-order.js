@@ -1,5 +1,5 @@
 'use strict';
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Supplier = require('../master/supplier');
 var Buyer = require('../master/buyer');
 var Currency = require('../master/currency');
