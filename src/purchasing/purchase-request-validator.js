@@ -49,7 +49,10 @@ module.exports = function (data) {
     for (var item of data.items) {
         validatePurchaseRequestItem(item);
     }
-    
+
+    data.should.have.property('status');
+    data.status.should.instanceof(Object);
+
     data.should.have.property('purchaseOrderIds');
     data.purchaseOrderIds.should.instanceof(Array); 
 };

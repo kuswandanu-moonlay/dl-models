@@ -56,6 +56,8 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.remark = '';
         this.items = [];
 
+        this.status = {};
+
         this.copy(source);
 
         this.items = (this.items || []).map(item => new PurchaseOrderItem(item));

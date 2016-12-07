@@ -68,6 +68,9 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 
+    data.should.have.property('status');
+    data.status.should.instanceof(Object);
+
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
     for (var item of data.items) {
