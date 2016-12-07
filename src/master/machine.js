@@ -18,5 +18,6 @@ module.exports = class Machine extends BaseModel {
         this.condition = '';
 
         this.copy(source);
+        this.unit = new Unit(this.unit);
     }
 };
