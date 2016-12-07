@@ -54,3 +54,8 @@ it("#11. Lamp Standard should valid", function () {
     var LampStandard = require('../src/master/lamp-standard');
     validate.lampStandard(new LampStandard());
 });
+
+it("#12. Account Bank should valid", function () {
+    var AccountBank = require('../src/master/account-bank');
+    validate.accountBank(new AccountBank());
+});

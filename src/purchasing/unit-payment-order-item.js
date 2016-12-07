@@ -1,5 +1,5 @@
 'use strict';
-var BaseModel = require('capital-models').BaseModel; 
+var BaseModel = require('model-toolkit').BaseModel; 
 var UnitReceiptNote= require('./unit-receipt-note'); 
 var Product = require('../master/product');
 var uom = require('../master/uom');
