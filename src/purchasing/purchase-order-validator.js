@@ -67,7 +67,7 @@ module.exports = function (data) {
     data.freightCostBy.should.instanceOf(String);
 
     data.should.have.property('currency');
-    data.supplier.should.instanceof(Object);
+    data.currency.should.instanceof(Object);
     validateCurrency(data.currency);
 
     data.should.have.property('currencyRate');
