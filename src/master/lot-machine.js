@@ -18,5 +18,6 @@ module.exports = class LotMachine extends BaseModel {
         this.constant=0;
 
         this.copy(source);
+        this.machine=new Machine(this.machine);
     }
 };
