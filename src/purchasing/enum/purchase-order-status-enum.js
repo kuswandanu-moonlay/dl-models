@@ -34,16 +34,12 @@ module.exports =
             'name': 'PAYMENT',
             'value': 7
         },
-        'VOID': {
-            'name': 'VOID',
-            'value': 8
-        },
         'PREMATURE': {
             'name': 'PREMATURE',
-            'value': 9
+            'value': 8
         },
         'COMPLETE': {
             'name': 'COMPLETE',
-            'value': 9
+            'value': 8
         }
     }
