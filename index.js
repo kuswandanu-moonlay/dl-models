@@ -39,7 +39,11 @@ module.exports = {
         UnitPaymentCorrectionNote: require('./src/purchasing/unit-payment-correction-note'),
         UnitPaymentCorrectionNoteItem: require('./src/purchasing/unit-payment-correction-note-item'),
         UnitPaymentOrder: require('./src/purchasing/unit-payment-order'),
-        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item')
+        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item'),
+        enum: {
+            PurchaseRequestStatus: require('./src/purchasing/enum/purchase-request-status-enum'),
+            PurchaseOrderStatus: require('./src/purchasing/enum/purchase-order-status-enum')
+        }
     },
     production:{
         spinning:{
