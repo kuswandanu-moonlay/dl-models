@@ -45,6 +45,11 @@ module.exports = {
                                 windingProductionOutput : require("./production/spinning/winding/winding-production-output-validator")
                         }
                 },
+                finishingPrinting:{
+                        productionOrder: require("./production/finishing-printing/production-order-validator"),
+                        productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator")
+
+                },
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         }
 };
