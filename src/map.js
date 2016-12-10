@@ -77,6 +77,14 @@ module.exports = {
             collection: {
                 DailySpinningProductionReport : 'daily-spinning-production-report'
             }
+        },
+        finishingPrinting :{
+            type:{
+                ProductionOrder : 'production-order'
+            },
+            collection:{
+                ProductionOrder : 'production-orders'
+            }
         }
     }
 }
