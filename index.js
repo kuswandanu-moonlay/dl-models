@@ -52,6 +52,9 @@ module.exports = {
                 WindingProductionOutput: require('./src/production/spinning/winding/winding-production-output')
             },
             DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
+        },
+        finishingPrinting : {
+            ProductionOrder: require('./src/production/finishing-printing/production-order')
         }
     },
     map: require('./src/map'),
