@@ -59,3 +59,8 @@ it("#12. Account Bank should valid", function () {
     var AccountBank = require('../src/master/account-bank');
     validate.accountBank(new AccountBank());
 });
+
+it("#13. Instruction should valid", function () {
+    var Instruction = require('../src/master/instruction');
+    validate.instruction(new Instruction());
+});
