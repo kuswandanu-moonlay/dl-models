@@ -10,7 +10,7 @@ it("#02. Output Hasil Produksi Spinning should valid", function () {
     validate.spinning.winding.windingProductionOutput(new WindingProductionOutput());
 });
 
-it("#03. Production Order should valid", function () {
-    var productionOrder = require('../src/production/production-order');
-    validate.spinning.winding.productionOrder(new ProductionOrder());
+it("#03. Sales Contract should valid", function () {
+    var salesContract = require('../src/production/sales-contract');
+    validate.finishingPrinting.salesContract(new SalesContract());
 });
