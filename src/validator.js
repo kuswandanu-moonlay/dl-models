@@ -23,7 +23,8 @@ module.exports = {
                 yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
                 uster: require('./master/uster-validator'),
                 lampStandard: require('./master/lamp-standard-validator'),
-                accountBank : require('./master/account-bank-validator')
+                accountBank : require('./master/account-bank-validator'),
+                instruction: require('./master/instruction-validator'),
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -47,7 +48,8 @@ module.exports = {
                 },
                 finishingPrinting:{
                         productionOrder: require("./production/finishing-printing/production-order-validator"),
-                        productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator")
+                        productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator"),
+                        salesContract: require("./production/finishing-printing/sales-contract-validator")
 
                 },
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
