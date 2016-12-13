@@ -39,7 +39,8 @@ module.exports = {
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
             LampStandard : 'lamp-standards',
-            AccountBank : 'account-banks'
+            AccountBank : 'account-banks',
+            Instruction : 'instructions'
         }
     },
     purchasing: {
@@ -80,10 +81,10 @@ module.exports = {
         },
         finishingPrinting :{
             type:{
-                ProductionOrder : 'production-order'
+                SalesContract : 'sales-contract'
             },
             collection:{
-                ProductionOrder : 'production-orders'
+                SalesContract : 'sales-contracts'
             }
         }
     }
