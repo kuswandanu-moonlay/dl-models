@@ -1,6 +1,7 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
 var Buyer = require('../../master/buyer');
+var Instruction = require('../../master/instruction');
 var LampStandard = require('../../master/lamp-standard');
 var uom = require('../../master/uom');
 var ProductionOrderDetail=require('./production-order-detail');
@@ -11,6 +12,7 @@ module.exports = class ProductionOrder extends BaseModel {
 
         this.salesContractNo='';
         this.orderNo='';
+        this.isExport=true;
 
         this.buyerId={};
         this.buyer= new Buyer();
@@ -19,6 +21,10 @@ module.exports = class ProductionOrder extends BaseModel {
         this.orderType='';
         this.construction='';
         this.material='';
+
+        this.instruction=new Instruction();
+        this.instructionId={};
+
         this.orderQuantity=0;
         this.uom=new uom();
         this.spelling=0;

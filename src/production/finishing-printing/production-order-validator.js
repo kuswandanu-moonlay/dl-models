@@ -3,7 +3,7 @@ var validateBuyer = require('../../master/buyer-validator');
 var validateUom = require('../../master/uom-validator');
 var validateLamp=require ('../../master/lamp-standard-validator');
 var validateDetail= require('./production-order-detail-validator');
-
+var validateInstruction = require('../../master/instruction-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -21,6 +21,13 @@ module.exports = function (data) {
     data.should.have.property('buyer');
     data.buyer.should.instanceof(Object);
     validateBuyer(data.buyer);
+
+    data.should.have.property('instructionId');
+    data.instructionId.should.instanceof(Object);
+
+    data.should.have.property('instruction');
+    data.instruction.should.instanceof(Object);
+    validateInstruction(data.instruction);
 
     data.should.have.property('processType');
     data.processType.should.be.String();
