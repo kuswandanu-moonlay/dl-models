@@ -22,7 +22,8 @@ module.exports = {
         Uster:require('./src/master/uster'),
         UsterClassification:require('./src/master/uster-classification'),
         LampStandard:require('./src/master/lamp-standard'),
-        AccountBank:require('./src/master/account-bank')
+        AccountBank:require('./src/master/account-bank'),
+        Instruction:require('./src/master/instruction')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -54,7 +55,9 @@ module.exports = {
             DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
         },
         finishingPrinting : {
-            ProductionOrder: require('./src/production/finishing-printing/production-order')
+            ProductionOrder: require('./src/production/finishing-printing/production-order'),
+            ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
+            SalesContract: require("./production/finishing-printing/sales-contract")
         }
     },
     map: require('./src/map'),
