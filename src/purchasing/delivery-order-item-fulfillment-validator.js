@@ -1,4 +1,5 @@
 require("should");
+var validateProduct = require('../master/product-validator');
 var validateSupplier = require('../master/supplier-validator');
 var validateUom = require('../master/uom-validator');
 var validateDeliveryOrderItem = require('../purchasing/delivery-order-item-validator');
@@ -15,7 +16,8 @@ module.exports = function (data) {
     data.productId.should.instanceOf(Object);
 
     data.should.have.property('product');
-    data.product.should.instanceOf(String);
+    data.product.should.instanceOf(Object);
+    validateProduct(data.product);
 
     data.should.have.property('purchaseOrderQuantity');
     data.purchaseOrderQuantity.should.instanceOf(Number);
