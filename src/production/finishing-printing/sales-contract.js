@@ -4,7 +4,7 @@ var ProductionOrder=require('./production-order');
 
 module.exports = class SalesContract extends BaseModel {
     constructor(source) {
-        super('production-order', '1.0.0');
+        super('sales-contract', '1.0.0');
 
         this.salesContractNo='';
         this.date=new Date();
