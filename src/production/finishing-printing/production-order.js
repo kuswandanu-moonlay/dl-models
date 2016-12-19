@@ -26,6 +26,7 @@ module.exports = class ProductionOrder extends BaseModel {
         this.instructionId={};
 
         this.orderQuantity=0;
+        this.uomId={};
         this.uom=new uom();
         this.spelling=0;
         this.originGreigeFabric=''; // asal kain greige

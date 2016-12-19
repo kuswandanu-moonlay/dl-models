@@ -44,6 +44,9 @@ module.exports = function (data) {
     data.should.have.property('orderQuantity');
     data.orderQuantity.should.instanceOf(Number);
 
+    data.should.have.property('uomId');
+    data.uomId.should.instanceof(Object);
+
     data.should.have.property('uom');
     data.uom.should.instanceof(Object);
     validateUom(data.uom);
@@ -82,8 +85,8 @@ module.exports = function (data) {
     data.should.have.property('sample');
     data.sample.should.be.String();
 
-    data.should.have.property('date');
-    data.date.should.instanceof(Date);
+    data.should.have.property('deliveryDate');
+    data.deliveryDate.should.instanceof(Date);
 
     data.should.have.property('remark');
     data.remark.should.be.String();
