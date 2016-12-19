@@ -57,7 +57,7 @@ module.exports = {
         finishingPrinting : {
             ProductionOrder: require('./src/production/finishing-printing/production-order'),
             ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
-            SalesContract: require("./production/finishing-printing/sales-contract")
+            SalesContract: require("./src/production/finishing-printing/sales-contract")
         }
     },
     map: require('./src/map'),
