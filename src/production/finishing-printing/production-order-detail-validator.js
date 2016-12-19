@@ -14,6 +14,9 @@ module.exports = function (data) {
     data.should.have.property('quantity');
     data.quantity.should.instanceOf(Number);
 
+    data.should.have.property('uomId');
+    data.uomId.should.instanceof(Object);
+
     data.should.have.property('uom');
     data.uom.should.instanceOf(Object);
     validateUom(data.uom);
