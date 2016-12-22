@@ -38,7 +38,7 @@ module.exports =
             'label': 'Barang sudah diterima Unit'
         },
         'RECEIVED': {
-            'name': 'PAYMENT',
+            'name': 'RECEIVED',
             'value': 7,
             'label': 'Barang sudah diterima Unit'
         },
