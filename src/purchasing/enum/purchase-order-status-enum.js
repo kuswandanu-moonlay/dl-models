@@ -25,7 +25,7 @@ module.exports =
         'ARRIVING': {
             'name': 'ARRIVING',
             'value': 4,
-            'label': 'Barang sudah datang'
+            'label': 'Barang sudah datang Parsial'
         },
         'ARRIVED': {
             'name': 'ARRIVED',
@@ -35,7 +35,7 @@ module.exports =
         'RECEIVING': {
             'name': 'RECEIVING',
             'value': 6,
-            'label': 'Barang sudah diterima Unit'
+            'label': 'Barang sudah diterima Unit Parsial'
         },
         'RECEIVED': {
             'name': 'RECEIVED',
