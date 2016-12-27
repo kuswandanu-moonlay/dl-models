@@ -14,7 +14,16 @@ module.exports = {
         Category: require('./src/master/category'),
         Currency: require('./src/master/currency'),
         Vat: require('./src/master/vat'),
-        Budget: require('./src/master/budget')
+        Budget: require('./src/master/budget'),
+        ThreadSpecification: require('./src/master/thread-specification'),
+        Machine:require('./src/master/machine'), 
+        LotMachine:require('./src/master/lot-machine'),
+        YarnEquivalentConversion:require('./src/master/yarn-equivalent-conversion'), 
+        Uster:require('./src/master/uster'),
+        UsterClassification:require('./src/master/uster-classification'),
+        LampStandard:require('./src/master/lamp-standard'),
+        AccountBank:require('./src/master/account-bank'),
+        Instruction:require('./src/master/instruction')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -28,10 +37,28 @@ module.exports = {
         UnitReceiptNoteItem: require('./src/purchasing/unit-receipt-note-item'),
         PurchaseRequestItem: require('./src/purchasing/purchase-request-item'),
         PurchaseRequest: require('./src/purchasing/purchase-request'),
-        UnitPaymentPriceCorrectionNote: require('./src/purchasing/unit-payment-price-correction-note'),
-        UnitPaymentPriceCorrectionNoteItem: require('./src/purchasing/unit-payment-price-correction-note-item'),
+        UnitPaymentCorrectionNote: require('./src/purchasing/unit-payment-correction-note'),
+        UnitPaymentCorrectionNoteItem: require('./src/purchasing/unit-payment-correction-note-item'),
         UnitPaymentOrder: require('./src/purchasing/unit-payment-order'),
-        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item')
+        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item'),
+        enum: {
+            PurchaseRequestStatus: require('./src/purchasing/enum/purchase-request-status-enum'),
+            PurchaseOrderStatus: require('./src/purchasing/enum/purchase-order-status-enum')
+        }
+    },
+    production:{
+        spinning:{
+            winding:{
+                WindingQualitySampling: require('./src/production/spinning/winding/winding-quality-sampling'),
+                WindingProductionOutput: require('./src/production/spinning/winding/winding-production-output')
+            },
+            DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
+        },
+        finishingPrinting : {
+            ProductionOrder: require('./src/production/finishing-printing/production-order'),
+            ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
+            SalesContract: require("./src/production/finishing-printing/sales-contract")
+        }
     },
     map: require('./src/map'),
     validator: require('./src/validator')

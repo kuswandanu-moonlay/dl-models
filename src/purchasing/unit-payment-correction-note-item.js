@@ -1,13 +1,13 @@
-'use strict'
-var BaseModel = require('capital-models').BaseModel;
+'use strict';
+var BaseModel = require('model-toolkit').BaseModel;
 var PurchaseOrderExternal = require('../purchasing/purchase-order-external');
 var Product = require('../master/product');
 var Uom = require('../master/uom');
 var Currency = require('../master/currency');
 
-module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
+module.exports = class UnitPaymentCorrectionNoteItem extends BaseModel {
     constructor(source) {
-        super('unit-payment-price-correction-note-item', '1.0.0');
+        super('unit-payment-correction-note-item', '1.0.0');
 
         //Define Properties
         this.purchaseOrderId = {};
@@ -24,4 +24,4 @@ module.exports = class UnitPaymentPriceCorrectionNoteItem extends BaseModel {
         this.unitReceiptNoteNo = "";
         this.copy(source);
     }
-}
+};

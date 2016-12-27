@@ -1,5 +1,6 @@
 require("should");
 var validateUom = require('./uom-validator');
+var validateCurrency = require('../master/currency-validator');
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -13,6 +14,10 @@ module.exports = function(data) {
 
     data.should.have.property('price');
     data.price.should.instanceOf(Number);
+
+    data.should.have.property('currency');
+    data.currency.should.instanceof(Object);
+    validateCurrency(data.currency);
 
     data.should.have.property('description');
     data.description.should.be.String();
@@ -29,4 +34,4 @@ module.exports = function(data) {
 
     data.should.have.property('properties');
     data.properties.should.be.Array();
-}
+};

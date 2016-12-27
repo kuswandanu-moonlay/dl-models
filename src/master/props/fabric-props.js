@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var map = require('../map');
 
 module.exports = class FabricDetail extends BaseModel {
@@ -13,4 +13,4 @@ module.exports = class FabricDetail extends BaseModel {
 
         this.copy(source);
     }
-}
+};

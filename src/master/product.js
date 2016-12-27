@@ -1,7 +1,8 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var uom = require('./uom');
+var Currency = require('../master/currency');
 
 
 module.exports = class Product extends BaseModel {
@@ -12,6 +13,7 @@ module.exports = class Product extends BaseModel {
         this.code = '';
         this.name = '';
         this.price = 0;
+        this.currency = new Currency();
         this.description = '';
         this.uomId = {};
         this.uom = new uom();
@@ -20,4 +22,4 @@ module.exports = class Product extends BaseModel {
 
         this.copy(source);
     }
-}
+};

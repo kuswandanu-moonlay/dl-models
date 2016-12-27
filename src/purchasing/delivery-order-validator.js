@@ -25,6 +25,9 @@ module.exports = function (data) {
 
     data.should.have.property('isPosted');
     data.isPosted.should.instanceOf(Boolean);
+    
+    data.should.have.property('isClosed');
+    data.isClosed.should.instanceOf(Boolean);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
@@ -34,4 +37,4 @@ module.exports = function (data) {
     for (var item of data.items) {
         validateDeliveryOrderItem(item);
     }
-}
+};

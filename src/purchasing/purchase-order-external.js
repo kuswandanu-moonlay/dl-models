@@ -1,5 +1,5 @@
-'use strict'
-var BaseModel = require('capital-models').BaseModel;
+'use strict';
+var BaseModel = require('model-toolkit').BaseModel;
 var Supplier = require('../master/supplier');
 var Currency = require('../master/currency');
 var Vat = require('../master/vat');
@@ -39,9 +39,11 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.remark = ''; 
         this.items = [];
 
+        this.status = {};
+
         this.copy(source);
         
         this.items = (this.items || []).map(item => new PurchaseOrder(item));
 
     }
-}
+};

@@ -5,10 +5,6 @@ var validateUom = require('../master/uom-validator');
 module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceof(Object);
-
-    data.should.have.property('uom');
-    data.uom.should.instanceof(Object);
-    validateUom(data.uom);
      
     data.should.have.property('productId');
     data.productId.should.instanceof(Object);
@@ -25,4 +21,4 @@ module.exports = function (data) {
     
     data.should.have.property('purchaseOrderIds');
     data.purchaseOrderIds.should.instanceof(Array); 
-}
+};

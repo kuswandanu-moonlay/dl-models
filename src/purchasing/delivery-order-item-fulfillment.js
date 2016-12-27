@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var uom = require('../master/uom');
 module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
     constructor(source) {
@@ -14,8 +14,9 @@ module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
         this.purchaseOrderQuantity = 0;
         this.purchaseOrderUom = new uom();
         this.deliveredQuantity = 0;
+        this.realizationQuantity = [];
         this.remark = '';
 
         this.copy(source);
     }
-}
+};

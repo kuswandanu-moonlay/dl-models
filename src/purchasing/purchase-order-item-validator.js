@@ -12,6 +12,9 @@ module.exports = function (data) {
     
     data.should.have.property('pricePerDealUnit');
     data.pricePerDealUnit.should.instanceOf(Number);
+    
+    data.should.have.property('priceBeforeTax');
+    data.priceBeforeTax.should.instanceOf(Number);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
@@ -47,4 +50,7 @@ module.exports = function (data) {
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
     
-}
+    data.should.have.property('useIncomeTax');
+    data.useIncomeTax.should.instanceOf(Boolean);
+    
+};

@@ -1,5 +1,5 @@
-'use strict'
-var BaseModel = require('capital-models').BaseModel;
+'use strict';
+var BaseModel = require('model-toolkit').BaseModel;
 
 module.exports = class StandardQualityTestPercentage extends BaseModel {
     constructor(source, type) {
@@ -14,4 +14,4 @@ module.exports = class StandardQualityTestPercentage extends BaseModel {
         
         this.copy(source);
     }
-}
+};

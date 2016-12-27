@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Profile = require('./profile');
 
 module.exports = class Account extends BaseModel {
@@ -16,4 +16,4 @@ module.exports = class Account extends BaseModel {
 
         this.copy(source);
     }
-}
+};
