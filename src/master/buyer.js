@@ -13,6 +13,7 @@ module.exports = class Buyer extends BaseModel {
         this.country = '';
         this.contact = '';
         this.tempo = '';
+        this.type='';
 
         this.copy(source);
     }
