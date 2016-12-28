@@ -22,13 +22,6 @@ module.exports = function (data) {
     data.buyer.should.instanceof(Object);
     validateBuyer(data.buyer);
 
-    data.should.have.property('instructionId');
-    data.instructionId.should.instanceof(Object);
-
-    data.should.have.property('instruction');
-    data.instruction.should.instanceof(Object);
-    validateInstruction(data.instruction);
-
     data.should.have.property('processType');
     data.processType.should.be.String();
 

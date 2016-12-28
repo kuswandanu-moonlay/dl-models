@@ -12,7 +12,6 @@ module.exports = class ProductionOrder extends BaseModel {
 
         this.salesContractNo='';
         this.orderNo='';
-        this.isExport=false;
 
         this.buyerId={};
         this.buyer= new Buyer();
@@ -21,9 +20,6 @@ module.exports = class ProductionOrder extends BaseModel {
         this.orderType='';
         this.construction='';
         this.material='';
-
-        this.instruction=new Instruction();
-        this.instructionId={};
 
         this.orderQuantity=0;
         this.uomId={};
