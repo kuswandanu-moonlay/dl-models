@@ -64,3 +64,13 @@ it("#13. Instruction should valid", function () {
     var Instruction = require('../src/master/instruction');
     validate.instruction(new Instruction());
 });
+
+it("#14. Order Type should valid", function () {
+    var OrderType = require('../src/master/order-type');
+    validate.orderType(new OrderType());
+});
+
+it("#15. Process Type should valid", function () {
+    var ProcessType = require('../src/master/process-type');
+    validate.processType(new ProcessType());
+});
