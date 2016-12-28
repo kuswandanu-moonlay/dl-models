@@ -40,7 +40,9 @@ module.exports = {
             Uster: 'usters',
             LampStandard : 'lamp-standards',
             AccountBank : 'account-banks',
-            Instruction : 'instructions'
+            Instruction : 'instructions',
+            OrderType : 'order-types',
+            ProcessType : 'process-types'
         }
     },
     purchasing: {
