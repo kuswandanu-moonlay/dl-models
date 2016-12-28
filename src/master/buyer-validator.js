@@ -20,8 +20,8 @@ module.exports = function (data) {
     data.contact.should.instanceOf(String);
 
     data.should.have.property('tempo');
-    data.tempo.should.instanceOf(String);
+    data.tempo.should.instanceOf(String); 
 
     data.should.have.property('type');
     data.type.should.instanceOf(String);
-};
+}; 
