@@ -25,6 +25,8 @@ module.exports = {
                 lampStandard: require('./master/lamp-standard-validator'),
                 accountBank : require('./master/account-bank-validator'),
                 instruction: require('./master/instruction-validator'),
+                orderType: require('./master/order-type-validator'),
+                processType: require('./master/process-type-validator'),
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
