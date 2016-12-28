@@ -23,7 +23,9 @@ module.exports = {
         UsterClassification:require('./src/master/uster-classification'),
         LampStandard:require('./src/master/lamp-standard'),
         AccountBank:require('./src/master/account-bank'),
-        Instruction:require('./src/master/instruction')
+        Instruction:require('./src/master/instruction'),
+        OrderType:require('./src/master/order-type'),
+        ProcessType:require('./src/master/process-type')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
