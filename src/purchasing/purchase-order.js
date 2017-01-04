@@ -1,5 +1,5 @@
 'use strict';
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Supplier = require('../master/supplier');
 var Buyer = require('../master/buyer');
 var Currency = require('../master/currency');
@@ -55,6 +55,8 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.isClosed = false;
         this.remark = '';
         this.items = [];
+
+        this.status = {};
 
         this.copy(source);
 

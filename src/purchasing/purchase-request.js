@@ -1,5 +1,5 @@
 'use strict';
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var PurchaseRequestItem = require('./purchase-request-item');
 var Budget= require('../master/budget');
 var map = require('../map');
@@ -26,6 +26,8 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.remark = '';
 
         this.items = [];
+
+        this.status = {};
         
         this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
         

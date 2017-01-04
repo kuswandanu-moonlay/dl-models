@@ -1,6 +1,6 @@
 'use strict';
 
-var BaseModel = require("capital-models").BaseModel;
+var BaseModel = require("model-toolkit").BaseModel;
 var Product = require('./product');
 var Machine = require('./machine');
 
@@ -18,5 +18,6 @@ module.exports = class LotMachine extends BaseModel {
         this.constant=0;
 
         this.copy(source);
+        this.machine=new Machine(this.machine);
     }
 };

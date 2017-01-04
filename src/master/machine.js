@@ -1,6 +1,6 @@
 'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Unit = require('./unit');
 
 module.exports = class Machine extends BaseModel {
@@ -18,5 +18,6 @@ module.exports = class Machine extends BaseModel {
         this.condition = '';
 
         this.copy(source);
+        this.unit = new Unit(this.unit);
     }
 };

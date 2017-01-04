@@ -1,5 +1,5 @@
 'use strict';
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 
 module.exports = class StandardQualityTestPercentage extends BaseModel {
     constructor(source, type) {

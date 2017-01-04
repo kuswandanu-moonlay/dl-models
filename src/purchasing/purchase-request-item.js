@@ -1,5 +1,5 @@
 'use strict';
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Product = require('../master/product');
 var uom = require('../master/uom');
 
@@ -10,7 +10,7 @@ module.exports = class PurchaseRequestItem extends BaseModel {
         this.productId = {};
         this.product = new Product();
         this.quantity = 0;
-        
+        this.deliveryOrderNos = [];
         this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
 
         this.remark = '';

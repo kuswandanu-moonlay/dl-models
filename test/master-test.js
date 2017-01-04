@@ -59,3 +59,28 @@ it("#12. Account Bank should valid", function () {
     var AccountBank = require('../src/master/account-bank');
     validate.accountBank(new AccountBank());
 });
+
+it("#13. Step should valid", function () {
+    var Step = require('../src/master/step');
+    validate.step(new Step());
+});
+
+it("#14. Instruction should valid", function () {
+    var Instruction = require('../src/master/instruction');
+    validate.instruction(new Instruction());
+});
+
+it("#15. Order Type should valid", function () {
+    var OrderType = require('../src/master/order-type');
+    validate.orderType(new OrderType());
+});
+
+it("#16. Process Type should valid", function () {
+    var ProcessType = require('../src/master/process-type');
+    validate.processType(new ProcessType());
+});
+
+it("#17. Color Type should valid", function () {
+    var ColorType = require('../src/master/color-type');
+    validate.colorType(new ColorType());
+});
