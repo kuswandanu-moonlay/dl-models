@@ -25,4 +25,7 @@ module.exports = function(data) {
     data.should.have.property('profile');
     data.profile.should.instanceof(Object);
     validateProfile(data.profile);
+    
+    data.should.have.property('permission');
+    data.permission.should.instanceof(Object);
 };

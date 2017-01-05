@@ -10,7 +10,7 @@ module.exports = class Role extends BaseModel {
         this.code = '';
         this.name = '';
         this.description = '';
-        this.permission = {};
+        this.permissions = [];
 
         this.copy(source);
     }

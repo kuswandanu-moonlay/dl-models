@@ -13,6 +13,7 @@ module.exports = class Account extends BaseModel {
         this.isLocked = false;
         this.profile = new Profile();
         this.roles = [];
+        this.permission = {};
 
         this.copy(source);
     }
