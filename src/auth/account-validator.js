@@ -20,12 +20,8 @@ module.exports = function(data) {
     data.roles.should.instanceof(Array);
     for (var role of data.roles)
         validateRole(role);
-
-
+ 
     data.should.have.property('profile');
     data.profile.should.instanceof(Object);
-    validateProfile(data.profile);
-    
-    data.should.have.property('permission');
-    data.permission.should.instanceof(Object);
+    validateProfile(data.profile); 
 };
