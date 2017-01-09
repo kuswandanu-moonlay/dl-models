@@ -3,7 +3,8 @@ module.exports = {
         auth: {
                 account: require("./auth/account-validator"),
                 profile: require("./auth/profile-validator"),
-                role: require("./auth/role-validator")
+                role: require("./auth/role-validator"),
+                apiEndpoint: require("./auth/api-endpoint-validator")
         },
         master: {
                 product: require("./master/product-validator"),
