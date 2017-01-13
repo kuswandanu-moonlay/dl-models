@@ -81,10 +81,12 @@ module.exports = {
         },
         finishingPrinting :{
             type:{
-                SalesContract : 'sales-contract'
+                SalesContract : 'sales-contract',
+                MonitoringEvent : 'monitoring-event'
             },
             collection:{
-                SalesContract : 'sales-contracts'
+                SalesContract : 'sales-contracts',
+                MonitoringEvent : 'monitoring-events'
             }
         }
     }
