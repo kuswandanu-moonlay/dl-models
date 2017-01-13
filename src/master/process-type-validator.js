@@ -1,5 +1,5 @@
 require("should"); 
-var validateOrderType=require('./order-type-validator')
+var validateOrderType=require('./order-type-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);

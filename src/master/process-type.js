@@ -1,7 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel; 
-var orderType = require('./order-type');
+var OrderType = require('./order-type');
 
 module.exports = class ProcessType extends BaseModel{
     constructor(source){
