@@ -74,3 +74,13 @@ it("#15. Process Type should valid", function () {
     var ProcessType = require('../src/master/process-type');
     validate.processType(new ProcessType());
 });
+
+it("#16. Color Type should valid", function () {
+    var ColorType = require('../src/master/color-type');
+    validate.colorType(new ColorType());
+});
+
+it("#17. Step should valid", function () {
+    var Step = require('../src/master/step');
+    validate.step(new Step());
+});
