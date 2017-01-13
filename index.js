@@ -2,7 +2,8 @@ module.exports = {
     auth: {
         Account: require('./src/auth/account'),
         Profile: require('./src/auth/profile'),
-        Role: require('./src/auth/role')
+        Role: require('./src/auth/role'),
+        ApiEndpoint: require('./src/auth/api-endpoint')
     },
     master: {
         Product: require('./src/master/product'),
