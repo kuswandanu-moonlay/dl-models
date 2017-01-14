@@ -1,5 +1,6 @@
 require("should");
 var validateUnit = require('./unit-validator');
+var validateStep = require('./step-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -18,6 +19,13 @@ module.exports = function (data) {
     data.should.have.property('unit');
     data.unit.should.instanceOf(Object);
     validateUnit(data.unit);
+
+    data.should.have.property('stepId');
+    data.stepId.should.instanceOf(Object);
+
+    data.should.have.property('step');
+    data.step.should.instanceOf(Object);
+    validateStep(data.step);
 
     data.should.have.property('process');
     data.process.should.instanceOf(String);
