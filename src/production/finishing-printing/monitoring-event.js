@@ -1,31 +1,26 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var Machine = require('../../../master/machine');
-var Product = require('../../../master/product');
-var Uster = require('../../../master/uster');
-var Unit = require('../../../master/unit');
+var Machine = require('../../master/machine');
+var MonitoringEventType = require('../../master/monitoring-event-type'); 
+var SalesContract = require('./sales-contract');
 
 module.exports = class MonitoringEvent extends BaseModel {
     constructor(source) {
         super('monitoring-event', '1.0.0');
 
         // Define properties.
-        this.unitId = {};
-        this.spinning = new Unit();
         this.date = new Date();
+        this.time = 0;
         this.machineId = {}; 
         this.machine = new Machine();
-        this.U = 0;
-        this.thin = 0;
-        this.thick = 0;
-        this.neps = 0;
-        this.ipi = 0;
-        this.usterId = {};
-        this.uster = new Uster();
-        this.sys = 0;
-        this.elongation = 0;
-        this.grade = '';
+        this.productionOrderNumber = '';
+        this.monitoringEventType = '';
+        // this.salesContractId = {};
+        // this.salesContract = new SalesContract(); 
+        // this.monitoringEventTypeId = {};
+        // this.monitoringEventType = new MonitoringEventType();
+        this.description = '';
 
         this.copy(source);
     }
