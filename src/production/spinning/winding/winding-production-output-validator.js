@@ -2,8 +2,8 @@ require("should");
 var validateMachine = require('../../../master/machine-validator');
 var validateProduct = require('../../../master/product-validator');
 var validateUnit = require('../../../master/unit-validator');
-var validateLotMachine = require('../../../master/machine-validator');
-var validateThreadSpecification = require('../../../master/thread-specification');
+var validateLotMachine = require('../../../master/lot-machine-validator');
+var validateThreadSpecification = require('../../../master/thread-specification-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);

@@ -1,6 +1,6 @@
 'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Product = require('./product');
 var ColorType = require('./color-type');
 var OrderType = require('./order-type');

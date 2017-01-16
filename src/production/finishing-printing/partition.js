@@ -1,7 +1,8 @@
 'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Step = require("../../master/step");
+var Machine = require("../../master/machine");
 
 module.exports = class Partition extends BaseModel {
     constructor(source) {

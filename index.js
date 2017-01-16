@@ -65,6 +65,7 @@ module.exports = {
             SalesContract : require('./src/production/finishing-printing/sales-contract'),
             ProductionOrder : require('./src/production/finishing-printing/production-order'),
             ProductionOrderDetail : require('./src/production/finishing-printing/production-order-detail')
+
         }
     },
     sales:{

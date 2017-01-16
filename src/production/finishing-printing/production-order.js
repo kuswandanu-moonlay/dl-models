@@ -1,6 +1,9 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
 var Buyer = require('../../master/buyer');
+var Product = require('../../master/product');
+var OrderType = require('../../master/order-type');
+var ProcessType = require('../../master/process-type');
 var LampStandard = require('../../master/lamp-standard');
 var uom = require('../../master/uom');
 var ProductionOrderDetail=require('./production-order-detail');
@@ -11,19 +14,25 @@ module.exports = class ProductionOrder extends BaseModel {
 
         this.salesContractNo='';
         this.orderNo='';
-        this.date=new Date();
-        this.isExport=true;
 
         this.buyerId={};
         this.buyer= new Buyer();
         
-        this.processType='';
-        this.orderType='';
-        this.construction='';
-        this.material='';
+        this.processTypeId={};
+        this.processType=new ProcessType();
+
+        this.orderTypeId={};
+        this.orderType=new OrderType();
+
+        this.materialId={};
+        this.material=new Product();
 
         this.orderQuantity=0;
+
+        this.uomId={};
         this.uom=new uom();
+
+        this.construction='';
         this.spelling=0;
         this.originGreigeFabric=''; // asal kain greige
         this.finishWidth='';
