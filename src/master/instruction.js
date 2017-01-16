@@ -1,9 +1,9 @@
 'use strict';
 
-var BaseModel = require('model-toolkit').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel; 
 var Product = require('./product');
-var ColorType = require('./color-type');
 var OrderType = require('./order-type');
+var ColorType = require('./color-type');
 
 module.exports = class Instruction extends BaseModel {
     constructor(source) {

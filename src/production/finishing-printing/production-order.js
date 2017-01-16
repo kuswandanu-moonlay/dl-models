@@ -49,6 +49,7 @@ module.exports = class ProductionOrder extends BaseModel {
         this.deliveryDate=new Date();
         this.remark='';
         this.details=[];
+        this.isUsed=false;
         this.copy(source);
 
         this.details = (this.details || []).map(detail => new ProductionOrderDetail(detail));

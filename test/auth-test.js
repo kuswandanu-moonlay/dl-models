@@ -15,3 +15,8 @@ it("#03. Account should valid", function(){
     validate.account(new Account());
 });
  
+it("#04. ApiEndpoint should valid", function(){
+    var ApiEndpoint = require('../src/auth/api-endpoint');
+    validate.apiEndpoint(new ApiEndpoint());
+});
+ 

@@ -99,6 +99,9 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.be.String();
 
+    data.should.have.property('isUsed');
+    data.isUsed.should.instanceOf(Boolean);
+
     data.should.have.property('details');
     data.details.should.instanceOf(Array);
     for (var detail of data.details) {

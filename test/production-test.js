@@ -20,3 +20,8 @@ it("#04. Output Hasil Produksi Spinning should valid", function () {
     var WindingProductionOutput = require('../src/production/spinning/winding/winding-production-output');
     validate.spinning.winding.windingProductionOutput(new WindingProductionOutput());
 });
+
+it("#05. Daily Operation Finishing Printing should valid", function () {
+    var DailyOperation = require('../src/production/finishing-printing/daily-operation');
+    validate.finishingPrinting.dailyOperation(new DailyOperation());
+});

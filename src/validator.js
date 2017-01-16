@@ -3,7 +3,8 @@ module.exports = {
         auth: {
                 account: require("./auth/account-validator"),
                 profile: require("./auth/profile-validator"),
-                role: require("./auth/role-validator")
+                role: require("./auth/role-validator"),
+                apiEndpoint: require("./auth/api-endpoint-validator")
         },
         master: {
                 product: require("./master/product-validator"),
@@ -24,11 +25,11 @@ module.exports = {
                 uster: require('./master/uster-validator'),
                 lampStandard: require('./master/lamp-standard-validator'),
                 accountBank : require('./master/account-bank-validator'),
-                step : require('./master/step-validator'),
-                instruction : require('./master/instruction-validator'),
+                instruction: require('./master/instruction-validator'),
                 orderType: require('./master/order-type-validator'),
                 processType: require('./master/process-type-validator'),
-                colorType: require('./master/color-type-validator')
+                colorType: require('./master/color-type-validator'),
+                step: require('./master/step-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -50,17 +51,14 @@ module.exports = {
                                 windingProductionOutput : require("./production/spinning/winding/winding-production-output-validator")
                         }
                 },
-                dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator"),
                 finishingPrinting : {
                         dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
                         kanban : require("./production/finishing-printing/kanban-validator"),
                         partition : require("./production/finishing-printing/partition-validator"),
                         salesContract: require("./production/finishing-printing/sales-contract-validator"),
                         productionOrder: require("./production/finishing-printing/production-order-validator"),
-                        productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator")
-                }
-        },
-        sales:{
-                salesContract:require("./sales/sales-contract-validator")
+                        productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator"),
+                },
+                dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         }
 };

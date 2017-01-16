@@ -2,7 +2,8 @@ module.exports = {
     auth: {
         Account: require('./src/auth/account'),
         Profile: require('./src/auth/profile'),
-        Role: require('./src/auth/role')
+        Role: require('./src/auth/role'),
+        ApiEndpoint: require('./src/auth/api-endpoint')
     },
     master: {
         Product: require('./src/master/product'),
@@ -23,11 +24,11 @@ module.exports = {
         UsterClassification:require('./src/master/uster-classification'),
         LampStandard:require('./src/master/lamp-standard'),
         AccountBank:require('./src/master/account-bank'),
-        Step: require('./src/master/step'),
-        Instruction: require('./src/master/instruction'),
+        Instruction:require('./src/master/instruction'),
         OrderType:require('./src/master/order-type'),
         ProcessType:require('./src/master/process-type'),
-        ColorType:require('./src/master/color-type')
+        ColorType:require('./src/master/color-type'),
+        Step:require('./src/master/step')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -59,13 +60,12 @@ module.exports = {
             DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
         },
         finishingPrinting : {
-            DailyOperation : require('./src/production/finishing-printing/daily-operation'),
-            Kanban : require('./src/production/finishing-printing/kanban'),
-            Partition : require('./src/production/finishing-printing/partition'),
-            SalesContract : require('./src/production/finishing-printing/sales-contract'),
-            ProductionOrder : require('./src/production/finishing-printing/production-order'),
-            ProductionOrderDetail : require('./src/production/finishing-printing/production-order-detail')
-
+            ProductionOrder: require('./src/production/finishing-printing/production-order'),
+            ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
+            SalesContract: require("./src/production/finishing-printing/sales-contract"),
+            DailyOperation: require("./src/production/finishing-printing/daily-operation"),
+            Partition: require("./src/production/finishing-printing/partition"),
+            Kanban: require("./src/production/finishing-printing/kanban")
         }
     },
     sales:{

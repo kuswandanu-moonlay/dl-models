@@ -3,11 +3,13 @@ module.exports = {
         type: {
             Account: 'account',
             Profile: 'profile',
-            Role: 'role'
+            Role: 'role',
+            ApiEndpoint: 'api-endpoint'
         },
         collection: {
             Account: 'accounts',
-            Role: 'roles'
+            Role: 'roles',
+            ApiEndpoint: 'api-endpoints'
         }
     },
     master: {
@@ -19,7 +21,8 @@ module.exports = {
             Vat: 'vat',
             Budget: 'budget',
             Machine: 'machine',
-            Uster: 'uster'
+            Uster: 'uster',
+            Step : 'step'
         },
         collection: {
             Buyer: 'buyers',
@@ -40,11 +43,11 @@ module.exports = {
             Uster: 'usters',
             LampStandard : 'lamp-standards',
             AccountBank : 'account-banks',
-            Step : 'steps',
             Instruction : 'instructions',
             OrderType : 'order-types',
             ProcessType : 'process-types',
-            ColorType : 'color-types'
+            ColorType : 'color-types',
+            Step : 'steps'
         }
     },
     purchasing: {
@@ -85,11 +88,12 @@ module.exports = {
         },
         finishingPrinting : {
             type:{
-                SalesContract : 'sales-contract'
+                SalesContract : 'sales-contract',
+                DailyOperation : 'daily-operation'
             },
             collection:{
-                DailyOperetion : 'daily-operations',
-                SalesContract : 'sales-contracts'
+                SalesContract : 'sales-contracts',
+                DailyOperation : 'daily-operations'
             }
         }
     },
