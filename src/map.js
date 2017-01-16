@@ -3,11 +3,13 @@ module.exports = {
         type: {
             Account: 'account',
             Profile: 'profile',
-            Role: 'role'
+            Role: 'role',
+            ApiEndpoint: 'api-endpoint'
         },
         collection: {
             Account: 'accounts',
-            Role: 'roles'
+            Role: 'roles',
+            ApiEndpoint: 'api-endpoints'
         }
     },
     master: {
