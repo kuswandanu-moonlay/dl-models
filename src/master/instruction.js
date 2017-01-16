@@ -12,8 +12,8 @@ module.exports = class Instruction extends BaseModel {
         // Define properties.
         this.name = '';
         this.orderTypeId = {};
-        this.orderType = new OrderType()
-        this.materialId = {}
+        this.orderType = new OrderType();
+        this.materialId = {};
         this.material = new Product();
         this.construction = '';
         this.colorTypeId = {};
