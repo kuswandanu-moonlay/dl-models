@@ -65,7 +65,27 @@ it("#13. Instruction should valid", function () {
     validate.instruction(new Instruction());
 });
 
-it("#14. Machine Type should valid", function () {
+it("#14. Order Type should valid", function () {
+    var OrderType = require('../src/master/order-type');
+    validate.orderType(new OrderType());
+});
+
+it("#15. Process Type should valid", function () {
+    var ProcessType = require('../src/master/process-type');
+    validate.processType(new ProcessType());
+});
+
+it("#16. Color Type should valid", function () {
+    var ColorType = require('../src/master/color-type');
+    validate.colorType(new ColorType());
+});
+
+it("#17. Step should valid", function () {
+    var Step = require('../src/master/step');
+    validate.step(new Step());
+});
+
+it("#18. Machine Type should valid", function () {
     var MachineType = require('../src/master/machine-type');
     validate.machineType(new MachineType());
 });

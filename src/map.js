@@ -21,7 +21,8 @@ module.exports = {
             Vat: 'vat',
             Budget: 'budget',
             Machine: 'machine',
-            Uster: 'uster'
+            Uster: 'uster',
+            Step : 'step'
         },
         collection: {
             Buyer: 'buyers',
@@ -42,7 +43,11 @@ module.exports = {
             Uster: 'usters',
             LampStandard : 'lamp-standards',
             AccountBank : 'account-banks',
-            Instruction : 'instructions'
+            Instruction : 'instructions',
+            OrderType : 'order-types',
+            ProcessType : 'process-types',
+            ColorType : 'color-types',
+            Step : 'steps'
         }
     },
     purchasing: {
@@ -83,10 +88,12 @@ module.exports = {
         },
         finishingPrinting :{
             type:{
-                SalesContract : 'sales-contract'
+                SalesContract : 'sales-contract',
+                DailyOperation : 'daily-operation'
             },
             collection:{
-                SalesContract : 'sales-contracts'
+                SalesContract : 'sales-contracts',
+                DailyOperation : 'daily-operations'
             }
         }
     }
