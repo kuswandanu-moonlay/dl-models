@@ -25,14 +25,11 @@ module.exports = {
         LampStandard:require('./src/master/lamp-standard'),
         AccountBank:require('./src/master/account-bank'),
         Instruction:require('./src/master/instruction'),
-<<<<<<< HEAD
-        MonitoringEventType:require("./src/master/monitoring-event-type")
-=======
+        MonitoringEventType:require("./src/master/monitoring-event-type"),
         OrderType:require('./src/master/order-type'),
         ProcessType:require('./src/master/process-type'),
         ColorType:require('./src/master/color-type'),
         Step:require('./src/master/step')
->>>>>>> refs/remotes/upstream/master
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -67,13 +64,10 @@ module.exports = {
             ProductionOrder: require('./src/production/finishing-printing/production-order'),
             ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
             SalesContract: require("./src/production/finishing-printing/sales-contract"),
-<<<<<<< HEAD
             MonitoringEvent: require("./src/production/finishing-printing/monitoring-event"),
-=======
             DailyOperation: require("./src/production/finishing-printing/daily-operation"),
             Partition: require("./src/production/finishing-printing/partition"),
             Kanban: require("./src/production/finishing-printing/kanban")
->>>>>>> refs/remotes/upstream/master
         }
     },
     map: require('./src/map'),
