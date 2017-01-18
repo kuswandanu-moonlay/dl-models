@@ -27,6 +27,10 @@ module.exports = {
                 accountBank : require('./master/account-bank-validator'),
                 instruction: require('./master/instruction-validator'),
                 monitoringEventType: require("./master/monitoring-event-type-validator"),
+                orderType: require('./master/order-type-validator'),
+                processType: require('./master/process-type-validator'),
+                colorType: require('./master/color-type-validator'),
+                step: require('./master/step-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -53,6 +57,9 @@ module.exports = {
                         productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator"),
                         salesContract: require("./production/finishing-printing/sales-contract-validator"),
                         monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
+                        dailyOperation: require("./production/finishing-printing/daily-operation-validator"),
+                        partition: require("./production/finishing-printing/partition-validator"),
+                        kanban: require("./production/finishing-printing/kanban-validator")
                 },
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         }

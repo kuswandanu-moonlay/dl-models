@@ -2,6 +2,7 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 var Unit = require('./unit');
+var Step = require('./step');
 
 module.exports = class Machine extends BaseModel {
     constructor(source) {
@@ -12,6 +13,8 @@ module.exports = class Machine extends BaseModel {
         this.name = '';
         this.unitId = {};
         this.unit = new Unit();
+        this.stepId = {};
+        this.step = new Step();
         this.process = '';
         this.manufacture = '';
         this.year = 1900;

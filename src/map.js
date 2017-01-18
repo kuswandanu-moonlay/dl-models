@@ -22,7 +22,8 @@ module.exports = {
             Budget: 'budget',
             Machine: 'machine',
             Uster: 'uster',
-            MonitoringEventType: 'monitoring-event-type'
+            MonitoringEventType: 'monitoring-event-type',
+            Step : 'step'
         },
         collection: {
             Buyer: 'buyers',
@@ -44,7 +45,11 @@ module.exports = {
             LampStandard : 'lamp-standards',
             AccountBank : 'account-banks',
             Instruction : 'instructions',
-            MonitoringEventType : 'monitoring-event-types'
+            MonitoringEventType : 'monitoring-event-types',
+            OrderType : 'order-types',
+            ProcessType : 'process-types',
+            ColorType : 'color-types',
+            Step : 'steps'
         }
     },
     purchasing: {
@@ -90,7 +95,12 @@ module.exports = {
             },
             collection:{
                 SalesContract : 'sales-contracts',
-                MonitoringEvent : 'monitoring-events'
+                MonitoringEvent : 'monitoring-events',
+                DailyOperation : 'daily-operation'
+            },
+            collection:{
+                SalesContract : 'sales-contracts',
+                DailyOperation : 'daily-operations'
             }
         }
     }
