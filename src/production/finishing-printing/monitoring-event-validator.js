@@ -20,26 +20,16 @@ module.exports = function (data) {
     data.machine.should.instanceof(Object);
     validateMachine(data.machine);
 
-    // data.should.have.property('salesContractId');
-    // data.salesContractId.should.instanceof(Object);
-
-    // data.should.have.property('salesContract');
-    // data.salesContract.should.instanceof(Object);
-    // validateSalesContract(data.salesContract);
-    
-    // data.should.have.property('monitoringEventTypeId');
-    // data.monitoringEventTypeId.should.instanceof(Object);
-
-    // data.should.have.property('monitoringEventType');
-    // data.monitoringEventType.should.instanceof(Object);
-    // validateMonitoringEventType(data.monitoringEventType);
-
     data.should.have.property('productionOrderNumber');
-    data.productionOrderNumber.should.be.String();
+    data.productionOrderNumber.should.instanceOf(String);
+
+    data.should.have.property('monitoringEventTypeId');
+    data.monitoringEventTypeId.should.instanceof(Object);
 
     data.should.have.property('monitoringEventType');
-    data.monitoringEventType.should.be.String();
+    data.monitoringEventType.should.instanceOf(Object);
+    validateMonitoringEventType(data.monitoringEventType);
 
     data.should.have.property('description');
-    data.description.should.be.String();
+    data.description.should.instanceOf(String);
 }

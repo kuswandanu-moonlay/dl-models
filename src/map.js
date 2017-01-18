@@ -21,7 +21,8 @@ module.exports = {
             Vat: 'vat',
             Budget: 'budget',
             Machine: 'machine',
-            Uster: 'uster'
+            Uster: 'uster',
+            MonitoringEventType: 'monitoring-event-type'
         },
         collection: {
             Buyer: 'buyers',
@@ -42,7 +43,8 @@ module.exports = {
             Uster: 'usters',
             LampStandard : 'lamp-standards',
             AccountBank : 'account-banks',
-            Instruction : 'instructions'
+            Instruction : 'instructions',
+            MonitoringEventType : 'monitoring-event-types'
         }
     },
     purchasing: {
