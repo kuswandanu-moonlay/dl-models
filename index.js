@@ -68,6 +68,11 @@ module.exports = {
             Kanban: require("./src/production/finishing-printing/kanban")
         }
     },
+    sales:{
+        SalesContract: require('./src/sales/sales-contract'),
+        SalesContractItem: require('./src/sales/sales-contract-item'),
+        SalesContractSubItem: require('./src/sales/sales-contract-sub-item')
+    },
     map: require('./src/map'),
     validator: require('./src/validator')
 }

@@ -7,30 +7,33 @@ module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
+    data.should.have.property('name');
+    data.name.should.instanceOf(String);
+
+    data.should.have.property('orderTypeId');
+    data.orderTypeId.should.instanceOf(Object);
+
+    data.should.have.property('orderType');
+    data.orderType.should.instanceOf(Object);
+    validateOrderType(data.orderType);
+
     data.should.have.property('materialId');
-    data.materialId.should.instanceof(Object);
+    data.materialId.should.instanceOf(Object);
 
     data.should.have.property('material');
-    data.material.should.instanceof(Object);
+    data.material.should.instanceOf(Object);
     validateProduct(data.material);
-    
-    data.should.have.property('orderTypeId');
-    data.orderTypeId.should.be.Object();
-    
-    data.should.have.property('orderType');
-    data.orderType.should.instanceof(Object);
-    validateOrderType(data.orderType);
-    
-    data.should.have.property('colorTypeId');
-    data.colorTypeId.should.be.Object();
-    
-    data.should.have.property('colorType');
-    data.colorType.should.instanceof(Object);
-    validateColorType(data.colorType);
 
     data.should.have.property('construction');
-    data.construction.should.be.String();
+    data.construction.should.instanceOf(String);
 
+    data.should.have.property('colorTypeId');
+    data.colorTypeId.should.instanceOf(Object);
+
+    data.should.have.property('colorType');
+    data.colorType.should.instanceOf(Object);
+    validateColorType(data.colorType);
+    
     data.should.have.property('steps');
-    data.steps.should.instanceOf(Array);
+    data.steps.should.be.Array();
 };

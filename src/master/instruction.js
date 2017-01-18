@@ -5,22 +5,21 @@ var Product = require('./product');
 var OrderType = require('./order-type');
 var ColorType = require('./color-type');
 
-module.exports = class instruction extends BaseModel{
-    constructor(source){
+module.exports = class Instruction extends BaseModel {
+    constructor(source) {
         super('instruction', '1.0.0');
-
-        this.materialId= {};
-        this.material = new Product();
-
-        this.orderTypeId={};
-        this.orderType=new OrderType();
-
-        this.colorTypeId={};
-        this.colorType=new ColorType();
-
-        this.construction = '';
-        this.steps=[];
         
+        // Define properties.
+        this.name = '';
+        this.orderTypeId = {};
+        this.orderType = new OrderType();
+        this.materialId = {};
+        this.material = new Product();
+        this.construction = '';
+        this.colorTypeId = {};
+        this.colorType = new ColorType();
+        this.steps = []; 
+
         this.copy(source);
     }
 };
