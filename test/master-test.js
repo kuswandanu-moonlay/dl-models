@@ -64,3 +64,8 @@ it("#13. Instruction should valid", function () {
     var Instruction = require('../src/master/instruction');
     validate.instruction(new Instruction());
 });
+
+it("#14. Machine Type should valid", function () {
+    var MachineType = require('../src/master/machine-type');
+    validate.machineType(new MachineType());
+});
