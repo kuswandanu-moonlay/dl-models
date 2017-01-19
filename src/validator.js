@@ -26,6 +26,7 @@ module.exports = {
                 lampStandard: require('./master/lamp-standard-validator'),
                 accountBank : require('./master/account-bank-validator'),
                 instruction: require('./master/instruction-validator'),
+                machineType:require('./master/machine-type-validator'),
                 orderType: require('./master/order-type-validator'),
                 processType: require('./master/process-type-validator'),
                 colorType: require('./master/color-type-validator'),
@@ -51,13 +52,13 @@ module.exports = {
                                 windingProductionOutput : require("./production/spinning/winding/winding-production-output-validator")
                         }
                 },
-                finishingPrinting:{
+                finishingPrinting : {
+                        dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
+                        kanban : require("./production/finishing-printing/kanban-validator"),
+                        partition : require("./production/finishing-printing/partition-validator"),
+                        salesContract: require("./production/finishing-printing/sales-contract-validator"),
                         productionOrder: require("./production/finishing-printing/production-order-validator"),
                         productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator"),
-                        salesContract: require("./production/finishing-printing/sales-contract-validator"),
-                        dailyOperation: require("./production/finishing-printing/daily-operation-validator"),
-                        partition: require("./production/finishing-printing/partition-validator"),
-                        kanban: require("./production/finishing-printing/kanban-validator")
                 },
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         }

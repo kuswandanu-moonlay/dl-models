@@ -1,4 +1,5 @@
 require("should"); 
+var validateDivision = require('./division-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -12,6 +13,7 @@ module.exports = function (data) {
     
     data.should.have.property('division');
     data.division.should.be.Object();
+    validateDivision(data.division);
 
     data.should.have.property('name');
     data.name.should.be.String();

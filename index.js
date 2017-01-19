@@ -25,10 +25,12 @@ module.exports = {
         LampStandard:require('./src/master/lamp-standard'),
         AccountBank:require('./src/master/account-bank'),
         Instruction:require('./src/master/instruction'),
+        MachineType:require('./src/master/machine-type'),
         OrderType:require('./src/master/order-type'),
         ProcessType:require('./src/master/process-type'),
         ColorType:require('./src/master/color-type'),
         Step:require('./src/master/step')
+
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -67,6 +69,11 @@ module.exports = {
             Partition: require("./src/production/finishing-printing/partition"),
             Kanban: require("./src/production/finishing-printing/kanban")
         }
+    },
+    sales:{
+        SalesContract: require('./src/sales/sales-contract'),
+        SalesContractItem: require('./src/sales/sales-contract-item'),
+        SalesContractSubItem: require('./src/sales/sales-contract-sub-item')
     },
     map: require('./src/map'),
     validator: require('./src/validator')

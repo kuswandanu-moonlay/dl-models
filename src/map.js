@@ -86,7 +86,7 @@ module.exports = {
                 DailySpinningProductionReport : 'daily-spinning-production-report'
             }
         },
-        finishingPrinting :{
+        finishingPrinting : {
             type:{
                 SalesContract : 'sales-contract',
                 DailyOperation : 'daily-operation'
@@ -95,6 +95,11 @@ module.exports = {
                 SalesContract : 'sales-contracts',
                 DailyOperation : 'daily-operations'
             }
+        }
+    },
+    sales:{
+        collection:{
+            SalesContract:'sales-contracts'
         }
     }
 }
