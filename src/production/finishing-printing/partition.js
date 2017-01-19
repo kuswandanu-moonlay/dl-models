@@ -9,6 +9,7 @@ module.exports = class Partition extends BaseModel {
         super('partition', '1.0.0');
 
         // Define properties.  
+        this.code = '';
         this.no = '';
         this.shift = '';
         this.stepId = {};
