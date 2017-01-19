@@ -26,7 +26,7 @@ module.exports = {
         AccountBank:require('./src/master/account-bank'),
         Instruction:require('./src/master/instruction'),
         MachineType:require('./src/master/machine-type'),
-        MachineTypeIndicator:require('./src/master/machine-type-Indicator'),
+        MachineTypeIndicator:require('./src/master/machine-type-indicator'),
         OrderType:require('./src/master/order-type'),
         ProcessType:require('./src/master/process-type'),
         ColorType:require('./src/master/color-type'),
