@@ -1,4 +1,5 @@
 require("should");
+var machineTypeIndicators = require('./machine-type-indicator-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -13,6 +14,10 @@ module.exports = function (data) {
     data.should.have.property('description');
     data.description.should.instanceOf(String);
 
-    data.should.have.property('indicator');
-    data.indicator.should.be.Array();
+    data.should.have.property('indicators');
+    data.indicators.should.be.Array();
+
+    for (var indicator of data.indicators) {
+        machineTypeIndicators(indicator);
+    }
 };
