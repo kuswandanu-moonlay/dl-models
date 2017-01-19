@@ -15,6 +15,6 @@ module.exports = class MachineType extends BaseModel {
 
         this.copy(source);
 
-        this.indicators = (this.indicators || []).map(indicators => new MachineTypeIndicator(indicators));;
+        this.indicators = (this.indicators || []).map(indicators => new MachineTypeIndicator(indicators));
     }
 };
