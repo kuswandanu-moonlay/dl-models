@@ -6,6 +6,9 @@ module.exports = function(data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
+    data.should.have.property('code');
+    data.code.should.be.String();
+
     data.should.have.property('no');
     data.no.should.be.String();
 
