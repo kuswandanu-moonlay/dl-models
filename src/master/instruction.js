@@ -9,14 +9,16 @@ module.exports = class instruction extends BaseModel{
     constructor(source){
         super('instruction', '1.0.0');
 
+        this.name='';
+
         this.materialId= {};
         this.material = new Product();
 
         this.orderTypeId={};
         this.orderType=new OrderType();
 
-        this.colorTypeId={};
-        this.colorType=new ColorType();
+        this.colorTypeId=null;
+        this.colorType=null;
 
         this.construction = '';
         this.steps=[];

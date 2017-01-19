@@ -7,6 +7,9 @@ module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
+    data.should.have.property('name');
+    data.name.should.be.String();
+
     data.should.have.property('materialId');
     data.materialId.should.instanceof(Object);
 
@@ -21,13 +24,6 @@ module.exports = function (data) {
     data.orderType.should.instanceof(Object);
     validateOrderType(data.orderType);
     
-    data.should.have.property('colorTypeId');
-    data.colorTypeId.should.be.Object();
-    
-    data.should.have.property('colorType');
-    data.colorType.should.instanceof(Object);
-    validateColorType(data.colorType);
-
     data.should.have.property('construction');
     data.construction.should.be.String();
 
