@@ -21,7 +21,6 @@ module.exports = class Instruction extends BaseModel {
         this.colorType=null;
 
         this.construction = '';
-        
         this.steps = []; 
 
         this.copy(source);

@@ -1,6 +1,5 @@
 require("should");
 var validateUom = require('../master/uom-validator');
-var validateColorType = require('../master/color-type-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
