@@ -1,5 +1,5 @@
 require("should");
-var validateProductionOrder = require('./production-order-validator');
+var validateProductionOrder = require('../../sales/production-order-validator');
 var validateKanban = require('./kanban-validator');
 var validateProduct = require("../../master/product-validator");
 var validateColorType = require("../../master/color-type-validator");

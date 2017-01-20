@@ -1,7 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var ProductionOrder = require("./production-order");
+var ProductionOrder = require("../../sales/production-order");
 var Kanban = require("./kanban");
 var Product = require("../../master/product");
 var ColorType = require("../../master/color-type");
