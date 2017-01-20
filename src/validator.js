@@ -61,8 +61,8 @@ module.exports = {
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         },
         sales:{
-                salesContract: require("./production/finishing-printing/sales-contract-validator"),
-                productionOrder: require("./production/finishing-printing/production-order-validator"),
-                productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator")
+                salesContract: require("./sales/sales-contract-validator"),
+                productionOrder: require("./sales/production-order-validator"),
+                productionOrderDetail: require("./sales/production-order-detail-validator")
         }
 };
