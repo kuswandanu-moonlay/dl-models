@@ -11,17 +11,12 @@ it("#02. Daily Operation Finishing Printing should valid", function () {
     validate.finishingPrinting.dailyOperation(new DailyOperation());
 });
 
-it("#03. Sales Contract should valid", function () {
-    var salesContract = require('../src/production/finishing-printing/sales-contract');
-    validate.finishingPrinting.salesContract(new salesContract());
-});
-
-it("#04. Output Hasil Produksi Spinning should valid", function () {
+it("#03. Output Hasil Produksi Spinning should valid", function () {
     var WindingProductionOutput = require('../src/production/spinning/winding/winding-production-output');
     validate.spinning.winding.windingProductionOutput(new WindingProductionOutput());
 });
 
-it("#05. Daily Operation Finishing Printing should valid", function () {
+it("#04. Daily Operation Finishing Printing should valid", function () {
     var DailyOperation = require('../src/production/finishing-printing/daily-operation');
     validate.finishingPrinting.dailyOperation(new DailyOperation());
 });

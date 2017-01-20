@@ -88,11 +88,9 @@ module.exports = {
         },
         finishingPrinting : {
             type:{
-                SalesContract : 'sales-contract',
                 DailyOperation : 'daily-operation'
             },
             collection:{
-                SalesContract : 'sales-contracts',
                 DailyOperation : 'daily-operations'
             }
         }

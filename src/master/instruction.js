@@ -16,8 +16,8 @@ module.exports = class Instruction extends BaseModel {
         this.materialId = {};
         this.material = new Product();
         this.construction = '';
-        this.colorTypeId = {};
-        this.colorType = new ColorType();
+        this.colorTypeId = null;
+        this.colorType = null;
         this.steps = []; 
 
         this.copy(source);

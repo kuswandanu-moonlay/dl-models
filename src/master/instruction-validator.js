@@ -1,7 +1,6 @@
 require("should");
 var validateOrderType=require('./order-type-validator');
 var validateProduct = require('./product-validator');
-var validateColorType=require('./color-type-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -26,13 +25,6 @@ module.exports = function (data) {
 
     data.should.have.property('construction');
     data.construction.should.instanceOf(String);
-
-    data.should.have.property('colorTypeId');
-    data.colorTypeId.should.instanceOf(Object);
-
-    data.should.have.property('colorType');
-    data.colorType.should.instanceOf(Object);
-    validateColorType(data.colorType);
     
     data.should.have.property('steps');
     data.steps.should.be.Array();
