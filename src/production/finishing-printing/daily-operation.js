@@ -1,7 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var ProductionOrder = require("./production-order");
+var ProductionOrder = require("../../sales/production-order");
 var Kanban = require("./kanban");
 var Product = require("../../master/product");
 var ColorType = require("../../master/color-type");
@@ -17,8 +17,8 @@ module.exports = class DailyOperation extends BaseModel {
         this.material = new Product();
         this.construction = '';
         this.color = '';
-        this.colorTypeId = {};
-        this.colorType = new ColorType();
+        this.colorTypeId = null;
+        this.colorType = null;
         this.kanban = new Kanban();
 
         this.copy(source);

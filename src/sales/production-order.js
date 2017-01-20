@@ -1,11 +1,11 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var Buyer = require('../../master/buyer');
-var Product = require('../../master/product');
-var OrderType = require('../../master/order-type');
-var ProcessType = require('../../master/process-type');
-var LampStandard = require('../../master/lamp-standard');
-var uom = require('../../master/uom');
+var Buyer = require('../master/buyer');
+var Product = require('../master/product');
+var OrderType = require('../master/order-type');
+var ProcessType = require('../master/process-type');
+var LampStandard = require('../master/lamp-standard');
+var uom = require('../master/uom');
 var ProductionOrderDetail=require('./production-order-detail');
 
 module.exports = class ProductionOrder extends BaseModel {

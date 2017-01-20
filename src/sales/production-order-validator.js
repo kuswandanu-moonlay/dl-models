@@ -1,12 +1,12 @@
 require("should");
-var validateBuyer = require('../../master/buyer-validator');
-var validateUom = require('../../master/uom-validator');
-var validateProduct = require('../../master/product-validator');
-var validateProcessType = require('../../master/process-type-validator');
-var validateOrderType = require('../../master/order-type-validator');
-var validateLamp=require ('../../master/lamp-standard-validator');
+var validateBuyer = require('../master/buyer-validator');
+var validateUom = require('../master/uom-validator');
+var validateProduct = require('../master/product-validator');
+var validateProcessType = require('../master/process-type-validator');
+var validateOrderType = require('../master/order-type-validator');
+var validateLamp=require ('../master/lamp-standard-validator');
 var validateDetail= require('./production-order-detail-validator');
-var validateInstruction = require('../../master/instruction-validator');
+var validateInstruction = require('../master/instruction-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);

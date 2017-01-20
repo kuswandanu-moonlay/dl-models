@@ -56,11 +56,13 @@ module.exports = {
                 finishingPrinting : {
                         dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
                         kanban : require("./production/finishing-printing/kanban-validator"),
-                        partition : require("./production/finishing-printing/partition-validator"),
-                        salesContract: require("./production/finishing-printing/sales-contract-validator"),
-                        productionOrder: require("./production/finishing-printing/production-order-validator"),
-                        productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator"),
-                },
-                dailySpinningProductionReport: require("./production/spinning/daily-spinning-production-report-validator")
+                        partition : require("./production/finishing-printing/partition-validator")
+                  },
+                dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
+        },
+        sales:{
+                salesContract: require("./sales/sales-contract-validator"),
+                productionOrder: require("./sales/production-order-validator"),
+                productionOrderDetail: require("./sales/production-order-detail-validator")
         }
 };
