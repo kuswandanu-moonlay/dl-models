@@ -17,8 +17,8 @@ module.exports = class DailyOperation extends BaseModel {
         this.material = new Product();
         this.construction = '';
         this.color = '';
-        this.colorTypeId = {};
-        this.colorType = new ColorType();
+        this.colorTypeId = null;
+        this.colorType = null;
         this.kanban = new Kanban();
 
         this.copy(source);

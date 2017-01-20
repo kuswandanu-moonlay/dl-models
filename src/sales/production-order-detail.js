@@ -1,7 +1,7 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var uom = require('../../master/uom');
-var ColorType = require('../../master/color-type');
+var uom = require('../master/uom');
+var ColorType = require('../master/color-type');
 
 module.exports = class ProductionOrderDetail extends BaseModel {
     constructor(source) {

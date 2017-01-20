@@ -28,13 +28,6 @@ module.exports = function(data) {
     data.should.have.property('color');
     data.color.should.be.String();
 
-    data.should.have.property('colorTypeId');
-    data.colorTypeId.should.instanceOf(Object);
-
-    data.should.have.property('colorType');
-    data.colorType.should.instanceOf(Object);
-    validateColorType(data.colorType);
-
     data.should.have.property('kanban');
     data.kanban.should.instanceOf(Object);
     validateKanban(data.kanban);

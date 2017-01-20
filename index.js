@@ -62,13 +62,15 @@ module.exports = {
             DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
         },
         finishingPrinting : {
-            ProductionOrder: require('./src/production/finishing-printing/production-order'),
-            ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
-            SalesContract: require("./src/production/finishing-printing/sales-contract"),
             DailyOperation: require("./src/production/finishing-printing/daily-operation"),
             Partition: require("./src/production/finishing-printing/partition"),
             Kanban: require("./src/production/finishing-printing/kanban")
         }
+    },
+    sales:{
+        ProductionOrder: require('./src/sales/production-order'),
+        ProductionOrderDetail: require('./src/sales/production-order-detail'),
+        SalesContract: require("./src/sales/sales-contract")
     },
     map: require('./src/map'),
     validator: require('./src/validator')
