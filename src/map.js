@@ -96,6 +96,9 @@ module.exports = {
         }
     },
     sales:{
+        type:{
+            SalesContract : 'sales-contract'
+        },
         collection:{
             SalesContract:'sales-contracts'
         }

@@ -14,7 +14,7 @@ module.exports = {
                 division: require("./master/division-validator"),
                 unit: require("./master/unit-validator"),
                 category: require("./master/category-validator"),
-                currency: require("./master/currency-validator"), 
+                currency: require("./master/currency-validator"),
                 vat: require("./master/vat-validator"),
                 budget: require('./master/budget-validator'),
                 threadSpecification: require('./master/thread-specification-validator'),
@@ -24,8 +24,10 @@ module.exports = {
                 yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
                 uster: require('./master/uster-validator'),
                 lampStandard: require('./master/lamp-standard-validator'),
-                accountBank : require('./master/account-bank-validator'),
+                accountBank: require('./master/account-bank-validator'),
                 instruction: require('./master/instruction-validator'),
+                machineType: require('./master/machine-type-validator'),
+                machineTypeIndicator: require('./master/machine-type-indicator-validator'),
                 orderType: require('./master/order-type-validator'),
                 processType: require('./master/process-type-validator'),
                 colorType: require('./master/color-type-validator'),
@@ -45,10 +47,10 @@ module.exports = {
                 purchaseRequestItem: require("./purchasing/purchase-request-item-validator")
         },
         production: {
-                spinning:{
-                        winding:{
-                                windingQualitySampling : require("./production/spinning/winding/winding-quality-sampling-validator"),
-                                windingProductionOutput : require("./production/spinning/winding/winding-production-output-validator")
+                spinning: {
+                        winding: {
+                                windingQualitySampling: require("./production/spinning/winding/winding-quality-sampling-validator"),
+                                windingProductionOutput: require("./production/spinning/winding/winding-production-output-validator")
                         }
                 },
                 finishingPrinting : {

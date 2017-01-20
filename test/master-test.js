@@ -109,3 +109,12 @@ it("#17. Step should valid", function () {
     var Step = require('../src/master/step');
     validate.step(new Step());
 });
+
+it("#18. Machine Type should valid", function () {
+    var MachineType = require('../src/master/machine-type');
+    validate.machineType(new MachineType());
+});
+it("#19. Machine Type Indicator should valid", function () {
+    var MachineTypeIndicator = require('../src/master/machine-type-indicator');
+    validate.machineTypeIndicator(new MachineTypeIndicator());
+});
