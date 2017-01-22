@@ -98,10 +98,6 @@ module.exports = {
                 MonitoringEvent : 'monitoring-events',
                 DailyOperation : 'daily-operation'
             },
-            collection:{
-                SalesContract : 'sales-contracts',
-                DailyOperation : 'daily-operations'
-            }
         }
     }
 }

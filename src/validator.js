@@ -57,6 +57,7 @@ module.exports = {
                         productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator"),
                         salesContract: require("./production/finishing-printing/sales-contract-validator"),
                         monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
+                        monitoringEventItem: require("./production/finishing-printing/monitoring-event-item-validator"),
                         dailyOperation: require("./production/finishing-printing/daily-operation-validator"),
                         partition: require("./production/finishing-printing/partition-validator"),
                         kanban: require("./production/finishing-printing/kanban-validator")

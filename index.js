@@ -65,6 +65,7 @@ module.exports = {
             ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
             SalesContract: require("./src/production/finishing-printing/sales-contract"),
             MonitoringEvent: require("./src/production/finishing-printing/monitoring-event"),
+            MonitoringEventItem: require("./src/production/finishing-printing/monitoring-event-item"),
             DailyOperation: require("./src/production/finishing-printing/daily-operation"),
             Partition: require("./src/production/finishing-printing/partition"),
             Kanban: require("./src/production/finishing-printing/kanban")
