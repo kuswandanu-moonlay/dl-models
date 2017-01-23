@@ -84,3 +84,8 @@ it("#17. Step should valid", function () {
     var Step = require('../src/master/step');
     validate.step(new Step());
 });
+
+it("#18. Monitoring Event Type should valid", function () {
+    var MonitoringEventType = require('../src/master/monitoring-event-type');
+    validate.monitoringEventType(new MonitoringEventType());
+});
