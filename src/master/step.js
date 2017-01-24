@@ -1,5 +1,4 @@
 'use strict';
-
 var BaseModel = require('model-toolkit').BaseModel;
 
 module.exports = class Step extends BaseModel {

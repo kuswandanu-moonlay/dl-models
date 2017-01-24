@@ -23,7 +23,8 @@ module.exports = {
             Machine: 'machine',
             Uster: 'uster',
             MonitoringEventType: 'monitoring-event-type',
-            Step : 'step'
+            Step : 'step',
+            MachineType:'machine-type',
         },
         collection: {
             Buyer: 'buyers',
@@ -49,7 +50,8 @@ module.exports = {
             OrderType : 'order-types',
             ProcessType : 'process-types',
             ColorType : 'color-types',
-            Step : 'steps'
+            Step : 'steps',
+            MachineSpesificationStandard : 'machine-spesification-standards'
         }
     },
     purchasing: {
@@ -88,17 +90,23 @@ module.exports = {
                 DailySpinningProductionReport : 'daily-spinning-production-report'
             }
         },
-        finishingPrinting :{
+        finishingPrinting : {
             type:{
-                SalesContract : 'sales-contract',
                 DailyOperation : 'daily-operation',
                 MonitoringEvent : 'monitoring-event'
             },
             collection:{
-                SalesContract : 'sales-contracts',
                 MonitoringEvent : 'monitoring-events',
-                DailyOperation : 'daily-operation'
+                DailyOperation : 'daily-operations'
             },
+        }
+    },
+    sales:{
+        type:{
+            SalesContract : 'sales-contract'
+        },
+        collection:{
+            SalesContract:'sales-contracts'
         }
     }
 }

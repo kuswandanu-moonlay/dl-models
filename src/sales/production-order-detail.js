@@ -1,7 +1,6 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var uom = require('../../master/uom');
-var ColorType = require('../../master/color-type');
+var uom = require('../master/uom');
 
 module.exports = class ProductionOrderDetail extends BaseModel {
     constructor(source) {
@@ -10,8 +9,8 @@ module.exports = class ProductionOrderDetail extends BaseModel {
         this.code='';
         this.colorRequest=''; //warna yang diminta
         this.colorTemplate=''; //acuan warna/desain
-        this.colorTypeId={};
-        this.colorType=new ColorType();
+        this.colorTypeId=null;
+        this.colorType=null;
         this.quantity=0;
         this.uomId={};
         this.uom=new uom();
