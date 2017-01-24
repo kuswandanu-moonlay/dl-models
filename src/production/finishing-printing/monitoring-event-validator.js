@@ -1,6 +1,6 @@
 require("should");
 var validateMachine = require('../../master/machine-validator');
-var validateProductionOrder = require('./production-order-validator');
+var validateProductionOrder = require('../../sales/production-order-validator');
 var validateMonitoringEventItem = require('./monitoring-event-item-validator');
 
 module.exports = function (data) {
