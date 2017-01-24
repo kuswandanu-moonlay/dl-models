@@ -48,7 +48,8 @@ module.exports = {
             OrderType : 'order-types',
             ProcessType : 'process-types',
             ColorType : 'color-types',
-            Step : 'steps'
+            Step : 'steps',
+            MachineSpesificationStandard : 'machine-spesification-standards'
         }
     },
     purchasing: {
