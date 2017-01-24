@@ -6,7 +6,6 @@ var validateProcessType = require('../master/process-type-validator');
 var validateOrderType = require('../master/order-type-validator');
 var validateLamp=require ('../master/lamp-standard-validator');
 var validateDetail= require('./production-order-detail-validator');
-var validateInstruction = require('../master/instruction-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
