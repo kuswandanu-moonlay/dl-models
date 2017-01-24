@@ -2,7 +2,7 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 var Machine = require('../../master/machine');
-var ProductionOrder = require('./production-order');
+var ProductionOrder = require('../../sales/production-order');
 var MonitoringEventItem = require('./monitoring-event-item');
 
 module.exports = class MonitoringEvent extends BaseModel {
