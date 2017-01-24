@@ -31,7 +31,8 @@ module.exports = {
                 orderType: require('./master/order-type-validator'),
                 processType: require('./master/process-type-validator'),
                 colorType: require('./master/color-type-validator'),
-                step: require('./master/step-validator')
+                step: require('./master/step-validator'),
+                machineSpesificationStandard: require('./master/machine-spesification-standard-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

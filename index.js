@@ -30,7 +30,8 @@ module.exports = {
         OrderType:require('./src/master/order-type'),
         ProcessType:require('./src/master/process-type'),
         ColorType:require('./src/master/color-type'),
-        Step:require('./src/master/step')
+        Step:require('./src/master/step'),
+        MachineSpesificationStandard:require('./src/master/machine-spesification-standard')
 
     },
     purchasing: {
