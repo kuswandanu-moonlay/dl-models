@@ -17,5 +17,4 @@ module.exports = function (data) {
     data.should.have.property('uom');
     data.uom.should.instanceof(Object);
     validateUom(data.uom);
-
 };

@@ -14,5 +14,5 @@ module.exports = class MachineSpesificationStandard extends BaseModel {
         this.uom = new Uom();
 
         this.copy(source);
-    };
-}
+    }
+};
