@@ -22,7 +22,8 @@ module.exports = {
             Budget: 'budget',
             Machine: 'machine',
             Uster: 'uster',
-            Step : 'step'
+            Step : 'step',
+            MachineType:'machine-type',
         },
         collection: {
             Buyer: 'buyers',

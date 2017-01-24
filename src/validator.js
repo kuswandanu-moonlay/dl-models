@@ -57,10 +57,10 @@ module.exports = {
                         dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
                         kanban : require("./production/finishing-printing/kanban-validator"),
                         partition : require("./production/finishing-printing/partition-validator")
-                  },
+                },
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         },
-        sales:{
+        sales : {
                 salesContract: require("./sales/sales-contract-validator"),
                 salesContractDetail: require("./sales/sales-contract-detail-validator"),
                 productionOrder: require("./sales/production-order-validator"),

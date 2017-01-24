@@ -1,7 +1,6 @@
 require("should");
 var validateOrderType=require('./order-type-validator');
 var validateProduct = require('./product-validator');
-var validateColorType=require('./color-type-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
