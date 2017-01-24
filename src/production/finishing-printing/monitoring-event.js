@@ -10,11 +10,11 @@ module.exports = class MonitoringEvent extends BaseModel {
         super('monitoring-event', '1.0.0');
 
         // Define properties.
+        this.code = '';
         this.date = new Date();
         this.timeInMillis = 0;
         this.machineId = {}; 
         this.machine = new Machine();
-        this.productionOrderNumber = '';
         this.productionOrder = new ProductionOrder();
         this.items = [];
 
