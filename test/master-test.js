@@ -124,3 +124,8 @@ it("#20. Machine Spesification Standard should valid", function () {
     var MachineSpesificationStandard = require('../src/master/machine-spesification-standard');
     validate.machineSpesificationStandard(new MachineSpesificationStandard());
 });
+
+it("#21. Monitoring Event Type should valid", function () {
+    var MonitoringEventType = require('../src/master/monitoring-event-type');
+    validate.monitoringEventType(new MonitoringEventType());
+});

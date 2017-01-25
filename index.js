@@ -25,6 +25,7 @@ module.exports = {
         LampStandard:require('./src/master/lamp-standard'),
         AccountBank:require('./src/master/account-bank'),
         Instruction:require('./src/master/instruction'),
+        MonitoringEventType:require("./src/master/monitoring-event-type"),
         MachineType:require('./src/master/machine-type'),
         MachineTypeIndicator:require('./src/master/machine-type-indicator'),
         OrderType:require('./src/master/order-type'),
@@ -64,6 +65,8 @@ module.exports = {
             DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
         },
         finishingPrinting : {
+            MonitoringEvent: require("./src/production/finishing-printing/monitoring-event"),
+            MonitoringEventItem: require("./src/production/finishing-printing/monitoring-event-item"),
             DailyOperation: require("./src/production/finishing-printing/daily-operation"),
             Partition: require("./src/production/finishing-printing/partition"),
             Kanban: require("./src/production/finishing-printing/kanban")
