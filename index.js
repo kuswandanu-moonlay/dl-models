@@ -68,7 +68,8 @@ module.exports = {
             MonitoringEvent: require("./src/production/finishing-printing/monitoring-event"),
             DailyOperation: require("./src/production/finishing-printing/daily-operation"),
             Partition: require("./src/production/finishing-printing/partition"),
-            Kanban: require("./src/production/finishing-printing/kanban")
+            Kanban: require("./src/production/finishing-printing/kanban"),
+            MonitoringSpecificationMachine:require("./src/production/finishing-printing/monitoring-specification-machine")
         }
     },
     sales:{
