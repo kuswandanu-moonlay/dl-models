@@ -20,3 +20,8 @@ it("#04. Daily Operation Finishing Printing should valid", function () {
     var DailyOperation = require('../src/production/finishing-printing/daily-operation');
     validate.finishingPrinting.dailyOperation(new DailyOperation());
 });
+
+it("#05. Monitoring Specification Finishing Printing Machine should valid", function () {
+    var MonitoringSpecificationMachine = require('../src/production/finishing-printing/monitoring-specification-machine');
+    validate.finishingPrinting.monitoringSpecificationMachine(new MonitoringSpecificationMachine());
+});

@@ -89,10 +89,12 @@ module.exports = {
         },
         finishingPrinting : {
             type:{
-                DailyOperation : 'daily-operation'
+                DailyOperation : 'daily-operation',
+                MonitoringSpecificationMachine:'monitoring-specification-machine'
             },
             collection:{
-                DailyOperation : 'daily-operations'
+                DailyOperation : 'daily-operations',
+                MonitoringSpecificationMachine:'monitoring-specification-machine'
             }
         }
     },
