@@ -114,7 +114,18 @@ it("#18. Machine Type should valid", function () {
     var MachineType = require('../src/master/machine-type');
     validate.machineType(new MachineType());
 });
+
 it("#19. Machine Type Indicator should valid", function () {
     var MachineTypeIndicator = require('../src/master/machine-type-indicator');
     validate.machineTypeIndicator(new MachineTypeIndicator());
+});
+
+it("#20. Machine Spesification Standard should valid", function () {
+    var MachineSpesificationStandard = require('../src/master/machine-spesification-standard');
+    validate.machineSpesificationStandard(new MachineSpesificationStandard());
+});
+
+it("#21. Monitoring Event Type should valid", function () {
+    var MonitoringEventType = require('../src/master/monitoring-event-type');
+    validate.monitoringEventType(new MonitoringEventType());
 });

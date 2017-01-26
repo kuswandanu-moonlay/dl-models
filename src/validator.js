@@ -26,12 +26,14 @@ module.exports = {
                 lampStandard: require('./master/lamp-standard-validator'),
                 accountBank: require('./master/account-bank-validator'),
                 instruction: require('./master/instruction-validator'),
+                monitoringEventType: require("./master/monitoring-event-type-validator"),
                 machineType: require('./master/machine-type-validator'),
                 machineTypeIndicator: require('./master/machine-type-indicator-validator'),
                 orderType: require('./master/order-type-validator'),
                 processType: require('./master/process-type-validator'),
                 colorType: require('./master/color-type-validator'),
-                step: require('./master/step-validator')
+                step: require('./master/step-validator'),
+                machineSpesificationStandard: require('./master/machine-spesification-standard-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -53,7 +55,9 @@ module.exports = {
                                 windingProductionOutput: require("./production/spinning/winding/winding-production-output-validator")
                         }
                 },
-                finishingPrinting : {
+                finishingPrinting:{
+                        monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
+                        monitoringEventItem: require("./production/finishing-printing/monitoring-event-item-validator"),
                         dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
                         kanban : require("./production/finishing-printing/kanban-validator"),
                         partition : require("./production/finishing-printing/partition-validator"),
