@@ -1,7 +1,7 @@
 require("should");
 var validateMachine = require('../../master/machine-validator');
 var validateProductionOrder = require('../../sales/production-order-validator');
-var validateMonitoringEventItem = require('./monitoring-event-item-validator');
+var validateMonitoringEventType = require('../../master/monitoring-event-type-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -10,11 +10,17 @@ module.exports = function (data) {
     data.should.have.property('code');
     data.code.should.instanceof(String);
 
-    data.should.have.property('date');
-    data.date.should.instanceof(Date);
+    data.should.have.property('dateStart');
+    data.dateStart.should.instanceof(Date);
 
-    data.should.have.property('timeInMillis');
-    data.timeInMillis.should.instanceof(Number);
+    data.should.have.property('timeInMillisStart');
+    data.timeInMillisStart.should.instanceof(Number);
+
+    data.should.have.property('dateEnd');
+    data.dateEnd.should.instanceof(Date);
+
+    data.should.have.property('timeInMillisEnd');
+    data.timeInMillisEnd.should.instanceof(Number);
 
     data.should.have.property('machineId');
     data.machineId.should.instanceof(Object);
@@ -27,8 +33,13 @@ module.exports = function (data) {
     data.productionOrder.should.instanceof(Object);
     validateProductionOrder(data.productionOrder);
 
-    for (var item of data.items) {
-        validateMonitoringEventItem(item);
-    }
-    
+    data.should.have.property('monitoringEventTypeId');
+    data.monitoringEventTypeId.should.instanceof(Object);
+
+    data.should.have.property('monitoringEventType');
+    data.monitoringEventType.should.instanceof(Object);
+    validateMonitoringEventType(data.monitoringEventType);
+
+    data.should.have.property('remark');
+    data.remark.should.instanceOf(String);
 }

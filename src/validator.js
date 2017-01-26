@@ -57,7 +57,6 @@ module.exports = {
                 },
                 finishingPrinting:{
                         monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
-                        monitoringEventItem: require("./production/finishing-printing/monitoring-event-item-validator"),
                         dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
                         kanban : require("./production/finishing-printing/kanban-validator"),
                         partition : require("./production/finishing-printing/partition-validator")

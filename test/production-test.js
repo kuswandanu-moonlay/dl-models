@@ -21,12 +21,7 @@ it("#04. Daily Operation Finishing Printing should valid", function () {
     validate.finishingPrinting.dailyOperation(new DailyOperation());
 });
 
-it("#05. Monitoring Event Item Finishing Printing should valid", function () {
-    var MonitoringEventItem = require('../src/production/finishing-printing/monitoring-event-item');
-    validate.finishingPrinting.monitoringEventItem(new MonitoringEventItem());
-});
-
-it("#06. Monitoring Event Finishing Printing should valid", function () {
+it("#05. Monitoring Event Finishing Printing should valid", function () {
     var MonitoringEvent = require('../src/production/finishing-printing/monitoring-event');
     validate.finishingPrinting.monitoringEvent(new MonitoringEvent());
 });
