@@ -3,7 +3,7 @@
 var BaseModel = require('model-toolkit').BaseModel;
 var Machine = require('../../master/machine');
 var ProductionOrder = require('../../sales/production-order');
-var MonitoringEventItem = require('./monitoring-event-item');
+var MonitoringEventType = require('../../master/monitoring-event-type');
 
 module.exports = class MonitoringEvent extends BaseModel {
     constructor(source) {
@@ -11,15 +11,17 @@ module.exports = class MonitoringEvent extends BaseModel {
 
         // Define properties.
         this.code = '';
-        this.date = new Date();
-        this.timeInMillis = 0;
+        this.dateStart = new Date();
+        this.timeInMillisStart = 0;
+        this.dateEnd = new Date();
+        this.timeInMillisEnd = 0;
         this.machineId = {}; 
         this.machine = new Machine();
         this.productionOrder = new ProductionOrder();
-        this.items = [];
+        this.monitoringEventTypeId = {}; 
+        this.monitoringEventType = new MonitoringEventType();
+        this.remark = '';
 
         this.copy(source);
-
-        this.items = (this.items || []).map(item => new MonitoringEventItem(item));
     }
 };
