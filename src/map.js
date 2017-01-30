@@ -51,7 +51,11 @@ module.exports = {
             ProcessType : 'process-types',
             ColorType : 'color-types',
             Step : 'steps',
-            MachineSpesificationStandard : 'machine-spesification-standards'
+            MachineSpesificationStandard : 'machine-spesification-standards',
+            MaterialConstruction : 'material-constructions',
+            YarnMaterial : 'yarn-materials',
+            FinishType: 'finish-types',
+            StandardTest: 'standard-test'
         }
     },
     purchasing: {
