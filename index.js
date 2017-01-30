@@ -32,7 +32,11 @@ module.exports = {
         ProcessType:require('./src/master/process-type'),
         ColorType:require('./src/master/color-type'),
         Step:require('./src/master/step'),
-        MachineSpesificationStandard:require('./src/master/machine-spesification-standard')
+        MachineSpesificationStandard:require('./src/master/machine-spesification-standard'),
+        MaterialConstruction:require('./src/master/material-construction'),
+        YarnMaterial:require('./src/master/yarn-material'),
+        FinishType:require('./src/master/finish-type'),
+        StandardTest:require('./src/master/standard-test')
 
     },
     purchasing: {
