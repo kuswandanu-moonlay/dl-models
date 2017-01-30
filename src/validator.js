@@ -33,7 +33,11 @@ module.exports = {
                 processType: require('./master/process-type-validator'),
                 colorType: require('./master/color-type-validator'),
                 step: require('./master/step-validator'),
-                machineSpesificationStandard: require('./master/machine-spesification-standard-validator')
+                machineSpesificationStandard: require('./master/machine-spesification-standard-validator'),
+                materialConstruction: require('./master/material-construction-validator'),
+                yarnMaterial: require('./master/yarn-material-validator'),
+                finishType: require('./master/finish-type-validator'),
+                standardTest: require('./master/standard-test-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

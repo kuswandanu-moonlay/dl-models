@@ -43,15 +43,19 @@ module.exports = {
             LotMachine: 'lot-machines',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
-            LampStandard: 'lamp-standards',
-            AccountBank: 'account-banks',
-            Instruction: 'instructions',
-            MonitoringEventType: 'monitoring-event-types',
-            OrderType: 'order-types',
-            ProcessType: 'process-types',
-            ColorType: 'color-types',
-            Step: 'steps',
-            MachineSpesificationStandard: 'machine-spesification-standards'
+            LampStandard : 'lamp-standards',
+            AccountBank : 'account-banks',
+            Instruction : 'instructions',
+            MonitoringEventType : 'monitoring-event-types',
+            OrderType : 'order-types',
+            ProcessType : 'process-types',
+            ColorType : 'color-types',
+            Step : 'steps',
+            MachineSpesificationStandard : 'machine-spesification-standards',
+            MaterialConstruction : 'material-constructions',
+            YarnMaterial : 'yarn-materials',
+            FinishType: 'finish-types',
+            StandardTest: 'standard-test'
         }
     },
     purchasing: {
