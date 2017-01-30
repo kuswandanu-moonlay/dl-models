@@ -3,7 +3,8 @@ module.exports = {
         auth: {
                 account: require("./auth/account-validator"),
                 profile: require("./auth/profile-validator"),
-                role: require("./auth/role-validator")
+                role: require("./auth/role-validator"),
+                apiEndpoint: require("./auth/api-endpoint-validator")
         },
         master: {
                 product: require("./master/product-validator"),
@@ -13,7 +14,7 @@ module.exports = {
                 division: require("./master/division-validator"),
                 unit: require("./master/unit-validator"),
                 category: require("./master/category-validator"),
-                currency: require("./master/currency-validator"), 
+                currency: require("./master/currency-validator"),
                 vat: require("./master/vat-validator"),
                 budget: require('./master/budget-validator'),
                 threadSpecification: require('./master/thread-specification-validator'),
@@ -23,8 +24,20 @@ module.exports = {
                 yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
                 uster: require('./master/uster-validator'),
                 lampStandard: require('./master/lamp-standard-validator'),
-                accountBank : require('./master/account-bank-validator'),
+                accountBank: require('./master/account-bank-validator'),
                 instruction: require('./master/instruction-validator'),
+                monitoringEventType: require("./master/monitoring-event-type-validator"),
+                machineType: require('./master/machine-type-validator'),
+                machineTypeIndicator: require('./master/machine-type-indicator-validator'),
+                orderType: require('./master/order-type-validator'),
+                processType: require('./master/process-type-validator'),
+                colorType: require('./master/color-type-validator'),
+                step: require('./master/step-validator'),
+                machineSpesificationStandard: require('./master/machine-spesification-standard-validator'),
+                materialConstruction: require('./master/material-construction-validator'),
+                yarnMaterial: require('./master/yarn-material-validator'),
+                finishType: require('./master/finish-type-validator'),
+                standardTest: require('./master/standard-test-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -40,18 +53,24 @@ module.exports = {
                 purchaseRequestItem: require("./purchasing/purchase-request-item-validator")
         },
         production: {
-                spinning:{
-                        winding:{
-                                windingQualitySampling : require("./production/spinning/winding/winding-quality-sampling-validator"),
-                                windingProductionOutput : require("./production/spinning/winding/winding-production-output-validator")
+                spinning: {
+                        winding: {
+                                windingQualitySampling: require("./production/spinning/winding/winding-quality-sampling-validator"),
+                                windingProductionOutput: require("./production/spinning/winding/winding-production-output-validator")
                         }
                 },
                 finishingPrinting:{
-                        productionOrder: require("./production/finishing-printing/production-order-validator"),
-                        productionOrderDetail: require("./production/finishing-printing/production-order-detail-validator"),
-                        salesContract: require("./production/finishing-printing/sales-contract-validator")
-
+                        monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
+                        dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
+                        kanban : require("./production/finishing-printing/kanban-validator"),
+                        partition : require("./production/finishing-printing/partition-validator"),
+                        monitoringSpecificationMachine:require("./production/finishing-printing/monitoring-specification-machine-validator")
                 },
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
+        },
+        sales : {
+                salesContract: require("./sales/sales-contract-validator"),
+                productionOrder: require("./sales/production-order-validator"),
+                productionOrderDetail: require("./sales/production-order-detail-validator")
         }
 };

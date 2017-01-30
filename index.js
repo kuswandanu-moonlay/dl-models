@@ -2,7 +2,8 @@ module.exports = {
     auth: {
         Account: require('./src/auth/account'),
         Profile: require('./src/auth/profile'),
-        Role: require('./src/auth/role')
+        Role: require('./src/auth/role'),
+        ApiEndpoint: require('./src/auth/api-endpoint')
     },
     master: {
         Product: require('./src/master/product'),
@@ -23,7 +24,20 @@ module.exports = {
         UsterClassification:require('./src/master/uster-classification'),
         LampStandard:require('./src/master/lamp-standard'),
         AccountBank:require('./src/master/account-bank'),
-        Instruction:require('./src/master/instruction')
+        Instruction:require('./src/master/instruction'),
+        MonitoringEventType:require("./src/master/monitoring-event-type"),
+        MachineType:require('./src/master/machine-type'),
+        MachineTypeIndicator:require('./src/master/machine-type-indicator'),
+        OrderType:require('./src/master/order-type'),
+        ProcessType:require('./src/master/process-type'),
+        ColorType:require('./src/master/color-type'),
+        Step:require('./src/master/step'),
+        MachineSpesificationStandard:require('./src/master/machine-spesification-standard'),
+        MaterialConstruction:require('./src/master/material-construction'),
+        YarnMaterial:require('./src/master/yarn-material'),
+        FinishType:require('./src/master/finish-type'),
+        StandardTest:require('./src/master/standard-test')
+
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -55,10 +69,17 @@ module.exports = {
             DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
         },
         finishingPrinting : {
-            ProductionOrder: require('./src/production/finishing-printing/production-order'),
-            ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
-            SalesContract: require("./src/production/finishing-printing/sales-contract")
+            MonitoringEvent: require("./src/production/finishing-printing/monitoring-event"),
+            DailyOperation: require("./src/production/finishing-printing/daily-operation"),
+            Partition: require("./src/production/finishing-printing/partition"),
+            Kanban: require("./src/production/finishing-printing/kanban"),
+            MonitoringSpecificationMachine:require("./src/production/finishing-printing/monitoring-specification-machine")
         }
+    },
+    sales:{
+        ProductionOrder: require('./src/sales/production-order'),
+        ProductionOrderDetail: require('./src/sales/production-order-detail'),
+        SalesContract: require("./src/sales/sales-contract")
     },
     map: require('./src/map'),
     validator: require('./src/validator')

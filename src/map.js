@@ -3,11 +3,13 @@ module.exports = {
         type: {
             Account: 'account',
             Profile: 'profile',
-            Role: 'role'
+            Role: 'role',
+            ApiEndpoint: 'api-endpoint'
         },
         collection: {
             Account: 'accounts',
-            Role: 'roles'
+            Role: 'roles',
+            ApiEndpoint: 'api-endpoints'
         }
     },
     master: {
@@ -19,7 +21,10 @@ module.exports = {
             Vat: 'vat',
             Budget: 'budget',
             Machine: 'machine',
-            Uster: 'uster'
+            Uster: 'uster',
+            MonitoringEventType: 'monitoring-event-type',
+            Step: 'step',
+            MachineType: 'machine-type',
         },
         collection: {
             Buyer: 'buyers',
@@ -33,14 +38,24 @@ module.exports = {
             Currency: 'currencies',
             Vat: 'vats',
             Budget: 'budgets',
-            ThreadSpecification : 'thread-specifications',
+            ThreadSpecification: 'thread-specifications',
             UsterClassification: 'uster-classifications',
             LotMachine: 'lot-machines',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
             LampStandard : 'lamp-standards',
             AccountBank : 'account-banks',
-            Instruction : 'instructions'
+            Instruction : 'instructions',
+            MonitoringEventType : 'monitoring-event-types',
+            OrderType : 'order-types',
+            ProcessType : 'process-types',
+            ColorType : 'color-types',
+            Step : 'steps',
+            MachineSpesificationStandard : 'machine-spesification-standards',
+            MaterialConstruction : 'material-constructions',
+            YarnMaterial : 'yarn-materials',
+            FinishType: 'finish-types',
+            StandardTest: 'standard-test'
         }
     },
     purchasing: {
@@ -48,7 +63,7 @@ module.exports = {
             PurchaseOrder: 'purchase-order',
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
-            UnitPaymentOrder:'unit-payment-order',
+            UnitPaymentOrder: 'unit-payment-order',
         },
         collection: {
             PurchaseOrder: 'purchase-orders',
@@ -56,36 +71,49 @@ module.exports = {
             DeliveryOrder: 'delivery-orders',
             UnitReceiptNote: 'unit-receipt-notes',
             PurchaseRequest: 'purchase-requests',
-            UnitPaymentCorrectionNote:'unit-payment-correction-notes',
-            UnitPaymentOrder:'unit-payment-orders'
+            UnitPaymentCorrectionNote: 'unit-payment-correction-notes',
+            UnitPaymentOrder: 'unit-payment-orders'
         }
     },
-    production:{
-        spinning : {
-            winding : {
-                type:{
-                    WindingQualitySampling : 'winding-quality-sampling',
-                    WindingProductionOutput : 'winding-production-output'
+    production: {
+        spinning: {
+            winding: {
+                type: {
+                    WindingQualitySampling: 'winding-quality-sampling',
+                    WindingProductionOutput: 'winding-production-output'
                 },
-                collection:{
-                    WindingQualitySampling : 'winding-quality-samplings',
-                    WindingProductionOutput : 'winding-production-outputs'
+                collection: {
+                    WindingQualitySampling: 'winding-quality-samplings',
+                    WindingProductionOutput: 'winding-production-outputs'
                 }
             },
-            type : {
-                DailySpinningProductionReport : 'daily-spinning-production-report'
+            type: {
+                DailySpinningProductionReport: 'daily-spinning-production-report'
             },
             collection: {
-                DailySpinningProductionReport : 'daily-spinning-production-report'
+                DailySpinningProductionReport: 'daily-spinning-production-report'
             }
         },
-        finishingPrinting :{
-            type:{
-                SalesContract : 'sales-contract'
+        finishingPrinting: {
+            type: {
+                DailyOperation: 'daily-operation',
+
+                MonitoringSpecificationMachine: 'monitoring-specification-machine'
             },
-            collection:{
-                SalesContract : 'sales-contracts'
+            collection: {
+                MonitoringEvent: 'monitoring-events',
+                DailyOperation: 'daily-operations',
+                MonitoringSpecificationMachine: 'monitoring-specification-machine'
             }
+
+        },
+    },
+    sales: {
+        type: {
+            SalesContract: 'sales-contract'
+        },
+        collection: {
+            SalesContract: 'sales-contracts'
         }
     }
 }

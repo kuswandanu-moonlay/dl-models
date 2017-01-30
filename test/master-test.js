@@ -60,7 +60,92 @@ it("#12. Account Bank should valid", function () {
     validate.accountBank(new AccountBank());
 });
 
-it("#13. Instruction should valid", function () {
+it("#13. Step should valid", function () {
+    var Step = require('../src/master/step');
+    validate.step(new Step());
+});
+
+it("#14. Instruction should valid", function () {
     var Instruction = require('../src/master/instruction');
     validate.instruction(new Instruction());
+});
+
+it("#15. Order Type should valid", function () {
+    var OrderType = require('../src/master/order-type');
+    validate.orderType(new OrderType());
+});
+
+it("#16. Process Type should valid", function () {
+    var ProcessType = require('../src/master/process-type');
+    validate.processType(new ProcessType());
+});
+
+it("#17. Color Type should valid", function () {
+    var ColorType = require('../src/master/color-type');
+    validate.colorType(new ColorType());  
+});
+
+it("#18. Instruction should valid", function () {
+    var Instruction = require('../src/master/instruction');
+    validate.instruction(new Instruction());
+});
+
+it("#14. Order Type should valid", function () {
+    var OrderType = require('../src/master/order-type');
+    validate.orderType(new OrderType());
+});
+
+it("#15. Process Type should valid", function () {
+    var ProcessType = require('../src/master/process-type');
+    validate.processType(new ProcessType());
+});
+
+it("#16. Color Type should valid", function () {
+    var ColorType = require('../src/master/color-type');
+    validate.colorType(new ColorType());
+});
+
+it("#17. Step should valid", function () {
+    var Step = require('../src/master/step');
+    validate.step(new Step());
+});
+
+it("#18. Machine Type should valid", function () {
+    var MachineType = require('../src/master/machine-type');
+    validate.machineType(new MachineType());
+});
+
+it("#19. Machine Type Indicator should valid", function () {
+    var MachineTypeIndicator = require('../src/master/machine-type-indicator');
+    validate.machineTypeIndicator(new MachineTypeIndicator());
+});
+
+it("#20. Machine Spesification Standard should valid", function () {
+    var MachineSpesificationStandard = require('../src/master/machine-spesification-standard');
+    validate.machineSpesificationStandard(new MachineSpesificationStandard());
+});
+
+it("#21. Monitoring Event Type should valid", function () {
+    var MonitoringEventType = require('../src/master/monitoring-event-type');
+    validate.monitoringEventType(new MonitoringEventType());
+});
+
+it("#22. Material Contruction should valid", function () {
+    var MaterialConstruction = require('../src/master/material-construction');
+    validate.materialConstruction(new MaterialConstruction());
+});
+
+it("#23. Yarn Material should valid", function () {
+    var YarnMaterial = require('../src/master/yarn-material');
+    validate.yarnMaterial(new YarnMaterial());
+});
+
+it("#24. Finish Type should valid", function () {
+    var FinishType = require('../src/master/finish-type');
+    validate.finishType(new FinishType());
+});
+
+it("#25. Standard Test should valid", function () {
+    var StandardTest = require('../src/master/standard-test');
+    validate.standardTest(new StandardTest());
 });

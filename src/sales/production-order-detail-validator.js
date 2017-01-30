@@ -1,5 +1,5 @@
 require("should");
-var validateUom = require('../../master/uom-validator');
+var validateUom = require('../master/uom-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -11,6 +11,9 @@ module.exports = function (data) {
     data.should.have.property('colorRequest');
     data.colorRequest.should.instanceOf(String);
 
+    data.should.have.property('colorTemplate');
+    data.colorTemplate.should.instanceOf(String);
+
     data.should.have.property('quantity');
     data.quantity.should.instanceOf(Number);
 
@@ -21,4 +24,4 @@ module.exports = function (data) {
     data.uom.should.instanceOf(Object);
     validateUom(data.uom);
 
-}
+};

@@ -1,5 +1,6 @@
 'use strict';
 
+
 var BaseModel = require('model-toolkit').BaseModel;
 
 module.exports = class AccountBank extends BaseModel {

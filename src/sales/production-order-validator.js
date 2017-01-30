@@ -1,9 +1,12 @@
 require("should");
-var validateBuyer = require('../../master/buyer-validator');
-var validateUom = require('../../master/uom-validator');
-var validateLamp=require ('../../master/lamp-standard-validator');
+var validateBuyer = require('../master/buyer-validator');
+var validateUom = require('../master/uom-validator');
+var validateProduct = require('../master/product-validator');
+var validateProcessType = require('../master/process-type-validator');
+var validateOrderType = require('../master/order-type-validator');
+var validateLamp=require ('../master/lamp-standard-validator');
 var validateDetail= require('./production-order-detail-validator');
-var validateInstruction = require('../../master/instruction-validator');
+var validateInstruction = require('../master/instruction-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -22,24 +25,29 @@ module.exports = function (data) {
     data.buyer.should.instanceof(Object);
     validateBuyer(data.buyer);
 
-    data.should.have.property('instructionId');
-    data.instructionId.should.instanceof(Object);
-
-    data.should.have.property('instruction');
-    data.instruction.should.instanceof(Object);
-    validateInstruction(data.instruction);
+    data.should.have.property('processTypeId');
+    data.processTypeId.should.instanceof(Object);
 
     data.should.have.property('processType');
-    data.processType.should.be.String();
+    data.processType.should.instanceof(Object);
+    validateProcessType(data.processType);
+
+    data.should.have.property('orderTypeId');
+    data.orderTypeId.should.instanceof(Object);
 
     data.should.have.property('orderType');
-    data.orderType.should.be.String();
+    data.orderType.should.instanceof(Object);
+    validateOrderType(data.orderType);
 
     data.should.have.property('construction');
     data.construction.should.be.String();
 
+    data.should.have.property('materialId');
+    data.materialId.should.instanceof(Object);
+
     data.should.have.property('material');
-    data.material.should.be.String();
+    data.material.should.instanceof(Object);
+    validateProduct(data.material);
 
     data.should.have.property('orderQuantity');
     data.orderQuantity.should.instanceOf(Number);
@@ -90,6 +98,9 @@ module.exports = function (data) {
 
     data.should.have.property('remark');
     data.remark.should.be.String();
+
+    data.should.have.property('isUsed');
+    data.isUsed.should.instanceOf(Boolean);
 
     data.should.have.property('details');
     data.details.should.instanceOf(Array);
