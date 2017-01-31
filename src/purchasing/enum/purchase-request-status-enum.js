@@ -19,17 +19,17 @@ module.exports =
         },
         'PROCESSING': {
             'name': 'PROCESSING',
-            'value': 3,
+            'value': 7,
             'label': 'Sudah diterima Pembelian'
         },
         'ORDERED': {
             'name': 'ORDERED',
-            'value': 4,
+            'value': 3,
             'label': 'Sudah diorder ke Supplier'
         },
         'ARRIVING': {
             'name': 'ARRIVING',
-            'value': 5,
+            'value': 4,
             'label': 'Barang sudah datang'
         },
         'PREMATURE': {
