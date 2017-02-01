@@ -2,6 +2,7 @@ require("should");
 var validateUnit = require('./unit-validator');
 var validateMachineType = require('./machine-type-validator');
 var validateStep = require('./step-validator');
+var validateMachineEvent = require('./machine-event-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -44,4 +45,7 @@ module.exports = function (data) {
     data.machineType.should.instanceOf(Object);
     validateMachineType(data.machineType);
 
+    for (var machineEvent of data.machineEvents) {
+        validateMachineEvent(machineEvent);
+    }
 };
