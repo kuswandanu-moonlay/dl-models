@@ -1,5 +1,6 @@
 require("should");
 var validateMachineType = require('../../master/machine-type-validator');
+var validateMonitoringSpecfificationMachineItem=require("./monitoring-specification-machine-item-validator");
 
 module.exports = function (data) {
 
@@ -21,4 +22,15 @@ module.exports = function (data) {
     data.should.have.property('machineType');
     data.machineType.should.instanceof(Object);
     validateMachineType(data.machineType);
+
+    data.should.have.property('items');
+    data.items.should.instanceof(Array);
+
+    for (var item of data.items) {
+        validateMonitoringSpecfificationMachineItem(item);
+    }
+
+
+
+
 };
