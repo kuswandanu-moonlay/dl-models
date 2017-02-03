@@ -12,6 +12,9 @@ module.exports = function (data) {
     data.dataType.should.instanceOf(String);
 
     data.should.have.property('defaultValue');
+    data.defaultValue.should.instanceOf(String);
 
+    data.should.have.property('value');
+    data.value.should.instanceOf(String);
 
 };
