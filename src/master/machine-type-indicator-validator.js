@@ -12,6 +12,4 @@ module.exports = function (data) {
     data.dataType.should.instanceOf(String);
 
     data.should.have.property('defaultValue');
-
-
 };
