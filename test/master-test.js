@@ -125,7 +125,27 @@ it("#20. Machine Spesification Standard should valid", function () {
     validate.machineSpesificationStandard(new MachineSpesificationStandard());
 });
 
-it("#21. Monitoring Event Type should valid", function () {
-    var MonitoringEventType = require('../src/master/monitoring-event-type');
-    validate.monitoringEventType(new MonitoringEventType());
+it("#21. Machine Event should valid", function () {
+    var MachineEvent = require('../src/master/machine-event');
+    validate.machineEvent(new MachineEvent());
+});
+
+it("#22. Material Contruction should valid", function () {
+    var MaterialConstruction = require('../src/master/material-construction');
+    validate.materialConstruction(new MaterialConstruction());
+});
+
+it("#23. Yarn Material should valid", function () {
+    var YarnMaterial = require('../src/master/yarn-material');
+    validate.yarnMaterial(new YarnMaterial());
+});
+
+it("#24. Finish Type should valid", function () {
+    var FinishType = require('../src/master/finish-type');
+    validate.finishType(new FinishType());
+});
+
+it("#25. Standard Test should valid", function () {
+    var StandardTest = require('../src/master/standard-test');
+    validate.standardTest(new StandardTest());
 });
