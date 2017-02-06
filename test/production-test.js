@@ -30,4 +30,3 @@ it("#06. Monitoring Specification Finishing Printing Machine should valid", func
     var MonitoringSpecificationMachine = require('../src/production/finishing-printing/monitoring-specification-machine');
     validate.finishingPrinting.monitoringSpecificationMachine(new MonitoringSpecificationMachine());
 });
-

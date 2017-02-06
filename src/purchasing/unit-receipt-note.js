@@ -21,6 +21,7 @@ module.exports = class UnitReceiptNote extends BaseModel {
         this.deliveryOrder = new DeliveryOrder();
         this.remark = '';
         this.items = [];
+        this.isPaid = false;
         this.copy(source);
 
         this.items = (this.items || []).map(item => new UnitReceiptNoteItem(item)); 
