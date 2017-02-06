@@ -68,9 +68,7 @@ module.exports = class ProductionOrder extends BaseModel {
 
         this.articleFabricEdge=''; //tulisan pinggir kain
         this.packingInstruction='';
-        this.salesStaffName=
         this.materialWidth='';
-        this.rollLength='';
         this.sample='';
         this.deliveryDate=new Date();
         this.remark='';

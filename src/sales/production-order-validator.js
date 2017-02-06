@@ -116,9 +116,6 @@ module.exports = function (data) {
     data.should.have.property('shrinkageStandard');
     data.shrinkageStandard.should.be.String();
 
-    data.should.have.property('rollLength');
-    data.rollLength.should.be.String();
-
     data.should.have.property('sample');
     data.sample.should.be.String();
 
