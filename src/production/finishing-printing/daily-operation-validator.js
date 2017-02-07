@@ -2,6 +2,8 @@ require("should");
 var validateProductionOrder = require('../../sales/production-order-validator');
 var validateKanban = require('./kanban-validator');
 var validateProduct = require("../../master/product-validator");
+var validateYarnMaterial = require("../../master/yarn-material-validator");
+var validateMaterialConstruction = require("../../master/material-construction-validator");
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -21,8 +23,19 @@ module.exports = function(data) {
     data.material.should.instanceOf(Object);
     validateProduct(data.material);
 
-    data.should.have.property('construction');
-    data.construction.should.be.String();
+    data.should.have.property('materialConstructionId');
+    data.materialConstructionId.should.instanceOf(Object);
+
+    data.should.have.property('materialConstruction');
+    data.materialConstruction.should.instanceOf(Object);
+    validateMaterialConstruction(data.materialConstruction);
+
+    data.should.have.property('yarnMaterialId');
+    data.yarnMaterialId.should.instanceOf(Object);
+
+    data.should.have.property('yarnMaterial');
+    data.yarnMaterial.should.instanceOf(Object);
+    validateYarnMaterial(data.yarnMaterial);
 
     data.should.have.property('color');
     data.color.should.be.String();
