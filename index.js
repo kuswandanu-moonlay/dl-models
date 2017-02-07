@@ -78,7 +78,8 @@ module.exports = {
     sales:{
         ProductionOrder: require('./src/sales/production-order'),
         ProductionOrderDetail: require('./src/sales/production-order-detail'),
-        SalesContract: require("./src/sales/sales-contract")
+        ProductionOrderLampStandard: require('./src/sales/production-order-lamp-standard'),
+        SalesContract: require("./src/sales/sales-contract"),
     },
     map: require('./src/map'),
     validator: require('./src/validator')

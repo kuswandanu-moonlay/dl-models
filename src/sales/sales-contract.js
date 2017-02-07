@@ -8,6 +8,7 @@ module.exports = class SalesContract extends BaseModel {
 
         this.salesContractNo='';
         this.date=new Date();
+
         this.productionOrders=[];
 
         this.copy(source);
