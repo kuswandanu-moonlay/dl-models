@@ -41,6 +41,9 @@ module.exports = function (data) {
     data.should.have.property('condition');
     data.condition.should.instanceOf(String);
 
+    data.should.have.property('machineTypeId');
+    data.machineTypeId.should.instanceOf(Object);
+
     data.should.have.property('machineType');
     data.machineType.should.instanceOf(Object);
     validateMachineType(data.machineType);
