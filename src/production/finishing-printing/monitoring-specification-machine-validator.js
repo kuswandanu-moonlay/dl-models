@@ -1,5 +1,6 @@
 require("should");
-var validateMachineType = require('../../master/machine-type-validator');
+// var validateMachineType = require('../../master/machine-type-validator');
+var validateMachine = require('../../master/machine-validator');
 var validateMonitoringSpecfificationMachineItem=require("./monitoring-specification-machine-item-validator");
 
 module.exports = function (data) {
@@ -16,12 +17,12 @@ module.exports = function (data) {
     data.should.have.property('time');
     data.time.should.instanceof(String);
 
-    data.should.have.property('machineTypeId');
-    data.machineTypeId.should.instanceof(Object);
+    data.should.have.property('machineId');
+    data.machineId.should.instanceof(Object);
 
-    data.should.have.property('machineType');
-    data.machineType.should.instanceof(Object);
-    validateMachineType(data.machineType);
+    data.should.have.property('machine');
+    data.machine.should.instanceof(Object);
+    validateMachine(data.machine);
 
     data.should.have.property('items');
     data.items.should.instanceof(Array);
