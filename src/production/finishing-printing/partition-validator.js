@@ -38,6 +38,9 @@ module.exports = function(data) {
     data.should.have.property('dateInput');
     data.dateInput.should.instanceof(Date);
 
+    data.should.have.property('timeInput');
+    data.timeInput.should.instanceof(Number);
+
     data.should.have.property('goodOutput');
     data.goodOutput.should.instanceOf(Number);
 
@@ -46,6 +49,9 @@ module.exports = function(data) {
 
     data.should.have.property('dateOutput');
     data.dateOutput.should.instanceof(Date);
+
+    data.should.have.property('timeOutput');
+    data.timeOutput.should.instanceof(Number);
 
     data.should.have.property('badOutputDescription');
     data.badOutputDescription.should.be.String();

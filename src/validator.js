@@ -71,6 +71,7 @@ module.exports = {
         sales : {
                 salesContract: require("./sales/sales-contract-validator"),
                 productionOrder: require("./sales/production-order-validator"),
-                productionOrderDetail: require("./sales/production-order-detail-validator")
+                productionOrderDetail: require("./sales/production-order-detail-validator"),
+                productionOrderLampStandard: require("./sales/production-order-lamp-standard-validator")
         }
 };
