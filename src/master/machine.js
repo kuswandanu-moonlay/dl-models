@@ -21,8 +21,10 @@ module.exports = class Machine extends BaseModel {
         this.manufacture = '';
         this.year = 1900;
         this.condition = '';
+        this.machineTypeId = {};
         this.machineType = new MachineType();
         this.machineEvents = [];
+
         this.copy(source);
         this.unit = new Unit(this.unit);
 

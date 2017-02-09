@@ -23,7 +23,7 @@ module.exports = {
             Machine: 'machine',
             Uster: 'uster',
             Step: 'step',
-            MachineType: 'machine-type',
+            MachineType: 'machine-types',
         },
         collection: {
             Buyer: 'buyers',
@@ -100,7 +100,7 @@ module.exports = {
             collection: {
                 MonitoringEvent: 'monitoring-events',
                 DailyOperation: 'daily-operations',
-                MonitoringSpecificationMachine: 'monitoring-specification-machine'
+                MonitoringSpecificationMachine: 'monitoring-specification-machines'
             }
 
         },
