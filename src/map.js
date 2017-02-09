@@ -53,7 +53,7 @@ module.exports = {
             MaterialConstruction : 'material-constructions',
             YarnMaterial : 'yarn-materials',
             FinishType: 'finish-types',
-            StandardTest: 'standard-test'
+            StandardTest: 'standard-tests'
         }
     },
     purchasing: {
@@ -95,7 +95,6 @@ module.exports = {
         finishingPrinting: {
             type: {
                 DailyOperation: 'daily-operation',
-
                 MonitoringSpecificationMachine: 'monitoring-specification-machine'
             },
             collection: {
