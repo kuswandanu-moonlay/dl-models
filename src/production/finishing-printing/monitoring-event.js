@@ -18,6 +18,7 @@ module.exports = class MonitoringEvent extends BaseModel {
         this.timeInMillisEnd = 0;
         this.machineId = {}; 
         this.machine = new Machine();
+        this.productionOrderId = {};
         this.productionOrder = new ProductionOrder();
         this.selectedProductionOrderDetail = new ProductionOrderDetail();
         this.cartNumber = '';
