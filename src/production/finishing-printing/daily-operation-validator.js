@@ -12,8 +12,8 @@ module.exports = function(data) {
     data.should.have.property('salesContract');
     data.salesContract.should.be.String();
 
-    data.should.have.property('productionOrderlId');
-    data.productionOrderlId.should.instanceOf(Object);
+    data.should.have.property('productionOrderId');
+    data.productionOrderId.should.instanceOf(Object);
 
     data.should.have.property('productionOrder');
     data.productionOrder.should.instanceOf(Object);
