@@ -4,7 +4,7 @@ var BaseModel = require('model-toolkit').BaseModel;
 var Unit = require('./unit');
 var MachineType = require('./machine-type');
 var Step = require('./step');
-
+var MachineEvent = require('./machine-event');
 
 module.exports = class Machine extends BaseModel {
     constructor(source) {
@@ -21,8 +21,13 @@ module.exports = class Machine extends BaseModel {
         this.manufacture = '';
         this.year = 1900;
         this.condition = '';
+        this.machineTypeId = {};
         this.machineType = new MachineType();
+        this.machineEvents = [];
+
         this.copy(source);
         this.unit = new Unit(this.unit);
+
+        this.machineEvents = (this.machineEvents || []).map(machineEvent => new MachineEvent(machineEvent));
     }
 };

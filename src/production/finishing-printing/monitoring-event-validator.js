@@ -2,7 +2,7 @@ require("should");
 var validateMachine = require('../../master/machine-validator');
 var validateProductionOrder = require('../../sales/production-order-validator');
 var validateProductionOrderDetail = require('../../sales/production-order-detail-validator');
-var validateMonitoringEventType = require('../../master/monitoring-event-type-validator');
+var validateMachineEvent = require('../../master/machine-event-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -41,12 +41,9 @@ module.exports = function (data) {
     data.should.have.property('cartNumber');
     data.cartNumber.should.instanceOf(String);
 
-    data.should.have.property('monitoringEventTypeId');
-    data.monitoringEventTypeId.should.instanceof(Object);
-
-    data.should.have.property('monitoringEventType');
-    data.monitoringEventType.should.instanceof(Object);
-    validateMonitoringEventType(data.monitoringEventType);
+    data.should.have.property('machineEvent');
+    data.machineEvent.should.instanceof(Object);
+    validateMachineEvent(data.machineEvent);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);

@@ -4,7 +4,7 @@ var BaseModel = require('model-toolkit').BaseModel;
 var Machine = require('../../master/machine');
 var ProductionOrder = require('../../sales/production-order');
 var ProductionOrderDetail = require('../../sales/production-order-detail');
-var MonitoringEventType = require('../../master/monitoring-event-type');
+var MachineEvent = require('../../master/machine-event');
 
 module.exports = class MonitoringEvent extends BaseModel {
     constructor(source) {
@@ -21,8 +21,7 @@ module.exports = class MonitoringEvent extends BaseModel {
         this.productionOrder = new ProductionOrder();
         this.selectedProductionOrderDetail = new ProductionOrderDetail();
         this.cartNumber = '';
-        this.monitoringEventTypeId = {}; 
-        this.monitoringEventType = new MonitoringEventType();
+        this.machineEvent = new MachineEvent();
         this.remark = '';
 
         this.copy(source);

@@ -10,7 +10,7 @@ module.exports = class MachineTypeIndicator extends BaseModel {
 
         this.indicator = '';
         this.dataType = '';
-        this.value = '';
+        this.defaultValue = '';
         this.copy(source);
     }
 };

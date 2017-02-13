@@ -125,9 +125,9 @@ it("#20. Machine Spesification Standard should valid", function () {
     validate.machineSpesificationStandard(new MachineSpesificationStandard());
 });
 
-it("#21. Monitoring Event Type should valid", function () {
-    var MonitoringEventType = require('../src/master/monitoring-event-type');
-    validate.monitoringEventType(new MonitoringEventType());
+it("#21. Machine Event should valid", function () {
+    var MachineEvent = require('../src/master/machine-event');
+    validate.machineEvent(new MachineEvent());
 });
 
 it("#22. Material Contruction should valid", function () {

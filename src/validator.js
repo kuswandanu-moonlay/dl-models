@@ -26,7 +26,6 @@ module.exports = {
                 lampStandard: require('./master/lamp-standard-validator'),
                 accountBank: require('./master/account-bank-validator'),
                 instruction: require('./master/instruction-validator'),
-                monitoringEventType: require("./master/monitoring-event-type-validator"),
                 machineType: require('./master/machine-type-validator'),
                 machineTypeIndicator: require('./master/machine-type-indicator-validator'),
                 orderType: require('./master/order-type-validator'),
@@ -37,7 +36,8 @@ module.exports = {
                 materialConstruction: require('./master/material-construction-validator'),
                 yarnMaterial: require('./master/yarn-material-validator'),
                 finishType: require('./master/finish-type-validator'),
-                standardTest: require('./master/standard-test-validator')
+                standardTest: require('./master/standard-test-validator'),
+                machineEvent: require('./master/machine-event-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -71,6 +71,7 @@ module.exports = {
         sales : {
                 salesContract: require("./sales/sales-contract-validator"),
                 productionOrder: require("./sales/production-order-validator"),
-                productionOrderDetail: require("./sales/production-order-detail-validator")
+                productionOrderDetail: require("./sales/production-order-detail-validator"),
+                productionOrderLampStandard: require("./sales/production-order-lamp-standard-validator")
         }
 };
