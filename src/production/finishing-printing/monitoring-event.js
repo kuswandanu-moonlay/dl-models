@@ -3,6 +3,7 @@
 var BaseModel = require('model-toolkit').BaseModel;
 var Machine = require('../../master/machine');
 var ProductionOrder = require('../../sales/production-order');
+var ProductionOrderDetail = require('../../sales/production-order-detail');
 var MonitoringEventType = require('../../master/monitoring-event-type');
 
 module.exports = class MonitoringEvent extends BaseModel {
@@ -18,6 +19,8 @@ module.exports = class MonitoringEvent extends BaseModel {
         this.machineId = {}; 
         this.machine = new Machine();
         this.productionOrder = new ProductionOrder();
+        this.selectedProductionOrderDetail = new ProductionOrderDetail();
+        this.cartNumber = '';
         this.monitoringEventTypeId = {}; 
         this.monitoringEventType = new MonitoringEventType();
         this.remark = '';
