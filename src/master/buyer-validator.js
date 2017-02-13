@@ -13,6 +13,9 @@ module.exports = function (data) {
     data.should.have.property('address');
     data.address.should.instanceOf(String);
 
+    data.should.have.property('city');
+    data.city.should.instanceOf(String);
+
     data.should.have.property('country');
     data.country.should.instanceOf(String);
 
