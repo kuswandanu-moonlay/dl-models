@@ -24,4 +24,7 @@ module.exports = function (data) {
 
     data.should.have.property('tempo');
     data.tempo.should.instanceOf(String); 
+
+    data.should.have.property('NPWP');
+    data.NPWP.should.instanceOf(String);
 }; 

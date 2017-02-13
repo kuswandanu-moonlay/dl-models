@@ -15,6 +15,7 @@ module.exports = class Buyer extends BaseModel {
         this.contact = '';
         this.tempo = '';
         this.type='';
+        this.NPWP='';
 
         this.copy(source);
     }
