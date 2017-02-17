@@ -30,6 +30,9 @@ module.exports = function (data) {
     data.machine.should.instanceof(Object);
     validateMachine(data.machine);
 
+    data.should.have.property('productionOrderId');
+    data.productionOrderId.should.instanceof(Object);
+
     data.should.have.property('productionOrder');
     data.productionOrder.should.instanceof(Object);
     validateProductionOrder(data.productionOrder);
