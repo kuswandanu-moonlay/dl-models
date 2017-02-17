@@ -25,3 +25,8 @@ it("#05. Monitoring Specification Finishing Printing Machine should valid", func
     var MonitoringSpecificationMachine = require('../src/production/finishing-printing/monitoring-specification-machine');
     validate.finishingPrinting.monitoringSpecificationMachine(new MonitoringSpecificationMachine());
 });
+
+it("#06. Kanban Finishing Printing should valid", function () {
+    var Kanban = require('../src/production/finishing-printing/kanban');
+    validate.finishingPrinting.kanban(new Kanban());
+});

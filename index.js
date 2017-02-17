@@ -31,6 +31,7 @@ module.exports = {
         ProcessType:require('./src/master/process-type'),
         ColorType:require('./src/master/color-type'),
         Step:require('./src/master/step'),
+        StepIndicator:require('./src/master/step-indicator'),
         MachineSpesificationStandard:require('./src/master/machine-spesification-standard'),
         MaterialConstruction:require('./src/master/material-construction'),
         YarnMaterial:require('./src/master/yarn-material'),
