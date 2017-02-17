@@ -13,6 +13,7 @@ module.exports = class DailyOperation extends BaseModel {
 
         // Define properties.
         this.salesContract = '';  
+        this.productionOrderId = {};  
         this.productionOrder = new ProductionOrder();
         this.materialId = {};
         this.material = new Product();
