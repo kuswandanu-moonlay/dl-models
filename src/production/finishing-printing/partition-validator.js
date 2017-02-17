@@ -1,6 +1,6 @@
 require("should");
-var validateStep = require('../../master/step-validator');
-var validateMachine = require('../../master/machine-validator');
+var Uom = require("../../master/uom");
+var validateUom = require('../../master/uom-validator');
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -12,47 +12,16 @@ module.exports = function(data) {
     data.should.have.property('no');
     data.no.should.be.String();
 
-    data.should.have.property('shift');
-    data.shift.should.be.String();
+    data.should.have.property('lengthFabric');
+    data.lengthFabric.should.instanceOf(Number);
 
-    data.should.have.property('stepId');
-    data.stepId.should.instanceOf(Object);
+    data.should.have.property('uomId');
+    data.uomId.should.instanceOf(Object);
 
-    data.should.have.property('step');
-    data.step.should.instanceOf(Object);
-    validateStep(data.step);
+    data.should.have.property('uom');
+    data.uom.should.instanceOf(Object);
+    validateUom(data.uom);
 
-    data.should.have.property('machineId');
-    data.machineId.should.instanceOf(Object);
-
-    data.should.have.property('machine');
-    data.machine.should.instanceOf(Object);
-    validateMachine(data.machine);
-
-    data.should.have.property('steps');
-    data.steps.should.be.Array();
-
-    data.should.have.property('input');
-    data.input.should.instanceOf(Number);
-
-    data.should.have.property('dateInput');
-    data.dateInput.should.instanceof(Date);
-
-    data.should.have.property('timeInput');
-    data.timeInput.should.instanceof(Number);
-
-    data.should.have.property('goodOutput');
-    data.goodOutput.should.instanceOf(Number);
-
-    data.should.have.property('badOutput');
-    data.badOutput.should.instanceOf(Number);
-
-    data.should.have.property('dateOutput');
-    data.dateOutput.should.instanceof(Date);
-
-    data.should.have.property('timeOutput');
-    data.timeOutput.should.instanceof(Number);
-
-    data.should.have.property('badOutputDescription');
-    data.badOutputDescription.should.be.String();
+    data.should.have.property('reference');
+    data.reference.should.be.String();
 };

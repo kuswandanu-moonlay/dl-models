@@ -101,6 +101,7 @@ module.exports = {
             collection: {
                 MonitoringEvent: 'monitoring-events',
                 DailyOperation: 'daily-operations',
+                Kanban: 'kanbans',
                 MonitoringSpecificationMachine: 'monitoring-specification-machine'
             }
 
