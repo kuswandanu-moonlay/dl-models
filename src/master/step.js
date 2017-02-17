@@ -1,5 +1,6 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
+var StepIndicator = require('./step-indicator');
 
 module.exports = class Step extends BaseModel {
     constructor(source) {
@@ -7,8 +8,10 @@ module.exports = class Step extends BaseModel {
         
         // Define properties.
         this.process = '';
-        this.itemMonitoring = []; 
+        this.itemMonitoring = [];
+        this.stepIndicators = []; 
 
         this.copy(source);
+        this.stepIndicators = (this.stepIndicators || []).map(stepIndicator => new StepIndicator(stepIndicator));
     }
 };
