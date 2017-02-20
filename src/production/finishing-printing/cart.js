@@ -7,8 +7,9 @@ module.exports = class Cart extends BaseModel {
         super('cart', '1.0.0');
 
         // Define properties.
+        this.code = '';
         this.cartNumber = '';
-        this.materialLength = 0;
+        this.qty = 0;
         this.pcs = 0;
         this.copy(source);
     }
