@@ -101,7 +101,8 @@ module.exports = {
                 MonitoringEvent: 'monitoring-events',
                 DailyOperation: 'daily-operations',
                 Kanban: 'kanbans',
-                MonitoringSpecificationMachine: 'monitoring-specification-machine'
+                MonitoringSpecificationMachine: 'monitoring-specification-machines'
+
             }
 
         },
