@@ -102,6 +102,7 @@ module.exports = {
                 DailyOperation: 'daily-operations',
                 Kanban: 'kanbans',
                 MonitoringSpecificationMachine: 'monitoring-specification-machines'
+
             }
 
         },
