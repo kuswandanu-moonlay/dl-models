@@ -100,6 +100,7 @@ module.exports = {
             collection: {
                 MonitoringEvent: 'monitoring-events',
                 DailyOperation: 'daily-operations',
+                Kanban: 'kanbans',
                 MonitoringSpecificationMachine: 'monitoring-specification-machines'
             }
 
@@ -107,10 +108,12 @@ module.exports = {
     },
     sales: {
         type: {
-            SalesContract: 'sales-contract'
+            SalesContract: 'sales-contract',
+            ProductionOrder: 'production-order'
         },
         collection: {
-            SalesContract: 'sales-contracts'
+            SalesContract: 'sales-contracts',
+            ProductionOrder : 'production-orders'
         }
     }
 }
