@@ -37,7 +37,8 @@ module.exports = {
         YarnMaterial:require('./src/master/yarn-material'),
         FinishType:require('./src/master/finish-type'),
         StandardTest:require('./src/master/standard-test'),
-        MachineEvent:require('./src/master/machine-event')
+        MachineEvent:require('./src/master/machine-event'),
+        Comodity:require('./src/master/comodity')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
