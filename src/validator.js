@@ -37,7 +37,8 @@ module.exports = {
                 yarnMaterial: require('./master/yarn-material-validator'),
                 finishType: require('./master/finish-type-validator'),
                 standardTest: require('./master/standard-test-validator'),
-                machineEvent: require('./master/machine-event-validator')
+                machineEvent: require('./master/machine-event-validator'),
+                comodity: require('./master/comodity-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

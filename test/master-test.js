@@ -149,3 +149,8 @@ it("#25. Standard Test should valid", function () {
     var StandardTest = require('../src/master/standard-test');
     validate.standardTest(new StandardTest());
 });
+
+it("#26. Comodity should valid", function () {
+    var Comodity = require('../src/master/comodity');
+    validate.comodity(new Comodity());
+});

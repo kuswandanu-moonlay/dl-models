@@ -53,7 +53,8 @@ module.exports = {
             MaterialConstruction : 'material-constructions',
             YarnMaterial : 'yarn-materials',
             FinishType: 'finish-types',
-            StandardTest: 'standard-tests'
+            StandardTest: 'standard-tests',
+            Comodity: 'comodities'
         }
     },
     purchasing: {

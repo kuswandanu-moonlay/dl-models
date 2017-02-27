@@ -1,7 +1,7 @@
 'use strict';
 
-
 var BaseModel = require('model-toolkit').BaseModel;
+var Currency = require('./currency');
 
 module.exports = class AccountBank extends BaseModel {
     constructor(source) {
@@ -14,6 +14,8 @@ module.exports = class AccountBank extends BaseModel {
         this.accountName = '';
         this.accountNumber = '';
         this.swiftCode = '';
+        this.currencyId={};
+        this.currency = new Currency();
 
         this.copy(source);
     }
