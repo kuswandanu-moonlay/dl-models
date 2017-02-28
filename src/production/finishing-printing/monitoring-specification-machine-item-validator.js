@@ -13,7 +13,6 @@ module.exports = function (data) {
 
     data.should.have.property('defaultValue');
 
-
     data.should.have.property('value');
 
 

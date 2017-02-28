@@ -32,4 +32,7 @@ module.exports = function(data) {
     data.should.have.property('instruction');
     data.instruction.should.instanceof(Object);
     validateInstruction(data.instruction);
+
+    data.should.have.property('grade');
+    data.grade.should.instanceof(String);
 };
