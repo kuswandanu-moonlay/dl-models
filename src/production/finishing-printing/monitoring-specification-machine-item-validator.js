@@ -15,7 +15,5 @@ module.exports = function (data) {
 
     data.should.have.property('value');
 
-    data.should.have.property('satuan');
-
 
 };
