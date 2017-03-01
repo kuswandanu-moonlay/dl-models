@@ -15,7 +15,7 @@ module.exports = function (data) {
 
     data.should.have.property('value');
 
-    data.should.have.property('satuan');
-    data.satuan.should.instanceOf(String);
+    data.should.have.property('uom');
+    data.uom.should.instanceOf(String);
 
 };
