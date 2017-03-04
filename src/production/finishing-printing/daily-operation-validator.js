@@ -7,17 +7,17 @@ module.exports = function(data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
-    data.should.have.property('kanbanId')
+    data.should.have.property('kanbanId');
     data.kanbanId.should.instanceOf(Object);
 
-    data.should.have.property('kanban')
+    data.should.have.property('kanban');
     data.kanban.should.instanceOf(Object);
     validateKanban(data.kanban);
 
-    data.should.have.property('machineId')
+    data.should.have.property('machineId');
     data.machineId.should.instanceOf(Object);
 
-    data.should.have.property('machine')
+    data.should.have.property('machine');
     data.machine.should.instanceOf(Object);
     validateMachine(data.machine);
 
