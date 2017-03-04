@@ -154,3 +154,8 @@ it("#26. Comodity should valid", function () {
     var Comodity = require('../src/master/comodity');
     validate.comodity(new Comodity());
 });
+
+it("#27. Quality should valid", function () {
+    var Quality = require('../src/master/quality');
+    validate.quality(new Quality());
+});
