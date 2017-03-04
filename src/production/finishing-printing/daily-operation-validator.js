@@ -1,49 +1,50 @@
 require("should");
-var validateProductionOrder = require('../../sales/production-order-validator');
 var validateKanban = require('./kanban-validator');
-var validateProduct = require("../../master/product-validator");
-var validateYarnMaterial = require("../../master/yarn-material-validator");
-var validateMaterialConstruction = require("../../master/material-construction-validator");
+var validateStep = require("../../master/step-validator");
+var validateMachine = require("../../master/machine-validator");
 
 module.exports = function(data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
-    data.should.have.property('salesContract');
-    data.salesContract.should.be.String();
+    data.should.have.property('kanbanId')
+    data.kanbanId.should.instanceOf(Object);
 
-    data.should.have.property('productionOrderId');
-    data.productionOrderId.should.instanceOf(Object);
-
-    data.should.have.property('productionOrder');
-    data.productionOrder.should.instanceOf(Object);
-    validateProductionOrder(data.productionOrder);
-
-    data.should.have.property('materialId');
-    data.materialId.should.instanceOf(Object);
-
-    data.should.have.property('material');
-    data.material.should.instanceOf(Object);
-    validateProduct(data.material);
-
-    data.should.have.property('materialConstructionId');
-    data.materialConstructionId.should.instanceOf(Object);
-
-    data.should.have.property('materialConstruction');
-    data.materialConstruction.should.instanceOf(Object);
-    validateMaterialConstruction(data.materialConstruction);
-
-    data.should.have.property('yarnMaterialId');
-    data.yarnMaterialId.should.instanceOf(Object);
-
-    data.should.have.property('yarnMaterial');
-    data.yarnMaterial.should.instanceOf(Object);
-    validateYarnMaterial(data.yarnMaterial);
-
-    data.should.have.property('color');
-    data.color.should.be.String();
-
-    data.should.have.property('kanban');
+    data.should.have.property('kanban')
     data.kanban.should.instanceOf(Object);
     validateKanban(data.kanban);
+
+    data.should.have.property('machineId')
+    data.machineId.should.instanceOf(Object);
+
+    data.should.have.property('machine')
+    data.machine.should.instanceOf(Object);
+    validateMachine(data.machine);
+
+    data.should.have.property('shift');
+    data.shift.should.be.String();
+
+    data.should.have.property('input');
+    data.input.should.instanceOf(Number);
+
+    data.should.have.property('dateInput');
+    data.dateInput.should.instanceof(Date);
+
+    data.should.have.property('timeInput');
+    data.timeInput.should.instanceOf(Number);
+
+    if(data.goodOutput)
+        data.goodOutput.should.instanceOf(Number);
+
+    if(data.badOutput)
+        data.badOutput.should.instanceOf(Number);
+
+    if(data.dateOutput)
+        data.dateOutput.should.instanceof(Date);
+
+    if(data.timeOutput)
+        data.timeOutput.should.instanceOf(Number);
+
+    if(data.badOutputDescription)
+        data.badOutputDescription.should.be.String();
 };
