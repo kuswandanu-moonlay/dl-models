@@ -13,6 +13,7 @@ module.exports = class MonitoringSpecificationMachineItem extends BaseModel {
         this.dataType = '';
         this.defaultValue='';
         this.value = '';
+        this.uom='';
         this.copy(source);
         
     }
