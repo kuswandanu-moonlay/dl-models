@@ -38,7 +38,8 @@ module.exports = {
         FinishType:require('./src/master/finish-type'),
         StandardTest:require('./src/master/standard-test'),
         MachineEvent:require('./src/master/machine-event'),
-        Comodity:require('./src/master/comodity')
+        Comodity:require('./src/master/comodity'),
+        Quality:require('./src/master/quality')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -81,7 +82,10 @@ module.exports = {
         ProductionOrder: require('./src/sales/production-order'),
         ProductionOrderDetail: require('./src/sales/production-order-detail'),
         ProductionOrderLampStandard: require('./src/sales/production-order-lamp-standard'),
-        SalesContract: require("./src/sales/sales-contract"),
+        FinishingPrintingSalesContract: require("./src/sales/finishing-printing-sales-contract"),
+        FinishingPrintingSalesContractDetail: require("./src/sales/finishing-printing-sales-contract-detail"),
+        SpinningSalesContract: require("./src/sales/spinning-sales-contract"),
+        WeavingSalesContract: require("./src/sales/weaving-sales-contract")
     },
     map: require('./src/map'),
     validator: require('./src/validator')
