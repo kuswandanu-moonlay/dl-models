@@ -72,7 +72,7 @@ module.exports = function (data) {
     validateUom(data.uom);
 
     data.should.have.property('shippingQuantityTolerance');
-    data.spelling.should.instanceOf(Number);
+    data.shippingQuantityTolerance.should.instanceOf(Number);
 
     data.should.have.property('qualityId');
     data.qualityId.should.instanceof(Object);
