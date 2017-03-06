@@ -7,7 +7,6 @@ var OrderType = require('../master/order-type');
 var ProcessType = require('../master/process-type');
 var uom = require('../master/uom');
 var AccountBank = require('../master/account-bank');
-var SalesContractDetail=require('./finishing-printing-sales-contract-detail');
 var MaterialConstruction=require('../master/material-construction');
 var SalesContractDetail=require('./finishing-printing-sales-contract-detail');
 var Comodity = require('../master/comodity');
