@@ -12,6 +12,7 @@ var MaterialConstruction=require('../master/material-construction');
 var SalesContractDetail=require('./finishing-printing-sales-contract-detail');
 var Comodity = require('../master/comodity');
 var Quality = require('../master/quality');
+var YarnMaterial= require('../master/yarn-material')
 
 
 module.exports = class FinishingPrintingSalesContract extends BaseModel {

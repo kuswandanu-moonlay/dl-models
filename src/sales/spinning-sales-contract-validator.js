@@ -54,7 +54,7 @@ module.exports = function (data) {
     data.paymentRequirement.should.be.String();
 
     data.should.have.property('incomeTax');
-    data.incomeTax.should.be.String();;
+    data.incomeTax.should.be.String();
 
     data.should.have.property('accountBankId');
     data.accountBankId.should.instanceof(Object);
