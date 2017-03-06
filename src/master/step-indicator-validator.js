@@ -9,4 +9,7 @@ module.exports = function(data) {
 
     data.should.have.property('value');
     data.value.should.be.String();
+
+    data.should.have.property('uom');
+    data.uom.should.be.String();
 };
