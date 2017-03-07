@@ -26,5 +26,7 @@ module.exports = class MonitoringEvent extends BaseModel {
         this.remark = '';
 
         this.copy(source);
+        this.dateEnd = source ? source.dateEnd : null;
+        this.timeInMillisEnd = source ? source.timeInMillisEnd : null;
     }
 };
