@@ -24,6 +24,7 @@ module.exports = class Machine extends BaseModel {
         this.machineTypeId = {};
         this.machineType = new MachineType();
         this.machineEvents = [];
+        this.monthlyCapacity = 0;
 
         this.copy(source);
         this.unit = new Unit(this.unit);

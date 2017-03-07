@@ -51,4 +51,7 @@ module.exports = function (data) {
     for (var machineEvent of data.machineEvents) {
         validateMachineEvent(machineEvent);
     }
+
+    data.should.have.property('monthlyCapacity');
+    data.monthlyCapacity.should.instanceOf(Number);
 };
