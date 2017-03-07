@@ -7,8 +7,7 @@ module.exports = class StepIndicator extends BaseModel{
         super('step-indicator', '1.0.0');
         this.name = '';
         this.value = '';
-        this.uomId = null;
-        this.uom = null;
+        this.uom = '';
         this.copy(source);
     }
 };

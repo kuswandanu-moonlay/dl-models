@@ -38,7 +38,8 @@ module.exports = {
                 finishType: require('./master/finish-type-validator'),
                 standardTest: require('./master/standard-test-validator'),
                 machineEvent: require('./master/machine-event-validator'),
-                comodity: require('./master/comodity-validator')
+                comodity: require('./master/comodity-validator'),
+                quality: require('./master/quality-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -64,15 +65,17 @@ module.exports = {
                         monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
                         dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
                         kanban : require("./production/finishing-printing/kanban-validator"),
-                        partition : require("./production/finishing-printing/partition-validator"),
                         monitoringSpecificationMachine:require("./production/finishing-printing/monitoring-specification-machine-validator")
                 },
                 dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
         },
         sales : {
-                salesContract: require("./sales/sales-contract-validator"),
                 productionOrder: require("./sales/production-order-validator"),
                 productionOrderDetail: require("./sales/production-order-detail-validator"),
-                productionOrderLampStandard: require("./sales/production-order-lamp-standard-validator")
+                productionOrderLampStandard: require("./sales/production-order-lamp-standard-validator"),
+                finishingPrintingSalesContract: require("./sales/finishing-printing-sales-contract-validator"),
+                finishingPrintingSalesContractDetail: require("./sales/finishing-printing-sales-contract-detail-validator"),
+                weavingSalesContract:require("./sales/weaving-sales-contract-validator"),
+                spinningSalesContract:require("./sales/spinning-sales-contract-validator")
         }
 };
