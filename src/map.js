@@ -54,7 +54,8 @@ module.exports = {
             YarnMaterial : 'yarn-materials',
             FinishType: 'finish-types',
             StandardTest: 'standard-tests',
-            Comodity: 'comodities'
+            Comodity: 'comodities',
+            Quality:'qualities'
         }
     },
     purchasing: {
@@ -110,12 +111,16 @@ module.exports = {
     },
     sales: {
         type: {
-            SalesContract: 'sales-contract',
-            ProductionOrder: 'production-order'
+            ProductionOrder: 'production-order',
+            FinishingPrintingSalesContract: 'finishing-printing-sales-contract',
+            WeavingSalesContract:'weaving-sales-contract',
+            SpinningSalesContract: 'spinning-sales-contract'
         },
         collection: {
-            SalesContract: 'sales-contracts',
-            ProductionOrder : 'production-orders'
+            ProductionOrder : 'production-orders',
+            FinishingPrintingSalesContract: 'finishing-printing-sales-contracts',
+            WeavingSalesContract:'weaving-sales-contracts',
+            SpinningSalesContract: 'spinning-sales-contracts'
         }
     }
 }
