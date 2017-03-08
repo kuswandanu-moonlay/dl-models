@@ -88,14 +88,8 @@ module.exports = function (data) {
     data.comodity.should.instanceof(Object);
     validateComodity(data.comodity);
 
-    data.should.have.property('rollLength');
-    data.rollLength.should.be.String();
-
     data.should.have.property('paymentMethod');
     data.paymentMethod.should.be.String();
-
-    data.should.have.property('paymentRequirement');
-    data.paymentRequirement.should.be.String();
 
     data.should.have.property('useIncomeTax');
     data.useIncomeTax.should.instanceof(Boolean);

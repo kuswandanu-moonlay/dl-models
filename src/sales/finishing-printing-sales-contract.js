@@ -55,10 +55,8 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.qualityId={};
         this.quality=new Quality();
 
-        this.rollLength='';
         this.useIncomeTax = false;
         this.paymentMethod = '';
-        this.paymentRequirement='';
 
         this.accountBankId={};
         this.accountBank=new AccountBank();
@@ -66,7 +64,10 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.transportFee='';
         this.deliveredTo='';
         this.packing='';
-        this.agent='';
+
+        this.agentId={};
+        this.agent=new Buyer();
+
         this.comission=0;
         this.deliverySchedule=new Date();
         this.condition='';

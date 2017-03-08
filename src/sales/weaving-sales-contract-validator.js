@@ -57,6 +57,9 @@ module.exports = function (data) {
     data.should.have.property('shippingQuantityTolerance');
     data.shippingQuantityTolerance.should.instanceOf(Number);
 
+    data.should.have.property('price');
+    data.price.should.instanceOf(Number);
+
     data.should.have.property('qualityId');
     data.qualityId.should.instanceof(Object);
 
@@ -71,17 +74,14 @@ module.exports = function (data) {
     data.comodity.should.instanceof(Object);
     validateComodity(data.comodity);
 
-    data.should.have.property('rollLength');
-    data.rollLength.should.be.String();
-
     data.should.have.property('paymentMethod');
     data.paymentMethod.should.be.String();
 
-    data.should.have.property('paymentRequirement');
-    data.paymentRequirement.should.be.String();
-
     data.should.have.property('incomeTax');
     data.incomeTax.should.be.String();
+    
+    data.should.have.property('deliveredTo');
+    data.deliveredTo.should.be.String();
 
     data.should.have.property('accountBankId');
     data.accountBankId.should.instanceof(Object);
@@ -89,9 +89,6 @@ module.exports = function (data) {
     data.should.have.property('accountBank');
     data.accountBank.should.instanceof(Object);
     validateAccount(data.accountBank);
-
-    data.should.have.property('deliveredTo');
-    data.deliveredTo.should.be.String();
 
     data.should.have.property('condition');
     data.condition.should.be.String();

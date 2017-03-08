@@ -32,18 +32,20 @@ module.exports = class SpinningSalesContract extends BaseModel {
         this.qualityId={};
         this.quality=new Quality();
 
-        this.rollLength='';
         this.incomeTax = '';
         this.paymentMethod = '';
-        this.paymentRequirement='';
+        this.deliveredTo='';
 
         this.accountBankId={};
         this.accountBank=new AccountBank();
 
         this.transportFee='';
-        this.deliveredTo='';
         this.packing='';
-        this.agent='';
+        this.price=0;
+
+        this.agentId={};
+        this.agent=new Buyer();
+
         this.comission=0;
         this.deliverySchedule=new Date();
         this.condition='';
