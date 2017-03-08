@@ -45,18 +45,19 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.qualityId={};
         this.quality=new Quality();
 
-        this.rollLength='';
         this.incomeTax = '';
         this.paymentMethod = '';
-        this.paymentRequirement='';
 
         this.accountBankId={};
         this.accountBank=new AccountBank();
 
         this.transportFee='';
-        this.deliveredTo='';
         this.packing='';
-        this.agent='';
+        this.deliveredTo='';
+        
+        this.agentId={};
+        this.agent=new Buyer();
+
         this.comission=0;
         this.deliverySchedule=new Date();
         this.condition='';
