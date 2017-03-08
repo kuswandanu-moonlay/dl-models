@@ -1,6 +1,7 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
 var ColorType = require('../master/color-type');
+var Currency = require('../master/currency');
 
 module.exports = class FinishingPrintingSalesContractDetail extends BaseModel {
     constructor(source) {
@@ -9,6 +10,8 @@ module.exports = class FinishingPrintingSalesContractDetail extends BaseModel {
         this.color=''; 
         this.price=0;
         this.useIncomeTax = false;
+        this.currencyId={};
+        this.currency= new Currency();
 
         this.copy(source);
     }
