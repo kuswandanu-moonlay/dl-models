@@ -54,6 +54,7 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.transportFee='';
         this.packing='';
         this.deliveredTo='';
+        this.price=0;
         
         this.agentId={};
         this.agent=new Buyer();

@@ -41,6 +41,7 @@ module.exports = class SpinningSalesContract extends BaseModel {
 
         this.transportFee='';
         this.packing='';
+        this.price=0;
 
         this.agentId={};
         this.agent=new Buyer();

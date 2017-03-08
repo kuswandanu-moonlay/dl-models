@@ -57,6 +57,9 @@ module.exports = function (data) {
     data.should.have.property('shippingQuantityTolerance');
     data.shippingQuantityTolerance.should.instanceOf(Number);
 
+    data.should.have.property('price');
+    data.price.should.instanceOf(Number);
+
     data.should.have.property('qualityId');
     data.qualityId.should.instanceof(Object);
 
