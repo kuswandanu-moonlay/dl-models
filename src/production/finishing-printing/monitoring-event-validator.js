@@ -17,12 +17,6 @@ module.exports = function (data) {
     data.should.have.property('timeInMillisStart');
     data.timeInMillisStart.should.instanceof(Number);
 
-    data.should.have.property('dateEnd');
-    data.dateEnd.should.instanceof(Date);
-
-    data.should.have.property('timeInMillisEnd');
-    data.timeInMillisEnd.should.instanceof(Number);
-
     data.should.have.property('machineId');
     data.machineId.should.instanceof(Object);
 
