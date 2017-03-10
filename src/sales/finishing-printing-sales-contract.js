@@ -47,7 +47,7 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.materialWidth='';
         this.orderQuantity=0;
         this.shippingQuantityTolerance=0;
-        this.amount='';
+        this.amount=0;
 
         this.comodityId={};
         this.comodity=new Comodity();
@@ -68,6 +68,7 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.transportFee='';
         this.deliveredTo='';
         this.packing='';
+        this.termOfShipment="";
 
         this.agentId={};
         this.agent=new Buyer();
