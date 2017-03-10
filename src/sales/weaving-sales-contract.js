@@ -8,6 +8,7 @@ var Comodity = require('../master/comodity');
 var Quality = require('../master/quality');
 var MaterialConstruction = require('../master/material-construction');
 var YarnMaterial = require('../master/yarn-material');
+var TermOfPayment= require('../master/term-of-payment');
 
 
 module.exports = class WeavingSalesContract extends BaseModel {
@@ -46,7 +47,9 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.quality=new Quality();
 
         this.incomeTax = '';
-        this.paymentMethod = '';
+
+        this.termOfPaymentId = {};
+        this.termOfPayment=new TermOfPayment();
 
         this.accountBankId={};
         this.accountBank=new AccountBank();
@@ -62,7 +65,6 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.comission=0;
         this.deliverySchedule=new Date();
         this.condition='';
-        this.attachment='';
         this.remark='';
 
         this.copy(source);
