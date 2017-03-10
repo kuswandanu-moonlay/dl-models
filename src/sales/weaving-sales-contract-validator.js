@@ -3,9 +3,9 @@ require("should");
 var validateBuyer = require('../master/buyer-validator');
 var validateUom = require('../master/uom-validator');
 var validateProduct = require('../master/product-validator');
-var validateAccount= require('../master/account-bank-validator');
-var validateMaterialConstruction= require ('../master/material-construction-validator');
-var validateYarnMaterial= require ('../master/yarn-material-validator');
+var validateAccount = require('../master/account-bank-validator');
+var validateMaterialConstruction = require('../master/material-construction-validator');
+var validateYarnMaterial = require('../master/yarn-material-validator');
 var validateQuality = require('../master/quality-validator');
 var validateComodity = require('../master/comodity-validator');
 var validateTermOfPayment = require('../master/term-of-payment-validator');
@@ -84,7 +84,7 @@ module.exports = function (data) {
 
     data.should.have.property('incomeTax');
     data.incomeTax.should.be.String();
-    
+
     data.should.have.property('deliveredTo');
     data.deliveredTo.should.be.String();
 
@@ -97,6 +97,9 @@ module.exports = function (data) {
 
     data.should.have.property('condition');
     data.condition.should.be.String();
+
+    data.should.have.property('termOfShipment');
+    data.termOfShipment.should.be.String();
 
     data.should.have.property('deliverySchedule');
     data.deliverySchedule.should.instanceof(Date);
