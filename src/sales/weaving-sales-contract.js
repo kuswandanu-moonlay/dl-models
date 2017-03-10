@@ -51,6 +51,8 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.termOfPaymentId = {};
         this.termOfPayment=new TermOfPayment();
 
+        this.termOfShipment="";
+
         this.accountBankId={};
         this.accountBank=new AccountBank();
 
