@@ -164,3 +164,8 @@ it("#28. Array Step should valid", function () {
     var ArrayStep = require('../src/master/array-step');
     validate.arrayStep(new ArrayStep());
 });
+
+it("#28. Term of Payment should valid", function () {
+    var TermOfPayment = require('../src/master/term-of-payment');
+    validate.termOfPayment(new TermOfPayment());
+});

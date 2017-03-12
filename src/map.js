@@ -55,7 +55,8 @@ module.exports = {
             FinishType: 'finish-types',
             StandardTest: 'standard-tests',
             Comodity: 'comodities',
-            Quality:'qualities'
+            Quality:'qualities',
+            TermOfPayment:'term-of-payments'
         }
     },
     purchasing: {

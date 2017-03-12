@@ -5,6 +5,7 @@ var uom = require('../master/uom');
 var AccountBank = require('../master/account-bank');
 var Comodity = require('../master/comodity');
 var Quality = require('../master/quality');
+var TermOfPayment= require('../master/term-of-payment');
 
 
 module.exports = class SpinningSalesContract extends BaseModel {
@@ -32,22 +33,26 @@ module.exports = class SpinningSalesContract extends BaseModel {
         this.qualityId={};
         this.quality=new Quality();
 
-        this.rollLength='';
         this.incomeTax = '';
-        this.paymentMethod = '';
-        this.paymentRequirement='';
+
+        this.termOfPaymentId = {};
+        this.termOfPayment=new TermOfPayment();
+
+        this.deliveredTo='';
 
         this.accountBankId={};
         this.accountBank=new AccountBank();
 
         this.transportFee='';
-        this.deliveredTo='';
         this.packing='';
-        this.agent='';
+        this.price=0;
+
+        this.agentId={};
+        this.agent=new Buyer();
+
         this.comission=0;
         this.deliverySchedule=new Date();
         this.condition='';
-        this.attachment='';
         this.remark='';
 
         this.copy(source);

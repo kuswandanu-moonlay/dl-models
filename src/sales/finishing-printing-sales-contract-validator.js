@@ -11,6 +11,7 @@ var validateDetails= require('./finishing-printing-sales-contract-detail-validat
 var validateYarnMaterial= require ('../master/yarn-material-validator');
 var validateQuality = require('../master/quality-validator');
 var validateComodity = require('../master/comodity-validator');
+var validateTermOfPayment = require('../master/term-of-payment-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -88,14 +89,12 @@ module.exports = function (data) {
     data.comodity.should.instanceof(Object);
     validateComodity(data.comodity);
 
-    data.should.have.property('rollLength');
-    data.rollLength.should.be.String();
+    data.should.have.property('termOfPaymentId');
+    data.termOfPaymentId.should.instanceof(Object);
 
-    data.should.have.property('paymentMethod');
-    data.paymentMethod.should.be.String();
-
-    data.should.have.property('paymentRequirement');
-    data.paymentRequirement.should.be.String();
+    data.should.have.property('termOfPayment');
+    data.termOfPayment.should.instanceof(Object);
+    validateTermOfPayment(data.termOfPayment);
 
     data.should.have.property('useIncomeTax');
     data.useIncomeTax.should.instanceof(Boolean);

@@ -11,7 +11,8 @@ var MaterialConstruction=require('../master/material-construction');
 var SalesContractDetail=require('./finishing-printing-sales-contract-detail');
 var Comodity = require('../master/comodity');
 var Quality = require('../master/quality');
-var YarnMaterial= require('../master/yarn-material')
+var YarnMaterial= require('../master/yarn-material');
+var TermOfPayment= require('../master/term-of-payment');
 
 
 module.exports = class FinishingPrintingSalesContract extends BaseModel {
@@ -46,6 +47,7 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.materialWidth='';
         this.orderQuantity=0;
         this.shippingQuantityTolerance=0;
+        this.amount=0;
 
         this.comodityId={};
         this.comodity=new Comodity();
@@ -55,10 +57,10 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.qualityId={};
         this.quality=new Quality();
 
-        this.rollLength='';
         this.useIncomeTax = false;
-        this.paymentMethod = '';
-        this.paymentRequirement='';
+
+        this.termOfPaymentId = {};
+        this.termOfPayment=new TermOfPayment();
 
         this.accountBankId={};
         this.accountBank=new AccountBank();
@@ -66,11 +68,14 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.transportFee='';
         this.deliveredTo='';
         this.packing='';
-        this.agent='';
+        this.termOfShipment="";
+
+        this.agentId={};
+        this.agent=new Buyer();
+
         this.comission=0;
         this.deliverySchedule=new Date();
         this.condition='';
-        this.attachment='';
         this.remark='';
 
         this.details=[];

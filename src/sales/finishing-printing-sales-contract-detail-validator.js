@@ -1,5 +1,5 @@
 require("should");
-var validateColorType = require('../master/color-type-validator');
+var validateCurrency= require('../master/currency-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -13,5 +13,12 @@ module.exports = function (data) {
 
     data.should.have.property('useIncomeTax');
     data.useIncomeTax.should.instanceof(Boolean);
+    
+    data.should.have.property('currencyId');
+    data.currencyId.should.instanceof(Object);
+
+    data.should.have.property('currency');
+    data.currency.should.instanceof(Object);
+    validateCurrency(data.currency);
 
 };
