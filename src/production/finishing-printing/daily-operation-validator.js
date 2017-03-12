@@ -21,6 +21,13 @@ module.exports = function(data) {
     data.machine.should.instanceOf(Object);
     validateMachine(data.machine);
 
+    data.should.have.property('stepId');
+    data.stepId.should.instanceOf(Object);
+
+    data.should.have.property('step');
+    data.step.should.instanceOf(Object);
+    validateStep(data.step);
+
     data.should.have.property('shift');
     data.shift.should.be.String();
 
