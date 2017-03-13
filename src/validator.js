@@ -40,6 +40,7 @@ module.exports = {
                 machineEvent: require('./master/machine-event-validator'),
                 comodity: require('./master/comodity-validator'),
                 quality: require('./master/quality-validator'),
+                arrayStep: require('./master/array-step-validator'),
                 termOfPayment: require('./master/term-of-payment-validator')
         },
         purchasing: {

@@ -11,6 +11,8 @@ module.exports = class DailyOperation extends BaseModel {
 
         this.kanbanId = {};
         this.kanban = new Kanban();
+        this.stepId = {};
+        this.step = new Step();
         this.machineId = {};
         this.machine = new Machine();
         this.shift = '';

@@ -1,7 +1,7 @@
 require("should");
 var validateUnit = require('./unit-validator');
 var validateMachineType = require('./machine-type-validator');
-var validateStep = require('./step-validator');
+var validateArrayStep = require('./array-step-validator');
 var validateMachineEvent = require('./machine-event-validator');
 
 module.exports = function (data) {
@@ -21,13 +21,6 @@ module.exports = function (data) {
     data.should.have.property('unit');
     data.unit.should.instanceOf(Object);
     validateUnit(data.unit);
-
-    data.should.have.property('stepId');
-    data.stepId.should.instanceOf(Object);
-
-    data.should.have.property('step');
-    data.step.should.instanceOf(Object);
-    validateStep(data.step);
 
     data.should.have.property('process');
     data.process.should.instanceOf(String);
@@ -50,6 +43,12 @@ module.exports = function (data) {
 
     for (var machineEvent of data.machineEvents) {
         validateMachineEvent(machineEvent);
+    }
+
+    data.should.have.property('steps');
+    data.steps.should.instanceOf(Array);
+    for (var step of data.steps) {
+        validateArrayStep(step);
     }
 
     data.should.have.property('monthlyCapacity');

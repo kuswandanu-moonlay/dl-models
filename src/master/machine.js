@@ -3,7 +3,7 @@
 var BaseModel = require('model-toolkit').BaseModel;
 var Unit = require('./unit');
 var MachineType = require('./machine-type');
-var Step = require('./step');
+var ArrayStep = require('./array-step');
 var MachineEvent = require('./machine-event');
 
 module.exports = class Machine extends BaseModel {
@@ -15,8 +15,7 @@ module.exports = class Machine extends BaseModel {
         this.name = '';
         this.unitId = {};
         this.unit = new Unit();
-        this.stepId = {};
-        this.step = new Step();
+        this.steps = [];
         this.process = '';
         this.manufacture = '';
         this.year = 1900;
@@ -28,7 +27,7 @@ module.exports = class Machine extends BaseModel {
 
         this.copy(source);
         this.unit = new Unit(this.unit);
-
         this.machineEvents = (this.machineEvents || []).map(machineEvent => new MachineEvent(machineEvent));
+        this.steps = (this.steps || []).map(step => new ArrayStep(step));
     }
 };
