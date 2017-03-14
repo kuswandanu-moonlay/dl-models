@@ -64,7 +64,7 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.agentId={};
         this.agent=new Buyer();
 
-        this.comission=0;
+        this.comission='';
         this.deliverySchedule=new Date();
         this.condition='';
         this.remark='';
