@@ -13,6 +13,9 @@ module.exports = function (data) {
     data.should.have.property('address');
     data.address.should.instanceOf(String);
 
+    data.should.have.property('city');
+    data.city.should.instanceOf(String);
+
     data.should.have.property('country');
     data.country.should.instanceOf(String);
 
@@ -20,5 +23,8 @@ module.exports = function (data) {
     data.contact.should.instanceOf(String);
 
     data.should.have.property('tempo');
-    data.tempo.should.instanceOf(String);
-};
+    data.tempo.should.instanceOf(String); 
+
+    data.should.have.property('NPWP');
+    data.NPWP.should.instanceOf(String);
+}; 

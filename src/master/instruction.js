@@ -1,15 +1,17 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel; 
+var Step = require('./step');
 
-module.exports = class instruction extends BaseModel{
-    constructor(source){
+module.exports = class Instruction extends BaseModel {
+    constructor(source) {
         super('instruction', '1.0.0');
-        this.material = '';
-        this.construction = '';
-        this.processType = '';
-        this.steps=[];
-        
+
+        this.code='';
+        this.name='';
+        this.steps = []; 
+
         this.copy(source);
+        this.steps = (this.steps || []).map(step => new Step(step));
     }
 };

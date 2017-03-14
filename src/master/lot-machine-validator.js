@@ -24,7 +24,7 @@ module.exports = function (data) {
 
     data.should.have.property('machine');
     data.machine.should.instanceof(Object);
-    validateProduct(data.product);
+    validateMachine(data.machine);
 
     data.should.have.property('ne');
     data.ne.should.instanceof(Number);
