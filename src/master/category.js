@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 
 module.exports = class Category extends BaseModel {
     constructor(source) {
@@ -13,4 +13,4 @@ module.exports = class Category extends BaseModel {
 
         this.copy(source);
     }
-}
+};

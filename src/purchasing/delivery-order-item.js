@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var PurchaseOrderExternal = require('../purchasing/purchase-order-external');
 var DeliveryOrderItemFulfillment = require('../purchasing/delivery-order-item-fulfillment');
 
@@ -17,4 +17,4 @@ module.exports = class DeliveryOrderItem extends BaseModel {
         this.copy(source);
         this.fulfillments = (this.fulfillments || []).map(fulfillment => new DeliveryOrderItemFulfillment(fulfillment));
     }
-}
+};

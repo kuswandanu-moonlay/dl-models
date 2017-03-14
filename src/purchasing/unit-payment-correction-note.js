@@ -1,5 +1,5 @@
-'use strict'
-var BaseModel = require('capital-models').BaseModel;
+'use strict';
+var BaseModel = require('model-toolkit').BaseModel;
 var Supplier = require('../master/supplier');
 var UnitPaymentCorrectionNoteItem = require('./unit-payment-correction-note-item');
 
@@ -19,7 +19,7 @@ module.exports = class UnitPaymentCorrectionNote extends BaseModel {
         this.vatTaxCorrectionNo = '';
         this.vatTaxCorrectionDate = new Date();
         this.returNoteNo = '';
-        this.priceCorrectionType='';
+        this.correctionType='';
         this.releaseOrderNoteNo='';
         this.remark = '';
         this.items = [];
@@ -27,4 +27,4 @@ module.exports = class UnitPaymentCorrectionNote extends BaseModel {
 
         this.items = (this.items || []).map(item => new UnitPaymentCorrectionNoteItem(item));
     }
-}
+};

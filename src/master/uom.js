@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel; 
+var BaseModel = require('model-toolkit').BaseModel; 
 
 module.exports = class uom extends BaseModel{
     constructor(source){
@@ -8,4 +8,4 @@ module.exports = class uom extends BaseModel{
         this.unit = '';
         this.copy(source);
     }
-}
+};

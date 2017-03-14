@@ -53,4 +53,4 @@ module.exports = function (data) {
 
     data.should.have.property('mtdUtilityPercentage');
     data.mtdUtilityPercentage.should.instanceOf(Number);
-}
+};

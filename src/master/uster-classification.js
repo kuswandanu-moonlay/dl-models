@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 
 module.exports = class UsterClassification extends BaseModel {
     constructor(source) {
@@ -15,4 +15,4 @@ module.exports = class UsterClassification extends BaseModel {
 
         this.copy(source);
     }
-}
+};

@@ -31,4 +31,4 @@ module.exports = function (data) {
 
     data.should.have.property('constant');
     data.constant.should.instanceof(Number);
-}
+};

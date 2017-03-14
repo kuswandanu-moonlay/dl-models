@@ -49,40 +49,40 @@ module.exports = function (data) {
     data.should.have.property('supplier');
     data.supplier.should.instanceof(Object);
     validateSupplier(data.supplier);
-    
+
     data.should.have.property('unitId');
     data.unitId.should.instanceof(Object);
 
     data.should.have.property('unit');
     data.unit.should.instanceof(Object);
-    
+
     data.should.have.property('categoryId');
     data.categoryId.should.instanceof(Object);
 
     data.should.have.property('category');
     data.category.should.instanceof(Object);
-    
+
 
     data.should.have.property('freightCostBy');
     data.freightCostBy.should.instanceOf(String);
 
     data.should.have.property('currency');
-    data.supplier.should.instanceof(Object);
+    data.currency.should.instanceof(Object);
     validateCurrency(data.currency);
 
     data.should.have.property('currencyRate');
     data.currencyRate.should.instanceOf(Number);
-    
+
     data.should.have.property('paymentMethod');
     data.paymentMethod.should.instanceOf(String);
 
     data.should.have.property('paymentDueDays');
     data.paymentDueDays.should.instanceOf(Number);
-   
-   data.should.have.property('vat');
+
+    data.should.have.property('vat');
     data.vat.should.instanceof(Object);
     validateVat(data.vat);
-    
+
     data.should.have.property('useVat');
     data.useVat.should.instanceOf(Boolean);
 
@@ -94,25 +94,28 @@ module.exports = function (data) {
 
     data.should.have.property('date');
     data.date.should.instanceof(Date);
-    
+
     data.should.have.property('expectedDeliveryDate');
     data.expectedDeliveryDate.should.instanceof(Date);
-    
+
     data.should.have.property('actualDeliveryDate');
     data.actualDeliveryDate.should.instanceof(Date);
-    
+
     data.should.have.property('isPosted');
     data.isPosted.should.instanceOf(Boolean);
-    
+
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
-    
+
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
-    
+
     data.should.have.property('items');
-    data.items.should.instanceOf(Array); 
+    data.items.should.instanceOf(Array);
     for (var item of data.items) {
         validatePurchaseOrderItem(item);
     }
-}
+
+    data.should.have.property('status');
+    data.status.should.instanceof(Object);
+};

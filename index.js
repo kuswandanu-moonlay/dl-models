@@ -20,7 +20,10 @@ module.exports = {
         LotMachine:require('./src/master/lot-machine'),
         YarnEquivalentConversion:require('./src/master/yarn-equivalent-conversion'), 
         Uster:require('./src/master/uster'),
-        UsterClassification:require('./src/master/uster-classification')
+        UsterClassification:require('./src/master/uster-classification'),
+        LampStandard:require('./src/master/lamp-standard'),
+        AccountBank:require('./src/master/account-bank'),
+        Instruction:require('./src/master/instruction')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -37,7 +40,11 @@ module.exports = {
         UnitPaymentCorrectionNote: require('./src/purchasing/unit-payment-correction-note'),
         UnitPaymentCorrectionNoteItem: require('./src/purchasing/unit-payment-correction-note-item'),
         UnitPaymentOrder: require('./src/purchasing/unit-payment-order'),
-        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item')
+        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item'),
+        enum: {
+            PurchaseRequestStatus: require('./src/purchasing/enum/purchase-request-status-enum'),
+            PurchaseOrderStatus: require('./src/purchasing/enum/purchase-order-status-enum')
+        }
     },
     production:{
         spinning:{
@@ -46,6 +53,11 @@ module.exports = {
                 WindingProductionOutput: require('./src/production/spinning/winding/winding-production-output')
             },
             DailySpinningProductionReport: require('./src/production/spinning/daily-spinning-production-report')
+        },
+        finishingPrinting : {
+            ProductionOrder: require('./src/production/finishing-printing/production-order'),
+            ProductionOrderDetail: require('./src/production/finishing-printing/production-order-detail'),
+            SalesContract: require("./src/production/finishing-printing/sales-contract")
         }
     },
     map: require('./src/map'),

@@ -35,8 +35,8 @@ module.exports = function (data) {
     data.should.have.property('returNoteNo');
     data.returNoteNo.should.instanceof(String);
     
-    data.should.have.property('priceCorrectionType');
-    data.priceCorrectionType.should.instanceof(String);
+    data.should.have.property('correctionType');
+    data.correctionType.should.instanceof(String);
     
     data.should.have.property('releaseOrderNoteNo');
     data.releaseOrderNoteNo.should.instanceof(String);
@@ -49,4 +49,4 @@ module.exports = function (data) {
     for (var item of data.items) {
         validateUnitPaymentCorrectionNoteItem(item);
     }
-}
+};

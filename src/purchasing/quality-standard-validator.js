@@ -21,4 +21,4 @@ module.exports = function (data) {
     
     data.should.have.property('lightMedPrespiration');
     data.lightMedPrespiration.should.instanceOf(Number);
-}
+};

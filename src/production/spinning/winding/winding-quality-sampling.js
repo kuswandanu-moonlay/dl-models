@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('model-toolkit').BaseModel;
 var Machine = require('../../../master/machine');
 var Product = require('../../../master/product');
 var Uster = require('../../../master/uster');
@@ -29,4 +29,4 @@ module.exports = class WindingQualitySampling extends BaseModel {
 
         this.copy(source);
     }
-}
+};

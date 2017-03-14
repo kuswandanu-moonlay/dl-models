@@ -37,7 +37,10 @@ module.exports = {
             UsterClassification: 'uster-classifications',
             LotMachine: 'lot-machines',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
-            Uster: 'usters'
+            Uster: 'usters',
+            LampStandard : 'lamp-standards',
+            AccountBank : 'account-banks',
+            Instruction : 'instructions'
         }
     },
     purchasing: {
@@ -74,6 +77,14 @@ module.exports = {
             },
             collection: {
                 DailySpinningProductionReport : 'daily-spinning-production-report'
+            }
+        },
+        finishingPrinting :{
+            type:{
+                SalesContract : 'sales-contract'
+            },
+            collection:{
+                SalesContract : 'sales-contracts'
             }
         }
     }
