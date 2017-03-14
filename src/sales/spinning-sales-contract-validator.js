@@ -55,6 +55,9 @@ module.exports = function (data) {
     data.termOfPayment.should.instanceof(Object);
     validateTermOfPayment(data.termOfPayment);
 
+    data.should.have.property('termOfShipment');
+    data.termOfShipment.should.be.String();
+
 
     data.should.have.property('incomeTax');
     data.incomeTax.should.be.String();
@@ -71,6 +74,9 @@ module.exports = function (data) {
 
     data.should.have.property('condition');
     data.condition.should.be.String();
+
+    data.should.have.property('attachment');
+    data.termOfShipment.should.be.String();
 
     data.should.have.property('deliverySchedule');
     data.deliverySchedule.should.instanceof(Date);
