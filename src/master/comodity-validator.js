@@ -9,4 +9,7 @@ module.exports = function (data) {
 
     data.should.have.property('name');
     data.name.should.instanceOf(String);
+
+    data.should.have.property('type');
+    data.type.should.instanceOf(String);
 };

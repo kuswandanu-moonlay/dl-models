@@ -9,6 +9,7 @@ module.exports = class Comodity extends BaseModel {
         // Define properties.  
         this.code = '';
         this.name = '';
+        this.type = '';
 
         this.copy(source);
     }
