@@ -55,7 +55,6 @@ module.exports = class SpinningSalesContract extends BaseModel {
         this.comission = 0;
         this.deliverySchedule = new Date();
         this.condition = '';
-        this.attachment = '';
         this.remark = '';
 
         this.copy(source);
