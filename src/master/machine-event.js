@@ -10,6 +10,7 @@ module.exports = class MachineEvent extends BaseModel {
         this.code = '';
         this.no = '';
         this.name = '';
+        this.category = '';
 
         this.copy(source);
     }
