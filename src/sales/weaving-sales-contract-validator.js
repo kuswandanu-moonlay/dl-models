@@ -104,7 +104,4 @@ module.exports = function (data) {
     data.should.have.property('deliverySchedule');
     data.deliverySchedule.should.instanceof(Date);
 
-    data.should.have.property('shipmentSchedule');
-    data.shipmentSchedule.should.instanceof(Date);
-
 };
