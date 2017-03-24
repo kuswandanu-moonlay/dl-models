@@ -55,6 +55,8 @@ module.exports = function (data) {
     data.termOfPayment.should.instanceof(Object);
     validateTermOfPayment(data.termOfPayment);
 
+    data.should.have.property('termOfShipment');
+    data.termOfShipment.should.be.String();
 
     data.should.have.property('incomeTax');
     data.incomeTax.should.be.String();
