@@ -104,4 +104,7 @@ module.exports = function (data) {
     data.should.have.property('deliverySchedule');
     data.deliverySchedule.should.instanceof(Date);
 
+    data.should.have.property('pieceLength');
+    data.pieceLength.should.be.String();
+
 };
