@@ -20,7 +20,12 @@ module.exports = class Kanban extends BaseModel {
         this.instruction = new Instruction();
         this.grade = '';
         this.isComplete = false;
-
+        this.currentStepIndex = 0;
+        this.currentQty = 0;
+        this.goodOutput = 0;
+        this.badOutput = 0;
+        this.oldKanbanId = {};
+        this.oldKanban = {};
         this.copy(source);
     }
 };

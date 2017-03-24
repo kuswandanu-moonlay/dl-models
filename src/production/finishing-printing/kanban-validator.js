@@ -35,4 +35,25 @@ module.exports = function(data) {
 
     data.should.have.property('grade');
     data.grade.should.instanceof(String);
+
+    data.should.have.property('isComplete');
+    data.isComplete.should.instanceof(Boolean);
+
+    data.should.have.property('currentStepIndex');
+    data.currentStepIndex.should.instanceof(Number);
+
+    data.should.have.property('currentQty');
+    data.currentQty.should.instanceof(Number);
+
+    data.should.have.property('goodOutput');
+    data.goodOutput.should.instanceof(Number);
+
+    data.should.have.property('badOutput');
+    data.badOutput.should.instanceof(Number);
+
+    data.should.have.property('oldKanbanId');
+    data.oldKanbanId.should.instanceof(Object);
+
+    data.should.have.property('oldKanban');
+    data.oldKanban.should.instanceof(Object);
 };
