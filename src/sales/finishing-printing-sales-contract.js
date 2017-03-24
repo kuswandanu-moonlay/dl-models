@@ -4,7 +4,7 @@ var ProductionOrder=require('./production-order');
 var Buyer = require('../master/buyer');
 var Product = require('../master/product');
 var OrderType = require('../master/order-type');
-var ProcessType = require('../master/process-type');
+var DesignMotive = require('../master/design-motive');
 var uom = require('../master/uom');
 var AccountBank = require('../master/account-bank');
 var MaterialConstruction=require('../master/material-construction');
@@ -26,8 +26,8 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
 
         this.dispositionNumber='';
 
-        this.processTypeId={};
-        this.processType=new ProcessType();
+        this.designMotiveId={};
+        this.designMotive=new DesignMotive();
 
         this.orderTypeId={};
         this.orderType=new OrderType();
@@ -48,6 +48,7 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.orderQuantity=0;
         this.shippingQuantityTolerance=0;
         this.amount=0;
+        this.pieceLength='';
 
         this.comodityId={};
         this.comodity=new Comodity();
@@ -76,7 +77,6 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.comission='';
         this.deliverySchedule=new Date();
         this.condition='';
-        this.remark='';
 
         this.details=[];
         this.details = (this.details || []).map(detail => new SalesContractDetail(detail));
