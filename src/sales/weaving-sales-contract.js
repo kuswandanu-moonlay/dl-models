@@ -68,6 +68,7 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.deliverySchedule=new Date();
         this.condition='';
         this.remark='';
+        this.pieceLength='';
 
         this.copy(source);
     }
