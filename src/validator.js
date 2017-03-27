@@ -41,7 +41,8 @@ module.exports = {
                 comodity: require('./master/comodity-validator'),
                 quality: require('./master/quality-validator'),
                 arrayStep: require('./master/array-step-validator'),
-                termOfPayment: require('./master/term-of-payment-validator')
+                termOfPayment: require('./master/term-of-payment-validator'),
+                designMotive: require('./master/design-motive-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

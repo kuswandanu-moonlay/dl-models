@@ -3,7 +3,6 @@ require("should");
 var validateBuyer = require('../master/buyer-validator');
 var validateUom = require('../master/uom-validator');
 var validateProduct = require('../master/product-validator');
-var validateProcessType = require('../master/process-type-validator');
 var validateOrderType = require('../master/order-type-validator');
 var validateAccount= require('../master/account-bank-validator');
 var validateMaterialConstruction= require ('../master/material-construction-validator');
@@ -26,13 +25,6 @@ module.exports = function (data) {
     data.should.have.property('buyer');
     data.buyer.should.instanceof(Object);
     validateBuyer(data.buyer);
-
-    data.should.have.property('processTypeId');
-    data.processTypeId.should.instanceof(Object);
-
-    data.should.have.property('processType');
-    data.processType.should.instanceof(Object);
-    validateProcessType(data.processType);
 
     data.should.have.property('orderTypeId');
     data.orderTypeId.should.instanceof(Object);

@@ -169,3 +169,8 @@ it("#29. Term of Payment should valid", function () {
     var TermOfPayment = require('../src/master/term-of-payment');
     validate.termOfPayment(new TermOfPayment());
 });
+
+it("#30. Design Motive should valid", function () {
+    var DesignMotive = require('../src/master/design-motive');
+    validate.designMotive(new DesignMotive());
+});
