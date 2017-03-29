@@ -56,7 +56,8 @@ module.exports = {
             StandardTest: 'standard-tests',
             Comodity: 'comodities',
             Quality:'qualities',
-            TermOfPayment:'term-of-payments'
+            TermOfPayment:'term-of-payments',
+            DesignMotive:'design-motives'
         }
     },
     purchasing: {
