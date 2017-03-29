@@ -9,6 +9,7 @@ module.exports = class DailyOperation extends BaseModel {
     constructor(source) {
         super('daily-operation', '1.0.0');
 
+        this.code = '';
         this.kanbanId = {};
         this.kanban = new Kanban();
         this.stepId = {};
@@ -16,9 +17,10 @@ module.exports = class DailyOperation extends BaseModel {
         this.machineId = {};
         this.machine = new Machine();
         this.shift = '';
-        this.dateInput = new Date();
-        this.timeInput = 0;
-        this.input = 0;
+        this.type = '';
+        this.dateInput = null;
+        this.timeInput = null;
+        this.input = null;
         this.dateOutput = null;
         this.timeOutput = null;
         this.goodOutput = null;

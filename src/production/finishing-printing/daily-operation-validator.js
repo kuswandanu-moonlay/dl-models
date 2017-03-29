@@ -7,6 +7,9 @@ module.exports = function(data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
+    data.should.have.property('code');
+    data.code.should.be.String();
+
     data.should.have.property('kanbanId');
     data.kanbanId.should.instanceOf(Object);
 
@@ -31,14 +34,17 @@ module.exports = function(data) {
     data.should.have.property('shift');
     data.shift.should.be.String();
 
-    data.should.have.property('input');
-    data.input.should.instanceOf(Number);
+    data.should.have.property('shift');
+    data.shift.should.be.String();
 
-    data.should.have.property('dateInput');
-    data.dateInput.should.instanceof(Date);
+    if(data.input)
+        data.input.should.instanceOf(Number);
 
-    data.should.have.property('timeInput');
-    data.timeInput.should.instanceOf(Number);
+    if(data.dateInput)
+        data.dateInput.should.instanceof(Date);
+
+    if(data.timeInput)
+        data.timeInput.should.instanceOf(Number);
 
     if(data.goodOutput)
         data.goodOutput.should.instanceOf(Number);
