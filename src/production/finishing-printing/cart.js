@@ -1,6 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
+var Uom = require("../../master/uom");
 
 module.exports = class Cart extends BaseModel {
     constructor(source) {
@@ -11,6 +12,8 @@ module.exports = class Cart extends BaseModel {
         this.cartNumber = '';
         this.qty = 0;
         this.pcs = 0;
+        this.uomId = {};
+        this.uom = new Uom();
         this.copy(source);
     }
 };
