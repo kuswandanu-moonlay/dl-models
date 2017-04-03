@@ -14,7 +14,7 @@ module.exports = class MonitoringSpecificationMachine extends BaseModel {
         // Define properties.
         this.code = "";
         this.date = new Date();
-        this.time = "";
+        this.time = new Date();
         this.machineId = {};
         this.machine = new Machine();
         this.productionOrderId = {};
