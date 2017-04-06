@@ -30,3 +30,18 @@ it("#06. Kanban Finishing Printing should valid", function () {
     var Kanban = require('../src/production/finishing-printing/kanban');
     validate.finishingPrinting.kanban(new Kanban());
 });
+
+it("#07. Fabric Test Criterion should valid", function () {
+    var FabricTestCriterion = require('../src/production/finishing-printing/quality-control/defect/fabric-test-criterion');
+    validate.finishingPrinting.qualityControl.defect.fabricTestCriterion(new FabricTestCriterion());
+});
+
+it("#08. Fabric Grade Test should valid", function () {
+    var FabricGradeTest = require('../src/production/finishing-printing/quality-control/defect/fabric-grade-test');
+    validate.finishingPrinting.qualityControl.defect.fabricGradeTest(new FabricGradeTest());
+});
+
+it("#09. Fabric Quality Control should valid", function () {
+    var FabricQualityControl = require('../src/production/finishing-printing/quality-control/defect/fabric-quality-control');
+    validate.finishingPrinting.qualityControl.defect.fabricQualityControl(new FabricQualityControl());
+});

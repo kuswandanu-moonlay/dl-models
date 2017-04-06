@@ -42,22 +42,22 @@ module.exports = {
             LotMachine: 'lot-machines',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
-            LampStandard : 'lamp-standards',
-            AccountBank : 'account-banks',
-            Instruction : 'instructions',
-            OrderType : 'order-types',
-            ProcessType : 'process-types',
-            ColorType : 'color-types',
-            Step : 'steps',
-            MachineSpesificationStandard : 'machine-spesification-standards',
-            MaterialConstruction : 'material-constructions',
-            YarnMaterial : 'yarn-materials',
+            LampStandard: 'lamp-standards',
+            AccountBank: 'account-banks',
+            Instruction: 'instructions',
+            OrderType: 'order-types',
+            ProcessType: 'process-types',
+            ColorType: 'color-types',
+            Step: 'steps',
+            MachineSpesificationStandard: 'machine-spesification-standards',
+            MaterialConstruction: 'material-constructions',
+            YarnMaterial: 'yarn-materials',
             FinishType: 'finish-types',
             StandardTest: 'standard-tests',
             Comodity: 'comodities',
-            Quality:'qualities',
-            TermOfPayment:'term-of-payments',
-            DesignMotive:'design-motives'
+            Quality: 'qualities',
+            TermOfPayment: 'term-of-payments',
+            DesignMotive: 'design-motives'
         }
     },
     purchasing: {
@@ -107,6 +107,19 @@ module.exports = {
                 Kanban: 'kanbans',
                 MonitoringSpecificationMachine: 'monitoring-specification-machines'
 
+            },
+            qualityControl: {
+                defect: {
+                    type: {
+                        FabricTestCriterion: "fabric-test-criterion",
+                        FabricGradeTest: "fabric-grade-test",
+                        FabricQualityControl: "fabric-quality-control"
+                    },
+                    collection: {
+                        SolidFabricQualityControl: "solid-fabric-quality-control",
+                        PrintingFabricQualityControl: "printing-fabric-quality-control"
+                    }
+                }
             }
 
         },
@@ -115,13 +128,13 @@ module.exports = {
         type: {
             ProductionOrder: 'production-order',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contract',
-            WeavingSalesContract:'weaving-sales-contract',
+            WeavingSalesContract: 'weaving-sales-contract',
             SpinningSalesContract: 'spinning-sales-contract'
         },
         collection: {
-            ProductionOrder : 'production-orders',
+            ProductionOrder: 'production-orders',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contracts',
-            WeavingSalesContract:'weaving-sales-contracts',
+            WeavingSalesContract: 'weaving-sales-contracts',
             SpinningSalesContract: 'spinning-sales-contracts'
         }
     }

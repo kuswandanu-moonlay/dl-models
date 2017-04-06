@@ -77,7 +77,14 @@ module.exports = {
             MonitoringEvent: require("./src/production/finishing-printing/monitoring-event"),
             DailyOperation: require("./src/production/finishing-printing/daily-operation"),
             Kanban: require("./src/production/finishing-printing/kanban"),
-            MonitoringSpecificationMachine:require("./src/production/finishing-printing/monitoring-specification-machine")
+            MonitoringSpecificationMachine:require("./src/production/finishing-printing/monitoring-specification-machine"),
+            qualityControl:{
+                defect:{
+                    FabricTestCriterion: require("./src/production/finishing-printing/quality-control/defect/fabric-test-criterion"),
+                    FabricGradeTest: require("./src/production/finishing-printing/quality-control/defect/fabric-grade-test"),
+                    FabricQualityControl: require("./src/production/finishing-printing/quality-control/defect/fabric-quality-control")
+                }
+            }
         }
     },
     sales:{
