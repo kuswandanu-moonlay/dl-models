@@ -8,6 +8,7 @@ module.exports = class FabricQualityControl extends BaseModel {
         super('fabric-quality-control', '1.0.0');
 
         // Define properties.
+        this.code = "";
         this.dateIm = new Date();
         this.shiftIm = "";
         this.group = "";
