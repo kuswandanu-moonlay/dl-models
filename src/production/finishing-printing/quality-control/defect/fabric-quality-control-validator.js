@@ -26,6 +26,15 @@ module.exports = function(data) {
     data.should.have.property('machineNoIm');
     data.machineNoIm.should.be.String();
     
+    data.should.have.property('productionOrderNo');
+    data.productionOrderNo.should.be.String();
+    
+    data.should.have.property('productionOrderType');
+    data.productionOrderType.should.be.String();
+    
+    data.should.have.property('kanbanCode');
+    data.kanbanCode.should.be.String();
+     
     data.should.have.property('kanbanId');
     data.kanbanId.should.instanceOf(Object) 
      
