@@ -8,6 +8,9 @@ module.exports = function(data) {
     data.should.have.property('code');
     data.code.should.be.String();
     
+    data.should.have.property('pointSystem');
+    data.pointSystem.should.instanceOf(Number); 
+    
     data.should.have.property('dateIm');
     data.dateIm.should.instanceOf(Date);
 
