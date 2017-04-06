@@ -116,8 +116,7 @@ module.exports = {
                         FabricQualityControl: "fabric-quality-control"
                     },
                     collection: {
-                        SolidFabricQualityControl: "solid-fabric-quality-control",
-                        PrintingFabricQualityControl: "printing-fabric-quality-control"
+                        FabricQualityControl: "fabric-quality-controls"
                     }
                 }
             }
