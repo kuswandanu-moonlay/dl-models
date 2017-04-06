@@ -34,7 +34,19 @@ module.exports = function(data) {
     
     data.should.have.property('kanbanCode');
     data.kanbanCode.should.be.String();
-     
+    
+    data.should.have.property('cartNo');
+    data.cartNo.should.be.String();
+    
+    data.should.have.property('orderQuantity');
+    data.orderQuantity.should.instanceOf(Number);
+    
+    data.should.have.property('buyer');
+    data.buyer.should.be.String();
+    
+    data.should.have.property('color');
+    data.color.should.be.String();
+    
     data.should.have.property('kanbanId');
     data.kanbanId.should.instanceOf(Object) 
      
