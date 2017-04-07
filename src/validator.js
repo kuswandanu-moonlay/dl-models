@@ -41,7 +41,8 @@ module.exports = {
                 comodity: require('./master/comodity-validator'),
                 quality: require('./master/quality-validator'),
                 arrayStep: require('./master/array-step-validator'),
-                termOfPayment: require('./master/term-of-payment-validator')
+                termOfPayment: require('./master/term-of-payment-validator'),
+                designMotive: require('./master/design-motive-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -63,21 +64,28 @@ module.exports = {
                                 windingProductionOutput: require("./production/spinning/winding/winding-production-output-validator")
                         }
                 },
-                finishingPrinting:{
+                finishingPrinting: {
                         monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
-                        dailyOperation : require("./production/finishing-printing/daily-operation-validator"),
-                        kanban : require("./production/finishing-printing/kanban-validator"),
-                        monitoringSpecificationMachine:require("./production/finishing-printing/monitoring-specification-machine-validator")
+                        dailyOperation: require("./production/finishing-printing/daily-operation-validator"),
+                        kanban: require("./production/finishing-printing/kanban-validator"),
+                        monitoringSpecificationMachine: require("./production/finishing-printing/monitoring-specification-machine-validator"),
+                        qualityControl: {
+                                defect: {
+                                        fabricTestCriterion: require("./production/finishing-printing/quality-control/defect/fabric-test-criterion-validator"),
+                                        fabricGradeTest: require("./production/finishing-printing/quality-control/defect/fabric-grade-test-validator"),
+                                        fabricQualityControl: require("./production/finishing-printing/quality-control/defect/fabric-quality-control-validator")
+                                }
+                        }
                 },
-                dailySpinningProductionReport : require("./production/spinning/daily-spinning-production-report-validator")
+                dailySpinningProductionReport: require("./production/spinning/daily-spinning-production-report-validator")
         },
-        sales : {
+        sales: {
                 productionOrder: require("./sales/production-order-validator"),
                 productionOrderDetail: require("./sales/production-order-detail-validator"),
                 productionOrderLampStandard: require("./sales/production-order-lamp-standard-validator"),
                 finishingPrintingSalesContract: require("./sales/finishing-printing-sales-contract-validator"),
                 finishingPrintingSalesContractDetail: require("./sales/finishing-printing-sales-contract-detail-validator"),
-                weavingSalesContract:require("./sales/weaving-sales-contract-validator"),
-                spinningSalesContract:require("./sales/spinning-sales-contract-validator")
+                weavingSalesContract: require("./sales/weaving-sales-contract-validator"),
+                spinningSalesContract: require("./sales/spinning-sales-contract-validator")
         }
 };

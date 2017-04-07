@@ -15,7 +15,7 @@ module.exports = function (data) {
     data.date.should.instanceOf(Date);
 
     data.should.have.property('time');
-    data.time.should.instanceof(String);
+    data.time.should.instanceOf(Date);
 
     data.should.have.property('machineId');
     data.machineId.should.instanceof(Object);

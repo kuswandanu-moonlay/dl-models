@@ -63,11 +63,12 @@ module.exports = class WeavingSalesContract extends BaseModel {
         
         this.agentId={};
         this.agent=new Buyer();
-        this.shipmentSchedule=new Date();
+
         this.comission='';
         this.deliverySchedule=new Date();
         this.condition='';
         this.remark='';
+        this.pieceLength='';
 
         this.copy(source);
     }
