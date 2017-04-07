@@ -27,6 +27,7 @@ module.exports = class FabricQualityControl extends BaseModel {
         this.color = "";
         this.construction = "";
         this.packingInstruction = "";
+        this.uom = "";
         
         this.kanbanId = {};
         
