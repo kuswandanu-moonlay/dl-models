@@ -77,6 +77,8 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.comission='';
         this.deliverySchedule=new Date();
         this.condition='';
+        this.pointSystem=10;
+        this.pointLimit=0;
 
         this.details=[];
         this.details = (this.details || []).map(detail => new SalesContractDetail(detail));
