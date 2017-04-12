@@ -14,6 +14,9 @@ module.exports = function(data) {
     data.should.have.property('productionOrderNo');
     data.productionOrderNo.should.instanceOf(String);
 
+    data.should.have.property('buyer');
+    data.buyer.should.instanceof(String);
+    
     data.should.have.property('date');
     data.date.should.be.Object();
 
@@ -25,6 +28,15 @@ module.exports = function(data) {
     for (var item of data.items) {
         validatePackingItem(item);
     }
+
+    data.should.have.property('colorCode');
+    data.colorCode.should.instanceof(String);
+    
+    data.should.have.property('colorName');
+    data.colorName.should.instanceof(String);
+    
+    data.should.have.property('motif');
+    data.motif.should.instanceof(String);
 
     data.should.have.property('status');
     data.status.should.instanceof(String);
