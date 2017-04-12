@@ -11,6 +11,7 @@ module.exports = class Packing extends BaseModel {
         this.productionOrderId = {};
         this.productionOrderNo = "";
         this.buyer = "";
+        this.buyerLocation = "";
         this.date = new Date();
         this.packingUom = "";
         this.colorCode = "";

@@ -17,6 +17,9 @@ module.exports = function(data) {
     data.should.have.property('buyer');
     data.buyer.should.instanceof(String);
     
+    data.should.have.property('buyerLocation');
+    data.buyerLocation.should.instanceof(String);
+    
     data.should.have.property('date');
     data.date.should.be.Object();
 
