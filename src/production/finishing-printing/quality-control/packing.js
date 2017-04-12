@@ -1,6 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
+var PackingItemModel = require("./packing-item");
 
 module.exports = class Packing extends BaseModel {
     constructor(source) {
@@ -23,6 +24,7 @@ module.exports = class Packing extends BaseModel {
         this.accepted = false;
         this.declined = false;
         this.copy(source);
+        this.items = this.items.map(item => new PackingItemModel(item));
 
     }
 };
