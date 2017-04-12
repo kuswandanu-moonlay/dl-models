@@ -118,6 +118,15 @@ module.exports = {
                     collection: {
                         FabricQualityControl: "fabric-quality-controls"
                     }
+                },
+
+                type: {
+                    Packing: "packing",
+                    PackingItem: "packing-item"
+                },
+                collection: {
+                    Packing: "packings",
+                    PackingItem: "packing-items",
                 }
             }
 

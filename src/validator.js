@@ -74,7 +74,9 @@ module.exports = {
                                         fabricTestCriterion: require("./production/finishing-printing/quality-control/defect/fabric-test-criterion-validator"),
                                         fabricGradeTest: require("./production/finishing-printing/quality-control/defect/fabric-grade-test-validator"),
                                         fabricQualityControl: require("./production/finishing-printing/quality-control/defect/fabric-quality-control-validator")
-                                }
+                                },
+                                packing: require("./production/finishing-printing/quality-control/packing-validator"),
+                                packingItem: require("./production/finishing-printing/quality-control/packing-item-validator")
                         }
                 },
                 dailySpinningProductionReport: require("./production/spinning/daily-spinning-production-report-validator")
