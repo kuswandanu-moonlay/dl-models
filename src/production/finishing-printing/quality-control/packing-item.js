@@ -12,7 +12,7 @@ module.exports = class PackingItem extends BaseModel {
         this.grade = '';
         this.weight = 0;
         this.length = 0;
-        this.amount = 0;
+        this.quantity = 0;
         this.remark = '';
         this.copy(source);
     }

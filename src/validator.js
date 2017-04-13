@@ -44,6 +44,12 @@ module.exports = {
                 termOfPayment: require('./master/term-of-payment-validator'),
                 designMotive: require('./master/design-motive-validator')
         },
+        inventory: {
+                finishingPrinting: {
+                        fpInventorySummary: require("./inventory/finishing-printing/fp-inventory-summary-validator"),
+                        fpInventoryMovement: require("./inventory/finishing-printing/fp-inventory-movement-validator")
+                }
+        },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
                 purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),

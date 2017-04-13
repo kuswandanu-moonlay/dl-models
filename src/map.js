@@ -60,6 +60,18 @@ module.exports = {
             DesignMotive: 'design-motives'
         }
     },
+    inventory:{
+      finishingPrinting : {
+          type:{
+              FPInventorySummary:"fp-inventory-summary",
+              FPInventoryMovement:"fp-inventory-movement",
+          },
+          collection:{
+              FPInventorySummary:"fp-inventory-summaries",
+              FPInventoryMovement:"fp-inventory-movements",
+          }
+      }  
+    },
     purchasing: {
         type: {
             PurchaseOrder: 'purchase-order',
