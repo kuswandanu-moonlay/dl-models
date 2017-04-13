@@ -10,6 +10,8 @@ module.exports = class FPInventoryMovement extends BaseModel {
         // Define properties.
         this.code = '';
         this.date = new Date();
+        this.packingId = {},
+        this.packingCode = "",
         this.productionOrderId = {};
         this.productionOrderNo = "";
         this.colorCode = "";
