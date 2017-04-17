@@ -18,9 +18,11 @@ module.exports = class UnitPaymentCorrectionNote extends BaseModel {
         this.incomeTaxCorrectionDate = new Date();
         this.vatTaxCorrectionNo = '';
         this.vatTaxCorrectionDate = new Date();
+        this.useVat = false;
+        this.useIncomeTax = false;
         this.returNoteNo = '';
-        this.correctionType='';
-        this.releaseOrderNoteNo='';
+        this.correctionType = '';
+        this.releaseOrderNoteNo = '';
         this.remark = '';
         this.items = [];
         this.copy(source);

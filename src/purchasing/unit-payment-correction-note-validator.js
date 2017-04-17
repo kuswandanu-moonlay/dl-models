@@ -32,6 +32,12 @@ module.exports = function (data) {
     data.should.have.property('vatTaxCorrectionDate');
     data.vatTaxCorrectionDate.should.instanceof(Date);
     
+    data.should.have.property('useIncomeTax');
+    data.useIncomeTax.should.instanceOf(Boolean);
+
+    data.should.have.property('useVat');
+    data.useVat.should.instanceOf(Boolean);
+    
     data.should.have.property('returNoteNo');
     data.returNoteNo.should.instanceof(String);
     
