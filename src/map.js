@@ -60,6 +60,20 @@ module.exports = {
             DesignMotive: 'design-motives'
         }
     },
+    inventory:{
+      finishingPrinting : {
+          type:{
+              FPInventorySummary:"fp-inventory-summary",
+              FPInventoryMovement:"fp-inventory-movement",
+              FPPackingReceipt:"fp-packing-receipt"
+          },
+          collection:{
+              FPInventorySummary:"fp-inventory-summaries",
+              FPInventoryMovement:"fp-inventory-movements",
+              FPPackingReceipt:"fp-packing-receipts"
+          }
+      }  
+    },
     purchasing: {
         type: {
             PurchaseOrder: 'purchase-order',
@@ -118,6 +132,15 @@ module.exports = {
                     collection: {
                         FabricQualityControl: "fabric-quality-controls"
                     }
+                },
+
+                type: {
+                    Packing: "packing",
+                    PackingItem: "packing-item"
+                },
+                collection: {
+                    Packing: "packings",
+                    PackingItem: "packing-items",
                 }
             }
 

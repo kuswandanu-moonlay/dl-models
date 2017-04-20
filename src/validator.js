@@ -44,6 +44,13 @@ module.exports = {
                 termOfPayment: require('./master/term-of-payment-validator'),
                 designMotive: require('./master/design-motive-validator')
         },
+        inventory: {
+                finishingPrinting: {
+                        fpInventorySummary: require("./inventory/finishing-printing/fp-inventory-summary-validator"),
+                        fpInventoryMovement: require("./inventory/finishing-printing/fp-inventory-movement-validator"),
+                        fpPackingReceipt: require("./inventory/finishing-printing/fp-packing-receipt-validator")
+                }
+        },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
                 purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),
@@ -74,7 +81,9 @@ module.exports = {
                                         fabricTestCriterion: require("./production/finishing-printing/quality-control/defect/fabric-test-criterion-validator"),
                                         fabricGradeTest: require("./production/finishing-printing/quality-control/defect/fabric-grade-test-validator"),
                                         fabricQualityControl: require("./production/finishing-printing/quality-control/defect/fabric-quality-control-validator")
-                                }
+                                },
+                                packing: require("./production/finishing-printing/quality-control/packing-validator"),
+                                packingItem: require("./production/finishing-printing/quality-control/packing-item-validator")
                         }
                 },
                 dailySpinningProductionReport: require("./production/spinning/daily-spinning-production-report-validator")

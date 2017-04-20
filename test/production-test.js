@@ -45,3 +45,11 @@ it("#09. Fabric Quality Control should valid", function () {
     var FabricQualityControl = require('../src/production/finishing-printing/quality-control/defect/fabric-quality-control');
     validate.finishingPrinting.qualityControl.defect.fabricQualityControl(new FabricQualityControl());
 });
+it("#10. Packing Item should valid", function () {
+    var PackingItem = require('../src/production/finishing-printing/quality-control/packing-item');
+    validate.finishingPrinting.qualityControl.packingItem(new PackingItem());
+});
+it("#11. Packing should valid", function () {
+    var Packing = require('../src/production/finishing-printing/quality-control/packing');
+    validate.finishingPrinting.qualityControl.packing(new Packing());
+});
