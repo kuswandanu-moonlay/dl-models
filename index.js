@@ -44,6 +44,13 @@ module.exports = {
         TermOfPayment: require('./src/master/term-of-payment'),
         DesignMotive: require('./src/master/design-motive')
     },
+    inventory:{
+      finishingPrinting:{
+          FPInventoryMovement:require("./src/inventory/finishing-printing/fp-inventory-movement"),
+          FPInventorySummary:require("./src/inventory/finishing-printing/fp-inventory-summary"),
+          FPPackingReceipt:require("./src/inventory/finishing-printing/fp-packing-receipt")
+      }
+    },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
         PurchaseOrder: require('./src/purchasing/purchase-order'),

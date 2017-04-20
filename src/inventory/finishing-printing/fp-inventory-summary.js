@@ -5,7 +5,7 @@ var Uom = require("../../master/uom");
 
 module.exports = class FPInventorySummary extends BaseModel {
     constructor(source) {
-        super('cart', '1.0.0');
+        super('fp-inventory-summary', '1.0.0');
 
         // Define properties.
         this.code = ''; 

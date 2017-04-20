@@ -65,10 +65,12 @@ module.exports = {
           type:{
               FPInventorySummary:"fp-inventory-summary",
               FPInventoryMovement:"fp-inventory-movement",
+              FPPackingReceipt:"fp-packing-receipt"
           },
           collection:{
               FPInventorySummary:"fp-inventory-summaries",
               FPInventoryMovement:"fp-inventory-movements",
+              FPPackingReceipt:"fp-packing-receipts"
           }
       }  
     },

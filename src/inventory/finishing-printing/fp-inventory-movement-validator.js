@@ -17,6 +17,12 @@ module.exports = function (data) {
     data.should.have.property('productionOrderNo');
     data.productionOrderNo.should.be.String();
     
+    data.should.have.property('packingId');
+    data.packingId.should.instanceof(Object);
+    
+    data.should.have.property('packingCode');
+    data.packingCode.should.be.String();
+    
     data.should.have.property('colorCode');
     data.colorCode.should.be.String();
     
