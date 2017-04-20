@@ -53,3 +53,8 @@ it("#11. Packing should valid", function () {
     var Packing = require('../src/production/finishing-printing/quality-control/packing');
     validate.finishingPrinting.qualityControl.packing(new Packing());
 });
+
+it("#12. Inspection lot color should valid", function () {
+    var InspectionLotColor = require('../src/production/finishing-printing/quality-control/inspection-lot-color');
+    validate.finishingPrinting.qualityControl.inspectionLotColor(new InspectionLotColor());
+});
