@@ -83,7 +83,9 @@ module.exports = {
                                         fabricQualityControl: require("./production/finishing-printing/quality-control/defect/fabric-quality-control-validator")
                                 },
                                 packing: require("./production/finishing-printing/quality-control/packing-validator"),
-                                packingItem: require("./production/finishing-printing/quality-control/packing-item-validator")
+                                packingItem: require("./production/finishing-printing/quality-control/packing-item-validator"),
+                                inspectionLotColor: require("./production/finishing-printing/quality-control/inspection-lot-color-validator"),
+                                inspectionLotColorItem: require("./production/finishing-printing/quality-control/inspection-lot-color-item-validator")
                         }
                 },
                 dailySpinningProductionReport: require("./production/spinning/daily-spinning-production-report-validator")
