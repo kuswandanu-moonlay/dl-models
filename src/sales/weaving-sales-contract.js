@@ -66,6 +66,7 @@ module.exports = class WeavingSalesContract extends BaseModel {
 
         this.comission='';
         this.deliverySchedule=new Date();
+        this.shipmentDescription='';
         this.condition='';
         this.remark='';
         this.pieceLength='';
