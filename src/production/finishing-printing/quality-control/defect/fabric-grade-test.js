@@ -13,15 +13,17 @@ module.exports = class FabricGradeTest extends BaseModel {
         this.grade = '';
         this.width = 0;
         this.pointSystem = 10;
-        
+        this.pointLimit = 0;
+
         this.initLength = 0;
         this.avalLength = 0;
         this.sampleLength = 0;
         this.finalLength = 0;
-        
+        this.finalArea = 0;
+
         this.score = 0;
         this.finalScore = 0;
-        
+
         this.criteria = [];
         this.copy(source);
 
