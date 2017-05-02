@@ -95,7 +95,9 @@ module.exports = {
                     FabricQualityControl: require("./src/production/finishing-printing/quality-control/defect/fabric-quality-control")
                 },
                 Packing: require("./src/production/finishing-printing/quality-control/packing"),
-                PackingItem: require("./src/production/finishing-printing/quality-control/packing-item")
+                PackingItem: require("./src/production/finishing-printing/quality-control/packing-item"),
+                InspectionLotColor: require("./src/production/finishing-printing/quality-control/inspection-lot-color"),
+                InspectionLotColorItem: require("./src/production/finishing-printing/quality-control/inspection-lot-color-item")
             }
         }
     },

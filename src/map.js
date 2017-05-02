@@ -147,11 +147,13 @@ module.exports = {
 
                 type: {
                     Packing: "packing",
-                    PackingItem: "packing-item"
+                    PackingItem: "packing-item",
+                    InspectionLotColor: "inspection-lot-color"
                 },
                 collection: {
                     Packing: "packings",
                     PackingItem: "packing-items",
+                    InspectionLotColor: "inspection-lot-colors"
                 }
             }
 

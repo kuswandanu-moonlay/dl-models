@@ -10,6 +10,7 @@ module.exports = class FabricQualityControl extends BaseModel {
         // Define properties.
         this.code = "";
         this.pointSystem = 10; // 4;
+        this.pointLimit = 0;
         this.dateIm = new Date();
         this.shiftIm = "";
         this.group = "";
