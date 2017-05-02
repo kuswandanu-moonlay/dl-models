@@ -60,19 +60,30 @@ module.exports = {
             DesignMotive: 'design-motives'
         }
     },
-    inventory:{
-      finishingPrinting : {
-          type:{
-              FPInventorySummary:"fp-inventory-summary",
-              FPInventoryMovement:"fp-inventory-movement",
-              FPPackingReceipt:"fp-packing-receipt"
-          },
-          collection:{
-              FPInventorySummary:"fp-inventory-summaries",
-              FPInventoryMovement:"fp-inventory-movements",
-              FPPackingReceipt:"fp-packing-receipts"
-          }
-      }  
+    inventory: {
+        finishingPrinting: {
+            type: {
+                FPInventorySummary: "fp-inventory-summary",
+                FPInventoryMovement: "fp-inventory-movement",
+                FPPackingReceipt: "fp-packing-receipt"
+            },
+            collection: {
+                FPInventorySummary: "fp-inventory-summaries",
+                FPInventoryMovement: "fp-inventory-movements",
+                FPPackingReceipt: "fp-packing-receipts"
+            }
+        },
+        type: {
+            InventorySummary: "inventory-summary",
+            InventoryMovement: "inventory-movement",
+            InventoryDocument: "inventory-document"
+        },
+        collection: {
+            InventorySummary: "inventory-summaries",
+            InventoryMovement: "inventory-movements",
+            InventoryDocument: "inventory-documents"
+        }
+
     },
     purchasing: {
         type: {

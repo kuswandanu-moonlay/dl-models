@@ -49,7 +49,10 @@ module.exports = {
                         fpInventorySummary: require("./inventory/finishing-printing/fp-inventory-summary-validator"),
                         fpInventoryMovement: require("./inventory/finishing-printing/fp-inventory-movement-validator"),
                         fpPackingReceipt: require("./inventory/finishing-printing/fp-packing-receipt-validator")
-                }
+                },
+                inventorySummary: require("./inventory/inventory-summary-validator"),
+                inventoryMovement: require("./inventory/inventory-movement-validator"),
+                inventoryDocument: require("./inventory/inventory-document-validator")
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
