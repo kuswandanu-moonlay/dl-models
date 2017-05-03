@@ -24,6 +24,7 @@ module.exports = {
             Uster: 'uster',
             Step: 'step',
             MachineType: 'machine-types',
+            Storage: 'storage',
         },
         collection: {
             Buyer: 'buyers',
@@ -57,7 +58,8 @@ module.exports = {
             Comodity: 'comodities',
             Quality: 'qualities',
             TermOfPayment: 'term-of-payments',
-            DesignMotive: 'design-motives'
+            DesignMotive: 'design-motives',
+            Storage: 'storages'
         }
     },
     inventory: {

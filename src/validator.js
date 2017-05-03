@@ -42,7 +42,8 @@ module.exports = {
                 quality: require('./master/quality-validator'),
                 arrayStep: require('./master/array-step-validator'),
                 termOfPayment: require('./master/term-of-payment-validator'),
-                designMotive: require('./master/design-motive-validator')
+                designMotive: require('./master/design-motive-validator'),
+                storage: require('./master/storage-validator')
         },
         inventory: {
                 finishingPrinting: {

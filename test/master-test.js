@@ -174,3 +174,7 @@ it("#30. Design Motive should valid", function () {
     var DesignMotive = require('../src/master/design-motive');
     validate.designMotive(new DesignMotive());
 });
+it("#31. Storage should valid", function () {
+    var Storage = require('../src/master/storage');
+    validate.designMotive(new Storage());
+});

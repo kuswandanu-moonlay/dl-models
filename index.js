@@ -42,7 +42,8 @@ module.exports = {
         Quality: require('./src/master/quality'),
         ArrayStep: require('./src/master/array-step'),
         TermOfPayment: require('./src/master/term-of-payment'),
-        DesignMotive: require('./src/master/design-motive')
+        DesignMotive: require('./src/master/design-motive'),
+        Storage: require('./src/master/storage')
     },
     inventory: {
         finishingPrinting: {
