@@ -15,6 +15,11 @@ module.exports = class FPPackingReceipt extends BaseModel {
         this.accepted = false;
         this.declined = false;
         this.remark = "";
+
+        this.productionOrderNo = "";
+        this.buyer = "";
+        this.colorName = "";
+        this.construction = "";
         
         this.copy(source);
     }
