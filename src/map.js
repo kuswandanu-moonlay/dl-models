@@ -24,6 +24,7 @@ module.exports = {
             Uster: 'uster',
             Step: 'step',
             MachineType: 'machine-types',
+            Storage: 'storage',
         },
         collection: {
             Buyer: 'buyers',
@@ -57,22 +58,34 @@ module.exports = {
             Comodity: 'comodities',
             Quality: 'qualities',
             TermOfPayment: 'term-of-payments',
-            DesignMotive: 'design-motives'
+            DesignMotive: 'design-motives',
+            Storage: 'storages'
         }
     },
-    inventory:{
-      finishingPrinting : {
-          type:{
-              FPInventorySummary:"fp-inventory-summary",
-              FPInventoryMovement:"fp-inventory-movement",
-              FPPackingReceipt:"fp-packing-receipt"
-          },
-          collection:{
-              FPInventorySummary:"fp-inventory-summaries",
-              FPInventoryMovement:"fp-inventory-movements",
-              FPPackingReceipt:"fp-packing-receipts"
-          }
-      }  
+    inventory: {
+        finishingPrinting: {
+            type: {
+                FPInventorySummary: "fp-inventory-summary",
+                FPInventoryMovement: "fp-inventory-movement",
+                FPPackingReceipt: "fp-packing-receipt"
+            },
+            collection: {
+                FPInventorySummary: "fp-inventory-summaries",
+                FPInventoryMovement: "fp-inventory-movements",
+                FPPackingReceipt: "fp-packing-receipts"
+            }
+        },
+        type: {
+            InventorySummary: "inventory-summary",
+            InventoryMovement: "inventory-movement",
+            InventoryDocument: "inventory-document"
+        },
+        collection: {
+            InventorySummary: "inventory-summaries",
+            InventoryMovement: "inventory-movements",
+            InventoryDocument: "inventory-documents"
+        }
+
     },
     purchasing: {
         type: {
