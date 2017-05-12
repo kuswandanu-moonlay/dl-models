@@ -25,4 +25,18 @@ module.exports = function (data) {
 
     data.should.have.property('declined');
     data.declined.should.instanceof(Boolean);
+
+
+
+    data.should.have.property('productionOrderNo');
+    data.productionOrderNo.should.be.String();
+
+    data.should.have.property('buyer');
+    data.buyer.should.be.String();
+
+    data.should.have.property('colorName');
+    data.colorName.should.be.String();
+
+    data.should.have.property('construction');
+    data.construction.should.be.String();
 };
