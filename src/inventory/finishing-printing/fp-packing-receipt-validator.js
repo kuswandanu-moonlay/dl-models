@@ -29,14 +29,14 @@ module.exports = function (data) {
 
 
     data.should.have.property('productionOrderNo');
-    data.declined.should.be.String();
+    data.productionOrderNo.should.be.String();
 
     data.should.have.property('buyer');
-    data.declined.should.be.String();
+    data.buyer.should.be.String();
 
     data.should.have.property('colorName');
-    data.declined.should.be.String();
+    data.colorName.should.be.String();
 
     data.should.have.property('construction');
-    data.declined.should.be.String();
+    data.construction.should.be.String();
 };
