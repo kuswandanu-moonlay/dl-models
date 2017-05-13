@@ -21,7 +21,7 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.buyer= new Buyer();
 
         this.dispositionNumber='';
-        this.referenceNumber='';
+        this.fromStock=false;
 
         this.materialId={};
         this.material=new Product();
