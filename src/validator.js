@@ -42,14 +42,18 @@ module.exports = {
                 quality: require('./master/quality-validator'),
                 arrayStep: require('./master/array-step-validator'),
                 termOfPayment: require('./master/term-of-payment-validator'),
-                designMotive: require('./master/design-motive-validator')
+                designMotive: require('./master/design-motive-validator'),
+                storage: require('./master/storage-validator')
         },
         inventory: {
                 finishingPrinting: {
                         fpInventorySummary: require("./inventory/finishing-printing/fp-inventory-summary-validator"),
                         fpInventoryMovement: require("./inventory/finishing-printing/fp-inventory-movement-validator"),
                         fpPackingReceipt: require("./inventory/finishing-printing/fp-packing-receipt-validator")
-                }
+                },
+                inventorySummary: require("./inventory/inventory-summary-validator"),
+                inventoryMovement: require("./inventory/inventory-movement-validator"),
+                inventoryDocument: require("./inventory/inventory-document-validator")
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),

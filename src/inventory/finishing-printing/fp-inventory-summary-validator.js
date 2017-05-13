@@ -36,5 +36,5 @@ module.exports = function (data) {
     data.length.should.instanceOf(Number);
     
     data.should.have.property('quantity');
-    data.quantity.should.instanceOf(Number);  
+    data.quantity.should.instanceOf(Number);
 };
