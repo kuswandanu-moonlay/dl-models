@@ -1,7 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var PackingItemModel = require('./packing-receipt-items');
+var PackingItemModel = require('./fp-packing-receipt-items');
 
 module.exports = class FPPackingReceipt extends BaseModel {
     constructor(source) {
