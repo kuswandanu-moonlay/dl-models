@@ -1,5 +1,5 @@
 require("should");
-var validatePackingReceiptItem = require("./packing-receipt-items-validator");
+var validatePackingReceiptItem = require("./fp-packing-receipt-items-validator");
 
 module.exports = function (data) {
     data.should.not.equal(null);
