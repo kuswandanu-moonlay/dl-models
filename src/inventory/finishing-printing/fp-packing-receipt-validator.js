@@ -1,5 +1,5 @@
 require("should");
-var validateUom = require('../../master/uom-validator');
+var validatePackingReceiptItem = require("./packing-receipt-items-validator");
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -27,7 +27,6 @@ module.exports = function (data) {
     data.declined.should.instanceof(Boolean);
 
 
-
     data.should.have.property('productionOrderNo');
     data.productionOrderNo.should.be.String();
 
@@ -45,5 +44,11 @@ module.exports = function (data) {
 
     data.should.have.property('packingUom');
     data.packingUom.should.be.String();
+
+    data.should.have.property('items');
+    data.items.should.instanceOf(Array);
+    for (var item of data.items) {
+        validatePackingReceiptItem(item);
+    }
 
 };

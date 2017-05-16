@@ -1,7 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var Uom = require("../../master/uom");
+var PackingItemModel = require('./packing-receipt-items');
 
 module.exports = class FPPackingReceipt extends BaseModel {
     constructor(source) {
@@ -24,5 +24,6 @@ module.exports = class FPPackingReceipt extends BaseModel {
         this.packingUom = "";
 
         this.copy(source);
+        this.items = this.items.map((item) => new PackingItemModel(item));
     }
 };
