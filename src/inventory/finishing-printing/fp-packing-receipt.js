@@ -8,7 +8,7 @@ module.exports = class FPPackingReceipt extends BaseModel {
         super('fp-packing-receipt', '1.0.0');
 
         // Define properties.
-        this.code = ''; 
+        this.code = '';
         this.date = new Date();
         this.packingId = {};
         this.packingCode = "";
@@ -20,7 +20,9 @@ module.exports = class FPPackingReceipt extends BaseModel {
         this.buyer = "";
         this.colorName = "";
         this.construction = "";
-        
+        this.items = [];
+        this.packingUom = "";
+
         this.copy(source);
     }
 };

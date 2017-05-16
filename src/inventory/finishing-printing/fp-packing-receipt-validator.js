@@ -1,25 +1,25 @@
 require("should");
-var validateUom = require('../../master/uom-validator'); 
-        
+var validateUom = require('../../master/uom-validator');
+
 module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
     data.should.have.property('code');
-    data.code.should.instanceof(String); 
-    
+    data.code.should.instanceof(String);
+
     data.should.have.property('date');
     data.date.should.instanceof(Object);
 
     data.should.have.property('packingId');
     data.packingId.should.instanceof(Object);
-    
+
     data.should.have.property('packingCode');
     data.packingCode.should.be.String();
-    
+
     data.should.have.property('remark');
-    data.remark.should.be.String(); 
-     
+    data.remark.should.be.String();
+
     data.should.have.property('accepted');
     data.accepted.should.instanceof(Boolean);
 
@@ -39,4 +39,11 @@ module.exports = function (data) {
 
     data.should.have.property('construction');
     data.construction.should.be.String();
+
+    data.should.have.property('items');
+    data.items.should.instanceof(Array);
+
+    data.should.have.property('packingUom');
+    data.packingUom.should.be.String();
+
 };
