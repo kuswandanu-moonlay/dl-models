@@ -25,7 +25,7 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.buyer= new Buyer();
 
         this.dispositionNumber='';
-        this.referenceNumber='';
+        this.fromStock=false;
 
         this.designMotiveId={};
         this.designMotive=new DesignMotive();

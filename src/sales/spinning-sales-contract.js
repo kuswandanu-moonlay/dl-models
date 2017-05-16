@@ -18,7 +18,7 @@ module.exports = class SpinningSalesContract extends BaseModel {
         this.buyer = new Buyer();
 
         this.dispositionNumber = '';
-        this.referenceNumber='';
+        this.fromStock=false;
 
         this.uomId = {};
         this.uom = new uom();
