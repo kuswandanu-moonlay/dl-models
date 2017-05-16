@@ -2,9 +2,9 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 
-module.exports = class PackingItem extends BaseModel {
+module.exports = class PackingReceiptItem extends BaseModel {
     constructor(source) {
-        super('packing-item', '1.0.0');
+        super('packing-receipt-item', '1.0.0');
 
         // Define properties.
 
