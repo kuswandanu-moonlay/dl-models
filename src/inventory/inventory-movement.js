@@ -28,6 +28,7 @@ module.exports = class InventoryMovement extends BaseModel {
         this.uom = "";
         
         this.remark = '';
+        this.type = '';
 
         this.copy(source);
     }
