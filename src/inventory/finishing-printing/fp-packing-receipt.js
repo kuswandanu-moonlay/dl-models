@@ -1,14 +1,14 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var Uom = require("../../master/uom");
+var PackingItemModel = require('./fp-packing-receipt-items');
 
 module.exports = class FPPackingReceipt extends BaseModel {
     constructor(source) {
         super('fp-packing-receipt', '1.0.0');
 
         // Define properties.
-        this.code = ''; 
+        this.code = '';
         this.date = new Date();
         this.packingId = {};
         this.packingCode = "";
@@ -20,7 +20,10 @@ module.exports = class FPPackingReceipt extends BaseModel {
         this.buyer = "";
         this.colorName = "";
         this.construction = "";
-        
+        this.items = [];
+        this.packingUom = "";
+
         this.copy(source);
+        this.items = this.items.map((item) => new PackingItemModel(item));
     }
 };

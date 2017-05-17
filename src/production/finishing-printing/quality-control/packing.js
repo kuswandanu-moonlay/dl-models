@@ -11,6 +11,7 @@ module.exports = class Packing extends BaseModel {
         this.code = '';
         this.productionOrderId = {};
         this.productionOrderNo = "";
+        this.salesContractNo = "";
         this.buyer = "";
         this.buyerLocation = "";
         this.date = new Date();
@@ -25,6 +26,5 @@ module.exports = class Packing extends BaseModel {
         this.declined = false;
         this.copy(source);
         this.items = this.items.map(item => new PackingItemModel(item));
-
     }
 };
