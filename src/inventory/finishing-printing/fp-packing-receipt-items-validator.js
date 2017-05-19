@@ -5,7 +5,10 @@ module.exports = function (data) {
     data.should.instanceOf(Object);
 
     data.should.have.property('product');
-    data.remark.should.instanceof(String);
+    data.product.should.instanceof(String);
+
+    data.should.have.property('productId');
+    data.productId.should.instanceof(Object);
 
     data.should.have.property('quantity');
     data.quantity.should.instanceof(Number);
@@ -15,4 +18,7 @@ module.exports = function (data) {
 
     data.should.have.property('notes');
     data.notes.should.instanceof(String);
+
+    data.should.have.property('uomId');
+    data.uomId.should.instanceof(Object);
 };
