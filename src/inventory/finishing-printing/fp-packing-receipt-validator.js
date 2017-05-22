@@ -26,6 +26,19 @@ module.exports = function (data) {
     data.should.have.property('declined');
     data.declined.should.instanceof(Boolean);
 
+    //Inventory Document Validation
+    data.should.have.property('storageId');
+    data.storageId.should.instanceof(Object);
+
+    data.should.have.property('referenceNo');
+    data.referenceNo.should.instanceof(String);
+
+    data.should.have.property('referenceType');
+    data.referenceType.should.instanceof(String);
+
+    data.should.have.property('type');
+    data.type.should.instanceof(String);
+
 
     data.should.have.property('productionOrderNo');
     data.productionOrderNo.should.be.String();

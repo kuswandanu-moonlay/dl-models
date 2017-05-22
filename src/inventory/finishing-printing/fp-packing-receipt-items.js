@@ -9,9 +9,11 @@ module.exports = class PackingReceiptItem extends BaseModel {
         // Define properties.
 
         this.product = "";
+        this.productId = {};
         this.quantity = 0;
         this.remark = "";
         this.notes = "";
+        this.uomId = {};
         this.copy(source);
     }
 };
