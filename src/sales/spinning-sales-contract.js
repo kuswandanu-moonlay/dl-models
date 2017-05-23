@@ -18,6 +18,7 @@ module.exports = class SpinningSalesContract extends BaseModel {
         this.buyer = new Buyer();
 
         this.dispositionNumber = '';
+        this.fromStock=false;
 
         this.uomId = {};
         this.uom = new uom();
@@ -54,6 +55,7 @@ module.exports = class SpinningSalesContract extends BaseModel {
 
         this.comission = 0;
         this.deliverySchedule = new Date();
+        this.shipmentDescription='';
         this.condition = '';
         this.remark = '';
 

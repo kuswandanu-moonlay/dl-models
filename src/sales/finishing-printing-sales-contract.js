@@ -25,6 +25,7 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.buyer= new Buyer();
 
         this.dispositionNumber='';
+        this.fromStock=false;
 
         this.designMotiveId={};
         this.designMotive=new DesignMotive();
@@ -76,6 +77,7 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
 
         this.comission='';
         this.deliverySchedule=new Date();
+        this.shipmentDescription='';
         this.condition='';
         this.pointSystem=10;
         this.pointLimit=0;

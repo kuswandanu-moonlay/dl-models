@@ -11,6 +11,9 @@ module.exports = function (data) {
     data.should.have.property('pointSystem');
     data.pointSystem.should.instanceOf(Number);
 
+    data.should.have.property('pointLimit');
+    data.pointSystem.should.instanceOf(Number);
+
     data.should.have.property('dateIm');
     data.dateIm.should.instanceOf(Date);
 

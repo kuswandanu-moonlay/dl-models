@@ -42,14 +42,18 @@ module.exports = {
         Quality: require('./src/master/quality'),
         ArrayStep: require('./src/master/array-step'),
         TermOfPayment: require('./src/master/term-of-payment'),
-        DesignMotive: require('./src/master/design-motive')
+        DesignMotive: require('./src/master/design-motive'),
+        Storage: require('./src/master/storage')
     },
-    inventory:{
-      finishingPrinting:{
-          FPInventoryMovement:require("./src/inventory/finishing-printing/fp-inventory-movement"),
-          FPInventorySummary:require("./src/inventory/finishing-printing/fp-inventory-summary"),
-          FPPackingReceipt:require("./src/inventory/finishing-printing/fp-packing-receipt")
-      }
+    inventory: {
+        finishingPrinting: {
+            FPInventoryMovement: require("./src/inventory/finishing-printing/fp-inventory-movement"),
+            FPInventorySummary: require("./src/inventory/finishing-printing/fp-inventory-summary"),
+            FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt")
+        },
+        InventoryMovement: require("./src/inventory/inventory-movement"),
+        InventorySummary: require("./src/inventory/inventory-summary"),
+        InventoryDocument: require("./src/inventory/inventory-document")
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
@@ -92,7 +96,9 @@ module.exports = {
                     FabricQualityControl: require("./src/production/finishing-printing/quality-control/defect/fabric-quality-control")
                 },
                 Packing: require("./src/production/finishing-printing/quality-control/packing"),
-                PackingItem: require("./src/production/finishing-printing/quality-control/packing-item")
+                PackingItem: require("./src/production/finishing-printing/quality-control/packing-item"),
+                InspectionLotColor: require("./src/production/finishing-printing/quality-control/inspection-lot-color"),
+                InspectionLotColorItem: require("./src/production/finishing-printing/quality-control/inspection-lot-color-item")
             }
         }
     },

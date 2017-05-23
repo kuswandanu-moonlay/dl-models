@@ -21,6 +21,7 @@ module.exports = class WeavingSalesContract extends BaseModel {
         this.buyer= new Buyer();
 
         this.dispositionNumber='';
+        this.fromStock=false;
 
         this.materialId={};
         this.material=new Product();
@@ -66,6 +67,7 @@ module.exports = class WeavingSalesContract extends BaseModel {
 
         this.comission='';
         this.deliverySchedule=new Date();
+        this.shipmentDescription='';
         this.condition='';
         this.remark='';
         this.pieceLength='';
