@@ -11,14 +11,14 @@ module.exports = function (data) {
     
     data.should.have.property('purchaseOrder');
     data.purchaseOrder.should.instanceof(Object);
-    validatePurchaseOrder(data.purchaseOrder);
+    // validatePurchaseOrder(data.purchaseOrder);
     
     data.should.have.property('productId');
     data.productId.should.instanceof(Object);
     
     data.should.have.property('product');
     data.product.should.instanceof(Object);
-    validateProduct(data.product);
+    // validateProduct(data.product);
     
     data.should.have.property('quantity');
     data.quantity.should.instanceof(Number);
@@ -28,7 +28,7 @@ module.exports = function (data) {
     
     data.should.have.property('uom');
     data.uom.should.instanceof(Object);
-    validateUom(data.uom);
+    // validateUom(data.uom);
     
     data.should.have.property('pricePerUnit');
     data.pricePerUnit.should.instanceof(Number);
@@ -38,7 +38,7 @@ module.exports = function (data) {
     
     data.should.have.property('currency');
     data.currency.should.instanceof(Object);
-    validateCurrency(data.currency);
+    // validateCurrency(data.currency);
 
     data.should.have.property('currencyRate');
     data.currencyRate.should.instanceOf(Number);
