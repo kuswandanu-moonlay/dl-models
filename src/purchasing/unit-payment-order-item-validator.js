@@ -9,6 +9,6 @@ module.exports = function (data) {
 
     data.should.have.property('unitReceiptNote');
     data.unitReceiptNote.should.instanceof(Object);
-    validateUnitReceiptNote(data.unitReceiptNote); 
+    // validateUnitReceiptNote(data.unitReceiptNote); 
    
 };
