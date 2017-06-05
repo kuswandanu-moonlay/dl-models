@@ -1,5 +1,4 @@
 require("should");
-var validatePurchaseOrderItem = require('./unit-payment-correction-note-purchase-order-validator');
 var validateBuyer = require('../master/buyer-validator');
 var validateSupplier = require('../master/supplier-validator');
 var validateCurrency = require('../master/currency-validator');
