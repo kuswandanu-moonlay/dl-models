@@ -1,4 +1,5 @@
 require("should");
+var validatePurchaseOrder = require('./unit-payment-correction-note-purchase-order-validator');
 var validateUnitReceiptNote = require('./unit-receipt-note-validator');
 var validateProduct = require('../master/product-validator');
 var validateUom = require('../master/uom-validator');
@@ -68,48 +69,6 @@ module.exports = function (data) {
 
         item.should.have.property('purchaseOrder');
         item.purchaseOrder.should.instanceof(Object);
-
-        item.purchaseOrder.should.have.property('purchaseOrderExternal');
-        item.purchaseOrder.purchaseOrderExternal.should.instanceof(Object);
-
-        item.purchaseOrder.purchaseOrderExternal.should.have.property('no');
-        item.purchaseOrder.purchaseOrderExternal.no.should.instanceOf(String);
-
-        item.purchaseOrder.should.have.property('currency');
-        item.purchaseOrder.currency.should.instanceof(Object);
-
-        item.purchaseOrder.currency.should.have.property('code');
-        item.purchaseOrder.currency.code.should.instanceOf(String);
-
-        item.purchaseOrder.currency.should.have.property('symbol');
-        item.purchaseOrder.currency.symbol.should.instanceOf(String);
-
-        item.purchaseOrder.currency.should.have.property('rate');
-        item.purchaseOrder.currency.rate.should.instanceOf(Number);
-
-        item.purchaseOrder.should.have.property('categoryId');
-        item.purchaseOrder.categoryId.should.instanceof(Object);
-
-        item.purchaseOrder.should.have.property('category');
-        item.purchaseOrder.category.should.instanceof(Object);
-
-        item.purchaseOrder.should.have.property('purchaseRequest');
-        item.purchaseOrder.purchaseRequest.should.instanceof(Object);
-
-        item.purchaseOrder.purchaseRequest.should.have.property('no');
-        item.purchaseOrder.purchaseRequest.no.should.instanceOf(String);
-        for (var poItem of item.purchaseOrder.items) {
-            poItem.should.have.property('useIncomeTax');
-            poItem.useIncomeTax.should.instanceof(Boolean);
-
-            poItem.should.have.property('product');
-            poItem.product.should.instanceof(Object);
-
-            poItem.product.should.have.property('code');
-            poItem.product.code.should.instanceOf(String);
-
-            poItem.product.should.have.property('name');
-            poItem.product.name.should.instanceOf(String);
-        }
+        validatePurchaseOrder(item.purchaseOrder);
     }
 };
