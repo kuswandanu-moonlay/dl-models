@@ -60,7 +60,10 @@ module.exports = function (data) {
     data.packingInstruction.should.be.String();
 
     data.should.have.property('kanbanId');
-    data.kanbanId.should.instanceOf(Object)
+    data.kanbanId.should.instanceOf(Object);
+
+    data.should.have.property("hasLotColorTest");
+    data.hasLotColorTest.should.instanceOf(Boolean);
 
     data.should.have.property('fabricGradeTests');
     data.fabricGradeTests.should.instanceOf(Array);

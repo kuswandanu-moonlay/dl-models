@@ -31,6 +31,7 @@ module.exports = class FabricQualityControl extends BaseModel {
         this.uom = "";
         
         this.kanbanId = {};
+        this.hasLotColorTest = false;
         
         this.fabricGradeTests = [];
         this.copy(source); 
