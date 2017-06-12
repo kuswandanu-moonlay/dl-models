@@ -9,6 +9,14 @@ module.exports = class InspectionLotColor extends BaseModel {
         super('inspection-lot-color', '1.0.0');
 
         this.code = '';
+        this.fabricQualityControlCode = "";
+        this.fabricQualityControlId = {};
+        this.productionOrderNo = "";
+        this.productionOrderId = {};
+        this.cartNo = "";
+        this.construction = "";
+        this.orderQuantity = 0;
+        this.uom = "";
         this.kanbanId = {};
         this.kanban = new Kanban();
         this.date = new Date();
