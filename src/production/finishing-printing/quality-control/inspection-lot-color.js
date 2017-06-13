@@ -1,7 +1,6 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var Kanban = require("../kanban");
 var InspectionLotColorItem = require("./inspection-lot-color-item");
 
 module.exports = class InspectionLotColor extends BaseModel {
@@ -13,12 +12,12 @@ module.exports = class InspectionLotColor extends BaseModel {
         this.fabricQualityControlId = {};
         this.productionOrderNo = "";
         this.productionOrderId = {};
+        this.productionOrderType = "";
         this.cartNo = "";
         this.construction = "";
+        this.color = "";
         this.orderQuantity = 0;
         this.uom = "";
-        this.kanbanId = {};
-        this.kanban = new Kanban();
         this.date = new Date();
         this.items = [];
 
