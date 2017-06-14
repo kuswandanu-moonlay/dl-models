@@ -2,7 +2,7 @@ require("should");
 var validateSupplier = require('../master/supplier-validator');
 var validateUnit = require('../master/unit-validator');
 var validateUnitReceiptOrderItem = require('./unit-receipt-note-item-validator');
-var validateDeliveryOrder = require('./delivery-order-validator');
+var validateDeliveryOrder = require('./unit-receipt-note-delivery-order-validator');
 
 module.exports = function (data) {
     data.should.have.property('no');
@@ -29,7 +29,7 @@ module.exports = function (data) {
     data.deliveryOrderId.should.instanceof(Object);
 
     data.should.have.property('deliveryOrder');
-    data.deliveryOrder.should.instanceof(Object);
+    data.deliveryOrder.should.instanceof(Object); 
     validateDeliveryOrder(data.deliveryOrder);
 
     data.should.have.property('remark');
