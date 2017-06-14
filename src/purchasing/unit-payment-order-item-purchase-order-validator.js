@@ -6,6 +6,7 @@ var validateVat = require('../master/vat-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
+    data.should.instanceOf(Object);
 
     data.should.have.property('purchaseOrderExternal');
     data.purchaseOrderExternal.should.instanceof(Object);
@@ -36,7 +37,6 @@ module.exports = function (data) {
 
     data.purchaseRequest.should.have.property('no');
     data.purchaseRequest.no.should.instanceOf(String);
-
     for (var item of data.items) {
         item.should.have.property('useIncomeTax');
         item.useIncomeTax.should.instanceof(Boolean);
