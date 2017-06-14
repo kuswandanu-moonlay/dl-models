@@ -15,7 +15,6 @@ module.exports = function (data) {
     data.should.have.property('supplierDoDate');
     data.supplierDoDate.should.instanceOf(Date);
 
-
     data.should.have.property('supplierId');
     data.supplierId.should.instanceof(Object);
 
@@ -36,9 +35,6 @@ module.exports = function (data) {
 
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
-
-    data.should.have.property('remark');
-    data.remark.should.instanceOf(String);
 
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
@@ -94,11 +90,11 @@ module.exports = function (data) {
             fulfillment.purchaseOrder.should.have.property('unit');
             fulfillment.purchaseOrder.unit.should.instanceof(Object);
 
-            fulfillment.purchaseOrder.should.have.property('code');
+            fulfillment.purchaseOrder.unit.should.have.property('code');
             fulfillment.purchaseOrder.unit.code.should.instanceof(String);
 
-            fulfillment.purchaseOrder.should.name.have.property('name');
-            fulfillment.purchaseOrder.unit.should.instanceof(String);
+            fulfillment.purchaseOrder.unit.should.have.property('name');
+            fulfillment.purchaseOrder.unit.name.should.instanceof(String);
 
             fulfillment.purchaseOrder.should.have.property('purchaseRequest');
             fulfillment.purchaseOrder.purchaseRequest.should.instanceof(Object);
