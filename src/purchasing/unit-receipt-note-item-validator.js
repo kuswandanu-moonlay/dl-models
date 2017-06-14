@@ -80,11 +80,11 @@ module.exports = function (data) {
     data.purchaseOrder.should.have.property('unit');
     data.purchaseOrder.unit.should.instanceof(Object);
 
-    data.purchaseOrder.should.have.property('code');
+    data.purchaseOrder.unit.should.have.property('code');
     data.purchaseOrder.unit.code.should.instanceof(String);
 
-    data.purchaseOrder.should.name.have.property('name');
-    data.purchaseOrder.unit.should.instanceof(String);
+    data.purchaseOrder.unit.should.have.property('name');
+    data.purchaseOrder.unit.name.should.instanceof(String);
 
     data.purchaseOrder.should.have.property('purchaseRequest');
     data.purchaseOrder.purchaseRequest.should.instanceof(Object);
