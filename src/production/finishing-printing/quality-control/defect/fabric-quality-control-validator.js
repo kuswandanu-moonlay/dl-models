@@ -59,6 +59,9 @@ module.exports = function (data) {
     data.should.have.property('uom');
     data.packingInstruction.should.be.String();
 
+    data.should.have.property('isUsed');
+    data.isUsed.should.instanceOf(Boolean);
+
     data.should.have.property('kanbanId');
     data.kanbanId.should.instanceOf(Object)
 

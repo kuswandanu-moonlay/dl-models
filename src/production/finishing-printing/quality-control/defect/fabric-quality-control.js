@@ -14,11 +14,10 @@ module.exports = class FabricQualityControl extends BaseModel {
         this.dateIm = new Date();
         this.shiftIm = "";
         this.group = "";
-        
+
         this.operatorIm = '';
         this.machineNoIm = '';
-        
-        
+
         this.productionOrderNo = "";
         this.productionOrderType = "";
         this.kanbanCode = "";
@@ -29,10 +28,11 @@ module.exports = class FabricQualityControl extends BaseModel {
         this.construction = "";
         this.packingInstruction = "";
         this.uom = "";
-        
+        this.isUsed = false;
+
         this.kanbanId = {};
-        
+
         this.fabricGradeTests = [];
-        this.copy(source); 
+        this.copy(source);
     }
 };
