@@ -42,7 +42,7 @@ module.exports = function (data) {
     data.kanbanCode.should.instanceOf(String);
 
     data.should.have.property("kanbanId");
-    data.kanbanId.should.instanceOf(String);
+    data.kanbanId.should.instanceOf(Object);
 
     data.should.have.property('date');
     data.date.should.instanceof(Date);
