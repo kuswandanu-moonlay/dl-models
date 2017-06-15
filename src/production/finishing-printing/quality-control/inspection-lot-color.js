@@ -20,6 +20,8 @@ module.exports = class InspectionLotColor extends BaseModel {
         this.uom = "";
         this.date = new Date();
         this.items = [];
+        this.kanbanCode = "";
+        this.kanbanId = {};
 
         this.copy(source);
         this.items = (this.items || []).map(item => new InspectionLotColorItem(item));
