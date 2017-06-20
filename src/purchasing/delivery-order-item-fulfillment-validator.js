@@ -17,14 +17,21 @@ module.exports = function (data) {
 
     data.should.have.property('product');
     data.product.should.instanceOf(Object);
-    validateProduct(data.product);
+
+    data.product.should.have.property('code');
+    data.product.code.should.instanceOf(String);
+
+    data.product.should.have.property('name');
+    data.product.name.should.instanceOf(String);
 
     data.should.have.property('purchaseOrderQuantity');
     data.purchaseOrderQuantity.should.instanceOf(Number);
 
     data.should.have.property('purchaseOrderUom');
     data.purchaseOrderUom.should.instanceOf(Object);
-    validateUom(data.purchaseOrderUom);
+
+    data.purchaseOrderUom.should.have.property('unit');
+    data.purchaseOrderUom.unit.should.instanceOf(String);
 
     data.should.have.property('deliveredQuantity');
     data.deliveredQuantity.should.instanceOf(Number);
