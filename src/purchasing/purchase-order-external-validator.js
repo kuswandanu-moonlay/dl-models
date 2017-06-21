@@ -1,5 +1,5 @@
 require("should");
-var validatePurchaseOrder = require('./purchase-order-validator');
+var validatePurchaseOrderExternalItem = require('./purchase-order-external-item-validator');
 var validateSupplier = require('../master/supplier-validator');
 var validateCurrency = require('../master/currency-validator');
 var validateVat = require('../master/vat-validator');
@@ -74,6 +74,6 @@ module.exports = function (data) {
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
     for (var item of data.items) {
-        validatePurchaseOrder(item);
+        validatePurchaseOrderExternalItem(item);
     }
 };
