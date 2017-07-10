@@ -1,6 +1,6 @@
 require("should");
-var validatePurchaseOrderExternal = require('../purchasing/purchase-order-external-validator');
 var validateDeliveryOrderItemFulfillment = require('../purchasing/delivery-order-item-fulfillment-validator');
+var validateDeliveryOrderItemPurchaseOrder = require('../purchasing/delivery-order-item-purchase-order-validator');
 
 module.exports = function (data) {
     data.should.have.property('purchaseOrderExternalId');
@@ -8,7 +8,15 @@ module.exports = function (data) {
 
     data.should.have.property('purchaseOrderExternal');
     data.purchaseOrderExternal.should.instanceOf(Object);
-    validatePurchaseOrderExternal(data.purchaseOrderExternal);
+    
+    data.purchaseOrderExternal.should.have.property('no');
+    data.purchaseOrderExternal.no.should.be.String();
+
+    data.purchaseOrderExternal.should.have.property('items');
+    data.purchaseOrderExternal.items.should.instanceOf(Array);
+    for (var item of data.purchaseOrderExternal.items) {
+        validateDeliveryOrderItemPurchaseOrder(item);
+    }
     
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
