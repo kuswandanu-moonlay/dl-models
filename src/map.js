@@ -105,6 +105,18 @@ module.exports = {
             UnitPaymentOrder: 'unit-payment-orders'
         }
     },
+    garmentPurchasing: {
+        type: {
+            PurchaseOrder: 'purchase-order',
+            DeliveryOrder: 'delivery-order',
+            PurchaseRequest: 'purchase-request',
+            UnitPaymentOrder: 'unit-payment-order',
+        },
+        collection: {
+            GarmentPurchaseRequest: 'garment-purchase-requests',
+            GarmentPurchaseOrder: 'garment-purchase-orders',
+        }
+    },
     production: {
         spinning: {
             winding: {
