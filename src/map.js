@@ -31,6 +31,7 @@ module.exports = {
             Supplier: 'suppliers',
             uom: 'unit-of-measurements',
             Product: 'products',
+            GarmentProduct: 'garment-products',
             Machine: 'machines',
             Division: 'divisions',
             Unit: 'units',
