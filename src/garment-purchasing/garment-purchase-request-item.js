@@ -11,7 +11,7 @@ module.exports = class PurchaseRequestItem extends BaseModel {
         this.product = new Product();
         this.quantity = 0;
         this.budgetPrice = 0;
-        this.uom = 0;
+        this.uom = new uom();
         this.deliveryOrderNos = [];
         this.remark = '';
 
