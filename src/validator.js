@@ -43,7 +43,9 @@ module.exports = {
                 arrayStep: require('./master/array-step-validator'),
                 termOfPayment: require('./master/term-of-payment-validator'),
                 designMotive: require('./master/design-motive-validator'),
-                storage: require('./master/storage-validator')
+                storage: require('./master/storage-validator'),
+                company: require('./master/company-validator'),
+                contact: require('./master/contact-validator')
         },
         inventory: {
                 finishingPrinting: {

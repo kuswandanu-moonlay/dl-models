@@ -25,6 +25,8 @@ module.exports = {
             Step: 'step',
             MachineType: 'machine-types',
             Storage: 'storage',
+            Company: 'company',
+            Contact: 'contact'
         },
         collection: {
             Buyer: 'buyers',
@@ -59,7 +61,9 @@ module.exports = {
             Quality: 'qualities',
             TermOfPayment: 'term-of-payments',
             DesignMotive: 'design-motives',
-            Storage: 'storages'
+            Storage: 'storages',
+            Company: 'companies',
+            Contact: 'contacts'
         }
     },
     inventory: {
