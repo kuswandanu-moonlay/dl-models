@@ -76,6 +76,9 @@ module.exports = {
             PurchaseOrderStatus: require('./src/purchasing/enum/purchase-order-status-enum')
         }
     },
+    garmentPurchasing: {
+        GarmentPurchaseRequest: require('./src/garment-purchasing/garment-purchase-request'),
+    },
     production: {
         spinning: {
             winding: {
