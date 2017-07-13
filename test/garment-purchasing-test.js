@@ -1,14 +1,14 @@
 var validate = require('../src/validator').garmentPurchasing;
 
 it("#01. Purchase Request should valid", function() {
-    var PurchaseRequest = require('../src/garment-purchasing/garment-purchase-request');
+    var PurchaseRequest = require('../src/garment-purchasing/purchase-request');
     validate.garmentPurchaseRequest(new PurchaseRequest());
 });
 
-// it("#02. Purchase Order should valid", function () {
-//     var PurchaseOrder = require('../src/purchasing/purchase-order');
-//     validate.purchaseOrder(new PurchaseOrder());
-// });
+it("#02. Purchase Order should valid", function () {
+    var PurchaseOrder = require('../src/garment-purchasing/purchase-order');
+    validate.garmentPurchaseOrder(new PurchaseOrder());
+});
 
 // it("#03. Purchase Order External should valid", function() {
 //     var PurchaseOrderExternal = require('../src/purchasing/purchase-order-external');
