@@ -1,6 +1,6 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var PurchaseRequestItem = require('./garment-purchase-request-item');
+var PurchaseRequestItem = require('./purchase-request-item');
 var map = require('../map');
 
 module.exports = class PurchaseRequest extends BaseModel {

@@ -72,7 +72,8 @@ module.exports = {
                 purchaseRequestItem: require("./purchasing/purchase-request-item-validator")
         },
         garmentPurchasing: {
-                garmentPurchaseRequest: require("./garment-purchasing/garment-purchase-request-validator")
+                garmentPurchaseRequest: require("./garment-purchasing/purchase-request-validator"),
+                garmentPurchaseOrder: require("./garment-purchasing/purchase-order-validator")
         },
         production: {
                 spinning: {
