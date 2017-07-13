@@ -51,7 +51,8 @@ module.exports = {
                 finishingPrinting: {
                         fpInventorySummary: require("./inventory/finishing-printing/fp-inventory-summary-validator"),
                         fpInventoryMovement: require("./inventory/finishing-printing/fp-inventory-movement-validator"),
-                        fpPackingReceipt: require("./inventory/finishing-printing/fp-packing-receipt-validator")
+                        fpPackingReceipt: require("./inventory/finishing-printing/fp-packing-receipt-validator"),
+                        fpShipmentDocument: require("./inventory/finishing-printing/shipment-document/fp-shipment-document-validator")
                 },
                 inventorySummary: require("./inventory/inventory-summary-validator"),
                 inventoryMovement: require("./inventory/inventory-movement-validator"),

@@ -29,4 +29,9 @@ it("#06. inventory document should valid", function () {
     var InventoryDocument = require('../src/inventory/inventory-document');
     validate.inventoryDocument(new InventoryDocument());
 });
+
+it("#07. finishing printing shipment document should valid", function () {
+    var FinishingPrintingShipmentDocument = require('../src/inventory/finishing-printing/shipment-document/fp-shipment-document');
+    validate.finishingPrintingShipmentDocument(new FinishingPrintingShipmentDocument());
+});
  
