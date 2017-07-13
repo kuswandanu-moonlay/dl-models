@@ -72,7 +72,8 @@ module.exports = {
             type: {
                 FPInventorySummary: "fp-inventory-summary",
                 FPInventoryMovement: "fp-inventory-movement",
-                FPPackingReceipt: "fp-packing-receipt"
+                FPPackingReceipt: "fp-packing-receipt",
+                FPPackingShipmentDocument: "fp-shipment-document"
             },
             collection: {
                 FPInventorySummary: "fp-inventory-summaries",

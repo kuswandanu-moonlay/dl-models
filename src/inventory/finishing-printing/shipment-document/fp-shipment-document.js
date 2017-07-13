@@ -6,7 +6,7 @@ var ShipmentDocumentDetail = require("./fp-shipment-document-detail");
 
 module.exports = class FinishingPrintingShipmentDocument extends BaseModel {
     constructor(source) {
-        super('shipment-document', '1.0.0');
+        super('fp-shipment-document', '1.0.0');
 
         //Shipment details
         this.code = "";
