@@ -43,7 +43,9 @@ module.exports = {
                 arrayStep: require('./master/array-step-validator'),
                 termOfPayment: require('./master/term-of-payment-validator'),
                 designMotive: require('./master/design-motive-validator'),
-                storage: require('./master/storage-validator')
+                storage: require('./master/storage-validator'),
+                company: require('./master/company-validator'),
+                contact: require('./master/contact-validator')
         },
         inventory: {
                 finishingPrinting: {
@@ -67,6 +69,9 @@ module.exports = {
                 UnitPaymentOrderItem: require("./purchasing/unit-payment-order-item-validator"),
                 purchaseRequest: require("./purchasing/purchase-request-validator"),
                 purchaseRequestItem: require("./purchasing/purchase-request-item-validator")
+        },
+        garmentPurchasing: {
+                garmentPurchaseRequest: require("./garment-purchasing/garment-purchase-request-validator")
         },
         production: {
                 spinning: {

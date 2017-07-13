@@ -43,7 +43,9 @@ module.exports = {
         ArrayStep: require('./src/master/array-step'),
         TermOfPayment: require('./src/master/term-of-payment'),
         DesignMotive: require('./src/master/design-motive'),
-        Storage: require('./src/master/storage')
+        Storage: require('./src/master/storage'),
+        Company: require('./src/master/company'),
+        Contact: require('./src/master/contact')
     },
     inventory: {
         finishingPrinting: {
@@ -75,6 +77,9 @@ module.exports = {
             PurchaseRequestStatus: require('./src/purchasing/enum/purchase-request-status-enum'),
             PurchaseOrderStatus: require('./src/purchasing/enum/purchase-order-status-enum')
         }
+    },
+    garmentPurchasing: {
+        GarmentPurchaseRequest: require('./src/garment-purchasing/garment-purchase-request'),
     },
     production: {
         spinning: {

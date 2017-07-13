@@ -25,6 +25,8 @@ module.exports = {
             Step: 'step',
             MachineType: 'machine-types',
             Storage: 'storage',
+            Company: 'company',
+            Contact: 'contact'
         },
         collection: {
             Buyer: 'buyers',
@@ -60,7 +62,9 @@ module.exports = {
             Quality: 'qualities',
             TermOfPayment: 'term-of-payments',
             DesignMotive: 'design-motives',
-            Storage: 'storages'
+            Storage: 'storages',
+            Company: 'companies',
+            Contact: 'contacts'
         }
     },
     inventory: {
@@ -103,6 +107,18 @@ module.exports = {
             PurchaseRequest: 'purchase-requests',
             UnitPaymentCorrectionNote: 'unit-payment-correction-notes',
             UnitPaymentOrder: 'unit-payment-orders'
+        }
+    },
+    garmentPurchasing: {
+        type: {
+            PurchaseOrder: 'purchase-order',
+            DeliveryOrder: 'delivery-order',
+            PurchaseRequest: 'purchase-request',
+            UnitPaymentOrder: 'unit-payment-order',
+        },
+        collection: {
+            GarmentPurchaseRequest: 'garment-purchase-requests',
+            GarmentPurchaseOrder: 'garment-purchase-orders',
         }
     },
     production: {
