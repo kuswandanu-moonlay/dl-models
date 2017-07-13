@@ -77,7 +77,8 @@ module.exports = {
         }
     },
     garmentPurchasing: {
-        GarmentPurchaseRequest: require('./src/garment-purchasing/garment-purchase-request'),
+        GarmentPurchaseRequest: require('./src/garment-purchasing/purchase-request'),
+        GarmentPurchaseOrder: require('./src/garment-purchasing/purchase-order'),
     },
     production: {
         spinning: {
