@@ -33,5 +33,5 @@ module.exports = function(data) {
     data.tags.should.be.String();
 
     data.should.have.property('properties');
-    data.properties.should.be.Array();
+    data.properties.should.be.Object();
 };

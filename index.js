@@ -51,7 +51,8 @@ module.exports = {
         finishingPrinting: {
             FPInventoryMovement: require("./src/inventory/finishing-printing/fp-inventory-movement"),
             FPInventorySummary: require("./src/inventory/finishing-printing/fp-inventory-summary"),
-            FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt")
+            FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt"),
+            FPShipmentDocument: require("./src/inventory/finishing-printing/shipment-document/fp-shipment-document")
         },
         InventoryMovement: require("./src/inventory/inventory-movement"),
         InventorySummary: require("./src/inventory/inventory-summary"),
