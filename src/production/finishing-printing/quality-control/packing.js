@@ -15,8 +15,12 @@ module.exports = class Packing extends BaseModel {
         this.salesContractNo = "";
         this.designCode = "";
         this.designNumber = "";
-        this.buyer = "";
+
+        this.buyerId = {};
+        this.buyerCode = "";
+        this.buyerName = "";
         this.buyerLocation = "";
+
         this.date = new Date();
         this.packingUom = "";
         this.colorCode = "";

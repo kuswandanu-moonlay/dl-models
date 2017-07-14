@@ -23,11 +23,19 @@ module.exports = function (data) {
     data.should.have.property('designNumber');
     data.designNumber.should.instanceOf(String);
 
-    data.should.have.property('buyer');
-    data.buyer.should.instanceOf(String);
+    //Buyer
+    data.should.have.property('buyerId');
+    data.buyerId.should.instanceOf(Object);
+
+    data.should.have.property('buyerCode');
+    data.buyerCode.should.instanceOf(String);
+
+    data.should.have.property('buyerName');
+    data.buyerName.should.instanceOf(String);
 
     data.should.have.property('buyerLocation');
     data.buyerLocation.should.instanceOf(String);
+    
 
     data.should.have.property('date');
     data.date.should.be.Object();
