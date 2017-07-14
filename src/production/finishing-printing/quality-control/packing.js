@@ -26,7 +26,10 @@ module.exports = class Packing extends BaseModel {
         this.colorCode = "";
         this.colorName = "";
         this.colorType = "";
-        this.construction = "";
+
+        this.materialConstructionFinishId = {};
+        this.materialConstructionName = "";
+
         this.motif = "";
         this.items = [];
         this.status = "";
