@@ -34,11 +34,11 @@ module.exports = function (data) {
     data.buyerName.should.instanceOf(String);
 
     data.should.have.property('buyerAddress');
-    data.buyerAddress.should.instanceOf(String);
+    data.buyerLocation.should.instanceOf(String);
 
     data.should.have.property('buyerType');
     data.buyerType.should.instanceOf(String);
-    
+
 
     data.should.have.property('date');
     data.date.should.be.Object();
@@ -51,6 +51,9 @@ module.exports = function (data) {
     for (var item of data.items) {
         validatePackingItem(item);
     }
+
+    data.should.have.property('construction');
+    data.construction.should.instanceOf(String);
 
     data.should.have.property('colorCode');
     data.colorCode.should.instanceOf(String);

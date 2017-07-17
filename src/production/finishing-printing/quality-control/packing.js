@@ -34,6 +34,8 @@ module.exports = class Packing extends BaseModel {
 
         this.materialWidthFinish = "";
 
+        this.construction = "";
+
         this.motif = "";
         this.items = [];
         this.status = "";
