@@ -30,7 +30,7 @@ module.exports = class Packing extends BaseModel {
         this.colorType = "";
 
         this.materialConstructionFinishId = {};
-        this.materialConstructionName = "";
+        this.materialConstructionFinishName = "";
 
         this.materialWidthFinish = "";
 

@@ -67,8 +67,8 @@ module.exports = function (data) {
     data.should.have.property('materialConstructionFinishId');
     data.materialConstructionFinishId.should.instanceOf(Object);
 
-    data.should.have.property('materialConstructionName');
-    data.materialConstructionName.should.instanceOf(String);
+    data.should.have.property('materialConstructionFinishName');
+    data.materialConstructionFinishName.should.instanceOf(String);
 
     data.should.have.property('materialWidthFinish');
     data.materialWidthFinish.should.instanceOf(String);
