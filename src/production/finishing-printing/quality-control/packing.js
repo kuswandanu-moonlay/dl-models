@@ -20,7 +20,7 @@ module.exports = class Packing extends BaseModel {
         this.buyerId = {};
         this.buyerCode = "";
         this.buyerName = "";
-        this.buyerLocation = "";
+        this.buyerAddress = "";
         this.buyerType = "";
 
         this.date = new Date();
