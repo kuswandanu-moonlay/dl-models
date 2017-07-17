@@ -58,8 +58,14 @@ module.exports = function (data) {
     data.should.have.property('colorType');
     data.colorType.should.instanceOf(String);
 
-    data.should.have.property('construction');
-    data.construction.should.instanceOf(String);
+    data.should.have.property('materialConstructionFinishId');
+    data.materialConstructionFinishId.should.instanceOf(Object);
+
+    data.should.have.property('materialConstructionName');
+    data.materialConstructionName.should.instanceOf(String);
+
+    data.should.have.property('materialWidthFinish');
+    data.materialWidthFinish.should.instanceOf(String);
 
     data.should.have.property('motif');
     data.motif.should.instanceOf(String);

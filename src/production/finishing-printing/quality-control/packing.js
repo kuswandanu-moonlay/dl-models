@@ -16,6 +16,7 @@ module.exports = class Packing extends BaseModel {
         this.designCode = "";
         this.designNumber = "";
 
+        //Buyer detail
         this.buyerId = {};
         this.buyerCode = "";
         this.buyerName = "";
@@ -29,6 +30,8 @@ module.exports = class Packing extends BaseModel {
 
         this.materialConstructionFinishId = {};
         this.materialConstructionName = "";
+
+        this.materialWidthFinish = "";
 
         this.motif = "";
         this.items = [];
