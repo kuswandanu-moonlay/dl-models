@@ -34,7 +34,7 @@ module.exports = function (data) {
     data.buyerName.should.instanceOf(String);
 
     data.should.have.property('buyerAddress');
-    data.buyerLocation.should.instanceOf(String);
+    data.buyerAddress.should.instanceOf(String);
 
     data.should.have.property('buyerType');
     data.buyerType.should.instanceOf(String);
