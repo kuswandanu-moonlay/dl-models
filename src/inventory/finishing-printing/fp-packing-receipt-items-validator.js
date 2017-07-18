@@ -13,6 +13,18 @@ module.exports = function (data) {
     data.should.have.property('quantity');
     data.quantity.should.instanceof(Number);
 
+    data.should.have.property('length');
+    data.length.should.instanceof(Number);
+
+    data.should.have.property('lengthTotal');
+    data.lengthTotal.should.instanceof(Number);
+
+    data.should.have.property('weight');
+    data.weight.should.instanceof(Number);
+
+    data.should.have.property('weightTotal');
+    data.weightTotal.should.instanceof(Number);
+
     data.should.have.property('remark');
     data.remark.should.instanceof(String);
 
