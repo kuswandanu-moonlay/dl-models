@@ -37,9 +37,6 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.unitId = {};
         this.unit = {};
 
-        this.categoryId = {};
-        this.category = {};
-
         this.freightCostBy = '';
         this.currency = new Currency();
         this.currencyRate = 1;

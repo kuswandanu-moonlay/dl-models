@@ -23,9 +23,6 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.unitId = {};
         this.unit = {};
 
-        this.categoryId = {};
-        this.category = {};
-
         this.isPosted = true;
         this.isUsed = false;
         this.remark = '';

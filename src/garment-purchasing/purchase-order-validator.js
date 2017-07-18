@@ -22,7 +22,7 @@ module.exports = function (data) {
     data.roNo.should.be.String();
 
     data.should.have.property('buyer');
-    data.buyer.should.be.String();
+    data.buyer.should.instanceof(Object);
 
     data.should.have.property('artikel');
     data.artikel.should.be.String();
@@ -58,13 +58,6 @@ module.exports = function (data) {
 
     data.should.have.property('unit');
     data.unit.should.instanceof(Object);
-
-    data.should.have.property('categoryId');
-    data.categoryId.should.instanceof(Object);
-
-    data.should.have.property('category');
-    data.category.should.instanceof(Object);
-
 
     data.should.have.property('freightCostBy');
     data.freightCostBy.should.instanceOf(String);
