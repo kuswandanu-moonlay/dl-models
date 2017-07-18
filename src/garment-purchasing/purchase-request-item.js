@@ -1,7 +1,6 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
 var Product = require('../master/product');
-var uom = require('../master/uom');
 
 module.exports = class PurchaseRequestItem extends BaseModel {
     constructor(source, type) {
@@ -11,7 +10,6 @@ module.exports = class PurchaseRequestItem extends BaseModel {
         this.product = new Product();
         this.quantity = 0;
         this.budgetPrice = 0;
-        this.uom = new uom();
         
         this.categoryId = {};
         this.category = {};
