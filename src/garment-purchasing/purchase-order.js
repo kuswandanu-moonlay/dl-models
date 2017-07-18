@@ -17,7 +17,8 @@ module.exports = class PurchaseOrder extends BaseModel {
         this.iso = 'FM-6.00-06-005';
         this.roNo=''; //Ro
 
-        this.buyer = ''; //buyer
+        this.buyerId = {};
+        this.buyer = new Buyer();
         this.artikel = ''; //artikel
 
         this.purchaseRequestId = {};
