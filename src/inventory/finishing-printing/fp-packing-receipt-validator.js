@@ -52,6 +52,9 @@ module.exports = function (data) {
     data.should.have.property('construction');
     data.construction.should.be.String();
 
+    data.should.have.property('finishWidth');
+    data.finishWidth.should.be.String();
+
     data.should.have.property('items');
     data.items.should.instanceof(Array);
 
