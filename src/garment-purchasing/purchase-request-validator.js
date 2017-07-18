@@ -15,7 +15,7 @@ module.exports = function (data) {
     data.roNo.should.instanceof(String);
 
     data.should.have.property('buyer');
-    data.buyer.should.instanceof(String);
+    data.buyer.should.instanceof(Object);
 
     data.should.have.property('artikel');
     data.artikel.should.instanceof(String);
@@ -34,12 +34,6 @@ module.exports = function (data) {
 
     data.should.have.property('unit');
     data.unit.should.instanceof(Object);
-    
-    data.should.have.property('categoryId');
-    data.categoryId.should.instanceof(Object);
-
-    data.should.have.property('category');
-    data.category.should.instanceof(Object);
 
     data.should.have.property('isPosted');
     data.isPosted.should.instanceOf(Boolean);

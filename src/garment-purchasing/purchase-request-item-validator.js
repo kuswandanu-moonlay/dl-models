@@ -23,6 +23,12 @@ module.exports = function (data) {
     data.uom.should.instanceof(Object);
     validateUom(data.uom);
 
+    data.should.have.property('categoryId');
+    data.categoryId.should.instanceof(Object);
+
+    data.should.have.property('category');
+    data.category.should.instanceof(Object);
+
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
     

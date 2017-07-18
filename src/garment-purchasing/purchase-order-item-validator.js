@@ -46,6 +46,12 @@ module.exports = function (data) {
 
     data.should.have.property('currencyRate');
     data.currencyRate.should.instanceOf(Number);
+
+    data.should.have.property('categoryId');
+    data.categoryId.should.instanceof(Object);
+
+    data.should.have.property('category');
+    data.category.should.instanceof(Object);
     
     data.should.have.property('conversion');
     data.conversion.should.instanceOf(Number);

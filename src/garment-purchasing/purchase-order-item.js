@@ -23,8 +23,11 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.budgetPrice = 0;
         
         this.currency = new Currency();
-        this.currencyRate = 1;
-        
+        this.currencyRate = 1;        
+
+        this.categoryId = {};
+        this.category = {};
+
         this.conversion = 1;
         this.isClosed=false;
         this.useIncomeTax = false;
