@@ -13,7 +13,7 @@ module.exports = function (data) {
     data.date.should.instanceof(Date);
     
     data.should.have.property('expectedDeliveryDate');
-    data.expectedDeliveryDate.should.instanceof(Date);
+    // data.expectedDeliveryDate.should.instanceof(Date);
  
     data.should.have.property('budgetId');
     data.budgetId.should.instanceof(Object);
