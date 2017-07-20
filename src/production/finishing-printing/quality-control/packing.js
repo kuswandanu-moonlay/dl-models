@@ -32,6 +32,7 @@ module.exports = class Packing extends BaseModel {
         this.materialConstructionFinishId = {};
         this.materialConstructionFinishName = "";
 
+        this.materialId = {};
         this.material = "";
 
         this.materialWidthFinish = "";
