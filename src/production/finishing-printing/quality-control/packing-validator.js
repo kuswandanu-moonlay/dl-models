@@ -70,6 +70,12 @@ module.exports = function (data) {
     data.should.have.property('materialConstructionFinishName');
     data.materialConstructionFinishName.should.instanceOf(String);
 
+    data.should.have.property('materialId');
+    data.materialId.should.instanceOf(Object);
+
+    data.should.have.property('material');
+    data.material.should.instanceOf(String);
+
     data.should.have.property('materialWidthFinish');
     data.materialWidthFinish.should.instanceOf(String);
 
