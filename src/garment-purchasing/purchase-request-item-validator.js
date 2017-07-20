@@ -1,5 +1,6 @@
 require("should");
 var validateProduct = require('../master/product-validator');
+var validateUom = require('../master/uom-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -17,6 +18,10 @@ module.exports = function (data) {
 
     data.should.have.property('budgetPrice');
     data.budgetPrice.should.instanceof(Number);
+
+    data.should.have.property('uom');
+    data.uom.should.instanceof(Object);
+    validateUom(data.uom);
 
     data.should.have.property('categoryId');
     data.categoryId.should.instanceof(Object);
