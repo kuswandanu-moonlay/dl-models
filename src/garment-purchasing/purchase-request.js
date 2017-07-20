@@ -9,7 +9,6 @@ module.exports = class PurchaseRequest extends BaseModel {
         super(type || map.garmentPurchasing.type.PurchaseRequest, '1.0.0');
 
         this.no=''; //auto generate
-        this.refNo=''; //Nopo
         this.roNo=''; //Ro
 
         this.buyerId = {};
