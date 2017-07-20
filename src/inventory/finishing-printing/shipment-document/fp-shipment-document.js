@@ -12,9 +12,11 @@ module.exports = class FinishingPrintingShipmentDocument extends BaseModel {
         this.code = "";
         this.deliveryDate = new Date();
         this.deliveryNo = "";
+        this.isVoid = false;
+        this.deliveryReference = "";
 
         //User defined
-        this.productIdentity = "";
+        this.productIdentity = ""; //Kode Produk dari User
 
         //Buyer details
         this.buyerId = {};
@@ -25,6 +27,11 @@ module.exports = class FinishingPrintingShipmentDocument extends BaseModel {
 
         //Production Order list
         this.details = [];
+
+        this.storageId = {};
+        this.storageName = "";
+        this.storageReferenceType = "";
+        this.storageType = "";
 
         this.copy(source);
 

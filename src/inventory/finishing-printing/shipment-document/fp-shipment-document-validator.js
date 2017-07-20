@@ -41,4 +41,19 @@ module.exports = function (data) {
     for (var detail of data.details) {
         validateShipmentDocumentDetail(detail);
     }
+
+    data.should.have.property("isVoid");
+    data.isVoid.should.instanceOf(Boolean);
+
+    data.should.have.property('storageId');
+    data.storageId.should.instanceof(Object);
+
+    data.should.have.property('storageName');
+    data.storageName.should.be.String();
+
+    data.should.have.property('storageReferenceType');
+    data.storageReferenceType.should.be.String();
+
+    data.should.have.property('storageType');
+    data.storageType.should.be.String();     
 };
