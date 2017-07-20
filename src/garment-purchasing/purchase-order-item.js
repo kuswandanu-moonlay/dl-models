@@ -8,6 +8,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
     constructor(source, type) {
         super(type || 'purchase-order-item', '1.0.0');
 
+        this.refNo=''; //Nopo
         this.product = new Product();
         
         this.defaultQuantity = 0;

@@ -7,6 +7,9 @@ module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
+    data.should.have.property('refNo');
+    data.refNo.should.instanceof(String);
+
     data.should.have.property('realizationQuantity');
     data.realizationQuantity.should.instanceOf(Number);
     
