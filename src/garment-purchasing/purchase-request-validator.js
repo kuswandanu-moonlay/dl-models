@@ -8,9 +8,6 @@ module.exports = function (data) {
     data.should.have.property('no');
     data.no.should.instanceof(String);
 
-    data.should.have.property('refNo');
-    data.refNo.should.instanceof(String);
-
     data.should.have.property('roNo');
     data.roNo.should.instanceof(String);
 
