@@ -49,9 +49,6 @@ module.exports = function (data) {
     data.should.have.property('expectedDeliveryDate');
     data.expectedDeliveryDate.should.instanceof(Date);
 
-    data.should.have.property('actualDeliveryDate');
-    data.actualDeliveryDate.should.instanceof(Date);
-
     data.should.have.property('shipmentDate');
     data.shipmentDate.should.instanceof(Date);
 
