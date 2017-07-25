@@ -11,7 +11,7 @@ module.exports = class FinishingPrintingShipmentDocument extends BaseModel {
         //Shipment details
         this.code = "";
         this.deliveryDate = new Date();
-        this.deliveryNo = "";
+        this.deliveryCode = "";
         this.isVoid = false;
         this.deliveryReference = "";
 
