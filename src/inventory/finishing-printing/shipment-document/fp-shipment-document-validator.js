@@ -12,8 +12,8 @@ module.exports = function (data) {
     data.should.have.property('deliveryDate');
     data.deliveryDate.should.instanceof(Object);
 
-    data.should.have.property('deliveryNo');
-    data.deliveryNo.should.be.String();
+    data.should.have.property('deliveryCode');
+    data.deliveryCode.should.be.String();
 
     //User defined
     data.should.have.property('productIdentity');
