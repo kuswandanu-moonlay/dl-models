@@ -15,6 +15,9 @@ module.exports = function (data) {
     data.should.have.property('prNo');
     data.prNo.should.be.String();
 
+    data.should.have.property('prId');
+    data.prId.should.instanceof(Object);
+
     data.should.have.property('prRefNo');
     data.prRefNo.should.be.String();
 

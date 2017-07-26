@@ -14,6 +14,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.poId = {};
 
         this.prNo = '';
+        this.prId = {};
         this.prRefNo = '';
         this.roNo = '';
 
