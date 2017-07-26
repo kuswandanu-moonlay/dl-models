@@ -109,6 +109,10 @@ module.exports = {
                 finishingPrintingSalesContract: require("./sales/finishing-printing-sales-contract-validator"),
                 finishingPrintingSalesContractDetail: require("./sales/finishing-printing-sales-contract-detail-validator"),
                 weavingSalesContract: require("./sales/weaving-sales-contract-validator"),
-                spinningSalesContract: require("./sales/spinning-sales-contract-validator")
+                spinningSalesContract: require("./sales/spinning-sales-contract-validator"),
+                dealTrackingBoard: require("./sales/deal-tracking-board-validator"),
+                dealTrackingStage: require("./sales/deal-tracking-stage-validator"),
+                dealTrackingDeal: require("./sales/deal-tracking-deal-validator"),
+                dealTrackingActivity: require("./sales/deal-tracking-activity-validator")
         }
 };
