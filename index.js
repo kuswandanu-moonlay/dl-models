@@ -116,7 +116,11 @@ module.exports = {
         FinishingPrintingSalesContract: require("./src/sales/finishing-printing-sales-contract"),
         FinishingPrintingSalesContractDetail: require("./src/sales/finishing-printing-sales-contract-detail"),
         SpinningSalesContract: require("./src/sales/spinning-sales-contract"),
-        WeavingSalesContract: require("./src/sales/weaving-sales-contract")
+        WeavingSalesContract: require("./src/sales/weaving-sales-contract"),
+        DealTrackingBoard: require("./src/sales/deal-tracking-board"),
+        DealTrackingStage: require("./src/sales/deal-tracking-stage"),
+        DealTrackingDeal: require("./src/sales/deal-tracking-deal"),
+        DealTrackingActivity: require("./src/sales/deal-tracking-activity")
     },
     map: require('./src/map'),
     validator: require('./src/validator')

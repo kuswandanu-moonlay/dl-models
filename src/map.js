@@ -184,13 +184,21 @@ module.exports = {
             ProductionOrder: 'production-order',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contract',
             WeavingSalesContract: 'weaving-sales-contract',
-            SpinningSalesContract: 'spinning-sales-contract'
+            SpinningSalesContract: 'spinning-sales-contract',
+            DealTrackingBoard: 'deal-tracking-board',
+            DealTrackingStage: 'deal-tracking-stage',
+            DealTrackingDeal: 'deal-tracking-deal',
+            DealTrackingActivity: 'deal-tracking-activity'
         },
         collection: {
             ProductionOrder: 'production-orders',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contracts',
             WeavingSalesContract: 'weaving-sales-contracts',
-            SpinningSalesContract: 'spinning-sales-contracts'
+            SpinningSalesContract: 'spinning-sales-contracts',
+            DealTrackingBoard: 'deal-tracking-boards',
+            DealTrackingStage: 'deal-tracking-stages',
+            DealTrackingDeal: 'deal-tracking-deals',
+            DealTrackingActivity: 'deal-tracking-activities'
         }
     }
 }
