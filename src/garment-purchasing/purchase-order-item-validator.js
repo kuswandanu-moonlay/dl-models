@@ -11,10 +11,10 @@ module.exports = function (data) {
 
     data.should.have.property('refNo');
     data.refNo.should.instanceof(String);
-     
+
     data.should.have.property('productId');
     data.productId.should.instanceof(Object);
-    
+
     data.should.have.property('product');
     data.product.should.instanceof(Object);
     validateProduct(data.product);
@@ -35,16 +35,16 @@ module.exports = function (data) {
 
     data.should.have.property('realizationQuantity');
     data.realizationQuantity.should.instanceOf(Number);
-    
+
     data.should.have.property('pricePerDealUnit');
     data.pricePerDealUnit.should.instanceOf(Number);
-    
+
     data.should.have.property('priceBeforeTax');
     data.priceBeforeTax.should.instanceOf(Number);
-    
+
     data.should.have.property('budgetPrice');
     data.budgetPrice.should.instanceOf(Number);
-    
+
     data.should.have.property('currency');
     data.currency.should.instanceof(Object);
     validateCurrency(data.currency);
@@ -57,13 +57,13 @@ module.exports = function (data) {
 
     data.should.have.property('category');
     data.category.should.instanceof(Object);
-    
+
     data.should.have.property('conversion');
     data.conversion.should.instanceOf(Number);
 
     data.should.have.property('isPosted');
     data.isPosted.should.instanceOf(Boolean);
-    
+
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
 
@@ -104,5 +104,8 @@ module.exports = function (data) {
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
-    
+
+    data.should.have.property('status');
+    data.status.should.instanceof(Object);
+
 };
