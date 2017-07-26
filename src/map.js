@@ -120,6 +120,7 @@ module.exports = {
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
+            Customs : 'customs'
         }
     },
     production: {

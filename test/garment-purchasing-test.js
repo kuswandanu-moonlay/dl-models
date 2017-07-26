@@ -10,6 +10,11 @@ it("#02. Purchase Order should valid", function () {
     validate.garmentPurchaseOrder(new PurchaseOrder());
 });
 
+it("#03. Customs should valid", function () {
+    var Customs = require('../src/garment-purchasing/customs');
+    validate.customs(new Customs());
+});
+
 // it("#03. Purchase Order External should valid", function() {
 //     var PurchaseOrderExternal = require('../src/purchasing/purchase-order-external');
 //     validate.purchaseOrderExternal(new PurchaseOrderExternal());
