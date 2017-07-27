@@ -10,10 +10,10 @@ it("#02. Purchase Order should valid", function () {
     validate.garmentPurchaseOrder(new PurchaseOrder());
 });
 
-// it("#03. Purchase Order External should valid", function() {
-//     var PurchaseOrderExternal = require('../src/purchasing/purchase-order-external');
-//     validate.purchaseOrderExternal(new PurchaseOrderExternal());
-// });
+it("#03. Purchase Order External should valid", function() {
+    var PurchaseOrderExternal = require('../src/garment-purchasing/purchase-order-external');
+    validate.garmentPurchaseOrderExternal(new PurchaseOrderExternal());
+});
 
 // it("#04. Delivery Order should valid", function () {
 //     var DeliveryOrder = require('../src/purchasing/delivery-order');

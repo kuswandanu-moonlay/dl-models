@@ -6,7 +6,7 @@ var map = require('../map');
 
 module.exports = class PurchaseOrder extends BaseModel {
     constructor(source, type) {
-        super(type || map.purchasing.type.PurchaseOrder, '1.0.0');
+        super(type || 'purchase-order', '1.0.0');
 
         // Define properties
         this.iso = 'FM-6.00-06-005';
@@ -30,7 +30,6 @@ module.exports = class PurchaseOrder extends BaseModel {
 
         this.date = new Date();
         this.expectedDeliveryDate = new Date();
-        this.actualDeliveryDate = new Date();
         this.shipmentDate = new Date();
         
         this.isPosted = false;

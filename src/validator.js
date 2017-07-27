@@ -73,7 +73,8 @@ module.exports = {
         },
         garmentPurchasing: {
                 garmentPurchaseRequest: require("./garment-purchasing/purchase-request-validator"),
-                garmentPurchaseOrder: require("./garment-purchasing/purchase-order-validator")
+                garmentPurchaseOrder: require("./garment-purchasing/purchase-order-validator"),
+                garmentPurchaseOrderExternal: require("./garment-purchasing/purchase-order-external-validator")
         },
         production: {
                 spinning: {
