@@ -52,6 +52,8 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.useVat = false;
         this.vatRate = 0;
         this.useIncomeTax = false;
+
+        this.status = {};
         
         this.remark = '';
 
