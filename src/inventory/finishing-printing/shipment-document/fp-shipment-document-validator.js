@@ -15,6 +15,9 @@ module.exports = function (data) {
     data.should.have.property('deliveryCode');
     data.deliveryCode.should.be.String();
 
+    data.should.have.property('shipmentNumber');
+    data.shipmentNumber.should.be.String();
+
     //User defined
     data.should.have.property('productIdentity');
     data.productIdentity.should.instanceOf(String);
@@ -55,5 +58,5 @@ module.exports = function (data) {
     data.storageReferenceType.should.be.String();
 
     data.should.have.property('storageType');
-    data.storageType.should.be.String();     
+    data.storageType.should.be.String();
 };
