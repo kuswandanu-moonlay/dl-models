@@ -174,7 +174,18 @@ it("#30. Design Motive should valid", function () {
     var DesignMotive = require('../src/master/design-motive');
     validate.designMotive(new DesignMotive());
 });
+
 it("#31. Storage should valid", function () {
     var Storage = require('../src/master/storage');
     validate.designMotive(new Storage());
+});
+
+it("#32. Company should valid", function () {
+    var Company = require('../src/master/company');
+    validate.company(new Company());
+});
+
+it("#32. Contact should valid", function () {
+    var Contact = require('../src/master/contact');
+    validate.contact(new Contact());
 });

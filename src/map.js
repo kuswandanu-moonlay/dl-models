@@ -25,6 +25,8 @@ module.exports = {
             Step: 'step',
             MachineType: 'machine-types',
             Storage: 'storage',
+            Company: 'company',
+            Contact: 'contact'
         },
         collection: {
             Buyer: 'buyers',
@@ -60,7 +62,9 @@ module.exports = {
             Quality: 'qualities',
             TermOfPayment: 'term-of-payments',
             DesignMotive: 'design-motives',
-            Storage: 'storages'
+            Storage: 'storages',
+            Company: 'companies',
+            Contact: 'contacts'
         }
     },
     inventory: {
@@ -69,13 +73,15 @@ module.exports = {
                 FPInventorySummary: "fp-inventory-summary",
                 FPInventoryMovement: "fp-inventory-movement",
                 FPPackingReceipt: "fp-packing-receipt",
-                FPReturToQCDoc:"fp-retur-to-qc-doc"
+                FPReturToQCDoc:"fp-retur-to-qc-doc",
+                FPPackingShipmentDocument: "fp-shipment-document"
             },
             collection: {
                 FPInventorySummary: "fp-inventory-summaries",
                 FPInventoryMovement: "fp-inventory-movements",
                 FPPackingReceipt: "fp-packing-receipts",
-                FPReturToQCDoc:"fp-retur-to-qc-docs"
+                FPReturToQCDoc:"fp-retur-to-qc-docs",
+                FPPackingShipmentDocument: "fp-shipment-documents"
             }
         },
         type: {
@@ -105,6 +111,19 @@ module.exports = {
             PurchaseRequest: 'purchase-requests',
             UnitPaymentCorrectionNote: 'unit-payment-correction-notes',
             UnitPaymentOrder: 'unit-payment-orders'
+        }
+    },
+    garmentPurchasing: {
+        type: {
+            PurchaseOrder: 'purchase-order',
+            DeliveryOrder: 'delivery-order',
+            PurchaseRequest: 'purchase-request',
+            UnitPaymentOrder: 'unit-payment-order',
+        },
+        collection: {
+            GarmentPurchaseRequest: 'garment-purchase-requests',
+            GarmentPurchaseOrder: 'garment-purchase-orders',
+            GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
         }
     },
     production: {
@@ -169,13 +188,21 @@ module.exports = {
             ProductionOrder: 'production-order',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contract',
             WeavingSalesContract: 'weaving-sales-contract',
-            SpinningSalesContract: 'spinning-sales-contract'
+            SpinningSalesContract: 'spinning-sales-contract',
+            DealTrackingBoard: 'deal-tracking-board',
+            DealTrackingStage: 'deal-tracking-stage',
+            DealTrackingDeal: 'deal-tracking-deal',
+            DealTrackingActivity: 'deal-tracking-activity'
         },
         collection: {
             ProductionOrder: 'production-orders',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contracts',
             WeavingSalesContract: 'weaving-sales-contracts',
-            SpinningSalesContract: 'spinning-sales-contracts'
+            SpinningSalesContract: 'spinning-sales-contracts',
+            DealTrackingBoard: 'deal-tracking-boards',
+            DealTrackingStage: 'deal-tracking-stages',
+            DealTrackingDeal: 'deal-tracking-deals',
+            DealTrackingActivity: 'deal-tracking-activities'
         }
     }
 }

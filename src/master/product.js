@@ -18,7 +18,7 @@ module.exports = class Product extends BaseModel {
         this.uomId = {};
         this.uom = new uom();
         this.tags = '';
-        this.properties = [];
+        this.properties = {};
 
         this.copy(source);
     }

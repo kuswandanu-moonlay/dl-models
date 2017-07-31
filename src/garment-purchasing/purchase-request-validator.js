@@ -1,6 +1,5 @@
 require("should");
 var validatePurchaseRequestItem = require('./purchase-request-item-validator');
-var validateBudget = require('../master/budget-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -9,30 +8,29 @@ module.exports = function (data) {
     data.should.have.property('no');
     data.no.should.instanceof(String);
 
+    data.should.have.property('roNo');
+    data.roNo.should.instanceof(String);
+
+    data.should.have.property('buyer');
+    data.buyer.should.instanceof(Object);
+
+    data.should.have.property('artikel');
+    data.artikel.should.instanceof(String);
+
     data.should.have.property('date');
     data.date.should.instanceof(Date);
     
     data.should.have.property('expectedDeliveryDate');
-    // data.expectedDeliveryDate.should.instanceof(Date);
- 
-    data.should.have.property('budgetId');
-    data.budgetId.should.instanceof(Object);
-
-    data.should.have.property('budget');
-    data.budget.should.instanceof(Object);
-    validateBudget(data.budget);
+    data.expectedDeliveryDate.should.instanceof(Date);
+    
+    data.should.have.property('shipmentDate');
+    data.shipmentDate.should.instanceof(Date);
 
     data.should.have.property('unitId');
     data.unitId.should.instanceof(Object);
 
     data.should.have.property('unit');
     data.unit.should.instanceof(Object);
-    
-    data.should.have.property('categoryId');
-    data.categoryId.should.instanceof(Object);
-
-    data.should.have.property('category');
-    data.category.should.instanceof(Object);
 
     data.should.have.property('isPosted');
     data.isPosted.should.instanceOf(Boolean);

@@ -1,38 +1,36 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
 var PurchaseRequestItem = require('./purchase-request-item');
-var Budget= require('../master/budget');
 var map = require('../map');
+var Buyer = require('../master/buyer');
 
 module.exports = class PurchaseRequest extends BaseModel {
     constructor(source, type) { 
-        super(type || map.purchasing.type.PurchaseRequest, '1.0.0');
+        super(type || map.garmentPurchasing.type.PurchaseRequest, '1.0.0');
 
-        this.no='';
-        this.date = new Date();
-        this.expectedDeliveryDate = '';
+        this.no=''; //auto generate
+        this.roNo=''; //Ro
+
+        this.buyerId = {};
+        this.buyer = new Buyer();
+        this.artikel = ''; //artikel
+
+        this.date = new Date(); //TgValid
+        this.expectedDeliveryDate = new Date(); //set blank
+        this.shipmentDate = new Date(); //Shipment
         
-        this.budgetId = {};
-        this.budget = new Budget();
-
         this.unitId = {};
         this.unit = {};
 
-        this.categoryId = {};
-        this.category = {};
-
-        this.isPosted = false;
+        this.isPosted = true;
         this.isUsed = false;
         this.remark = '';
-
-        this.items = [];
-
         this.status = {};
-        
         this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
         
-        this.copy(source);
-
+        this.items = [];
         this.items = (this.items || []).map(item => new PurchaseRequestItem(item));
+        
+        this.copy(source);
     }
 };

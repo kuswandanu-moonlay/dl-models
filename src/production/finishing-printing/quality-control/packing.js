@@ -15,14 +15,30 @@ module.exports = class Packing extends BaseModel {
         this.salesContractNo = "";
         this.designCode = "";
         this.designNumber = "";
-        this.buyer = "";
-        this.buyerLocation = "";
+
+        //Buyer detail
+        this.buyerId = {};
+        this.buyerCode = "";
+        this.buyerName = "";
+        this.buyerAddress = "";
+        this.buyerType = "";
+
         this.date = new Date();
         this.packingUom = "";
         this.colorCode = "";
         this.colorName = "";
         this.colorType = "";
+
+        this.materialConstructionFinishId = {};
+        this.materialConstructionFinishName = "";
+
+        this.materialId = {};
+        this.material = "";
+
+        this.materialWidthFinish = "";
+
         this.construction = "";
+
         this.motif = "";
         this.items = [];
         this.status = "";
