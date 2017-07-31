@@ -52,9 +52,9 @@ module.exports = {
             FPInventoryMovement: require("./src/inventory/finishing-printing/fp-inventory-movement"),
             FPInventorySummary: require("./src/inventory/finishing-printing/fp-inventory-summary"),
             FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt"),
-            FPReturToQCDoc: require("./src/inventory/finishing-printing/fp-retur-to-qc-doc"),
-            FPReturToQCDocItem: require("./src/inventory/finishing-printing/fp-retur-to-qc-doc-item"),
-            FPReturToQCDocDetail: require("./src/inventory/finishing-printing/fp-retur-to-qc-doc-detail"),
+            FPReturToQCDoc: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc"),
+            FPReturToQCDocItem: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-item"),
+            FPReturToQCDocDetail: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-detail"),
             FPShipmentDocument: require("./src/inventory/finishing-printing/shipment-document/fp-shipment-document")
         },
         InventoryMovement: require("./src/inventory/inventory-movement"),
