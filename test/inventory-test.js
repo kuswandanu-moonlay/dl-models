@@ -37,5 +37,5 @@ it("#07. finishing printing shipment document should valid", function () {
 
 it("#08. finishing-printing/retur-to-qc should valid", function () {
     var FPReturToQCDoc = require('../src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc');
-    validate.fpReturToQCDoc(new FPReturToQCDoc());
+    validate.finishingPrinting.fpReturToQCDoc(new FPReturToQCDoc());
 });
