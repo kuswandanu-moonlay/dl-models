@@ -68,12 +68,14 @@ module.exports = {
             type: {
                 FPInventorySummary: "fp-inventory-summary",
                 FPInventoryMovement: "fp-inventory-movement",
-                FPPackingReceipt: "fp-packing-receipt"
+                FPPackingReceipt: "fp-packing-receipt",
+                FPReturToQCDoc:"fp-retur-to-qc-doc"
             },
             collection: {
                 FPInventorySummary: "fp-inventory-summaries",
                 FPInventoryMovement: "fp-inventory-movements",
-                FPPackingReceipt: "fp-packing-receipts"
+                FPPackingReceipt: "fp-packing-receipts",
+                FPReturToQCDoc:"fp-retur-to-qc-docs"
             }
         },
         type: {

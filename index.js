@@ -49,7 +49,10 @@ module.exports = {
         finishingPrinting: {
             FPInventoryMovement: require("./src/inventory/finishing-printing/fp-inventory-movement"),
             FPInventorySummary: require("./src/inventory/finishing-printing/fp-inventory-summary"),
-            FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt")
+            FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt"),
+            FPReturToQCDoc: require("./src/inventory/finishing-printing/fp-retur-to-qc-doc"),
+            FPReturToQCDocItem: require("./src/inventory/finishing-printing/fp-retur-to-qc-doc-item"),
+            FPReturToQCDocDetail: require("./src/inventory/finishing-printing/fp-retur-to-qc-doc-detail")
         },
         InventoryMovement: require("./src/inventory/inventory-movement"),
         InventorySummary: require("./src/inventory/inventory-summary"),

@@ -29,4 +29,18 @@ it("#06. inventory document should valid", function () {
     var InventoryDocument = require('../src/inventory/inventory-document');
     validate.inventoryDocument(new InventoryDocument());
 });
- 
+
+it("#07. finishing-printing/retur-to-qc should valid", function () {
+    var FPReturToQCDoc = require('../src/inventory/finishing-printing/fp-retur-to-qc-doc');
+    validate.fpReturToQCDoc(new FPReturToQCDoc());
+});
+
+it("#08. finishing-printing/retur-to-qc-item should valid", function () {
+    var FPReturToQCDocItem = require('../src/inventory/finishing-printing/fp-retur-to-qc-doc-item');
+    validate.fpReturToQCDocItem(new FPReturToQCDocItem());
+});
+
+it("#09. finishing-printing/retur-to-qc-detail should valid", function () {
+    var FPReturToQCDocDetail = require('../src/inventory/finishing-printing/fp-retur-to-qc-doc-detail');
+    validate.fpReturToQCDocDetail(new FPReturToQCDocDetail());
+});
