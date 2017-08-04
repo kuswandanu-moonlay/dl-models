@@ -27,7 +27,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.dealQuantity = 0;
         this.dealUom = new uom();
 
-        this.realizationQuantity = 0;
+        this.realizations = [];
 
         this.pricePerDealUnit = 0;
         this.priceBeforeTax = 0;
