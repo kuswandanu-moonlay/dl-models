@@ -13,5 +13,6 @@ module.exports = class DurationEstimation extends BaseModel{
         this.areas = (this.areas || []).map(area => new Area(area));
         
         this.copy(source);
+        this.processType=new ProcessType(this.processType);
     }
 };
