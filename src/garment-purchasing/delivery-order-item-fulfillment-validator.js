@@ -11,6 +11,12 @@ module.exports = function (data) {
     data.should.have.property('purchaseOrderNo');
     data.purchaseOrderNo.should.instanceOf(String);
 
+    data.should.have.property('purchaseRequestId');
+    data.purchaseRequestId.should.instanceOf(Object);
+
+    data.should.have.property('purchaseRequestNo');
+    data.purchaseRequestNo.should.instanceOf(String);
+
     data.should.have.property('productId');
     data.productId.should.instanceOf(Object);
 

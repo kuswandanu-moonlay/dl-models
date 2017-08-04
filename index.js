@@ -45,7 +45,8 @@ module.exports = {
         DesignMotive: require('./src/master/design-motive'),
         Storage: require('./src/master/storage'),
         Company: require('./src/master/company'),
-        Contact: require('./src/master/contact')
+        Contact: require('./src/master/contact'),
+        FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation')
     },
     inventory: {
         finishingPrinting: {

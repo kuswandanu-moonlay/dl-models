@@ -45,7 +45,8 @@ module.exports = {
                 designMotive: require('./master/design-motive-validator'),
                 storage: require('./master/storage-validator'),
                 company: require('./master/company-validator'),
-                contact: require('./master/contact-validator')
+                contact: require('./master/contact-validator'),
+                finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator')
         },
         inventory: {
                 finishingPrinting: {

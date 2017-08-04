@@ -64,7 +64,8 @@ module.exports = {
             DesignMotive: 'design-motives',
             Storage: 'storages',
             Company: 'companies',
-            Contact: 'contacts'
+            Contact: 'contacts',
+            FinishingPrintingDurationEstimation: 'fp-duration-estimations'
         }
     },
     inventory: {
@@ -124,6 +125,7 @@ module.exports = {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
+            GarmentDeliveryOrder: 'garment-delivery-orders',
         }
     },
     production: {

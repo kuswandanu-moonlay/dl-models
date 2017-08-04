@@ -185,7 +185,12 @@ it("#32. Company should valid", function () {
     validate.company(new Company());
 });
 
-it("#32. Contact should valid", function () {
+it("#33. Contact should valid", function () {
     var Contact = require('../src/master/contact');
     validate.contact(new Contact());
+});
+
+it("#34. Finishing Printing Duration Estimation should valid", function () {
+    var Storage = require('../src/master/fp-duration-estimation');
+    validate.finishingPrintingDurationEstimation(new Storage());
 });
