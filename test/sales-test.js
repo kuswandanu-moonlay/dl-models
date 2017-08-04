@@ -19,3 +19,23 @@ it("#04. Weaving Sales Contract should valid", function () {
     var WeavingSalesContract = require('../src/sales/weaving-sales-contract');
     validate.weavingSalesContract(new WeavingSalesContract());
 });
+
+it("#05. Deal Tracking Board should valid", function () {
+    var DealTrackingBoard = require('../src/sales/deal-tracking-board');
+    validate.dealTrackingBoard(new DealTrackingBoard());
+});
+
+it("#06. Deal Tracking Stage should valid", function () {
+    var DealTrackingStage = require('../src/sales/deal-tracking-stage');
+    validate.dealTrackingStage(new DealTrackingStage());
+});
+
+it("#07. Deal Tracking Deal should valid", function () {
+    var DealTrackingDeal = require('../src/sales/deal-tracking-deal');
+    validate.dealTrackingDeal(new DealTrackingDeal());
+});
+
+it("#08. Deal Tracking Activity should valid", function () {
+    var DealTrackingActivity = require('../src/sales/deal-tracking-activity');
+    validate.dealTrackingActivity(new DealTrackingActivity());
+});

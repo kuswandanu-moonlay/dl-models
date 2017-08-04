@@ -180,7 +180,17 @@ it("#31. Storage should valid", function () {
     validate.designMotive(new Storage());
 });
 
-it("#32. Finishing Printing Duration Estimation should valid", function () {
+it("#32. Company should valid", function () {
+    var Company = require('../src/master/company');
+    validate.company(new Company());
+});
+
+it("#33. Contact should valid", function () {
+    var Contact = require('../src/master/contact');
+    validate.contact(new Contact());
+});
+
+it("#34. Finishing Printing Duration Estimation should valid", function () {
     var Storage = require('../src/master/fp-duration-estimation');
     validate.finishingPrintingDurationEstimation(new Storage());
 });

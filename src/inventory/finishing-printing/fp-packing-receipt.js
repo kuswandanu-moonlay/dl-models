@@ -26,8 +26,14 @@ module.exports = class FPPackingReceipt extends BaseModel {
         this.buyer = "";
         this.colorName = "";
         this.construction = "";
+        this.materialWidthFinish = "";
         this.items = [];
         this.packingUom = "";
+
+        this.orderType = "";
+        this.colorType = "";
+        this.designCode = "";
+        this.designNumber = "";
 
         this.copy(source);
         this.items = this.items.map((item) => new PackingItemModel(item));

@@ -25,6 +25,8 @@ module.exports = {
             Step: 'step',
             MachineType: 'machine-types',
             Storage: 'storage',
+            Company: 'company',
+            Contact: 'contact'
         },
         collection: {
             Buyer: 'buyers',
@@ -61,6 +63,8 @@ module.exports = {
             TermOfPayment: 'term-of-payments',
             DesignMotive: 'design-motives',
             Storage: 'storages',
+            Company: 'companies',
+            Contact: 'contacts',
             FinishingPrintingDurationEstimation: 'fp-duration-estimations'
         }
     },
@@ -69,12 +73,16 @@ module.exports = {
             type: {
                 FPInventorySummary: "fp-inventory-summary",
                 FPInventoryMovement: "fp-inventory-movement",
-                FPPackingReceipt: "fp-packing-receipt"
+                FPPackingReceipt: "fp-packing-receipt",
+                FPReturToQCDoc:"fp-retur-to-qc-doc",
+                FPPackingShipmentDocument: "fp-shipment-document"
             },
             collection: {
                 FPInventorySummary: "fp-inventory-summaries",
                 FPInventoryMovement: "fp-inventory-movements",
-                FPPackingReceipt: "fp-packing-receipts"
+                FPPackingReceipt: "fp-packing-receipts",
+                FPReturToQCDoc:"fp-retur-to-qc-docs",
+                FPPackingShipmentDocument: "fp-shipment-documents"
             }
         },
         type: {
@@ -182,13 +190,21 @@ module.exports = {
             ProductionOrder: 'production-order',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contract',
             WeavingSalesContract: 'weaving-sales-contract',
-            SpinningSalesContract: 'spinning-sales-contract'
+            SpinningSalesContract: 'spinning-sales-contract',
+            DealTrackingBoard: 'deal-tracking-board',
+            DealTrackingStage: 'deal-tracking-stage',
+            DealTrackingDeal: 'deal-tracking-deal',
+            DealTrackingActivity: 'deal-tracking-activity'
         },
         collection: {
             ProductionOrder: 'production-orders',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contracts',
             WeavingSalesContract: 'weaving-sales-contracts',
-            SpinningSalesContract: 'spinning-sales-contracts'
+            SpinningSalesContract: 'spinning-sales-contracts',
+            DealTrackingBoard: 'deal-tracking-boards',
+            DealTrackingStage: 'deal-tracking-stages',
+            DealTrackingDeal: 'deal-tracking-deals',
+            DealTrackingActivity: 'deal-tracking-activities'
         }
     }
 }

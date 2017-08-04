@@ -11,14 +11,34 @@ module.exports = class Packing extends BaseModel {
         this.code = '';
         this.productionOrderId = {};
         this.productionOrderNo = "";
+        this.orderType = "";
         this.salesContractNo = "";
-        this.buyer = "";
-        this.buyerLocation = "";
+        this.designCode = "";
+        this.designNumber = "";
+
+        //Buyer detail
+        this.buyerId = {};
+        this.buyerCode = "";
+        this.buyerName = "";
+        this.buyerAddress = "";
+        this.buyerType = "";
+
         this.date = new Date();
         this.packingUom = "";
         this.colorCode = "";
         this.colorName = "";
+        this.colorType = "";
+
+        this.materialConstructionFinishId = {};
+        this.materialConstructionFinishName = "";
+
+        this.materialId = {};
+        this.material = "";
+
+        this.materialWidthFinish = "";
+
         this.construction = "";
+
         this.motif = "";
         this.items = [];
         this.status = "";

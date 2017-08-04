@@ -14,11 +14,31 @@ module.exports = function (data) {
     data.should.have.property('productionOrderNo');
     data.productionOrderNo.should.instanceOf(String);
 
-    data.should.have.property('buyer');
-    data.buyer.should.instanceOf(String);
+    data.should.have.property('orderType');
+    data.orderType.should.instanceOf(String);
 
-    data.should.have.property('buyerLocation');
-    data.buyerLocation.should.instanceOf(String);
+    data.should.have.property('designCode');
+    data.designCode.should.instanceOf(String);
+
+    data.should.have.property('designNumber');
+    data.designNumber.should.instanceOf(String);
+
+    //Buyer
+    data.should.have.property('buyerId');
+    data.buyerId.should.instanceOf(Object);
+
+    data.should.have.property('buyerCode');
+    data.buyerCode.should.instanceOf(String);
+
+    data.should.have.property('buyerName');
+    data.buyerName.should.instanceOf(String);
+
+    data.should.have.property('buyerAddress');
+    data.buyerAddress.should.instanceOf(String);
+
+    data.should.have.property('buyerType');
+    data.buyerType.should.instanceOf(String);
+
 
     data.should.have.property('date');
     data.date.should.be.Object();
@@ -32,14 +52,32 @@ module.exports = function (data) {
         validatePackingItem(item);
     }
 
+    data.should.have.property('construction');
+    data.construction.should.instanceOf(String);
+
     data.should.have.property('colorCode');
     data.colorCode.should.instanceOf(String);
 
     data.should.have.property('colorName');
     data.colorName.should.instanceOf(String);
 
-    data.should.have.property('construction');
-    data.construction.should.instanceOf(String);
+    data.should.have.property('colorType');
+    data.colorType.should.instanceOf(String);
+
+    data.should.have.property('materialConstructionFinishId');
+    data.materialConstructionFinishId.should.instanceOf(Object);
+
+    data.should.have.property('materialConstructionFinishName');
+    data.materialConstructionFinishName.should.instanceOf(String);
+
+    data.should.have.property('materialId');
+    data.materialId.should.instanceOf(Object);
+
+    data.should.have.property('material');
+    data.material.should.instanceOf(String);
+
+    data.should.have.property('materialWidthFinish');
+    data.materialWidthFinish.should.instanceOf(String);
 
     data.should.have.property('motif');
     data.motif.should.instanceOf(String);

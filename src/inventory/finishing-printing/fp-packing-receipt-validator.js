@@ -52,11 +52,26 @@ module.exports = function (data) {
     data.should.have.property('construction');
     data.construction.should.be.String();
 
+    data.should.have.property('materialWidthFinish');
+    data.materialWidthFinish.should.be.String();
+
     data.should.have.property('items');
     data.items.should.instanceof(Array);
 
     data.should.have.property('packingUom');
     data.packingUom.should.be.String();
+
+    data.should.have.property('orderType');
+    data.orderType.should.be.String();
+
+    data.should.have.property('colorType');
+    data.colorType.should.be.String();
+
+    data.should.have.property('designCode');
+    data.designCode.should.be.String();
+
+    data.should.have.property('designNumber');
+    data.designNumber.should.be.String();
 
     data.should.have.property('items');
     data.items.should.instanceOf(Array);

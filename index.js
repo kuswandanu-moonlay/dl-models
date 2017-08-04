@@ -44,13 +44,19 @@ module.exports = {
         TermOfPayment: require('./src/master/term-of-payment'),
         DesignMotive: require('./src/master/design-motive'),
         Storage: require('./src/master/storage'),
+        Company: require('./src/master/company'),
+        Contact: require('./src/master/contact'),
         FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation')
     },
     inventory: {
         finishingPrinting: {
             FPInventoryMovement: require("./src/inventory/finishing-printing/fp-inventory-movement"),
             FPInventorySummary: require("./src/inventory/finishing-printing/fp-inventory-summary"),
-            FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt")
+            FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt"),
+            FPReturToQCDoc: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc"),
+            FPReturToQCDocItem: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-item"),
+            FPReturToQCDocDetail: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-detail"),
+            FPShipmentDocument: require("./src/inventory/finishing-printing/shipment-document/fp-shipment-document")
         },
         InventoryMovement: require("./src/inventory/inventory-movement"),
         InventorySummary: require("./src/inventory/inventory-summary"),
@@ -116,7 +122,11 @@ module.exports = {
         FinishingPrintingSalesContract: require("./src/sales/finishing-printing-sales-contract"),
         FinishingPrintingSalesContractDetail: require("./src/sales/finishing-printing-sales-contract-detail"),
         SpinningSalesContract: require("./src/sales/spinning-sales-contract"),
-        WeavingSalesContract: require("./src/sales/weaving-sales-contract")
+        WeavingSalesContract: require("./src/sales/weaving-sales-contract"),
+        DealTrackingBoard: require("./src/sales/deal-tracking-board"),
+        DealTrackingStage: require("./src/sales/deal-tracking-stage"),
+        DealTrackingDeal: require("./src/sales/deal-tracking-deal"),
+        DealTrackingActivity: require("./src/sales/deal-tracking-activity")
     },
     map: require('./src/map'),
     validator: require('./src/validator')
