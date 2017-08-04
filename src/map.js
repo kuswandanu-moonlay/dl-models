@@ -60,7 +60,8 @@ module.exports = {
             Quality: 'qualities',
             TermOfPayment: 'term-of-payments',
             DesignMotive: 'design-motives',
-            Storage: 'storages'
+            Storage: 'storages',
+            FinishingPrintingDurationEstimation: 'fp-duration-estimations'
         }
     },
     inventory: {
@@ -116,6 +117,7 @@ module.exports = {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
+            GarmentDeliveryOrder: 'garment-delivery-orders',
         }
     },
     production: {

@@ -43,7 +43,8 @@ module.exports = {
         ArrayStep: require('./src/master/array-step'),
         TermOfPayment: require('./src/master/term-of-payment'),
         DesignMotive: require('./src/master/design-motive'),
-        Storage: require('./src/master/storage')
+        Storage: require('./src/master/storage'),
+        FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation')
     },
     inventory: {
         finishingPrinting: {
