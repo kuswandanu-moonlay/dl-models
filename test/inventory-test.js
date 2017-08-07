@@ -34,3 +34,8 @@ it("#07. finishing printing shipment document should valid", function () {
     var FinishingPrintingShipmentDocument = require('../src/inventory/finishing-printing/shipment-document/fp-shipment-document');
     validate.finishingPrinting.fpShipmentDocument(new FinishingPrintingShipmentDocument());
 });
+
+it("#08. finishing-printing/retur-to-qc should valid", function () {
+    var FPReturToQCDoc = require('../src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc');
+    validate.finishingPrinting.fpReturToQCDoc(new FPReturToQCDoc());
+});

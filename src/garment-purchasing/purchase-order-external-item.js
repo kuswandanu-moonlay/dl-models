@@ -14,7 +14,9 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.poId = {};
 
         this.prNo = '';
+        this.prId = {};
         this.prRefNo = '';
+        this.roNo = '';
 
         this.productId = {};
         this.product = new Product();
@@ -25,14 +27,13 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.dealQuantity = 0;
         this.dealUom = new uom();
 
-        this.realizationQuantity = 0;
+        this.realizations = [];
 
         this.pricePerDealUnit = 0;
         this.priceBeforeTax = 0;
         this.budgetPrice = 0;
 
         this.conversion = 1;
-        this.isPosted = false;
         this.isClosed = false;
         this.useIncomeTax = false;
 

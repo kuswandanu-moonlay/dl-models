@@ -46,13 +46,17 @@ module.exports = {
                 storage: require('./master/storage-validator'),
                 company: require('./master/company-validator'),
                 contact: require('./master/contact-validator'),
-                badOutputReason: require('./master/bad-output-reason-validator')
+                badOutputReason: require('./master/bad-output-reason-validator'),
+                finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator')
         },
         inventory: {
                 finishingPrinting: {
                         fpInventorySummary: require("./inventory/finishing-printing/fp-inventory-summary-validator"),
                         fpInventoryMovement: require("./inventory/finishing-printing/fp-inventory-movement-validator"),
                         fpPackingReceipt: require("./inventory/finishing-printing/fp-packing-receipt-validator"),
+                        fpReturToQCDoc: require("./inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-validator"),
+                        fpReturToQCDocItem: require("./inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-item-validator"),
+                        fpReturToQCDocDetail: require("./inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-detail-validator"),
                         fpShipmentDocument: require("./inventory/finishing-printing/shipment-document/fp-shipment-document-validator")
                 },
                 inventorySummary: require("./inventory/inventory-summary-validator"),
@@ -76,7 +80,8 @@ module.exports = {
                 garmentPurchaseRequest: require("./garment-purchasing/purchase-request-validator"),
                 garmentPurchaseOrder: require("./garment-purchasing/purchase-order-validator"),
                 customs: require("./garment-purchasing/customs-validator"),
-                garmentPurchaseOrderExternal: require("./garment-purchasing/purchase-order-external-validator")
+                garmentPurchaseOrderExternal: require("./garment-purchasing/purchase-order-external-validator"),
+                garmentDeliveryOrder: require("./garment-purchasing/delivery-order-validator"),
         },
         production: {
                 spinning: {
@@ -112,6 +117,10 @@ module.exports = {
                 finishingPrintingSalesContract: require("./sales/finishing-printing-sales-contract-validator"),
                 finishingPrintingSalesContractDetail: require("./sales/finishing-printing-sales-contract-detail-validator"),
                 weavingSalesContract: require("./sales/weaving-sales-contract-validator"),
-                spinningSalesContract: require("./sales/spinning-sales-contract-validator")
+                spinningSalesContract: require("./sales/spinning-sales-contract-validator"),
+                dealTrackingBoard: require("./sales/deal-tracking-board-validator"),
+                dealTrackingStage: require("./sales/deal-tracking-stage-validator"),
+                dealTrackingDeal: require("./sales/deal-tracking-deal-validator"),
+                dealTrackingActivity: require("./sales/deal-tracking-activity-validator")
         }
 };

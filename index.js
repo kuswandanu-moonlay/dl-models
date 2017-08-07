@@ -46,13 +46,17 @@ module.exports = {
         Storage: require('./src/master/storage'),
         Company: require('./src/master/company'),
         Contact: require('./src/master/contact'),
-        BadOutputReason: require('./src/master/bad-output-reason')
+        BadOutputReason: require('./src/master/bad-output-reason'),
+        FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation')
     },
     inventory: {
         finishingPrinting: {
             FPInventoryMovement: require("./src/inventory/finishing-printing/fp-inventory-movement"),
             FPInventorySummary: require("./src/inventory/finishing-printing/fp-inventory-summary"),
             FPPackingReceipt: require("./src/inventory/finishing-printing/fp-packing-receipt"),
+            FPReturToQCDoc: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc"),
+            FPReturToQCDocItem: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-item"),
+            FPReturToQCDocDetail: require("./src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-detail"),
             FPShipmentDocument: require("./src/inventory/finishing-printing/shipment-document/fp-shipment-document")
         },
         InventoryMovement: require("./src/inventory/inventory-movement"),
@@ -85,6 +89,7 @@ module.exports = {
         GarmentPurchaseOrder: require('./src/garment-purchasing/purchase-order'),
         Customs: require('./src/garment-purchasing/customs'),
         GarmentPurchaseOrderExternal: require('./src/garment-purchasing/purchase-order-external'),
+        GarmentDeliveryOrder: require('./src/garment-purchasing/delivery-order'),
     },
     production: {
         spinning: {
@@ -120,7 +125,11 @@ module.exports = {
         FinishingPrintingSalesContract: require("./src/sales/finishing-printing-sales-contract"),
         FinishingPrintingSalesContractDetail: require("./src/sales/finishing-printing-sales-contract-detail"),
         SpinningSalesContract: require("./src/sales/spinning-sales-contract"),
-        WeavingSalesContract: require("./src/sales/weaving-sales-contract")
+        WeavingSalesContract: require("./src/sales/weaving-sales-contract"),
+        DealTrackingBoard: require("./src/sales/deal-tracking-board"),
+        DealTrackingStage: require("./src/sales/deal-tracking-stage"),
+        DealTrackingDeal: require("./src/sales/deal-tracking-deal"),
+        DealTrackingActivity: require("./src/sales/deal-tracking-activity")
     },
     map: require('./src/map'),
     validator: require('./src/validator')
