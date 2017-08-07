@@ -2,6 +2,7 @@ require("should");
 var validateKanban = require('./kanban-validator');
 var validateStep = require("../../master/step-validator");
 var validateMachine = require("../../master/machine-validator");
+var validateBadOutputReason = require("./bad-output-reason-item-validator");
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -58,6 +59,14 @@ module.exports = function(data) {
     if(data.timeOutput)
         data.timeOutput.should.instanceOf(Number);
 
-    if(data.badOutputDescription)
-        data.badOutputDescription.should.be.String();
+    if(data.action){
+        data.action.should.be.String();
+    }
+
+    if(data.badOutputReasons){
+        data.badOutputReasons.should.instanceOf(Array);
+        for (var badOutputReason of data.badOutputReasons) {
+            validateBadOutputReason(badOutputReason);
+        }
+    }
 };

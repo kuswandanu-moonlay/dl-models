@@ -190,7 +190,12 @@ it("#33. Contact should valid", function () {
     validate.contact(new Contact());
 });
 
-it("#34. Finishing Printing Duration Estimation should valid", function () {
+it("#34. Bad Output Reason should valid", function () {
+    var BadOutputReason = require('../src/master/bad-output-reason');
+    validate.badOutputReason(new BadOutputReason());
+});
+
+it("#35. Finishing Printing Duration Estimation should valid", function () {
     var Storage = require('../src/master/fp-duration-estimation');
     validate.finishingPrintingDurationEstimation(new Storage());
 });

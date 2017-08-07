@@ -65,6 +65,7 @@ module.exports = {
             Storage: 'storages',
             Company: 'companies',
             Contact: 'contacts',
+            BadOutputReason: 'bad-output-reasons',
             FinishingPrintingDurationEstimation: 'fp-duration-estimations'
         }
     },
@@ -124,6 +125,7 @@ module.exports = {
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
+            Customs : 'customs',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
         }
