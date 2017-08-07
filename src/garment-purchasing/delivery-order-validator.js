@@ -1,6 +1,6 @@
 require("should");
 var validateSupplier = require('../master/supplier-validator');
-var validateDeliveryOrderItem = require('../purchasing/delivery-order-item-validator');
+var validateDeliveryOrderItem = require('./delivery-order-item-validator');
 
 module.exports = function (data) {
     data.should.have.property('no');

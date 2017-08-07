@@ -1,5 +1,5 @@
 require("should");
-var validateDeliveryOrderItemFulfillment = require('../purchasing/delivery-order-item-fulfillment-validator');
+var validateDeliveryOrderItemFulfillment = require('./delivery-order-item-fulfillment-validator');
 
 module.exports = function (data) {
     data.should.have.property('purchaseOrderExternalId');

@@ -1,8 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var PurchaseOrderExternal = require('../purchasing/purchase-order-external');
-var DeliveryOrderItemFulfillment = require('../purchasing/delivery-order-item-fulfillment');
+var DeliveryOrderItemFulfillment = require('./delivery-order-item-fulfillment');
 
 module.exports = class DeliveryOrderItem extends BaseModel {
     constructor(source) {
