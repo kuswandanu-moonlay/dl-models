@@ -45,7 +45,8 @@ module.exports = {
         DesignMotive: require('./src/master/design-motive'),
         Storage: require('./src/master/storage'),
         Company: require('./src/master/company'),
-        Contact: require('./src/master/contact')
+        Contact: require('./src/master/contact'),
+        BadOutputReason: require('./src/master/bad-output-reason')
     },
     inventory: {
         finishingPrinting: {
@@ -82,7 +83,8 @@ module.exports = {
     garmentPurchasing: {
         GarmentPurchaseRequest: require('./src/garment-purchasing/purchase-request'),
         GarmentPurchaseOrder: require('./src/garment-purchasing/purchase-order'),
-        Customs: require('./src/garment-purchasing/customs')
+        Customs: require('./src/garment-purchasing/customs'),
+        GarmentPurchaseOrderExternal: require('./src/garment-purchasing/purchase-order-external'),
     },
     production: {
         spinning: {
@@ -95,6 +97,7 @@ module.exports = {
         finishingPrinting: {
             MonitoringEvent: require("./src/production/finishing-printing/monitoring-event"),
             DailyOperation: require("./src/production/finishing-printing/daily-operation"),
+            BadOutputReasonItem: require("./src/production/finishing-printing/bad-output-reason-item"),
             Kanban: require("./src/production/finishing-printing/kanban"),
             MonitoringSpecificationMachine: require("./src/production/finishing-printing/monitoring-specification-machine"),
             qualityControl: {

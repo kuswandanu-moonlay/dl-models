@@ -189,3 +189,8 @@ it("#32. Contact should valid", function () {
     var Contact = require('../src/master/contact');
     validate.contact(new Contact());
 });
+
+it("#33. Bad Output Reason should valid", function () {
+    var BadOutputReason = require('../src/master/bad-output-reason');
+    validate.badOutputReason(new BadOutputReason());
+});

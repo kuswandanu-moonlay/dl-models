@@ -2,16 +2,17 @@
 var BaseModel = require('model-toolkit').BaseModel;
 var PurchaseRequestItem = require('./purchase-request-item');
 var map = require('../map');
+var Buyer = require('../master/buyer');
 
 module.exports = class PurchaseRequest extends BaseModel {
     constructor(source, type) { 
         super(type || map.garmentPurchasing.type.PurchaseRequest, '1.0.0');
 
         this.no=''; //auto generate
-        this.refNo=''; //Nopo
         this.roNo=''; //Ro
 
-        this.buyer = ''; //buyer
+        this.buyerId = {};
+        this.buyer = new Buyer();
         this.artikel = ''; //artikel
 
         this.date = new Date(); //TgValid
@@ -20,9 +21,6 @@ module.exports = class PurchaseRequest extends BaseModel {
         
         this.unitId = {};
         this.unit = {};
-
-        this.categoryId = {};
-        this.category = {};
 
         this.isPosted = true;
         this.isUsed = false;

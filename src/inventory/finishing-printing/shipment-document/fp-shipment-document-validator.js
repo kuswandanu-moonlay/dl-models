@@ -12,8 +12,8 @@ module.exports = function (data) {
     data.should.have.property('deliveryDate');
     data.deliveryDate.should.instanceof(Object);
 
-    data.should.have.property('deliveryNo');
-    data.deliveryNo.should.be.String();
+    data.should.have.property('deliveryCode');
+    data.deliveryCode.should.be.String();
 
     //User defined
     data.should.have.property('productIdentity');
@@ -41,4 +41,19 @@ module.exports = function (data) {
     for (var detail of data.details) {
         validateShipmentDocumentDetail(detail);
     }
+
+    data.should.have.property("isVoid");
+    data.isVoid.should.instanceOf(Boolean);
+
+    data.should.have.property('storageId');
+    data.storageId.should.instanceof(Object);
+
+    data.should.have.property('storageName');
+    data.storageName.should.be.String();
+
+    data.should.have.property('storageReferenceType');
+    data.storageReferenceType.should.be.String();
+
+    data.should.have.property('storageType');
+    data.storageType.should.be.String();     
 };
