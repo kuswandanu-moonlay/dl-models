@@ -10,15 +10,20 @@ it("#02. Purchase Order should valid", function () {
     validate.garmentPurchaseOrder(new PurchaseOrder());
 });
 
-it("#03. Purchase Order External should valid", function() {
+it("#03. Customs should valid", function () {
+    var Customs = require('../src/garment-purchasing/customs');
+    validate.customs(new Customs());
+});
+
+it("#04. Purchase Order External should valid", function() {
     var PurchaseOrderExternal = require('../src/garment-purchasing/purchase-order-external');
     validate.garmentPurchaseOrderExternal(new PurchaseOrderExternal());
 });
 
-// it("#04. Delivery Order should valid", function () {
-//     var DeliveryOrder = require('../src/purchasing/delivery-order');
-//     validate.deliveryOrder(new DeliveryOrder());
-// });
+it("#04. Delivery Order should valid", function () {
+    var DeliveryOrder = require('../src/garment-purchasing/delivery-order');
+    validate.garmentDeliveryOrder(new DeliveryOrder());
+});
 
 // it("#05. Unit Receipt Note should valid", function () {
 //     var UnitReceiptNote = require('../src/purchasing/unit-receipt-note');

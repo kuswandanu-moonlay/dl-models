@@ -45,8 +45,8 @@ module.exports = function (data) {
     data.dealUom.should.instanceOf(Object);
     validateUom(data.dealUom);
 
-    data.should.have.property('realizationQuantity');
-    data.realizationQuantity.should.instanceOf(Number);
+    data.should.have.property('realizations');
+    data.realizations.should.instanceOf(Array);
 
     data.should.have.property('pricePerDealUnit');
     data.pricePerDealUnit.should.instanceOf(Number);

@@ -64,7 +64,9 @@ module.exports = {
             DesignMotive: 'design-motives',
             Storage: 'storages',
             Company: 'companies',
-            Contact: 'contacts'
+            Contact: 'contacts',
+            BadOutputReason: 'bad-output-reasons',
+            FinishingPrintingDurationEstimation: 'fp-duration-estimations'
         }
     },
     inventory: {
@@ -73,12 +75,14 @@ module.exports = {
                 FPInventorySummary: "fp-inventory-summary",
                 FPInventoryMovement: "fp-inventory-movement",
                 FPPackingReceipt: "fp-packing-receipt",
+                FPReturToQCDoc:"fp-retur-to-qc-doc",
                 FPPackingShipmentDocument: "fp-shipment-document"
             },
             collection: {
                 FPInventorySummary: "fp-inventory-summaries",
                 FPInventoryMovement: "fp-inventory-movements",
                 FPPackingReceipt: "fp-packing-receipts",
+                FPReturToQCDoc:"fp-retur-to-qc-docs",
                 FPPackingShipmentDocument: "fp-shipment-documents"
             }
         },
@@ -121,7 +125,9 @@ module.exports = {
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
+            Customs : 'customs',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
+            GarmentDeliveryOrder: 'garment-delivery-orders',
         }
     },
     production: {
