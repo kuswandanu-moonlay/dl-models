@@ -56,4 +56,10 @@ module.exports = function(data) {
 
     data.should.have.property('oldKanban');
     data.oldKanban.should.instanceof(Object);
+
+    data.should.have.property('isBadOutput');
+    data.isBadOutput.should.instanceof(Boolean);
+
+    data.should.have.property('isReprocess');
+    data.isReprocess.should.instanceof(Boolean);
 };
