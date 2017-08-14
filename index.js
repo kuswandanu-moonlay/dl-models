@@ -88,6 +88,7 @@ module.exports = {
         GarmentPurchaseOrder: require('./src/garment-purchasing/purchase-order'),
         GarmentPurchaseOrderExternal: require('./src/garment-purchasing/purchase-order-external'),
         GarmentDeliveryOrder: require('./src/garment-purchasing/delivery-order'),
+        GarmentInvoiceNote: require('./src/garment-purchasing/invoice-note'),
     },
     production: {
         spinning: {
