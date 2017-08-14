@@ -43,6 +43,9 @@ module.exports = function (data) {
     data.vat.should.instanceof(Object);
     validateVat(data.vat);
 
+    data.should.have.property('isPayTax');
+    data.isPayTax.should.instanceOf(Boolean);
+
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 
