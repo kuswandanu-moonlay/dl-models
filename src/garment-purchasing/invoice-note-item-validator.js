@@ -48,7 +48,4 @@ module.exports = function (data) {
 
     data.should.have.property('deliveredQuantity');
     data.deliveredQuantity.should.instanceOf(Number);
-
-    data.should.have.property('remainsQuantity');
-    data.remainsQuantity.should.instanceOf(Number);
 };
