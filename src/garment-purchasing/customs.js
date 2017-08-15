@@ -3,7 +3,7 @@
 var BaseModel = require('model-toolkit').BaseModel;
 var Supplier = require('../master/supplier');
 var Currency= require('../master/currency');
-var DeliveryOrder= require('../purchasing/delivery-order'); 
+var DeliveryOrder= require('./delivery-order'); 
 
 module.exports = class Customs extends BaseModel {
     constructor(source) {
