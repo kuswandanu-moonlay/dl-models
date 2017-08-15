@@ -18,6 +18,7 @@ module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
         this.deliveredQuantity = 0;
         this.realizationQuantity = [];
         this.remainsQuantity = 0;
+        this.pricePerDealUnit = 0;
         this.remark = '';
 
         this.copy(source);

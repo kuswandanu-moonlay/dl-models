@@ -22,6 +22,7 @@ module.exports = class InvoiceNoteItem extends BaseModel {
         this.purchaseOrderUom = new uom();
 
         this.deliveredQuantity = 0;
+        this.pricePerDealUnit = 0;
         this.copy(source);
     }
 };

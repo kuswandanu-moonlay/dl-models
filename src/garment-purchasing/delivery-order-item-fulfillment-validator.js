@@ -47,6 +47,9 @@ module.exports = function (data) {
     data.should.have.property('remainsQuantity');
     data.remainsQuantity.should.instanceOf(Number);
 
+    data.should.have.property('pricePerDealUnit');
+    data.pricePerDealUnit.should.instanceOf(Number);
+
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 };
