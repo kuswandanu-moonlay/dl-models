@@ -1,12 +1,6 @@
 require("should");
 
 module.exports = function (data) {
-    data.should.have.property('deliveryOrderId');
-    data.deliveryOrderId.should.instanceof(Object);
-
-    data.should.have.property('deliveryOrderNo');
-    data.deliveryOrderNo.should.be.String();
-
     data.should.have.property('purchaseOrderExternalId');
     data.purchaseOrderExternalId.should.instanceOf(Object);
 
