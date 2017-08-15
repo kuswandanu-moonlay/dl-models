@@ -50,10 +50,6 @@ module.exports = function (data) {
     data.should.have.property('pricePerDealUnit');
     data.pricePerDealUnit.should.instanceOf(Number);
 
-    data.should.have.property('currency');
-    data.currency.should.instanceof(Object);
-    validateCurrency(data.currency);
-
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 };
