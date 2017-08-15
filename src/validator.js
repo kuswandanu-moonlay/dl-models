@@ -46,6 +46,7 @@ module.exports = {
                 storage: require('./master/storage-validator'),
                 company: require('./master/company-validator'),
                 contact: require('./master/contact-validator'),
+                badOutputReason: require('./master/bad-output-reason-validator'),
                 finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator')
         },
         inventory: {
@@ -78,6 +79,7 @@ module.exports = {
         garmentPurchasing: {
                 garmentPurchaseRequest: require("./garment-purchasing/purchase-request-validator"),
                 garmentPurchaseOrder: require("./garment-purchasing/purchase-order-validator"),
+                customs: require("./garment-purchasing/customs-validator"),
                 garmentPurchaseOrderExternal: require("./garment-purchasing/purchase-order-external-validator"),
                 garmentDeliveryOrder: require("./garment-purchasing/delivery-order-validator"),
                 garmentInvoiceNote: require("./garment-purchasing/invoice-note-validator"),
@@ -92,6 +94,7 @@ module.exports = {
                 finishingPrinting: {
                         monitoringEvent: require("./production/finishing-printing/monitoring-event-validator"),
                         dailyOperation: require("./production/finishing-printing/daily-operation-validator"),
+                        badOutputReasonItem: require("./production/finishing-printing/bad-output-reason-item-validator"),
                         kanban: require("./production/finishing-printing/kanban-validator"),
                         monitoringSpecificationMachine: require("./production/finishing-printing/monitoring-specification-machine-validator"),
                         qualityControl: {

@@ -20,6 +20,8 @@ module.exports = class DeliveryOrder extends BaseModel {
         this.isClosed = false;
         this.hasInvoice = false;
         this.remark = '';
+        this.customsId = null;
+        this.customsNo = null;
         this.items = [];
         this.copy(source);
 
