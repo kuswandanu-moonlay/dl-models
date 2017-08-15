@@ -27,6 +27,9 @@ module.exports = function (data) {
     data.should.have.property('incomeTaxNo');
     data.incomeTaxNo.should.instanceOf(String);
 
+    data.should.have.property('incomeTaxInvoiceNo');
+    data.incomeTaxInvoiceNo.should.instanceOf(String);
+
     data.should.have.property('incomeTaxDate');
     data.incomeTaxDate.should.instanceOf(Date);
 
@@ -35,6 +38,9 @@ module.exports = function (data) {
 
     data.should.have.property('vatNo');
     data.vatNo.should.instanceOf(String);
+
+    data.should.have.property('vatInvoiceNo');
+    data.vatInvoiceNo.should.instanceOf(String);
 
     data.should.have.property('vatDate');
     data.vatDate.should.instanceOf(Date);

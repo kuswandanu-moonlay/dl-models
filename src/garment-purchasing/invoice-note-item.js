@@ -2,6 +2,7 @@
 var BaseModel = require('model-toolkit').BaseModel;
 var uom = require('../master/uom');
 var Product = require('../master/product');
+var InvoiceNoteDeliveryOrderItem= require('./invoice-note-delivery-order-item'); 
 
 module.exports = class InvoiceNoteItem extends BaseModel {
     constructor(source) {
@@ -9,23 +10,12 @@ module.exports = class InvoiceNoteItem extends BaseModel {
 
         this.deliveryOrderId = {};
         this.deliveryOrderNo = '';
-
-        this.purchaseOrderExternalId = {};
-        this.purchaseOrderExternalNo = '';
-
-        this.purchaseOrderId = {};
-        this.purchaseOrderNo = '';
-
-        this.purchaseRequestId = {};
-        this.purchaseRequestNo = '';
-
-        this.productId = {};
-        this.product = new Product();
-
-        this.purchaseOrderQuantity = 0;
-        this.purchaseOrderUom = new uom();
-
-        this.deliveredQuantity = 0;
+        this.deliveryOrderDate = new Date();
+        this.deliveryOrderSupplierDoDate = new Date();
+        
+        this.items = [];
         this.copy(source);
+
+        this.items = (this.items || []).map(item => new InvoiceNoteDeliveryOrderItem(item)); 
     }
 };
