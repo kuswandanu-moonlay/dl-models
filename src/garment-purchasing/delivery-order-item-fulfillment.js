@@ -2,6 +2,7 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 var uom = require('../master/uom');
+var Currency = require('../master/currency');
 module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
     constructor(source) {
         super('delivery-order-item-fulfillment', '1.0.0');
@@ -18,6 +19,8 @@ module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
         this.deliveredQuantity = 0;
         this.realizationQuantity = [];
         this.remainsQuantity = 0;
+        this.pricePerDealUnit = 0;
+        this.currency = new Currency();
         this.remark = '';
 
         this.copy(source);

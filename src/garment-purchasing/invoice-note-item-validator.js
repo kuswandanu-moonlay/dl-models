@@ -6,6 +6,12 @@ module.exports = function (data) {
 
     data.should.have.property('deliveryOrderNo');
     data.deliveryOrderNo.should.be.String();
+
+    data.should.have.property('deliveryOrderDate');
+    data.deliveryOrderDate.should.instanceOf(Date);
+
+    data.should.have.property('deliveryOrderSupplierDoDate');
+    data.deliveryOrderSupplierDoDate.should.instanceOf(Date);
     
     data.should.have.property('items');
     data.items.should.instanceOf(Array);

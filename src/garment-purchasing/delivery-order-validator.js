@@ -28,8 +28,8 @@ module.exports = function (data) {
     data.should.have.property('shipmentNo');
     data.shipmentNo.should.instanceOf(String);
 
-    data.should.have.property('isPosted');
-    data.isPosted.should.instanceOf(Boolean);
+    data.should.have.property('hasInvoice');
+    data.hasInvoice.should.instanceOf(Boolean);
     
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
