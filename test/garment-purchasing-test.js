@@ -25,6 +25,11 @@ it("#04. Delivery Order should valid", function () {
     validate.garmentDeliveryOrder(new DeliveryOrder());
 });
 
+it("#05. Invoice Note should valid", function () {
+    var InvoiceNote = require('../src/garment-purchasing/invoice-note');
+    validate.garmentInvoiceNote(new InvoiceNote());
+});
+
 // it("#05. Unit Receipt Note should valid", function () {
 //     var UnitReceiptNote = require('../src/purchasing/unit-receipt-note');
 //     validate.unitReceiptNote(new UnitReceiptNote());

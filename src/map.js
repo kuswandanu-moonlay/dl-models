@@ -128,6 +128,7 @@ module.exports = {
             Customs : 'customs',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
+            GarmentInvoiceNote: 'garment-invoice-notes'
         }
     },
     production: {
