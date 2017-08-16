@@ -8,6 +8,7 @@ module.exports = class Step extends BaseModel {
 
         // Define properties.
         this.process = '';
+        this.processArea = '';
         this.alias = '';
         // this.itemMonitoring = [];
         this.stepIndicators = [];
