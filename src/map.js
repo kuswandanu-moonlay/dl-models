@@ -125,7 +125,7 @@ module.exports = {
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
-            Customs : 'customs',
+            Customs : 'garment-customs',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
             GarmentInvoiceNote: 'garment-invoice-notes'
