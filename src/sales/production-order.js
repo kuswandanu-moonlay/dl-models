@@ -19,6 +19,7 @@ module.exports = class ProductionOrder extends BaseModel {
         super('production-order', '1.0.0');
 
         this.salesContractNo='';
+        this.salesContractId={};
         this.orderNo='';
 
         this.buyerId={};
