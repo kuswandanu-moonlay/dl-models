@@ -18,7 +18,10 @@ module.exports = class PurchaseRequestItem extends BaseModel {
         this.category = {};
 
         this.deliveryOrderNos = [];
+        this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
+        this.isUsed = false;
         this.remark = '';
+        this.id_po = '';
 
         this.copy(source);
     }

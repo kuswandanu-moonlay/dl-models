@@ -26,7 +26,6 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.isUsed = false;
         this.remark = '';
         this.status = {};
-        this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
         
         this.items = [];
         this.items = (this.items || []).map(item => new PurchaseRequestItem(item));
