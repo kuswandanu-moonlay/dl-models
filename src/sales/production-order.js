@@ -36,6 +36,9 @@ module.exports = class ProductionOrder extends BaseModel {
 
         this.orderQuantity=0;
 
+        this.designMotiveId={};
+        this.designMotive=new DesignMotive();
+
         this.uomId={};
         this.uom=new uom();
 
