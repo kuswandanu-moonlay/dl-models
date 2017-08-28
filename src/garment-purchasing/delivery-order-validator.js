@@ -43,6 +43,9 @@ module.exports = function (data) {
     if(data.customsNo)
         data.customsNo.should.instanceOf(String);
 
+    data.should.have.property('hasCustoms');
+    data.hasCustoms.should.instanceOf(Boolean);
+
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
     for (var item of data.items) {
