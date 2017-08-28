@@ -60,27 +60,7 @@ module.exports = function (data) {
 
     data.should.have.property('purchaseRequestNo');
     data.purchaseRequestNo.should.instanceOf(String);
-
-    for (var item of data.purchaseOrder.items) {
-        item.should.have.property('useIncomeTax');
-        item.useIncomeTax.should.instanceof(Boolean);
-
-        item.should.have.property('product');
-        item.product.should.instanceof(Object);
-
-        item.product.should.have.property('code');
-        item.product.code.should.instanceOf(String);
-
-        item.product.should.have.property('name');
-        item.product.name.should.instanceOf(String);
-
-        item.should.have.property('pricePerDealUnit');
-        item.pricePerDealUnit.should.instanceOf(Number);
-
-        item.should.have.property('useIncomeTax');
-        item.useIncomeTax.should.instanceOf(Boolean);
-    }
-
+    
     data.should.have.property('correction');
     data.correction.should.instanceOf(Array);
 
