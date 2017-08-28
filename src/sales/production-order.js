@@ -11,6 +11,7 @@ var MaterialConstruction = require('../master/material-construction');
 var YarnMaterial = require('../master/yarn-material');
 var FinishType= require('../master/finish-type');
 var StandardTest= require('../master/standard-test');
+var DesignMotive= require('../master/design-motive');
 var ProductionOrderLampStandard=require('./production-order-lamp-standard');
 var Account= require('../auth/account');
 
@@ -35,6 +36,9 @@ module.exports = class ProductionOrder extends BaseModel {
         this.material=new Product();
 
         this.orderQuantity=0;
+
+        this.designMotiveId={};
+        this.designMotive=new DesignMotive();
 
         this.uomId={};
         this.uom=new uom();

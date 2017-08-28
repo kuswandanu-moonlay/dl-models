@@ -82,6 +82,8 @@ module.exports = class FinishingPrintingSalesContract extends BaseModel {
         this.pointSystem=10;
         this.pointLimit=0;
 
+        this.remainingQuantity=0;
+
         this.details=[];
         this.details = (this.details || []).map(detail => new SalesContractDetail(detail));
 
