@@ -50,7 +50,4 @@ module.exports = function (data) {
 
     data.should.have.property('status');
     data.status.should.instanceof(Object);
-
-    data.should.have.property('purchaseOrderIds');
-    data.purchaseOrderIds.should.instanceof(Array); 
 };

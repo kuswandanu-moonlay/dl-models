@@ -56,6 +56,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.status = {};
         
         this.remark = '';
+        this.id_po = '';
 
         this.fulfillments = [];
         

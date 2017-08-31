@@ -32,7 +32,16 @@ module.exports = function (data) {
     data.should.have.property('category');
     data.category.should.instanceof(Object);
 
+    data.should.have.property('isUsed');
+    data.isUsed.should.instanceOf(Boolean);
+
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
+
+    data.should.have.property('id_po');
+    data.id_po.should.instanceOf(String);
+
+    data.should.have.property('purchaseOrderIds');
+    data.purchaseOrderIds.should.instanceof(Array); 
     
 };
