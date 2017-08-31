@@ -39,3 +39,8 @@ it("#08. finishing-printing/retur-to-qc should valid", function () {
     var FPReturToQCDoc = require('../src/inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc');
     validate.finishingPrinting.fpReturToQCDoc(new FPReturToQCDoc());
 });
+
+it("#08. finishing-printing/retur-fr-byr should valid", function () {
+    var FPReturFromBuyer = require('../src/inventory/finishing-printing/retur-fr-byr-doc/fp-retur-fr-byr-doc');
+    validate.finishingPrinting.fpReturFromBuyerDoc(new FPReturFromBuyer());
+});
