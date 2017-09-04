@@ -34,6 +34,7 @@ module.exports = class PurchaseOrder extends BaseModel {
         
         this.isPosted = false;
         this.isClosed = false;
+        this.isSplit = false;
 
         this.remark = '';
         this.items = [];

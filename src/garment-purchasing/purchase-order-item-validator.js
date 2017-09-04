@@ -108,4 +108,7 @@ module.exports = function (data) {
     data.should.have.property('status');
     data.status.should.instanceof(Object);
 
+    data.should.have.property('id_po');
+    data.id_po.should.instanceOf(String);
+
 };

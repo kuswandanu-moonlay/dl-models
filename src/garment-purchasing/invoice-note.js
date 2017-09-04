@@ -18,10 +18,12 @@ module.exports = class InvoiceNote extends BaseModel {
         this.currency = new Currency();
         
         this.incomeTaxNo = '';
+        this.incomeTaxInvoiceNo = '';
         this.incomeTaxDate = new Date();
         this.useIncomeTax = false;
 
         this.vatNo = '';
+        this.vatInvoiceNo = '';
         this.vatDate = new Date();
         this.useVat = false;
         this.vat = new Vat();
