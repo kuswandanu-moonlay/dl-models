@@ -121,6 +121,7 @@ module.exports = {
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
             UnitPaymentOrder: 'unit-payment-order',
+            type: 'unit-payment-correction-note'
         },
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
@@ -128,7 +129,8 @@ module.exports = {
             Customs : 'customs',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
-            GarmentInvoiceNote: 'garment-invoice-notes'
+            GarmentInvoiceNote: 'garment-invoice-notes',
+            GarmentUnitPaymentCorrectionNote: 'garment-unit-payment-correction-note'
         }
     },
     production: {
