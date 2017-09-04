@@ -123,7 +123,7 @@ module.exports = {
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
             UnitPaymentOrder: 'unit-payment-order',
-            type: 'unit-payment-correction-note'
+            UnitPaymentCorrectionNote: 'unit-payment-correction-note'
         },
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
