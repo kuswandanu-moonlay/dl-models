@@ -43,5 +43,8 @@ module.exports = function (data) {
 
     data.should.have.property('purchaseOrderIds');
     data.purchaseOrderIds.should.instanceof(Array); 
+
+    data.should.have.property('colors');
+    data.colors.should.instanceof(Array); 
     
 };
