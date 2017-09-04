@@ -30,10 +30,20 @@ it("#05. Invoice Note should valid", function () {
     validate.garmentInvoiceNote(new InvoiceNote());
 });
 
-it("#06. Unit Receipt Note should valid", function () {
+it("#06. Unit Payment Correction Note should valid", function () {
+    var InvoiceNote = require('../src/garment-purchasing/unit-payment-correction-note');
+    validate.garmentUnitPaymentCorrectionNote(new InvoiceNote());
+});
+
+it("#07. Unit Receipt Note should valid", function () {
     var UnitReceiptNote = require('../src/garment-purchasing/unit-receipt-note');
     validate.garmentUnitReceiptNote(new UnitReceiptNote());
 }); 
+
+// it("#05. Unit Receipt Note should valid", function () {
+//     var UnitReceiptNote = require('../src/purchasing/unit-receipt-note');
+//     validate.unitReceiptNote(new UnitReceiptNote());
+// });
  
 // it("#06. Unit Payment Correction Note should valid", function () {
 //     var unitPaymentCorrectionNote = require('../src/purchasing/unit-payment-correction-note');

@@ -123,6 +123,7 @@ module.exports = {
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
             UnitPaymentOrder: 'unit-payment-order',
+            UnitPaymentCorrectionNote: 'unit-payment-correction-note'
         },
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
@@ -131,6 +132,7 @@ module.exports = {
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
             GarmentInvoiceNote: 'garment-invoice-notes',
+            GarmentUnitPaymentCorrectionNote: 'garment-unit-payment-correction-note',
             GarmentUnitReceiptNote: 'garment-unit-receipt-notes',
         }
     },
