@@ -1,6 +1,5 @@
 require("should");
-var validateUnitPaymentCorrectionNoteItem = require('./unit-payment-correction-note-item-validator');
-var validateDeliveryOrder = require('./delivery-order-validator');
+var validateGarmentPurchaseCorrectionItem = require('./garment-purchase-correction-item-validator');
 
 module.exports = function (data) {
     data.should.have.property('no');
@@ -17,7 +16,6 @@ module.exports = function (data) {
     
     data.should.have.property('deliveryOrder');
     data.deliveryOrder.should.instanceof(Object);
-    validateDeliveryOrder(data.deliveryOrder);
 
     data.should.have.property('remark');
     data.remark.should.instanceof(String);
@@ -25,6 +23,6 @@ module.exports = function (data) {
     data.should.have.property('items');
     data.items.should.instanceOf(Array); 
     for (var item of data.items) {
-        validateUnitPaymentCorrectionNoteItem(item);
+        validateGarmentPurchaseCorrectionItem(item);
     }
 };
