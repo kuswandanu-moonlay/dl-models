@@ -1,26 +1,25 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var Product = require('../master/product');
-var Uom = require('../master/uom');
-var Currency = require('../master/currency');
 
-module.exports = class UnitPaymentCorrectionNoteItem extends BaseModel {
+module.exports = class GarmentPurchaseCorrectionItem extends BaseModel {
     constructor(source) {
-        super('garment-unit-payment-correction-note-item', '1.0.0');
+        super('garment-purchase-correction-item', '1.0.0');
 
         //Define Properties
         this.purchaseOrderExternalId = {};
         this.purchaseOrderExternalNo = "";
+        this.purchaseOrderInternalId = {};
+        this.purchaseOrderInternalNo = "";
         this.purchaseRequestId = {};
         this.purchaseRequestNo = "";
         this.productId = {};
-        this.product = new Product();
+        this.product = {};
         this.quantity = 0;
         this.uomId = {};
-        this.uom = new Uom();
+        this.uom = {};
         this.pricePerUnit = 0;
         this.priceTotal = 0;
-        this.currency = new Currency();
+        this.currency = {};
         this.currencyRate = 1;
         this.copy(source);
     }
