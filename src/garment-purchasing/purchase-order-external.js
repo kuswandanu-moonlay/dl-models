@@ -23,13 +23,14 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.currencyRate = 1;
 
         this.paymentMethod = '';
+        this.paymentType = '';
         this.paymentDueDays = 0;
 
         this.vat = new Vat();
         this.useVat = false;
         this.vatRate = 0;
         this.useIncomeTax = false;
-        
+
         this.categoryId = {};
         this.category = {};
 
@@ -37,14 +38,14 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.expectedDeliveryDate = new Date();
 
         this.isPosted = false;
-        this.isClosed=false;
-        this.remark = ''; 
+        this.isClosed = false;
+        this.remark = '';
         this.items = [];
 
         this.status = {};
 
         this.copy(source);
-        
+
         this.items = (this.items || []).map(item => new PurchaseOrderExternalItem(item));
 
     }

@@ -1,28 +1,28 @@
 'use strict';
-
 var BaseModel = require('model-toolkit').BaseModel;
 var uom = require('../master/uom');
-var Currency = require('../master/currency');
-module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
-    constructor(source) {
-        super('delivery-order-item-fulfillment', '1.0.0');
+var Product = require('../master/product');
 
-        //Define Properties 
+module.exports = class InvoiceNoteItem extends BaseModel {
+    constructor(source) {
+        super('invoice-note-delivery-order-item', '1.0.0');
+        this.purchaseOrderExternalId = {};
+        this.purchaseOrderExternalNo = '';
+
         this.purchaseOrderId = {};
         this.purchaseOrderNo = '';
+
         this.purchaseRequestId = {};
         this.purchaseRequestNo = '';
+
         this.productId = {};
-        this.product = {};
+        this.product = new Product();
+
         this.purchaseOrderQuantity = 0;
         this.purchaseOrderUom = new uom();
-        this.deliveredQuantity = 0;
-        this.realizationQuantity = [];
-        this.remainsQuantity = 0;
-        this.pricePerDealUnit = 0;
-        this.currency = new Currency();
-        this.remark = '';
 
+        this.deliveredQuantity = 0;
+        this.pricePerDealUnit = 0;
         this.copy(source);
     }
 };

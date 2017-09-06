@@ -76,14 +76,16 @@ module.exports = {
                 FPInventoryMovement: "fp-inventory-movement",
                 FPPackingReceipt: "fp-packing-receipt",
                 FPReturToQCDoc:"fp-retur-to-qc-doc",
-                FPPackingShipmentDocument: "fp-shipment-document"
+                FPPackingShipmentDocument: "fp-shipment-document",
+                FPReturFromBuyerDoc:"fp-retur-fr-byr-docs"
             },
             collection: {
                 FPInventorySummary: "fp-inventory-summaries",
                 FPInventoryMovement: "fp-inventory-movements",
                 FPPackingReceipt: "fp-packing-receipts",
                 FPReturToQCDoc:"fp-retur-to-qc-docs",
-                FPPackingShipmentDocument: "fp-shipment-documents"
+                FPPackingShipmentDocument: "fp-shipment-documents",
+                FPReturFromBuyerDoc:"fp-retur-fr-byr-docs"
             }
         },
         type: {
@@ -121,13 +123,17 @@ module.exports = {
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
             UnitPaymentOrder: 'unit-payment-order',
+            GarmentPurchaseCorrection: 'garment-purchase-correction'
         },
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
-            Customs : 'customs',
+            Customs : 'garment-customs',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
+            GarmentInvoiceNote: 'garment-invoice-notes',
+            GarmentPurchaseCorrection: 'garment-purchase-correction',
+            GarmentUnitReceiptNote: 'garment-unit-receipt-notes',
         }
     },
     production: {

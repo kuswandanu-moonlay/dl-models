@@ -57,7 +57,10 @@ module.exports = {
                         fpReturToQCDoc: require("./inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-validator"),
                         fpReturToQCDocItem: require("./inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-item-validator"),
                         fpReturToQCDocDetail: require("./inventory/finishing-printing/retur-to-qc-doc/fp-retur-to-qc-doc-detail-validator"),
-                        fpShipmentDocument: require("./inventory/finishing-printing/shipment-document/fp-shipment-document-validator")
+                        fpShipmentDocument: require("./inventory/finishing-printing/shipment-document/fp-shipment-document-validator"),
+                        fpReturFromBuyerDoc: require("./inventory/finishing-printing/retur-fr-byr-doc/fp-retur-fr-byr-doc-validator"),
+                        fpReturFromBuyerDocDetail: require("./inventory/finishing-printing/retur-fr-byr-doc/fp-retur-fr-byr-doc-detail-validator"),
+                        fpReturFromBuyerDocItem: require("./inventory/finishing-printing/retur-fr-byr-doc/fp-retur-fr-byr-doc-item-validator")
                 },
                 inventorySummary: require("./inventory/inventory-summary-validator"),
                 inventoryMovement: require("./inventory/inventory-movement-validator"),
@@ -82,6 +85,9 @@ module.exports = {
                 customs: require("./garment-purchasing/customs-validator"),
                 garmentPurchaseOrderExternal: require("./garment-purchasing/purchase-order-external-validator"),
                 garmentDeliveryOrder: require("./garment-purchasing/delivery-order-validator"),
+                garmentInvoiceNote: require("./garment-purchasing/invoice-note-validator"),
+                garmentPurchaseCorrection: require('./garment-purchasing/garment-purchase-correction-validator'),
+                garmentUnitReceiptNote: require("./garment-purchasing/unit-receipt-note-validator"),
         },
         production: {
                 spinning: {
