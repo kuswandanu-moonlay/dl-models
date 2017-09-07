@@ -10,6 +10,7 @@ module.exports = class GarmentPurchaseCorrectionItem extends BaseModel {
         this.purchaseOrderExternalNo = "";
         this.purchaseOrderInternalId = {};
         this.purchaseOrderInternalNo = "";
+        this.purchaseOrderInternal = {};
         this.purchaseRequestId = {};
         this.purchaseRequestNo = "";
         this.productId = {};
