@@ -29,6 +29,7 @@ module.exports = class InvoiceNote extends BaseModel {
         this.vat = new Vat();
 
         this.isPayTax  = false;
+        this.hasInternNote = false;
         this.remark = '';
         this.items = [];
         this.copy(source);

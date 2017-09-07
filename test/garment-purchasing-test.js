@@ -40,17 +40,7 @@ it("#07. Unit Receipt Note should valid", function () {
     validate.garmentUnitReceiptNote(new UnitReceiptNote());
 }); 
 
-// it("#05. Unit Receipt Note should valid", function () {
-//     var UnitReceiptNote = require('../src/purchasing/unit-receipt-note');
-//     validate.unitReceiptNote(new UnitReceiptNote());
-// });
- 
-// it("#06. Unit Payment Correction Note should valid", function () {
-//     var unitPaymentCorrectionNote = require('../src/purchasing/unit-payment-correction-note');
-//     validate.unitPaymentCorrectionNote(new unitPaymentCorrectionNote());
-// });
-
-// it("#07. Unit Payment Order should valid", function () {
-//     var UnitPaymentOrder = require('../src/purchasing/unit-payment-order');
-//     validate.UnitPaymentOrder(new UnitPaymentOrder());
-// });
+it("#08. Intern Note should valid", function () {
+    var InternNote = require('../src/garment-purchasing/intern-note');
+    validate.garmentInternNote(new InternNote());
+});

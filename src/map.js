@@ -134,6 +134,7 @@ module.exports = {
             GarmentInvoiceNote: 'garment-invoice-notes',
             GarmentUnitPaymentCorrectionNote: 'garment-unit-payment-correction-note',
             GarmentUnitReceiptNote: 'garment-unit-receipt-notes',
+            GarmentInternNote: 'garment-intern-notes',
         }
     },
     production: {

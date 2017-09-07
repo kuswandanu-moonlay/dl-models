@@ -88,6 +88,7 @@ module.exports = {
                 garmentInvoiceNote: require("./garment-purchasing/invoice-note-validator"),
                 garmentUnitPaymentCorrectionNote: require('./garment-purchasing/unit-payment-correction-note-validator'),
                 garmentUnitReceiptNote: require("./garment-purchasing/unit-receipt-note-validator"),
+                garmentInternNote: require("./garment-purchasing/intern-note-validator"),
         },
         production: {
                 spinning: {
