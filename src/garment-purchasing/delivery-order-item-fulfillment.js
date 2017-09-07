@@ -22,7 +22,7 @@ module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
         this.pricePerDealUnit = 0;
         this.currency = new Currency();
         this.remark = '';
-        this.correction = [];
+        this.corrections = [];
 
         this.copy(source);
     }

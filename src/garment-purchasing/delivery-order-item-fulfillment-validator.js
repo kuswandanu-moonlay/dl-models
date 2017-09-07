@@ -58,6 +58,6 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 
-    data.should.have.property('correction');
-    data.correction.should.instanceOf(Array);
+    data.should.have.property('corrections');
+    data.corrections.should.instanceOf(Array);
 };
