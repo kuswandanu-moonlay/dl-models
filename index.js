@@ -96,6 +96,7 @@ module.exports = {
         GarmentInvoiceNote: require('./src/garment-purchasing/invoice-note'),
         GarmentPurchaseCorrection: require('./src/garment-purchasing/garment-purchase-correction'),
         GarmentUnitReceiptNote: require('./src/garment-purchasing/unit-receipt-note'),
+        GarmentInternNote: require('./src/garment-purchasing/intern-note'),
     },
     production: {
         spinning: {

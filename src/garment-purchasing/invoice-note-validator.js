@@ -52,6 +52,9 @@ module.exports = function (data) {
     data.should.have.property('isPayTax');
     data.isPayTax.should.instanceOf(Boolean);
 
+    data.should.have.property('hasInternNote');
+    data.hasInternNote.should.instanceOf(Boolean);
+
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 
