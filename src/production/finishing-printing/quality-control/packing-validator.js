@@ -82,6 +82,12 @@ module.exports = function (data) {
     data.should.have.property('motif');
     data.motif.should.instanceOf(String);
 
+    data.should.have.property("deliveryType");
+    data.deliveryType.should.instanceOf(String);
+
+    data.should.have.property("finishedProductType");
+    data.finishedProductType.should.instanceOf(String);
+
     data.should.have.property('status');
     data.status.should.instanceOf(String);
 
