@@ -30,21 +30,24 @@ module.exports = function (data) {
 
     data.should.have.property('hasInvoice');
     data.hasInvoice.should.instanceOf(Boolean);
-    
+
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 
-    if(data.customsId)
+    if (data.customsId)
         data.customsId.should.instanceof(Object);
 
-    if(data.customsNo)
+    if (data.customsNo)
         data.customsNo.should.instanceOf(String);
 
     data.should.have.property('hasCustoms');
     data.hasCustoms.should.instanceOf(Boolean);
+
+    data.should.have.property('useCustoms');
+    data.useCustoms.should.instanceOf(Boolean);
 
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
