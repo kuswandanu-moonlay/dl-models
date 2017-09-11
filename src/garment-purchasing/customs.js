@@ -2,8 +2,8 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 var Supplier = require('../master/supplier');
-var Currency= require('../master/currency');
-var DeliveryOrder= require('./delivery-order'); 
+var Currency = require('../master/currency');
+var DeliveryOrder = require('./delivery-order');
 
 module.exports = class Customs extends BaseModel {
     constructor(source) {
@@ -11,11 +11,12 @@ module.exports = class Customs extends BaseModel {
 
         //Define Properties
         this.no = '';
-        this.customsDate = new Date(); 
-        this.validateDate = new Date(); 
+        this.refNo = '';
+        this.customsDate = new Date();
+        this.validateDate = new Date();
         this.supplierId = {};
-        this.supplier = new Supplier(); 
-        this.amountOfPackaging=0;
+        this.supplier = new Supplier();
+        this.amountOfPackaging = 0;
         this.packaging = '';
         this.bruto = 0;
         this.netto = 0;
@@ -26,6 +27,6 @@ module.exports = class Customs extends BaseModel {
         this.deliveryOrders = [];
         this.copy(source);
 
-        this.deliveryOrders = (this.deliveryOrders || []).map(item => new DeliveryOrder(item)); 
+        this.deliveryOrders = (this.deliveryOrders || []).map(item => new DeliveryOrder(item));
     }
 };
