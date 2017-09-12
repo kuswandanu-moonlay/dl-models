@@ -26,7 +26,8 @@ module.exports = {
             MachineType: 'machine-types',
             Storage: 'storage',
             Company: 'company',
-            Contact: 'contact'
+            Contact: 'contact',
+            DealTrackingReason: 'deal-tracking-reason'
         },
         collection: {
             Buyer: 'buyers',
@@ -66,7 +67,8 @@ module.exports = {
             Company: 'companies',
             Contact: 'contacts',
             BadOutputReason: 'bad-output-reasons',
-            FinishingPrintingDurationEstimation: 'fp-duration-estimations'
+            FinishingPrintingDurationEstimation: 'fp-duration-estimations',
+            DealTrackingReason: 'deal-tracking-reasons'
         }
     },
     inventory: {

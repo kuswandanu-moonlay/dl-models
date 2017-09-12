@@ -17,6 +17,7 @@ module.exports = class DealTrackingDeal extends BaseModel {
         this.contact = new Contact();
         this.closeDate = new Date();
         this.description = '';
+        this.reason = '';
 
         this.copy(source);
     }
