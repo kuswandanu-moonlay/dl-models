@@ -47,7 +47,8 @@ module.exports = {
         Company: require('./src/master/company'),
         Contact: require('./src/master/contact'),
         BadOutputReason: require('./src/master/bad-output-reason'),
-        FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation')
+        FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation'),
+        DealTrackingReason: require('./src/master/deal-tracking-reason')
     },
     inventory: {
         finishingPrinting: {
