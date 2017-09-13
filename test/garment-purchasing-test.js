@@ -44,3 +44,7 @@ it("#08. Intern Note should valid", function () {
     var InternNote = require('../src/garment-purchasing/intern-note');
     validate.garmentInternNote(new InternNote());
 });
+it("#09. garment currency should valid", function () {
+    var GarmentCurrency = require('../src/garment-purchasing/garment-currency');
+    validate.garmentCurrency(new GarmentCurrency());
+});
