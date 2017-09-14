@@ -125,7 +125,8 @@ module.exports = {
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
             UnitPaymentOrder: 'unit-payment-order',
-            GarmentPurchaseCorrection: 'garment-purchase-correction'
+            GarmentPurchaseCorrection: 'garment-purchase-correction',
+            GarmentCurrency:'garment-currency',
         },
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
@@ -137,6 +138,7 @@ module.exports = {
             GarmentPurchaseCorrection: 'garment-purchase-corrections',
             GarmentUnitReceiptNote: 'garment-unit-receipt-notes',
             GarmentInternNote: 'garment-intern-notes',
+            GarmentCurrency:'garment-currency',
         }
     },
     production: {

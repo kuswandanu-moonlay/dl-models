@@ -90,6 +90,7 @@ module.exports = {
                 garmentPurchaseCorrection: require('./garment-purchasing/garment-purchase-correction-validator'),
                 garmentUnitReceiptNote: require("./garment-purchasing/unit-receipt-note-validator"),
                 garmentInternNote: require("./garment-purchasing/intern-note-validator"),
+                garmentCurrency:require("./garment-purchasing/garment-currency-validator"),
         },
         production: {
                 spinning: {
