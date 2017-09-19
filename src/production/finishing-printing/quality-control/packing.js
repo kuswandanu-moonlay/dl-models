@@ -39,6 +39,10 @@ module.exports = class Packing extends BaseModel {
 
         this.construction = "";
 
+        // Jenis Pengiriman dan Jenis Barang Jadi
+        this.deliveryType = "";
+        this.finishedProductType = "";
+
         this.motif = "";
         this.items = [];
         this.status = "";

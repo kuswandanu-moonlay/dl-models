@@ -2,15 +2,24 @@ require("should");
 
 module.exports = function (data) {
     data.should.have.property('purchaseOrderExternalId');
-    data.purchaseOrderId.should.instanceof(Object);
+    data.purchaseOrderExternalId.should.instanceof(Object);
 
-    data.product.should.have.property('purchaseOrderExternalNo');
+    data.should.have.property('purchaseOrderExternalNo');
     data.purchaseOrderExternalNo.should.instanceOf(String);
+
+    data.should.have.property('purchaseOrderInternalId');
+    data.purchaseOrderInternalId.should.instanceof(Object);
+
+    data.should.have.property('purchaseOrderInternalNo');
+    data.purchaseOrderInternalNo.should.instanceOf(String);
+
+    data.should.have.property('purchaseOrderInternal');
+    data.purchaseOrderInternal.should.instanceof(Object);
 
     data.should.have.property('purchaseRequestId');
     data.purchaseRequestId.should.instanceof(Object);
 
-    data.product.should.have.property('purchaseRequestNo');
+    data.should.have.property('purchaseRequestNo');
     data.purchaseRequestNo.should.instanceOf(String);
 
     data.should.have.property('productId');

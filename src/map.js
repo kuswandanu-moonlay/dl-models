@@ -132,7 +132,7 @@ module.exports = {
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
             GarmentInvoiceNote: 'garment-invoice-notes',
-            GarmentPurchaseCorrection: 'garment-purchase-correction',
+            GarmentPurchaseCorrection: 'garment-purchase-corrections',
             GarmentUnitReceiptNote: 'garment-unit-receipt-notes',
             GarmentInternNote: 'garment-intern-notes',
         }
