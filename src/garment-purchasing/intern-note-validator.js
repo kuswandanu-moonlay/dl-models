@@ -10,9 +10,6 @@ module.exports = function (data) {
     data.should.have.property('date');
     data.date.should.instanceOf(Date);
 
-    data.should.have.property('dueDate');
-    data.dueDate.should.instanceOf(Date);
-
     data.should.have.property('supplierId');
     data.supplierId.should.instanceof(Object);
 
@@ -22,9 +19,6 @@ module.exports = function (data) {
 
     data.should.have.property('currency');
     data.supplier.should.instanceof(Object);
-
-    data.should.have.property('paymentMethod');
-    data.paymentMethod.should.instanceOf(String);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);

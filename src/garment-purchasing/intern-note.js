@@ -11,11 +11,9 @@ module.exports = class InternNote extends BaseModel {
         //Define Properties
         this.no = '';
         this.date = new Date();
-        this.dueDate = new Date();
         this.supplierId = {};
         this.supplier = new Supplier();
         this.currency = new Currency();
-        this.paymentMethod = '';
         this.remark = '';
         this.items = [];
         this.copy(source);

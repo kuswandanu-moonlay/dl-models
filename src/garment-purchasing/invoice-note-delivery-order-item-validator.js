@@ -45,4 +45,13 @@ module.exports = function (data) {
 
     data.should.have.property('pricePerDealUnit');
     data.pricePerDealUnit.should.instanceOf(Number);
+
+    data.should.have.property('paymentMethod');
+    data.paymentMethod.should.instanceOf(String);
+
+    data.should.have.property('paymentType');
+    data.paymentType.should.instanceOf(String);
+
+    data.should.have.property('paymentDueDays');
+    data.paymentDueDays.should.instanceOf(Number);
 };
