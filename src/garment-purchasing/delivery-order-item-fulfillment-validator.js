@@ -60,4 +60,16 @@ module.exports = function (data) {
 
     data.should.have.property('corrections');
     data.corrections.should.instanceOf(Array);
+    
+    data.should.have.property('quantityConversion');
+    data.quantityConversion.should.instanceOf(Number);
+
+    data.should.have.property('conversion');
+    data.conversion.should.instanceOf(Number);
+
+    data.should.have.property('uomConversion');
+    data.uomConversion.should.instanceOf(Object);
+
+    data.uomConversion.should.have.property('unit');
+    data.uomConversion.unit.should.instanceOf(String);
 };
