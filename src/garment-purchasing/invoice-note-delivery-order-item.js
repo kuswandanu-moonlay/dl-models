@@ -23,6 +23,10 @@ module.exports = class InvoiceNoteItem extends BaseModel {
 
         this.deliveredQuantity = 0;
         this.pricePerDealUnit = 0;
+
+        this.paymentDueDays = "";
+        this.paymentType = "";
+        this.paymentMethod = 0;
         this.copy(source);
     }
 };

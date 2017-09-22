@@ -12,6 +12,7 @@ module.exports = class InvoiceNote extends BaseModel {
 
         //Define Properties
         this.no = '';
+        this.refNo = '';
         this.date = new Date();  
         this.supplierId = {};
         this.supplier = new Supplier();

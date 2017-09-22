@@ -4,10 +4,19 @@ var validateDeliveryOrderItemFulfillment = require('./delivery-order-item-fulfil
 module.exports = function (data) {
     data.should.have.property('purchaseOrderExternalId');
     data.purchaseOrderExternalId.should.instanceOf(Object);
-    
+
     data.should.have.property('purchaseOrderExternalNo');
     data.purchaseOrderExternalNo.should.be.String();
-    
+
+    data.should.have.property('paymentMethod');
+    data.paymentMethod.should.instanceOf(String);
+
+    data.should.have.property('paymentType');
+    data.paymentType.should.instanceOf(String);
+
+    data.should.have.property('paymentDueDays');
+    data.paymentDueDays.should.instanceOf(Number);
+
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);
 

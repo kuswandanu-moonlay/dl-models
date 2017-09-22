@@ -10,6 +10,10 @@ module.exports = class DeliveryOrderItem extends BaseModel {
         //Define Properties 
         this.purchaseOrderExternalId = {};
         this.purchaseOrderExternalNo = '';
+        this.paymentDueDays = "";
+        this.paymentType = "";
+        this.paymentMethod = 0;
+
         this.isClosed = false;
 
         this.fulfillments = [];
