@@ -60,10 +60,25 @@ module.exports = function (data) {
 
     data.should.have.property('purchaseRequestNo');
     data.purchaseRequestNo.should.instanceOf(String);
-    
+
     data.should.have.property('correction');
     data.correction.should.instanceOf(Array);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
+
+    data.should.have.property('quantityConversion');
+    data.quantityConversion.should.instanceOf(Number);
+
+    data.should.have.property('conversion');
+    data.conversion.should.instanceOf(Number);
+
+    data.should.have.property('uomConversion');
+    data.uomConversion.should.instanceOf(Object);
+
+    data.uomConversion.should.have.property('unit');
+    data.uomConversion.unit.should.instanceOf(String);
+
+    data.should.have.property('buyer');
+    data.buyer.should.instanceof(Object);
 };
