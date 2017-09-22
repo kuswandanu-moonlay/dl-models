@@ -34,4 +34,7 @@ module.exports = function (data) {
 
     data.should.have.property('description');
     data.description.should.instanceOf(String);
+
+    data.should.have.property('reason');
+    data.reason.should.instanceOf(String);
 };

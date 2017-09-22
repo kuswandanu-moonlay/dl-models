@@ -26,7 +26,8 @@ module.exports = {
             MachineType: 'machine-types',
             Storage: 'storage',
             Company: 'company',
-            Contact: 'contact'
+            Contact: 'contact',
+            DealTrackingReason: 'deal-tracking-reason'
         },
         collection: {
             Buyer: 'buyers',
@@ -66,7 +67,8 @@ module.exports = {
             Company: 'companies',
             Contact: 'contacts',
             BadOutputReason: 'bad-output-reasons',
-            FinishingPrintingDurationEstimation: 'fp-duration-estimations'
+            FinishingPrintingDurationEstimation: 'fp-duration-estimations',
+            DealTrackingReason: 'deal-tracking-reasons'
         }
     },
     inventory: {
@@ -123,7 +125,8 @@ module.exports = {
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
             UnitPaymentOrder: 'unit-payment-order',
-            GarmentPurchaseCorrection: 'garment-purchase-correction'
+            GarmentPurchaseCorrection: 'garment-purchase-correction',
+            GarmentCurrency:'garment-currency',
         },
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
@@ -135,6 +138,7 @@ module.exports = {
             GarmentPurchaseCorrection: 'garment-purchase-corrections',
             GarmentUnitReceiptNote: 'garment-unit-receipt-notes',
             GarmentInternNote: 'garment-intern-notes',
+            GarmentCurrency:'kurs-currencies',
         }
     },
     production: {

@@ -47,7 +47,8 @@ module.exports = {
                 company: require('./master/company-validator'),
                 contact: require('./master/contact-validator'),
                 badOutputReason: require('./master/bad-output-reason-validator'),
-                finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator')
+                finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator'),
+                dealTrackingReason: require('./master/deal-tracking-reason-validator')
         },
         inventory: {
                 finishingPrinting: {
@@ -89,6 +90,7 @@ module.exports = {
                 garmentPurchaseCorrection: require('./garment-purchasing/garment-purchase-correction-validator'),
                 garmentUnitReceiptNote: require("./garment-purchasing/unit-receipt-note-validator"),
                 garmentInternNote: require("./garment-purchasing/intern-note-validator"),
+                garmentCurrency:require("./garment-purchasing/garment-currency-validator"),
         },
         production: {
                 spinning: {

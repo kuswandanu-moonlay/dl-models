@@ -199,3 +199,9 @@ it("#35. Finishing Printing Duration Estimation should valid", function () {
     var Storage = require('../src/master/fp-duration-estimation');
     validate.finishingPrintingDurationEstimation(new Storage());
 });
+
+
+it("#36. Deal Tracking Reason should valid", function () {
+    var DealTrackingReason = require('../src/master/deal-tracking-reason');
+    validate.dealTrackingReason(new DealTrackingReason());
+});

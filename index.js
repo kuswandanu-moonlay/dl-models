@@ -47,7 +47,8 @@ module.exports = {
         Company: require('./src/master/company'),
         Contact: require('./src/master/contact'),
         BadOutputReason: require('./src/master/bad-output-reason'),
-        FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation')
+        FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation'),
+        DealTrackingReason: require('./src/master/deal-tracking-reason')
     },
     inventory: {
         finishingPrinting: {
@@ -97,6 +98,7 @@ module.exports = {
         GarmentPurchaseCorrection: require('./src/garment-purchasing/garment-purchase-correction'),
         GarmentUnitReceiptNote: require('./src/garment-purchasing/unit-receipt-note'),
         GarmentInternNote: require('./src/garment-purchasing/intern-note'),
+        GarmentCurrency: require('./src/garment-purchasing/garment-currency'),
     },
     production: {
         spinning: {
