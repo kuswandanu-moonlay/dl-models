@@ -44,6 +44,7 @@ module.exports = {
         TermOfPayment: require('./src/master/term-of-payment'),
         DesignMotive: require('./src/master/design-motive'),
         Storage: require('./src/master/storage'),
+        Holiday: require('./src/master/holiday'),
         Company: require('./src/master/company'),
         Contact: require('./src/master/contact'),
         BadOutputReason: require('./src/master/bad-output-reason'),
