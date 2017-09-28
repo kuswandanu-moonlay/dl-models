@@ -208,5 +208,5 @@ it("#36. Deal Tracking Reason should valid", function () {
 
 it("#37. Holiday should valid", function () {
     var Holiday = require('../src/master/holiday');
-    validate.Holiday(new Holiday());
+    validate.holiday(new Holiday());
 });
