@@ -25,6 +25,7 @@ module.exports = {
             Step: 'step',
             MachineType: 'machine-types',
             Storage: 'storage',
+            Holiday: 'holiday',
             Company: 'company',
             Contact: 'contact',
             DealTrackingReason: 'deal-tracking-reason'
@@ -64,6 +65,7 @@ module.exports = {
             TermOfPayment: 'term-of-payments',
             DesignMotive: 'design-motives',
             Storage: 'storages',
+            Holiday: 'holidays',
             Company: 'companies',
             Contact: 'contacts',
             BadOutputReason: 'bad-output-reasons',
