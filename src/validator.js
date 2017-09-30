@@ -8,6 +8,7 @@ module.exports = {
         },
         master: {
                 product: require("./master/product-validator"),
+                holiday: require('./master/holiday-validator'),
                 buyer: require("./master/buyer-validator"),
                 supplier: require("./master/supplier-validator"),
                 uom: require("./master/uom-validator"),
