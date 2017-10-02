@@ -104,6 +104,19 @@ module.exports = {
         }
 
     },
+    inventoryTextile: {
+        type: {
+            TextileInventorySummary: "textile-inventory-summary",
+            TextileInventoryMovement: "textile-inventory-movement",
+            TextileInventoryDocument: "textile-inventory-document"
+        },
+        collection: {
+            TextileInventorySummary: "textile-inventory-summaries",
+            TextileInventoryMovement: "textile-inventory-movements",
+            TextileInventoryDocument: "textile-inventory-documents"
+        }
+
+    },
     purchasing: {
         type: {
             PurchaseOrder: 'purchase-order',
