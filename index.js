@@ -44,6 +44,7 @@ module.exports = {
         TermOfPayment: require('./src/master/term-of-payment'),
         DesignMotive: require('./src/master/design-motive'),
         Storage: require('./src/master/storage'),
+        Holiday: require('./src/master/holiday'),
         Company: require('./src/master/company'),
         Contact: require('./src/master/contact'),
         BadOutputReason: require('./src/master/bad-output-reason'),
@@ -66,6 +67,12 @@ module.exports = {
         InventoryMovement: require("./src/inventory/inventory-movement"),
         InventorySummary: require("./src/inventory/inventory-summary"),
         InventoryDocument: require("./src/inventory/inventory-document")
+    },
+    inventoryTextile: {
+        TextileInventoryMovement: require("./src/inventory-textile/textile-inventory-movement"),
+        TextileInventorySummary: require("./src/inventory-textile/textile-inventory-summary"),
+        TextileInventoryDocument: require("./src/inventory-textile/textile-inventory-document"),
+        TextileInventoryDocumentItem: require("./src/inventory-textile/textile-inventory-document-item")
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),

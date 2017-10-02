@@ -8,6 +8,7 @@ module.exports = {
         },
         master: {
                 product: require("./master/product-validator"),
+                holiday: require('./master/holiday-validator'),
                 buyer: require("./master/buyer-validator"),
                 supplier: require("./master/supplier-validator"),
                 uom: require("./master/uom-validator"),
@@ -66,6 +67,12 @@ module.exports = {
                 inventorySummary: require("./inventory/inventory-summary-validator"),
                 inventoryMovement: require("./inventory/inventory-movement-validator"),
                 inventoryDocument: require("./inventory/inventory-document-validator")
+        },
+        inventoryTextile: {
+                textileInventorySummary: require("./inventory-textile/textile-inventory-summary-validator"),
+                textileInventoryMovement: require("./inventory-textile/textile-inventory-movement-validator"),
+                textileInventoryDocument: require("./inventory-textile/textile-inventory-document-validator"),
+                textileInventoryDocumentItem: require("./inventory-textile/textile-inventory-document-item-validator")
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
