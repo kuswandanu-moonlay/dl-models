@@ -3,6 +3,7 @@ var validatePurchaseOrderExternalItem = require('./purchase-order-external-item-
 var validateSupplier = require('../master/supplier-validator');
 var validateCurrency = require('../master/currency-validator');
 var validateVat = require('../master/vat-validator');
+var validateQualityStandard = require('./purchase-order-external-quality-standard-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -49,12 +50,9 @@ module.exports = function (data) {
 
     data.should.have.property('useIncomeTax');
     data.useIncomeTax.should.instanceOf(Boolean);
-
-    data.should.have.property('categoryId');
-    data.categoryId.should.instanceof(Object);
-
+    
     data.should.have.property('category');
-    data.category.should.instanceof(Object);
+    data.category.should.instanceof(String);
 
     data.should.have.property('date');
     data.date.should.instanceof(Date);
@@ -73,6 +71,10 @@ module.exports = function (data) {
 
     data.should.have.property('status');
     data.status.should.instanceof(Object);
+
+    data.should.have.property('qualityStandard');
+    data.qualityStandard.should.instanceof(Object);
+    validateQualityStandard(data.qualityStandard);
 
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
