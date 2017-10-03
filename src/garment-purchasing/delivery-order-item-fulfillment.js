@@ -12,6 +12,7 @@ module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
         this.purchaseOrderNo = '';
         this.purchaseRequestId = {};
         this.purchaseRequestNo = '';
+        this.purchaseRequestRefNo = '';
         this.productId = {};
         this.product = {};
         this.purchaseOrderQuantity = 0;
