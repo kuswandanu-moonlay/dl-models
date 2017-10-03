@@ -6,22 +6,21 @@ module.exports = function (data) {
     
     data.should.have.property('referenceNo');
     data.referenceNo.should.be.String();
+
     data.should.have.property('referenceType');
     data.referenceType.should.be.String();
-    
+
     data.should.have.property('date');
     data.date.should.instanceof(Object);
 
-
     data.should.have.property('productId');
     data.productId.should.instanceof(Object);
-    
+
     data.should.have.property('productCode');
     data.productCode.should.instanceof(String); 
 
     data.should.have.property('productName');
     data.productName.should.be.String();
-    
 
     data.should.have.property('storageId');
     data.storageId.should.instanceof(Object);
@@ -31,7 +30,6 @@ module.exports = function (data) {
     
     data.should.have.property('storageName');
     data.storageName.should.be.String();
-    
     
     data.should.have.property('before');
     data.before.should.instanceOf(Number);  
