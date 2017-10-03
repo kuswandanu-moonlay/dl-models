@@ -65,4 +65,10 @@ module.exports = function (data) {
 
     data.should.have.property('useIncomeTax');
     data.useIncomeTax.should.instanceOf(Boolean);
+
+    data.should.have.property('categoryId');
+    data.categoryId.should.instanceof(Object);
+
+    data.should.have.property('category');
+    data.category.should.instanceof(Object);
 };

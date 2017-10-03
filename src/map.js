@@ -25,6 +25,7 @@ module.exports = {
             Step: 'step',
             MachineType: 'machine-types',
             Storage: 'storage',
+            Holiday: 'holiday',
             Company: 'company',
             Contact: 'contact',
             DealTrackingReason: 'deal-tracking-reason'
@@ -64,6 +65,7 @@ module.exports = {
             TermOfPayment: 'term-of-payments',
             DesignMotive: 'design-motives',
             Storage: 'storages',
+            Holiday: 'holidays',
             Company: 'companies',
             Contact: 'contacts',
             BadOutputReason: 'bad-output-reasons',
@@ -101,8 +103,7 @@ module.exports = {
             InventoryDocument: "inventory-documents"
         }
 
-    },
-    inventoryGarment: {
+    }, garmentInventory: {
         type: {
             GarmentInventorySummary: "garment-inventory-summary",
             GarmentInventoryMovement: "garment-inventory-movement",
@@ -113,6 +114,19 @@ module.exports = {
             GarmentInventoryMovement: "garment-inventory-movements",
             GarmentInventoryDocument: "garment-inventory-documents"
         }
+    },
+    inventoryTextile: {
+        type: {
+            TextileInventorySummary: "textile-inventory-summary",
+            TextileInventoryMovement: "textile-inventory-movement",
+            TextileInventoryDocument: "textile-inventory-document"
+        },
+        collection: {
+            TextileInventorySummary: "textile-inventory-summaries",
+            TextileInventoryMovement: "textile-inventory-movements",
+            TextileInventoryDocument: "textile-inventory-documents"
+        }
+
     },
     purchasing: {
         type: {

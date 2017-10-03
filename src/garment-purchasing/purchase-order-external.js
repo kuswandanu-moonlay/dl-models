@@ -4,6 +4,7 @@ var Supplier = require('../master/supplier');
 var Currency = require('../master/currency');
 var Vat = require('../master/vat');
 var PurchaseOrderExternalItem = require('./purchase-order-external-item');
+var QualityStandard = require('./purchase-order-external-quality-standard');
 
 module.exports = class PurchaseOrderExternal extends BaseModel {
     constructor(source, type) {
@@ -30,9 +31,8 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.useVat = false;
         this.vatRate = 0;
         this.useIncomeTax = false;
-
-        this.categoryId = {};
-        this.category = {};
+        
+        this.category = "";
 
         this.date = new Date();
         this.expectedDeliveryDate = new Date();
@@ -43,6 +43,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.items = [];
 
         this.status = {};
+        this.qualityStandard = new QualityStandard();
 
         this.copy(source);
 
