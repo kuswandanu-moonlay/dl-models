@@ -67,6 +67,12 @@ module.exports = {
         InventorySummary: require("./src/inventory/inventory-summary"),
         InventoryDocument: require("./src/inventory/inventory-document")
     },
+    garmentInventory: {
+       
+        GarmentInventoryMovement: require("./src/inventory-garment/garment-inventory-movement"),
+        GarmentInventorySummary: require("./src/inventory-garment/garment-inventory-summary"),
+        GarmentInventoryDocument: require("./src/inventory-garment/garment-inventory-document")
+    },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
         PurchaseOrder: require('./src/purchasing/purchase-order'),

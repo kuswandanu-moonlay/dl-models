@@ -67,6 +67,12 @@ module.exports = {
                 inventoryMovement: require("./inventory/inventory-movement-validator"),
                 inventoryDocument: require("./inventory/inventory-document-validator")
         },
+      garmentInventory: {
+                garmentInventorySummary: require("./inventory-garment/garment-inventory-summary-validator"),
+                garmentInventoryMovement: require("./inventory-garment/garment-inventory-movement-validator"),
+                garmentInventoryDocument: require("./inventory-garment/garment-inventory-document-validator"),
+                garmentInventoryDocumentItem: require("./inventory-garment/garment-inventory-document-item-validator")
+        },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
                 purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),
