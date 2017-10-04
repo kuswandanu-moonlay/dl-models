@@ -14,6 +14,7 @@ module.exports = class InvoiceNoteItem extends BaseModel {
 
         this.purchaseRequestId = {};
         this.purchaseRequestNo = '';
+        this.purchaseRequestRefNo = '';
 
         this.productId = {};
         this.product = new Product();
