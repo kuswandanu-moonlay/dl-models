@@ -18,7 +18,10 @@ module.exports = function (data) {
     validateSupplier(data.supplier);
 
     data.should.have.property('currency');
-    data.supplier.should.instanceof(Object);
+    data.currency.should.instanceof(Object);
+
+    data.should.have.property('hasUnitReceiptNote');
+    data.hasUnitReceiptNote.should.instanceof(Boolean);
 
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);

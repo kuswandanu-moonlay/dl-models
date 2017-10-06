@@ -20,6 +20,7 @@ module.exports = class UnitReceiptNoteItem extends BaseModel {
         this.purchaseOrderNo = '';
         this.purchaseRequestId = {};
         this.purchaseRequestNo = '';
+        this.purchaseRequestRefNo = '';
         this.quantityConversion = 0;
         this.uomConversion = new uom();
         this.conversion = 1;

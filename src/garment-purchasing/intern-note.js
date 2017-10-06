@@ -15,6 +15,7 @@ module.exports = class InternNote extends BaseModel {
         this.supplier = new Supplier();
         this.currency = new Currency();
         this.remark = '';
+        this.hasUnitReceiptNote = false;
         this.items = [];
         this.copy(source);
 
