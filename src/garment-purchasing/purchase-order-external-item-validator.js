@@ -45,6 +45,9 @@ module.exports = function (data) {
     data.dealUom.should.instanceOf(Object);
     validateUom(data.dealUom);
 
+    data.should.have.property('dealConversion');
+    data.dealConversion.should.instanceOf(Number);
+
     data.should.have.property('realizations');
     data.realizations.should.instanceOf(Array);
 
@@ -59,6 +62,13 @@ module.exports = function (data) {
 
     data.should.have.property('conversion');
     data.conversion.should.instanceOf(Number);
+
+    data.should.have.property('quantityConversion');
+    data.quantityConversion.should.instanceOf(Number);
+
+    data.should.have.property('uomConversion');
+    data.uomConversion.should.instanceOf(Object);
+
 
     data.should.have.property('isClosed');
     data.isClosed.should.instanceOf(Boolean);

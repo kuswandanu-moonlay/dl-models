@@ -26,6 +26,7 @@ module.exports = class PurchaseOrderItem extends BaseModel {
 
         this.dealQuantity = 0;
         this.dealUom = new uom();
+        this.dealConversion = 1;
 
         this.realizations = [];
 
@@ -33,6 +34,8 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.priceBeforeTax = 0;
         this.budgetPrice = 0;
 
+        this.quantityConversion = 0;
+        this.uomConversion = new uom();
         this.conversion = 1;
         this.isClosed = false;
         this.useIncomeTax = false;
