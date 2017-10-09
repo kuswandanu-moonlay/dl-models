@@ -45,9 +45,6 @@ module.exports = function (data) {
     data.dealUom.should.instanceOf(Object);
     validateUom(data.dealUom);
 
-    data.should.have.property('dealConversion');
-    data.dealConversion.should.instanceOf(Number);
-
     data.should.have.property('realizations');
     data.realizations.should.instanceOf(Array);
 
