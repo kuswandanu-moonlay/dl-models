@@ -64,6 +64,9 @@ module.exports = function (data) {
     data.should.have.property('purchaseRequestRefNo');
     data.purchaseRequestRefNo.should.instanceOf(String);
 
+    data.should.have.property('roNo');
+    data.roNo.should.be.String();
+
     data.should.have.property('correction');
     data.correction.should.instanceOf(Array);
 

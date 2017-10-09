@@ -10,6 +10,7 @@ module.exports = class DeliveryOrderItemFulfillment extends BaseModel {
         //Define Properties 
         this.purchaseOrderId = {};
         this.purchaseOrderNo = '';
+        this.roNo = '';
         this.purchaseRequestId = {};
         this.purchaseRequestNo = '';
         this.purchaseRequestRefNo = '';
