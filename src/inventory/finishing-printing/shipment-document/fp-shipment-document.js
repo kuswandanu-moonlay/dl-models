@@ -2,7 +2,7 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 var ShipmentDocumentDetail = require("./fp-shipment-document-detail");
-
+var Storage = require("../../master/storage");
 
 module.exports = class FinishingPrintingShipmentDocument extends BaseModel {
     constructor(source) {
@@ -33,6 +33,7 @@ module.exports = class FinishingPrintingShipmentDocument extends BaseModel {
         this.storageName = "";
         this.storageReferenceType = "";
         this.storageType = "";
+        this.storage = new Storage();
 
         this.copy(source);
 
