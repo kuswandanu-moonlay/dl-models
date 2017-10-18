@@ -75,13 +75,6 @@ module.exports = {
         GarmentInventorySummary: require("./src/inventory-garment/garment-inventory-summary"),
         GarmentInventoryDocument: require("./src/inventory-garment/garment-inventory-document")
     },
-    inventoryTextile: {
-        TextileInventoryMovement: require("./src/inventory-textile/textile-inventory-movement"),
-        TextileInventorySummary: require("./src/inventory-textile/textile-inventory-summary"),
-        TextileInventoryDocument: require("./src/inventory-textile/textile-inventory-document"),
-        TextileInventoryDocumentItem: require("./src/inventory-textile/textile-inventory-document-item")
-
-    },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
         PurchaseOrder: require('./src/purchasing/purchase-order'),

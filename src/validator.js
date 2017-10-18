@@ -75,13 +75,6 @@ module.exports = {
                 garmentInventoryDocument: require("./inventory-garment/garment-inventory-document-validator"),
                 garmentInventoryDocumentItem: require("./inventory-garment/garment-inventory-document-item-validator")
       },
-        inventoryTextile: {
-                textileInventorySummary: require("./inventory-textile/textile-inventory-summary-validator"),
-                textileInventoryMovement: require("./inventory-textile/textile-inventory-movement-validator"),
-                textileInventoryDocument: require("./inventory-textile/textile-inventory-document-validator"),
-                textileInventoryDocumentItem: require("./inventory-textile/textile-inventory-document-item-validator")
-
-        },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
                 purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),
