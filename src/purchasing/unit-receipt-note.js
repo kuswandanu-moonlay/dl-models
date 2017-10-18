@@ -22,6 +22,7 @@ module.exports = class UnitReceiptNote extends BaseModel {
         this.remark = '';
         this.items = [];
         this.isPaid = false;
+        
         this.storageId={};
         this.storageName='';
         this.storageCode='';
