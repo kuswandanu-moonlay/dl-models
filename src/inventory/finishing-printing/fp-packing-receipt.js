@@ -2,6 +2,7 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 var PackingItemModel = require('./fp-packing-receipt-items');
+var Storage = require("../../master/storage");
 
 module.exports = class FPPackingReceipt extends BaseModel {
     constructor(source) {
@@ -18,6 +19,7 @@ module.exports = class FPPackingReceipt extends BaseModel {
 
         //Inventory Document Validation
         this.storageId = {};
+        this.storage = new Storage();
         this.referenceNo = "";
         this.referenceType = "";
         this.type = "";
