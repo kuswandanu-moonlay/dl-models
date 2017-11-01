@@ -31,12 +31,7 @@ module.exports = function (data) {
     data.should.have.property('isDelivered');
     data.isDelivered.should.instanceof(Boolean);
 
-    data.should.have.property('beforeQuantity');
-    data.beforeQuantity.should.instanceof(Number);
+    data.should.have.property('availableQuantity');
+    data.availableQuantity.should.instanceof(Number);
 
-    data.should.have.property('afterQuantity');
-    data.afterQuantity.should.instanceof(Number);
-
-    data.should.have.property('movementQuantity');
-    data.movementQuantity.should.instanceof(Number);
 };

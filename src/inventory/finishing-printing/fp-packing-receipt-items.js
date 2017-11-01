@@ -18,9 +18,7 @@ module.exports = class PackingReceiptItem extends BaseModel {
         this.uomId = {};
 
         this.isDelivered = false;
-        this.beforeQuantity = 0;
-        this.afterQuantity = 0;
-        this.movementQuantity = 0;
+        this.availableQuantity = 0;
 
         this.copy(source);
     }
