@@ -2,7 +2,7 @@ require("should");
 var validateMachine = require('../../../master/machine-validator');
 var validateProduct = require('../../../master/product-validator');
 var validateUnit = require('../../../master/unit-validator');
-var validateLotMachine = require('../../../master/lot-machine-validator');
+//var validateLotMachine = require('../../../master/lot-machine-validator');
 var validateThreadSpecification = require('../../../master/thread-specification-validator');
 
 module.exports = function (data) {
@@ -36,12 +36,12 @@ module.exports = function (data) {
     data.should.have.property('machineId');
     data.machineId.should.instanceof(Object);
 
-    data.should.have.property('lotMachine');
-    data.lotMachine.should.instanceof(Object);
-    validateLotMachine(data.lotMachine);
+    // data.should.have.property('lotMachine');
+    // data.lotMachine.should.instanceof(Object);
+    // validateLotMachine(data.lotMachine);
 
-    data.should.have.property('lotMachineId');
-    data.lotMachineId.should.instanceof(Object);
+    // data.should.have.property('lotMachineId');
+    // data.lotMachineId.should.instanceof(Object);
 
     data.should.have.property('threadSpecification');
     data.threadSpecification.should.instanceof(Object);

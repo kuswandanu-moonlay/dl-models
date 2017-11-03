@@ -210,3 +210,13 @@ it("#37. Holiday should valid", function () {
     var Holiday = require('../src/master/holiday');
     validate.holiday(new Holiday());
 });
+
+it("#38. Spinning Yarn should valid", function () {
+    var SpinningYarn = require('../src/master/spinning-yarn');
+    validate.spinningYarn(new SpinningYarn());
+});
+
+it("#39. Spinning Production Lot should valid", function () {
+    var SpinningProductionLot = require('../src/master/spinning-production-lot');
+    validate.spinningProductionLot(new SpinningProductionLot());
+});

@@ -1,17 +1,19 @@
 require("should");
 var validateProduct = require('./product-validator');
 var validateMachine = require('./machine-validator');
+var validateYarn = require('./spinning-yarn-validator');
+var validateUnit = require('./unit-validator')
 
 module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceof(Object);
      
-    data.should.have.property('productId');
-    data.productId.should.instanceof(Object);
+    // data.should.have.property('productId');
+    // data.productId.should.instanceof(Object);
 
-    data.should.have.property('product');
-    data.product.should.instanceof(Object);
-    validateProduct(data.product);
+    // data.should.have.property('product');
+    // data.product.should.instanceof(Object);
+    // validateProduct(data.product);
 
     data.should.have.property('rpm');
     data.rpm.should.instanceof(Number);
@@ -31,4 +33,18 @@ module.exports = function (data) {
 
     data.should.have.property('constant');
     data.constant.should.instanceof(Number);
+
+    data.should.have.property('spinningYarnId');
+    data.spinningYarnId.should.instanceof(Object);
+
+    data.should.have.property('spinningYarn');
+    data.spinningYarn.should.instanceof(Object);
+    validateYarn(data.spinningYarn);
+
+    data.should.have.property('unitId');
+    data.unitId.should.instanceof(Object);
+
+    data.should.have.property('unit');
+    data.unit.should.instanceof(Object);
+    validateUnit(data.unit);
 };
