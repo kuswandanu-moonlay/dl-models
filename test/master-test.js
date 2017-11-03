@@ -217,6 +217,6 @@ it("#38. Spinning Yarn should valid", function () {
 });
 
 it("#39. Spinning Production Lot should valid", function () {
-    var SpinningProductionLot = require('../src/master/spinning-lot-production');
+    var SpinningProductionLot = require('../src/master/spinning-production-lot');
     validate.spinningProductionLot(new SpinningProductionLot());
 });
