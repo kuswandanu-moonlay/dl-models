@@ -21,7 +21,7 @@ module.exports = {
                 threadSpecification: require('./master/thread-specification-validator'),
                 machine: require('./master/machine-validator'),
                 usterClassification: require('./master/uster-classification-validator'),
-                lotMachine: require('./master/lot-machine-validator'),
+                spinningProductionLot: require('./master/spinning-production-lot-validator'),
                 yarnEquivalentConversion: require('./master/yarn-equivalent-conversion-validator'),
                 uster: require('./master/uster-validator'),
                 lampStandard: require('./master/lamp-standard-validator'),
@@ -49,7 +49,8 @@ module.exports = {
                 contact: require('./master/contact-validator'),
                 badOutputReason: require('./master/bad-output-reason-validator'),
                 finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator'),
-                dealTrackingReason: require('./master/deal-tracking-reason-validator')
+                dealTrackingReason: require('./master/deal-tracking-reason-validator'),
+                spinningYarn:require('./master/spinning-yarn-validator')
         },
         inventory: {
                 finishingPrinting: {

@@ -45,7 +45,7 @@ module.exports = {
             Budget: 'budgets',
             ThreadSpecification: 'thread-specifications',
             UsterClassification: 'uster-classifications',
-            LotMachine: 'lot-machines',
+            SpinningProductionLot: 'spinning-production-lots',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
             LampStandard: 'lamp-standards',
@@ -70,7 +70,8 @@ module.exports = {
             Contact: 'contacts',
             BadOutputReason: 'bad-output-reasons',
             FinishingPrintingDurationEstimation: 'fp-duration-estimations',
-            DealTrackingReason: 'deal-tracking-reasons'
+            DealTrackingReason: 'deal-tracking-reasons',
+            SpinningYarn: 'spinning-yarns'
         }
     },
     inventory: {
