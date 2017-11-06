@@ -20,6 +20,9 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.be.String();
 
+    data.should.have.property('isVoid');
+    data.isVoid.should.be.instanceOf(Boolean);
+
     data.should.have.property('accepted');
     data.accepted.should.instanceof(Boolean);
 
