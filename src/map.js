@@ -79,17 +79,17 @@ module.exports = {
                 FPInventorySummary: "fp-inventory-summary",
                 FPInventoryMovement: "fp-inventory-movement",
                 FPPackingReceipt: "fp-packing-receipt",
-                FPReturToQCDoc:"fp-retur-to-qc-doc",
+                FPReturToQCDoc: "fp-retur-to-qc-doc",
                 FPPackingShipmentDocument: "fp-shipment-document",
-                FPReturFromBuyerDoc:"fp-retur-fr-byr-docs"
+                FPReturFromBuyerDoc: "fp-retur-fr-byr-docs"
             },
             collection: {
                 FPInventorySummary: "fp-inventory-summaries",
                 FPInventoryMovement: "fp-inventory-movements",
                 FPPackingReceipt: "fp-packing-receipts",
-                FPReturToQCDoc:"fp-retur-to-qc-docs",
+                FPReturToQCDoc: "fp-retur-to-qc-docs",
                 FPPackingShipmentDocument: "fp-shipment-documents",
-                FPReturFromBuyerDoc:"fp-retur-fr-byr-docs"
+                FPReturFromBuyerDoc: "fp-retur-fr-byr-docs"
             }
         },
         type: {
@@ -152,19 +152,19 @@ module.exports = {
             PurchaseRequest: 'purchase-request',
             UnitPaymentOrder: 'unit-payment-order',
             GarmentPurchaseCorrection: 'garment-purchase-correction',
-            GarmentCurrency:'garment-currency',
+            GarmentCurrency: 'garment-currency',
         },
         collection: {
             GarmentPurchaseRequest: 'garment-purchase-requests',
             GarmentPurchaseOrder: 'garment-purchase-orders',
-            Customs : 'garment-customs',
+            Customs: 'garment-customs',
             GarmentPurchaseOrderExternal: 'garment-purchase-order-externals',
             GarmentDeliveryOrder: 'garment-delivery-orders',
             GarmentInvoiceNote: 'garment-invoice-notes',
             GarmentPurchaseCorrection: 'garment-purchase-corrections',
             GarmentUnitReceiptNote: 'garment-unit-receipt-notes',
             GarmentInternNote: 'garment-intern-notes',
-            GarmentCurrency:'kurs-currencies',
+            GarmentCurrency: 'kurs-currencies',
         }
     },
     production: {
@@ -244,6 +244,11 @@ module.exports = {
             DealTrackingStage: 'deal-tracking-stages',
             DealTrackingDeal: 'deal-tracking-deals',
             DealTrackingActivity: 'deal-tracking-activities'
+        }
+    },
+    garmentMasterPlan: {
+        collection: {
+            WeeklyPlan: 'weekly-plans'
         }
     }
 }
