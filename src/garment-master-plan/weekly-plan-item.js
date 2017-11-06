@@ -8,7 +8,7 @@ module.exports = class WeeklyPlanItem extends BaseModel {
         this.weekNumber = {};
         this.startDate = new Date();
         this.endDate = new Date();
-        this.monthName = "";
+        this.month = 1;
         this.copy(source);
     }
 };

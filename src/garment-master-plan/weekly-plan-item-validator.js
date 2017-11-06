@@ -13,6 +13,6 @@ module.exports = function (data) {
     data.should.have.property('endDate');
     data.endDate.should.instanceof(Date);
 
-    data.should.have.property('monthName');
-    data.monthName.should.be.instanceOf(String);
+    data.should.have.property('month');
+    data.month.should.be.instanceOf(Number);
 };
