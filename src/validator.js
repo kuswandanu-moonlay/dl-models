@@ -68,13 +68,12 @@ module.exports = {
                 inventoryMovement: require("./inventory/inventory-movement-validator"),
                 inventoryDocument: require("./inventory/inventory-document-validator")
         },
-
-      garmentInventory: {
+        garmentInventory: {
                 garmentInventorySummary: require("./inventory-garment/garment-inventory-summary-validator"),
                 garmentInventoryMovement: require("./inventory-garment/garment-inventory-movement-validator"),
                 garmentInventoryDocument: require("./inventory-garment/garment-inventory-document-validator"),
                 garmentInventoryDocumentItem: require("./inventory-garment/garment-inventory-document-item-validator")
-      },
+        },
         inventoryTextile: {
                 textileInventorySummary: require("./inventory-textile/textile-inventory-summary-validator"),
                 textileInventoryMovement: require("./inventory-textile/textile-inventory-movement-validator"),
@@ -105,7 +104,7 @@ module.exports = {
                 garmentPurchaseCorrection: require('./garment-purchasing/garment-purchase-correction-validator'),
                 garmentUnitReceiptNote: require("./garment-purchasing/unit-receipt-note-validator"),
                 garmentInternNote: require("./garment-purchasing/intern-note-validator"),
-                garmentCurrency:require("./garment-purchasing/garment-currency-validator"),
+                garmentCurrency: require("./garment-purchasing/garment-currency-validator"),
         },
         production: {
                 spinning: {
@@ -146,5 +145,8 @@ module.exports = {
                 dealTrackingStage: require("./sales/deal-tracking-stage-validator"),
                 dealTrackingDeal: require("./sales/deal-tracking-deal-validator"),
                 dealTrackingActivity: require("./sales/deal-tracking-activity-validator")
+        },
+        garmentMasterPlan:{
+                weeklyPlan: require("./garment-master-plan/weekly-plan-validator")
         }
 };

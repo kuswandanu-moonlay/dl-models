@@ -13,3 +13,4 @@ test('@production', './production-test');
 test('@sales', './sales-test');
 test('@garmentInventory', './garment-inventory-test');
 test('@inventory-textile', './inventory-textile-test');
+test('@garment-master-plan', './garment-master-plan-test');
