@@ -50,7 +50,7 @@ module.exports = {
                 badOutputReason: require('./master/bad-output-reason-validator'),
                 finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator'),
                 dealTrackingReason: require('./master/deal-tracking-reason-validator'),
-                spinningYarn:require('./master/spinning-yarn-validator')
+                spinningYarn: require('./master/spinning-yarn-validator')
         },
         inventory: {
                 finishingPrinting: {
@@ -70,12 +70,12 @@ module.exports = {
                 inventoryDocument: require("./inventory/inventory-document-validator")
         },
 
-      garmentInventory: {
+        garmentInventory: {
                 garmentInventorySummary: require("./inventory-garment/garment-inventory-summary-validator"),
                 garmentInventoryMovement: require("./inventory-garment/garment-inventory-movement-validator"),
                 garmentInventoryDocument: require("./inventory-garment/garment-inventory-document-validator"),
                 garmentInventoryDocumentItem: require("./inventory-garment/garment-inventory-document-item-validator")
-      },
+        },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
                 purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),
@@ -99,7 +99,7 @@ module.exports = {
                 garmentPurchaseCorrection: require('./garment-purchasing/garment-purchase-correction-validator'),
                 garmentUnitReceiptNote: require("./garment-purchasing/unit-receipt-note-validator"),
                 garmentInternNote: require("./garment-purchasing/intern-note-validator"),
-                garmentCurrency:require("./garment-purchasing/garment-currency-validator"),
+                garmentCurrency: require("./garment-purchasing/garment-currency-validator"),
         },
         production: {
                 spinning: {
@@ -140,5 +140,8 @@ module.exports = {
                 dealTrackingStage: require("./sales/deal-tracking-stage-validator"),
                 dealTrackingDeal: require("./sales/deal-tracking-deal-validator"),
                 dealTrackingActivity: require("./sales/deal-tracking-activity-validator")
+        },
+        garmentMasterPlan: {
+                weeklyPlan: require("./garment-master-plan/weekly-plan-validator")
         }
 };

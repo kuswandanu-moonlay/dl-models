@@ -71,7 +71,7 @@ module.exports = {
     },
 
     garmentInventory: {
-       
+
         GarmentInventoryMovement: require("./src/inventory-garment/garment-inventory-movement"),
         GarmentInventorySummary: require("./src/inventory-garment/garment-inventory-summary"),
         GarmentInventoryDocument: require("./src/inventory-garment/garment-inventory-document")
@@ -148,6 +148,9 @@ module.exports = {
         DealTrackingStage: require("./src/sales/deal-tracking-stage"),
         DealTrackingDeal: require("./src/sales/deal-tracking-deal"),
         DealTrackingActivity: require("./src/sales/deal-tracking-activity")
+    },
+    garmentMasterPlan: {
+        WeeklyPlan: require("./src/garment-master-plan/weekly-plan")
     },
     map: require('./src/map'),
     validator: require('./src/validator')
