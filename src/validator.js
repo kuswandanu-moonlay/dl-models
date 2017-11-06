@@ -1,4 +1,5 @@
 module.exports = {
+
         auth: {
                 account: require("./auth/account-validator"),
                 profile: require("./auth/profile-validator"),
@@ -49,7 +50,7 @@ module.exports = {
                 badOutputReason: require('./master/bad-output-reason-validator'),
                 finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator'),
                 dealTrackingReason: require('./master/deal-tracking-reason-validator'),
-                spinningYarn:require('./master/spinning-yarn-validator')
+                spinningYarn: require('./master/spinning-yarn-validator')
         },
         inventory: {
                 finishingPrinting: {
@@ -68,18 +69,12 @@ module.exports = {
                 inventoryMovement: require("./inventory/inventory-movement-validator"),
                 inventoryDocument: require("./inventory/inventory-document-validator")
         },
+
         garmentInventory: {
                 garmentInventorySummary: require("./inventory-garment/garment-inventory-summary-validator"),
                 garmentInventoryMovement: require("./inventory-garment/garment-inventory-movement-validator"),
                 garmentInventoryDocument: require("./inventory-garment/garment-inventory-document-validator"),
                 garmentInventoryDocumentItem: require("./inventory-garment/garment-inventory-document-item-validator")
-        },
-        inventoryTextile: {
-                textileInventorySummary: require("./inventory-textile/textile-inventory-summary-validator"),
-                textileInventoryMovement: require("./inventory-textile/textile-inventory-movement-validator"),
-                textileInventoryDocument: require("./inventory-textile/textile-inventory-document-validator"),
-                textileInventoryDocumentItem: require("./inventory-textile/textile-inventory-document-item-validator")
-
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
@@ -146,7 +141,7 @@ module.exports = {
                 dealTrackingDeal: require("./sales/deal-tracking-deal-validator"),
                 dealTrackingActivity: require("./sales/deal-tracking-activity-validator")
         },
-        garmentMasterPlan:{
+        garmentMasterPlan: {
                 weeklyPlan: require("./garment-master-plan/weekly-plan-validator")
         }
 };
