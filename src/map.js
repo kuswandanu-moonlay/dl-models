@@ -45,7 +45,7 @@ module.exports = {
             Budget: 'budgets',
             ThreadSpecification: 'thread-specifications',
             UsterClassification: 'uster-classifications',
-            LotMachine: 'lot-machines',
+            SpinningProductionLot: 'spinning-production-lots',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
             LampStandard: 'lamp-standards',
@@ -70,7 +70,8 @@ module.exports = {
             Contact: 'contacts',
             BadOutputReason: 'bad-output-reasons',
             FinishingPrintingDurationEstimation: 'fp-duration-estimations',
-            DealTrackingReason: 'deal-tracking-reasons'
+            DealTrackingReason: 'deal-tracking-reasons',
+            SpinningYarn: 'spinning-yarns'
         }
     },
     inventory: {
@@ -114,19 +115,6 @@ module.exports = {
             GarmentInventoryMovement: "garment-inventory-movements",
             GarmentInventoryDocument: "garment-inventory-documents"
         }
-    },
-    inventoryTextile: {
-        type: {
-            TextileInventorySummary: "textile-inventory-summary",
-            TextileInventoryMovement: "textile-inventory-movement",
-            TextileInventoryDocument: "textile-inventory-document"
-        },
-        collection: {
-            TextileInventorySummary: "textile-inventory-summaries",
-            TextileInventoryMovement: "textile-inventory-movements",
-            TextileInventoryDocument: "textile-inventory-documents"
-        }
-
     },
     purchasing: {
         type: {

@@ -18,7 +18,7 @@ module.exports = {
         Budget: require('./src/master/budget'),
         ThreadSpecification: require('./src/master/thread-specification'),
         Machine: require('./src/master/machine'),
-        LotMachine: require('./src/master/lot-machine'),
+        SpinningProductionLot: require('./src/master/spinning-production-lot'),
         YarnEquivalentConversion: require('./src/master/yarn-equivalent-conversion'),
         Uster: require('./src/master/uster'),
         UsterClassification: require('./src/master/uster-classification'),
@@ -49,7 +49,8 @@ module.exports = {
         Contact: require('./src/master/contact'),
         BadOutputReason: require('./src/master/bad-output-reason'),
         FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation'),
-        DealTrackingReason: require('./src/master/deal-tracking-reason')
+        DealTrackingReason: require('./src/master/deal-tracking-reason'),
+        SpinningYarn: require('./src/master/spinning-yarn')
     },
     inventory: {
         finishingPrinting: {
@@ -74,13 +75,6 @@ module.exports = {
         GarmentInventoryMovement: require("./src/inventory-garment/garment-inventory-movement"),
         GarmentInventorySummary: require("./src/inventory-garment/garment-inventory-summary"),
         GarmentInventoryDocument: require("./src/inventory-garment/garment-inventory-document")
-    },
-    inventoryTextile: {
-        TextileInventoryMovement: require("./src/inventory-textile/textile-inventory-movement"),
-        TextileInventorySummary: require("./src/inventory-textile/textile-inventory-summary"),
-        TextileInventoryDocument: require("./src/inventory-textile/textile-inventory-document"),
-        TextileInventoryDocumentItem: require("./src/inventory-textile/textile-inventory-document-item")
-
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),
