@@ -9,7 +9,7 @@ module.exports = function (data) {
     data.code.should.be.String();
 
     data.should.have.property('divisionId');
-    data.divisionId.should.be.Object();
+    data.divisionId.should.instanceof(Object);
     
     data.should.have.property('division');
     data.division.should.be.Object();
