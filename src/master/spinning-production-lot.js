@@ -8,7 +8,7 @@ var Unit = require('./unit');
 
 module.exports = class SpinningProductionLot extends BaseModel {
     constructor(source) {
-        super('spinning-lot-production', '1.0.0');
+        super('spinning-production-lot', '1.0.0');
 
         // this.product= new Product();
         // this.productId={};
