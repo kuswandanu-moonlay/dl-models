@@ -16,6 +16,10 @@ module.exports = class PackingReceiptItem extends BaseModel {
         this.remark = "";
         this.notes = "";
         this.uomId = {};
+
+        this.isDelivered = false;
+        this.availableQuantity = 0;
+
         this.copy(source);
     }
 };

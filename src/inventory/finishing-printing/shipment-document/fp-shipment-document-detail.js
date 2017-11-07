@@ -1,7 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var ShipmentDocumentItem = require("./fp-shipment-document-item")
+var ShipmentDocumentItem = require("./fp-shipment-document-item");
 
 module.exports = class ShipmentDocumentDetail extends BaseModel {
     constructor(source) {

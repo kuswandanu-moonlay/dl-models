@@ -16,6 +16,7 @@ module.exports = class FPPackingReceipt extends BaseModel {
         this.accepted = false;
         this.declined = false;
         this.remark = "";
+        this.isVoid = false;
 
         //Inventory Document Validation
         this.storageId = {};
