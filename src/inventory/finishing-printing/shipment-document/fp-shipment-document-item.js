@@ -1,29 +1,27 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
+var ShipmentDocumentPackingReceiptItem = require("./fp-shipment-document-packing-receipt-item");
 
 module.exports = class ShipmentDocumentItem extends BaseModel {
     constructor(source) {
         super('shipment-document-item', '1.0.0');
 
-        //Product detail
-        this.productId = "";
-        this.productCode = "";
-        this.productName = "";
+        //Packing Receipt
+        this.packingReceiptId = {};
+        this.packingReceiptCode = "";
 
-        this.designCode = "";
-        this.designNumber = "";
-        this.colorType = "";
+        this.storageId = {};
+        this.storageCode = "";
+        this.storageName = "";
 
-        this.uomId = {};
-        this.uomUnit = "";
+        this.referenceNo = "";
+        this.referenceType = "";
         
-        this.quantity = 0;
-        this.length = 0;
-        this.weight = 0;
-
-        this.remark = "";
+        this.packingReceiptItems = [];
 
         this.copy(source);
+
+        this.packingReceiptItems = (this.packingReceiptItems || []).map((packingReceiptItem) => new ShipmentDocumentPackingReceiptItem(packingReceiptItem));
     }
 };
