@@ -3,6 +3,7 @@
 var BaseModel = require('model-toolkit').BaseModel;
 var Company = require('../master/company');
 var Contact = require('../master/contact');
+var Product = require('../master/product');
 
 module.exports = class DealTrackingDeal extends BaseModel {
     constructor(source) {
@@ -16,6 +17,9 @@ module.exports = class DealTrackingDeal extends BaseModel {
         this.contactId = {};
         this.contact = new Contact();
         this.closeDate = new Date();
+        this.productId = {};
+        this.product = new Product();
+        this.quantity = 0;
         this.description = '';
         this.reason = '';
 
