@@ -150,7 +150,8 @@ module.exports = {
         DealTrackingActivity: require("./src/sales/deal-tracking-activity")
     },
     garmentMasterPlan: {
-        WeeklyPlan: require("./src/garment-master-plan/weekly-plan")
+        WeeklyPlan: require("./src/garment-master-plan/weekly-plan"),
+        WorkingHoursStandard: require('./src/garment-master-plan/working-hours-standard')
     },
     map: require('./src/map'),
     validator: require('./src/validator')
