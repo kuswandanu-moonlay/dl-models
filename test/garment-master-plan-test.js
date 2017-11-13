@@ -9,3 +9,8 @@ it("#02. Working Hours Standard should valid", function () {
     var WorkingHoursStandard = require('../src/garment-master-plan/working-hours-standard');
     validate.workingHoursStandard(new WorkingHoursStandard());
 });
+
+it("#03. Style should valid", function () {
+    var Style = require('../src/garment-master-plan/style');
+    validate.style(new Style());
+});
