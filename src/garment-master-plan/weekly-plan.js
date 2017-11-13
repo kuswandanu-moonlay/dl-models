@@ -8,6 +8,8 @@ module.exports = class WeeklyPlan extends BaseModel {
     constructor(source, type) {
         super(type || 'weekly-plan', '1.0.0');
         this.year = 1900;
+        this.unitId = {};
+        this.unit = new Unit(); 
         this.items = [];
         this.copy(source);
         this.items = (this.items || []).map(week => new Week(week));

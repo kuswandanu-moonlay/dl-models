@@ -15,4 +15,10 @@ module.exports = function (data) {
 
     data.should.have.property('month');
     data.month.should.be.instanceOf(Number);
+
+    data.should.have.property('efficiency');
+    data.efficiency.should.be.instanceOf(Number);
+
+    data.should.have.property('operator');
+    data.operator.should.be.instanceOf(Number);
 };
