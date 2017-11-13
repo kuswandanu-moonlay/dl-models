@@ -143,6 +143,7 @@ module.exports = {
         },
         garmentMasterPlan: {
                 weeklyPlan: require("./garment-master-plan/weekly-plan-validator"),
-                workingHoursStandard: require('./garment-master-plan/working-hours-standard-validator')
+                workingHoursStandard: require('./garment-master-plan/working-hours-standard-validator'),
+                style: require('./garment-master-plan/style-validator'),
         }
 };
