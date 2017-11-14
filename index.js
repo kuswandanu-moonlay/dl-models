@@ -151,7 +151,8 @@ module.exports = {
     },
     garmentMasterPlan: {
         WeeklyPlan: require("./src/garment-master-plan/weekly-plan"),
-        WorkingHoursStandard: require('./src/garment-master-plan/working-hours-standard')
+        WorkingHoursStandard: require('./src/garment-master-plan/working-hours-standard'),
+        Style: require('./src/garment-master-plan/style')
     },
     map: require('./src/map'),
     validator: require('./src/validator')
