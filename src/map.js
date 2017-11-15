@@ -238,7 +238,8 @@ module.exports = {
         collection: {
             WeeklyPlan: 'weekly-plans',
             WorkingHoursStandard: 'working-hours-standards',
-            Style: 'styles'
+            Style: 'styles',
+            StandardHour: 'standard-hours'
         }
     }
 }
