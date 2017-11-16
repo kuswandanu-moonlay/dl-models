@@ -38,11 +38,14 @@ module.exports = class PurchaseOrderItem extends BaseModel {
         this.conversion = 1;
         this.isClosed = false;
         this.useIncomeTax = false;
-        
+
         this.categoryId = {};
         this.category = {};
 
         this.remark = '';
+
+        this.isOverBudget = false;
+        this.overBudgetRemark = '';
         this.copy(source);
     }
 };
