@@ -14,3 +14,8 @@ it("#03. Style should valid", function () {
     var Style = require('../src/garment-master-plan/style');
     validate.style(new Style());
 });
+
+it("#04. Standard Hour should valid", function () {
+    var StandardHour = require('../src/garment-master-plan/standard-hour');
+    validate.standardHour(new StandardHour());
+});

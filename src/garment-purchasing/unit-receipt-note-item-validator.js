@@ -87,4 +87,7 @@ module.exports = function (data) {
 
     data.should.have.property('buyer');
     data.buyer.should.instanceof(Object);
+
+    data.should.have.property('artikel');
+    data.artikel.should.instanceOf(String);
 };
