@@ -13,9 +13,17 @@ module.exports = class InventoryMovementItem extends BaseModel {
         this.productName = "";
    
         this.quantity = 0; 
+        this.secondQuantity = 0; 
+        this.thirdQuantity = 0; 
         
         this.uomId = {};
         this.uom = "";
+
+        this.secondUomId = {};
+        this.secondUom = "";
+
+        this.thirdUomId = {};
+        this.thirdUom = "";
         
         this.remark = '';
 
