@@ -78,4 +78,10 @@ module.exports = function (data) {
 
     data.should.have.property('category');
     data.category.should.instanceof(Object);
+
+    data.should.have.property('isOverBudget');
+    data.isOverBudget.should.instanceOf(Boolean);
+
+    data.should.have.property('overBudgetRemark');
+    data.overBudgetRemark.should.instanceof(Object);
 };
