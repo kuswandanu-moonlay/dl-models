@@ -7,6 +7,7 @@ module.exports = class GarmentPurchaseCorrection extends BaseModel {
         super('garment-purchase-correction', '1.0.0');
 
         this.no = '';
+        this.returNoteNo = '';
         this.date = new Date();
         this.correctionType = '';
         this.deliveryOrderId = {};
