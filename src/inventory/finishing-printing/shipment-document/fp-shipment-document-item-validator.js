@@ -1,46 +1,37 @@
 require("should");
 
+var validateShipmentDocumentPackingReceiptItem = require("./fp-shipment-document-packing-receipt-item-validator");
+
 module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
-    data.should.have.property('productId');
-    data.productId.should.instanceof(Object);
+    data.should.have.property('packingReceiptId');
+    data.packingReceiptId.should.instanceof(Object);
 
-    data.should.have.property('productCode');
-    data.productCode.should.instanceof(String);
-
-    data.should.have.property('productName');
-    data.productName.should.instanceof(String);
+    data.should.have.property('packingReceiptCode');
+    data.packingReceiptCode.should.instanceof(String);
 
     //
-    data.should.have.property('designCode');
-    data.remark.should.instanceof(String);
+    data.should.have.property('storageId');
+    data.storageId.should.instanceof(Object);
 
-    data.should.have.property('designNumber');
-    data.designNumber.should.instanceof(String);
+    data.should.have.property('storageCode');
+    data.storageCode.should.instanceof(String);
 
-    data.should.have.property('colorType');
-    data.colorType.should.instanceof(String);
-
-    //
-    data.should.have.property('uomId');
-    data.uomId.should.instanceof(Object);
-
-    data.should.have.property('uomUnit');
-    data.uomUnit.should.instanceof(String);
+    data.should.have.property('storageName');
+    data.storageName.should.instanceof(String);
 
     //
-    data.should.have.property('quantity');
-    data.quantity.should.instanceof(Number);
+    data.should.have.property('referenceNo');
+    data.referenceNo.should.instanceof(String);
 
-    data.should.have.property('length');
-    data.length.should.instanceof(Number);
+    data.should.have.property('referenceType');
+    data.referenceType.should.instanceof(String);
 
-    data.should.have.property('weight');
-    data.weight.should.instanceof(Number);
-
-    //
-    data.should.have.property('remark');
-    data.remark.should.instanceof(String);
+    data.should.have.property('packingReceiptItems');
+    data.packingReceiptItems.should.instanceOf(Array);
+    for (var packingReceiptItem of data.packingReceiptItems) {
+        validateShipmentDocumentPackingReceiptItem(packingReceiptItem);
+    }
 };
