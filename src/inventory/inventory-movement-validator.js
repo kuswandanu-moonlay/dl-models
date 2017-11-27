@@ -40,7 +40,7 @@ module.exports = function (data) {
     data.quantity.should.instanceOf(Number);
 
     data.should.have.property('after');
-    data.afterQuantity.should.instanceOf(Number);
+    data.after.should.instanceOf(Number);
 
     data.should.have.property('secondBefore');
     data.secondBefore.should.instanceOf(Number);
