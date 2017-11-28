@@ -21,25 +21,11 @@ module.exports = class InventoryMovement extends BaseModel {
         this.storageName = "";
         
         this.before = 0;
-        this.secondBefore = 0;
-        this.thirdBefore = 0;
-
         this.quantity = 0;
-        this.secondQuantity = 0;
-        this.thirdQuantity = 0;
-        
         this.after = 0;
-        this.secondAfter = 0;
-        this.thirdAfter = 0;
         
         this.uomId = {};
         this.uom = "";
-
-        this.secondUomId = {};
-        this.secondUom = "";
-
-        this.thirdUomId = {};
-        this.thirdUom = "";
         
         this.remark = '';
         this.type = '';

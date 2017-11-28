@@ -17,14 +17,8 @@ module.exports = class InventorySummary extends BaseModel {
         this.storageName = "";
 
         this.quantity = 0;
-        this.secondQuantity = 0;
-        this.thirdQuantity = 0;
         this.uomId = {};
         this.uom = "";
-        this.secondUomId = {};
-        this.secondUom = "";
-        this.thirdUomId = {};
-        this.thirdUom = "";
 
         this.copy(source);
     }
