@@ -31,7 +31,7 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
         this.useVat = false;
         this.vatRate = 0;
         this.useIncomeTax = false;
-        
+
         this.category = "";
 
         this.date = new Date();
@@ -44,6 +44,8 @@ module.exports = class PurchaseOrderExternal extends BaseModel {
 
         this.status = {};
         this.qualityStandard = new QualityStandard();
+        this.isOverBudget = false;
+        this.isApproved = true;
 
         this.copy(source);
 

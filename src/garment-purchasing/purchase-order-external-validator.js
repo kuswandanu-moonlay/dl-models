@@ -50,7 +50,7 @@ module.exports = function (data) {
 
     data.should.have.property('useIncomeTax');
     data.useIncomeTax.should.instanceOf(Boolean);
-    
+
     data.should.have.property('category');
     data.category.should.instanceof(String);
 
@@ -71,6 +71,12 @@ module.exports = function (data) {
 
     data.should.have.property('status');
     data.status.should.instanceof(Object);
+
+    data.should.have.property('isOverBudget');
+    data.isOverBudget.should.instanceOf(Boolean);
+
+    data.should.have.property('isApproved');
+    data.isApproved.should.instanceOf(Boolean);
 
     data.should.have.property('qualityStandard');
     data.qualityStandard.should.instanceof(Object);
