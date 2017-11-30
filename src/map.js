@@ -239,7 +239,8 @@ module.exports = {
             WeeklyPlan: 'weekly-plans',
             WorkingHoursStandard: 'working-hours-standards',
             Style: 'styles',
-            StandardHour: 'standard-hours'
+            StandardHour: 'standard-hours',
+            BookingOrder: 'booking-orders'
         }
     }
 }
