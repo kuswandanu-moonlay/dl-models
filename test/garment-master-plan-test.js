@@ -19,3 +19,8 @@ it("#04. Standard Hour should valid", function () {
     var StandardHour = require('../src/garment-master-plan/standard-hour');
     validate.standardHour(new StandardHour());
 });
+
+it("#05. Booking Order should valid", function () {
+    var BookingOrder = require('../src/garment-master-plan/booking-order');
+    validate.bookingOrder(new BookingOrder());
+});
