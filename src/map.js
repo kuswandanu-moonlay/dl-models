@@ -240,7 +240,8 @@ module.exports = {
             WorkingHoursStandard: 'working-hours-standards',
             Style: 'styles',
             StandardHour: 'standard-hours',
-            BookingOrder: 'booking-orders'
+            BookingOrder: 'booking-orders',
+            MasterPlanComodity: 'master-plan-comodities'
         }
     }
 }
