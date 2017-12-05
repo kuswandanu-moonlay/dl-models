@@ -24,3 +24,8 @@ it("#05. Booking Order should valid", function () {
     var BookingOrder = require('../src/garment-master-plan/booking-order');
     validate.bookingOrder(new BookingOrder());
 });
+
+it("#06. Master Plan Comodity should valid", function () {
+    var MasterPlanComodity = require('../src/garment-master-plan/master-plan-comodity');
+    validate.masterPlanComodity(new MasterPlanComodity());
+});
