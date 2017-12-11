@@ -156,7 +156,7 @@ module.exports = {
         Style: require('./src/garment-master-plan/style'),
         StandardHour: require('./src/garment-master-plan/standard-hour'),
         BookingOrder: require('./src/garment-master-plan/booking-order'),
-        BookingOrderDetail: require('./src/garment-master-plan/booking-order-detail'),
+        BookingOrderItem: require('./src/garment-master-plan/booking-order-item'),
         MasterPlanComodity: require('./src/garment-master-plan/master-plan-comodity')
     },
     map: require('./src/map'),
