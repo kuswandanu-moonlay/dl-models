@@ -50,7 +50,8 @@ module.exports = {
                 badOutputReason: require('./master/bad-output-reason-validator'),
                 finishingPrintingDurationEstimation: require('./master/fp-duration-estimation-validator'),
                 dealTrackingReason: require('./master/deal-tracking-reason-validator'),
-                spinningYarn: require('./master/spinning-yarn-validator')
+                spinningYarn: require('./master/spinning-yarn-validator'),
+                kursBudget: require('./master/kurs-budget-validator')
         },
         inventory: {
                 finishingPrinting: {
