@@ -28,7 +28,8 @@ module.exports = {
             Holiday: 'holiday',
             Company: 'company',
             Contact: 'contact',
-            DealTrackingReason: 'deal-tracking-reason'
+            DealTrackingReason: 'deal-tracking-reason',
+            KursBudget: 'kurs-budget'
         },
         collection: {
             Buyer: 'buyers',
@@ -71,7 +72,8 @@ module.exports = {
             BadOutputReason: 'bad-output-reasons',
             FinishingPrintingDurationEstimation: 'fp-duration-estimations',
             DealTrackingReason: 'deal-tracking-reasons',
-            SpinningYarn: 'spinning-yarns'
+            SpinningYarn: 'spinning-yarns',
+            KursBudget: 'kurs-budgets'
         }
     },
     inventory: {
