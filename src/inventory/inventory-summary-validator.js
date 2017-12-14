@@ -27,27 +27,27 @@ module.exports = function (data) {
     data.should.have.property('quantity');
     data.quantity.should.instanceOf(Number);
 
-    // data.should.have.property('secondQuantity');
-    // data.secondQuantity.should.instanceOf(Number);
+    data.should.have.property('secondQuantity');
+    data.secondQuantity.should.instanceOf(Number);
 
-    // data.should.have.property('thirdQuantity');
-    // data.thirdQuantity.should.instanceOf(Number);
+    data.should.have.property('thirdQuantity');
+    data.thirdQuantity.should.instanceOf(Number);
 
     data.should.have.property('uomId');
     data.uomId.should.instanceof(Object);
 
-    // data.should.have.property('secondUomId');
-    // data.secondUomId.should.instanceof(Object);
+    data.should.have.property('secondUomId');
+    data.secondUomId.should.instanceof(Object);
 
-    // data.should.have.property('thirdUomId');
-    // data.thirdUomId.should.instanceof(Object);
+    data.should.have.property('thirdUomId');
+    data.thirdUomId.should.instanceof(Object);
 
     data.should.have.property('uom');
     data.uom.should.be.String();
 
-    // data.should.have.property('secondUom');
-    // data.secondUom.should.be.String();
+    data.should.have.property('secondUom');
+    data.secondUom.should.be.String();
 
-    // data.should.have.property('thirdUom');
-    // data.thirdUom.should.be.String();
+    data.should.have.property('thirdUom');
+    data.thirdUom.should.be.String();
 };
