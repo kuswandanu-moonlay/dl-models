@@ -12,6 +12,8 @@ module.exports = class GarmentPurchaseCorrection extends BaseModel {
         this.correctionType = '';
         this.deliveryOrderId = {};
         this.deliveryOrder = {};
+        this.useVat = false;
+        this.useIncomeTax = false;
         this.remark = '';
         this.items = [];
         this.copy(source);
