@@ -26,8 +26,8 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.be.String();
 
-    data.should.have.property('isConfirmed');
-    data.isConfirmed.should.instanceOf(Boolean);
+    data.should.have.property('isMasterPlan');
+    data.isMasterPlan.should.instanceOf(Boolean);
 
     data.should.have.property('isCanceled');
     data.isCanceled.should.instanceOf(Boolean);
