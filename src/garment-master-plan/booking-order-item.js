@@ -7,8 +7,11 @@ module.exports = class BookingOrderItem extends BaseModel {
     constructor(source, type) {
         super(type || 'booking-order-item', '1.0.0');
 
+        this.code='';
         this.masterPlanComodity= new Comodity();
         this.masterPlanComodityId={};
+
+        this.isConfirmed=false;
 
         this.quantity = 0;
         this.remark='';

@@ -4,6 +4,10 @@ var validatorComodity = require('./master-plan-comodity-validator');
 module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
+
+    
+    data.should.have.property('code');
+    data.code.should.be.instanceOf(String);
     
     data.should.have.property('masterPlanComodityId');
     data.masterPlanComodityId.should.instanceOf(Object);
@@ -17,4 +21,7 @@ module.exports = function (data) {
     
     data.should.have.property('remark');
     data.remark.should.be.instanceOf(String);
+    
+    data.should.have.property('isConfirmed');
+    data.isConfirmed.should.instanceOf(Boolean);
 };
