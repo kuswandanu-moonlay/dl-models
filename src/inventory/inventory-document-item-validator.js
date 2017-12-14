@@ -22,7 +22,7 @@ module.exports = function (data) {
     // data.secondQuantity.should.instanceOf(Number);
 
     // data.should.have.property('thirdQuantity');
-    data.thirdQuantity.should.instanceOf(Number);
+    // data.thirdQuantity.should.instanceOf(Number);
      
     
     data.should.have.property('uomId');
