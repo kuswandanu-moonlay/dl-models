@@ -4,13 +4,13 @@ var validateUom = require('../master/uom-validator');
 var validateProduct = require('../master/product-validator');
 var validateProcessType = require('../master/process-type-validator');
 var validateOrderType = require('../master/order-type-validator');
-var validateLamp=require ('../master/lamp-standard-validator');
-var validateDetail= require('./production-order-detail-validator');
-var validateMaterialConstruction= require ('../master/material-construction-validator');
-var validateYarnMaterial= require ('../master/yarn-material-validator');
-var validateFinishType = require ('../master/finish-type-validator');
-var validateStandardTest= require('../master/standard-test-validator');
-var validateAccount= require('../auth/account-validator');
+var validateLamp = require('../master/lamp-standard-validator');
+var validateDetail = require('./production-order-detail-validator');
+var validateMaterialConstruction = require('../master/material-construction-validator');
+var validateYarnMaterial = require('../master/yarn-material-validator');
+var validateFinishType = require('../master/finish-type-validator');
+var validateStandardTest = require('../master/standard-test-validator');
+var validateAccount = require('../auth/account-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -130,6 +130,9 @@ module.exports = function (data) {
 
     data.should.have.property('isUsed');
     data.isUsed.should.instanceOf(Boolean);
+
+    data.should.have.property('isClosed');
+    data.isClosed.should.instanceOf(Boolean);
 
     data.should.have.property('details');
     data.details.should.instanceOf(Array);
