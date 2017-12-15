@@ -50,7 +50,8 @@ module.exports = {
         BadOutputReason: require('./src/master/bad-output-reason'),
         FinishingPrintingDurationEstimation: require('./src/master/fp-duration-estimation'),
         DealTrackingReason: require('./src/master/deal-tracking-reason'),
-        SpinningYarn: require('./src/master/spinning-yarn')
+        SpinningYarn: require('./src/master/spinning-yarn'),
+        KursBudget: require('./src/master/kurs-budget')
     },
     inventory: {
         finishingPrinting: {
@@ -156,7 +157,7 @@ module.exports = {
         Style: require('./src/garment-master-plan/style'),
         StandardHour: require('./src/garment-master-plan/standard-hour'),
         BookingOrder: require('./src/garment-master-plan/booking-order'),
-        BookingOrderDetail: require('./src/garment-master-plan/booking-order-detail'),
+        BookingOrderItem: require('./src/garment-master-plan/booking-order-item'),
         MasterPlanComodity: require('./src/garment-master-plan/master-plan-comodity')
     },
     map: require('./src/map'),

@@ -1,7 +1,5 @@
 require("should");
-var validatorDetails = require('./booking-order-detail-validator');
-var validatorStyle = require('./style-validator');
-var validatorstandardHours = require('./standard-hour-validator');
+var validatorItems = require('./booking-order-item-validator');
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -24,33 +22,19 @@ module.exports = function (data) {
     
     data.should.have.property('garmentBuyerCode');
     data.garmentBuyerCode.should.be.String();
-    
-    data.should.have.property('styleId');
-    data.styleId.should.instanceOf(Object);
-
-    data.should.have.property('style');
-    data.style.should.instanceOf(Object);
-    validatorStyle(data.style);
-    
-    data.should.have.property('orderQuantity');
-    data.orderQuantity.should.instanceOf(Number);
-    
-    data.should.have.property('standardHourId');
-    data.standardHourId.should.instanceOf(Object);
-    
-    data.should.have.property('standardHour');
-    data.standardHour.should.instanceOf(Object);
-    validatorstandardHours(data.standardHour);
 
     data.should.have.property('remark');
     data.remark.should.be.String();
 
-    data.should.have.property('isConfirmed');
-    data.isConfirmed.should.instanceOf(Boolean);
+    data.should.have.property('isMasterPlan');
+    data.isMasterPlan.should.instanceOf(Boolean);
 
-    data.should.have.property('details');
-    data.details.should.instanceOf(Array);
-    for (var item of data.details) {
-        validatorDetails(item);
+    data.should.have.property('isCanceled');
+    data.isCanceled.should.instanceOf(Boolean);
+
+    data.should.have.property('items');
+    data.items.should.instanceOf(Array);
+    for (var item of data.items) {
+        validatorItems(item);
     }
 };

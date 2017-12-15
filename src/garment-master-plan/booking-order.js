@@ -1,9 +1,7 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var BookDetail = require('./booking-order-detail');
-var StandardHour = require('./standard-hour');
-var Style =require('./style');
+var BookingItem = require('./booking-order-item');
 
 module.exports = class BookingOrder extends BaseModel {
     constructor(source) {
@@ -18,19 +16,14 @@ module.exports = class BookingOrder extends BaseModel {
         this.garmentBuyerName='';
         this.garmentBuyerCode='';
 
-        this.styleId={};
-        this.style=new Style();
-
-        this.standardHourId={};
-        this.standardHour=new StandardHour();
-
         this.orderQuantity=0;
         this.remark = '';
-        this.isConfirmed=false;
-        this.details=[];
+        this.isMasterPlan=false;
+        this.isCanceled=false;
+        this.items=[];
 
         this.copy(source);
 
-        this.details = (this.details || []).map(detail => new BookDetail(detail));
+        this.items = (this.items || []).map(item => new BookingItem(item));
     }
 };
