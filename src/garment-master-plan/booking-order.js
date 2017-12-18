@@ -18,7 +18,7 @@ module.exports = class BookingOrder extends BaseModel {
 
         this.orderQuantity=0;
         this.remark = '';
-        this.isConfirmed=false;
+        this.isMasterPlan=false;
         this.isCanceled=false;
         this.items=[];
 

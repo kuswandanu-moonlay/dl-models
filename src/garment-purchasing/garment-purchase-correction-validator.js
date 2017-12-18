@@ -19,6 +19,12 @@ module.exports = function (data) {
 
     data.should.have.property('deliveryOrder');
     data.deliveryOrder.should.instanceof(Object);
+    
+    data.should.have.property('useIncomeTax');
+    data.useIncomeTax.should.instanceOf(Boolean);
+
+    data.should.have.property('useVat');
+    data.useVat.should.instanceOf(Boolean);
 
     data.should.have.property('remark');
     data.remark.should.instanceof(String);
