@@ -241,7 +241,8 @@ module.exports = {
             Style: 'styles',
             StandardHour: 'standard-hours',
             BookingOrder: 'booking-orders',
-            MasterPlanComodity: 'master-plan-comodities'
+            MasterPlanComodity: 'master-plan-comodities',
+            MasterPlan: 'master-plans'
         }
     }
 }
