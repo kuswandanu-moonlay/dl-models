@@ -29,3 +29,8 @@ it("#06. Master Plan Comodity should valid", function () {
     var MasterPlanComodity = require('../src/garment-master-plan/master-plan-comodity');
     validate.masterPlanComodity(new MasterPlanComodity());
 });
+
+it("#07. Master Plan should valid", function () {
+    var MasterPlan = require('../src/garment-master-plan/master-plan');
+    validate.masterPlan(new MasterPlan());
+});

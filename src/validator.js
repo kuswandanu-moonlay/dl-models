@@ -149,6 +149,9 @@ module.exports = {
                 standardHour: require('./garment-master-plan/standard-hour-validator'),
                 bookingOrder: require('./garment-master-plan/booking-order-validator'),
                 bookingOrderItem: require('./garment-master-plan/booking-order-item-validator'),
-                masterPlanComodity: require('./garment-master-plan/master-plan-comodity-validator')
+                masterPlanComodity: require('./garment-master-plan/master-plan-comodity-validator'),
+                masterPlan: require('./garment-master-plan/master-plan-validator'),
+                masterPlanDetail: require('./garment-master-plan/master-plan-detail-validator'),
+                masterPlanDetailItem: require('./garment-master-plan/master-plan-detail-item-validator')
         }
 };
