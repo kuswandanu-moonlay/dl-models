@@ -28,6 +28,7 @@ module.exports = class Kanban extends BaseModel {
         this.oldKanban = {};
         this.isBadOutput = false;
         this.isReprocess = false;
+        this.isInactive = false;
         this.copy(source);
     }
 };
