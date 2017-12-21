@@ -62,4 +62,7 @@ module.exports = function(data) {
 
     data.should.have.property('isReprocess');
     data.isReprocess.should.instanceof(Boolean);
+
+    data.should.have.property('isInactive');
+    data.isInactive.should.instanceof(Boolean);
 };
