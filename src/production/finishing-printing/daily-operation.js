@@ -25,7 +25,7 @@ module.exports = class DailyOperation extends BaseModel {
         this.timeOutput = null;
         this.goodOutput = null;
         this.badOutput = null;
-        this.action = null;
+        // this.action = null;
         this.badOutputReasons = null;
 
         this.copy(source);

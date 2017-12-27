@@ -9,7 +9,8 @@ module.exports = class BadOutputReasonItem extends BaseModel {
 
         // Define properties.
 
-        this.precentage = 0;
+        this.length = 0;
+        this.action = '';
         this.description = '';
         this.badOutputReasonId = {};
         this.badOutputReason = new BadOutputReason();
