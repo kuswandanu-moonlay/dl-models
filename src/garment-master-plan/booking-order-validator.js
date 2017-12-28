@@ -32,9 +32,12 @@ module.exports = function (data) {
     data.should.have.property('isCanceled');
     data.isCanceled.should.instanceOf(Boolean);
 
-    data.should.have.property('items');
-    data.items.should.instanceOf(Array);
-    for (var item of data.items) {
-        validatorItems(item);
+    //data.should.have.property('items');
+    if(data.items){
+        data.items.should.instanceOf(Array);
+
+        for (var item of data.items) {
+            validatorItems(item);
+        }
     }
 };
