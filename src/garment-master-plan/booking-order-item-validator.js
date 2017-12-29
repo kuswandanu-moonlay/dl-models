@@ -25,6 +25,6 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.be.instanceOf(String);
     
-    data.should.have.property('isConfirmed');
-    data.isConfirmed.should.instanceOf(Boolean);
+    // data.should.have.property('isConfirmed');
+    // data.isConfirmed.should.instanceOf(Boolean);
 };
