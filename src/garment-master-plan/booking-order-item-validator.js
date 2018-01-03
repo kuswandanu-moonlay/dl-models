@@ -16,12 +16,15 @@ module.exports = function (data) {
     data.masterPlanComodity.should.instanceOf(Object);
     validatorComodity(data.masterPlanComodity);
     
+    data.should.have.property('deliveryDate');
+    data.deliveryDate.should.instanceof(Date);
+
     data.should.have.property('quantity');
     data.quantity.should.be.instanceOf(Number);
     
     data.should.have.property('remark');
     data.remark.should.be.instanceOf(String);
     
-    data.should.have.property('isConfirmed');
-    data.isConfirmed.should.instanceOf(Boolean);
+    // data.should.have.property('isConfirmed');
+    // data.isConfirmed.should.instanceOf(Boolean);
 };

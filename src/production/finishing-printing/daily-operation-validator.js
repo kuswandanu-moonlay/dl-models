@@ -59,9 +59,9 @@ module.exports = function(data) {
     if(data.timeOutput)
         data.timeOutput.should.instanceOf(Number);
 
-    if(data.action){
-        data.action.should.be.String();
-    }
+    // if(data.action){
+    //     data.action.should.be.String();
+    // }
 
     if(data.badOutputReasons){
         data.badOutputReasons.should.instanceOf(Array);

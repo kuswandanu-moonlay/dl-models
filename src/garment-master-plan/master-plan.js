@@ -15,6 +15,7 @@ module.exports = class MasterPlan extends BaseModel {
         this.bookingDate=new Date();
         this.deliveryDate=new Date();
         this.remark='';
+        this.bookingItems=[];
         this.details=[];
         this.status='';
 
