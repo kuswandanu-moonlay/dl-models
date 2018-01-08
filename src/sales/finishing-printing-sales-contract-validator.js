@@ -4,10 +4,10 @@ var validateBuyer = require('../master/buyer-validator');
 var validateUom = require('../master/uom-validator');
 var validateProduct = require('../master/product-validator');
 var validateOrderType = require('../master/order-type-validator');
-var validateAccount= require('../master/account-bank-validator');
-var validateMaterialConstruction= require ('../master/material-construction-validator');
-var validateDetails= require('./finishing-printing-sales-contract-detail-validator');
-var validateYarnMaterial= require ('../master/yarn-material-validator');
+var validateAccount = require('../master/account-bank-validator');
+var validateMaterialConstruction = require('../master/material-construction-validator');
+var validateDetails = require('./finishing-printing-sales-contract-detail-validator');
+var validateYarnMaterial = require('../master/yarn-material-validator');
 var validateQuality = require('../master/quality-validator');
 var validateComodity = require('../master/comodity-validator');
 var validateTermOfPayment = require('../master/term-of-payment-validator');
@@ -18,6 +18,9 @@ module.exports = function (data) {
 
     data.should.have.property('salesContractNo');
     data.salesContractNo.should.be.String();
+
+    data.should.have.property('documentNumber');
+    data.documentNumber.should.be.String();
 
     data.should.have.property('buyerId');
     data.buyerId.should.instanceof(Object);
