@@ -25,6 +25,9 @@ module.exports = function (data) {
     data.should.have.property('orderNo');
     data.orderNo.should.be.String();
 
+    data.should.have.property('documentNumber');
+    data.documentNumber.should.be.String();
+
     data.should.have.property('buyerId');
     data.buyerId.should.instanceof(Object);
 
