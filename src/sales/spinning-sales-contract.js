@@ -13,7 +13,7 @@ module.exports = class SpinningSalesContract extends BaseModel {
         super('spinning-sales-contract', '1.0.0');
 
         this.salesContractNo = '';
-        this.documentNumber = '';
+        // this.documentNumber = '';
 
         this.buyerId = {};
         this.buyer = new Buyer();
