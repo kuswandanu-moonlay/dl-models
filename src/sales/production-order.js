@@ -22,7 +22,7 @@ module.exports = class ProductionOrder extends BaseModel {
         this.salesContractNo = '';
         this.salesContractId = {};
         this.orderNo = '';
-        this.documentNumber = '';
+        // this.documentNumber = '';
 
         this.buyerId = {};
         this.buyer = new Buyer();
