@@ -5,8 +5,11 @@ module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
-    data.should.have.property('precentage');
-    data.precentage.should.instanceOf(Number);
+    data.should.have.property('length');
+    data.length.should.instanceOf(Number);
+
+    data.should.have.property('action');
+    data.action.should.be.String();
     
     data.should.have.property('description');
     data.description.should.be.String();

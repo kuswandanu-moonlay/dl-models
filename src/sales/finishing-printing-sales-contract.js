@@ -1,90 +1,91 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var ProductionOrder=require('./production-order');
+var ProductionOrder = require('./production-order');
 var Buyer = require('../master/buyer');
 var Product = require('../master/product');
 var OrderType = require('../master/order-type');
 var DesignMotive = require('../master/design-motive');
 var uom = require('../master/uom');
 var AccountBank = require('../master/account-bank');
-var MaterialConstruction=require('../master/material-construction');
-var SalesContractDetail=require('./finishing-printing-sales-contract-detail');
+var MaterialConstruction = require('../master/material-construction');
+var SalesContractDetail = require('./finishing-printing-sales-contract-detail');
 var Comodity = require('../master/comodity');
 var Quality = require('../master/quality');
-var YarnMaterial= require('../master/yarn-material');
-var TermOfPayment= require('../master/term-of-payment');
+var YarnMaterial = require('../master/yarn-material');
+var TermOfPayment = require('../master/term-of-payment');
 
 
 module.exports = class FinishingPrintingSalesContract extends BaseModel {
     constructor(source) {
         super('finishing-printing-sales-contract', '1.0.0');
 
-        this.salesContractNo='';
+        this.salesContractNo = '';
+        // this.documentNumber = '';
 
-        this.buyerId={};
-        this.buyer= new Buyer();
+        this.buyerId = {};
+        this.buyer = new Buyer();
 
-        this.dispositionNumber='';
-        this.fromStock=false;
+        this.dispositionNumber = '';
+        this.fromStock = false;
 
-        this.designMotiveId={};
-        this.designMotive=new DesignMotive();
+        this.designMotiveId = {};
+        this.designMotive = new DesignMotive();
 
-        this.orderTypeId={};
-        this.orderType=new OrderType();
+        this.orderTypeId = {};
+        this.orderType = new OrderType();
 
-        this.materialId={};
-        this.material=new Product();
+        this.materialId = {};
+        this.material = new Product();
 
-        this.uomId={};
-        this.uom=new uom();
+        this.uomId = {};
+        this.uom = new uom();
 
-        this.materialConstructionId={};
-        this.materialConstruction=new MaterialConstruction();
-        
-        this.yarnMaterialId={};
-        this.yarnMaterial=new YarnMaterial();
+        this.materialConstructionId = {};
+        this.materialConstruction = new MaterialConstruction();
 
-        this.materialWidth='';
-        this.orderQuantity=0;
-        this.shippingQuantityTolerance=0;
-        this.amount=0;
-        this.pieceLength='';
+        this.yarnMaterialId = {};
+        this.yarnMaterial = new YarnMaterial();
 
-        this.comodityId={};
-        this.comodity=new Comodity();
+        this.materialWidth = '';
+        this.orderQuantity = 0;
+        this.shippingQuantityTolerance = 0;
+        this.amount = 0;
+        this.pieceLength = '';
 
-        this.comodityDescription='';
+        this.comodityId = {};
+        this.comodity = new Comodity();
 
-        this.qualityId={};
-        this.quality=new Quality();
+        this.comodityDescription = '';
+
+        this.qualityId = {};
+        this.quality = new Quality();
 
         this.useIncomeTax = false;
 
         this.termOfPaymentId = {};
-        this.termOfPayment=new TermOfPayment();
+        this.termOfPayment = new TermOfPayment();
 
-        this.accountBankId={};
-        this.accountBank=new AccountBank();
+        this.accountBankId = {};
+        this.accountBank = new AccountBank();
 
-        this.transportFee='';
-        this.deliveredTo='';
-        this.packing='';
-        this.termOfShipment="";
+        this.transportFee = '';
+        this.deliveredTo = '';
+        this.packing = '';
+        this.termOfShipment = "";
 
-        this.agentId={};
-        this.agent=new Buyer();
+        this.agentId = {};
+        this.agent = new Buyer();
 
-        this.comission='';
-        this.deliverySchedule=new Date();
-        this.shipmentDescription='';
-        this.condition='';
-        this.pointSystem=10;
-        this.pointLimit=0;
+        this.comission = '';
+        this.deliverySchedule = new Date();
+        this.shipmentDescription = '';
+        this.condition = '';
+        this.pointSystem = 10;
+        this.pointLimit = 0;
 
-        this.remainingQuantity=0;
+        this.remainingQuantity = 0;
 
-        this.details=[];
+        this.details = [];
         this.details = (this.details || []).map(detail => new SalesContractDetail(detail));
 
         this.copy(source);

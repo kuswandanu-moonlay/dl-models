@@ -10,8 +10,9 @@ module.exports = class BookingOrderItem extends BaseModel {
         this.code='';
         this.masterPlanComodity= new Comodity();
         this.masterPlanComodityId={};
+        this.deliveryDate=new Date();
 
-        this.isConfirmed=false;
+        //this.isConfirmed=false;
 
         this.quantity = 0;
         this.remark='';

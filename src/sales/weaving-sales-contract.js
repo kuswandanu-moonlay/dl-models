@@ -8,69 +8,70 @@ var Comodity = require('../master/comodity');
 var Quality = require('../master/quality');
 var MaterialConstruction = require('../master/material-construction');
 var YarnMaterial = require('../master/yarn-material');
-var TermOfPayment= require('../master/term-of-payment');
+var TermOfPayment = require('../master/term-of-payment');
 
 
 module.exports = class WeavingSalesContract extends BaseModel {
     constructor(source) {
         super('weaving-sales-contract', '1.0.0');
 
-        this.salesContractNo='';
+        this.salesContractNo = '';
+        // this.documentNumber = '';
 
-        this.buyerId={};
-        this.buyer= new Buyer();
+        this.buyerId = {};
+        this.buyer = new Buyer();
 
-        this.dispositionNumber='';
-        this.fromStock=false;
+        this.dispositionNumber = '';
+        this.fromStock = false;
 
-        this.materialId={};
-        this.material=new Product();
+        this.materialId = {};
+        this.material = new Product();
 
-        this.uomId={};
-        this.uom=new uom();
+        this.uomId = {};
+        this.uom = new uom();
 
-        this.materialConstructionId={};
-        this.materialConstruction=new MaterialConstruction();
-        
-        this.yarnMaterialId={};
-        this.yarnMaterial=new YarnMaterial();
+        this.materialConstructionId = {};
+        this.materialConstruction = new MaterialConstruction();
 
-        this.materialWidth='';
-        this.orderQuantity=0;
-        this.shippingQuantityTolerance=0;
+        this.yarnMaterialId = {};
+        this.yarnMaterial = new YarnMaterial();
 
-        this.comodityId={};
-        this.comodity=new Comodity();
+        this.materialWidth = '';
+        this.orderQuantity = 0;
+        this.shippingQuantityTolerance = 0;
 
-        this.comodityDescription='';
+        this.comodityId = {};
+        this.comodity = new Comodity();
 
-        this.qualityId={};
-        this.quality=new Quality();
+        this.comodityDescription = '';
+
+        this.qualityId = {};
+        this.quality = new Quality();
 
         this.incomeTax = '';
 
         this.termOfPaymentId = {};
-        this.termOfPayment=new TermOfPayment();
+        this.termOfPayment = new TermOfPayment();
 
-        this.termOfShipment="";
+        this.termOfShipment = "";
 
-        this.accountBankId={};
-        this.accountBank=new AccountBank();
+        this.accountBankId = {};
+        this.accountBank = new AccountBank();
 
-        this.transportFee='';
-        this.packing='';
-        this.deliveredTo='';
-        this.price=0;
-        
-        this.agentId={};
-        this.agent=new Buyer();
+        this.transportFee = '';
+        this.packing = '';
+        this.deliveredTo = '';
+        this.price = 0;
 
-        this.comission='';
-        this.deliverySchedule=new Date();
-        this.shipmentDescription='';
-        this.condition='';
-        this.remark='';
-        this.pieceLength='';
+        this.agentId = {};
+        this.agent = new Buyer();
+
+        this.comission = '';
+        this.deliverySchedule = new Date();
+        this.shipmentDescription = '';
+        this.condition = '';
+        this.remark = '';
+        this.pieceLength = '';
 
         this.copy(source);
     }
