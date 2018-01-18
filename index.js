@@ -160,7 +160,8 @@ module.exports = {
         BookingOrderItem: require('./src/garment-master-plan/booking-order-item'),
         MasterPlanComodity: require('./src/garment-master-plan/master-plan-comodity'),
         MasterPlan: require('./src/garment-master-plan/master-plan'),
-        MasterPlanDetail: require('./src/garment-master-plan/master-plan-detail')
+        MasterPlanDetail: require('./src/garment-master-plan/master-plan-detail'),
+        MasterYarnType: require('./src/garment-master-plan/master-yarn-type'),
     },
     map: require('./src/map'),
     validator: require('./src/validator')

@@ -244,7 +244,8 @@ module.exports = {
             StandardHour: 'standard-hours',
             BookingOrder: 'booking-orders',
             MasterPlanComodity: 'master-plan-comodities',
-            MasterPlan: 'master-plans'
+            MasterPlan: 'master-plans',
+            MasterYarnType: 'yarn-types'
         }
     }
 }

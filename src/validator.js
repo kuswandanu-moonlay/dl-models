@@ -151,6 +151,7 @@ module.exports = {
                 bookingOrderItem: require('./garment-master-plan/booking-order-item-validator'),
                 masterPlanComodity: require('./garment-master-plan/master-plan-comodity-validator'),
                 masterPlan: require('./garment-master-plan/master-plan-validator'),
-                masterPlanDetail: require('./garment-master-plan/master-plan-detail-validator')
+                masterPlanDetail: require('./garment-master-plan/master-plan-detail-validator'),
+                masterYarnType: require('./garment-master-plan/master-yarn-type-validator'),
         }
 };

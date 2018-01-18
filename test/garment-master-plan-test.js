@@ -34,3 +34,8 @@ it("#07. Master Plan should valid", function () {
     var MasterPlan = require('../src/garment-master-plan/master-plan');
     validate.masterPlan(new MasterPlan());
 });
+
+it("#08. Master Yarn Type should valid", function () {
+    var MasterYarnType = require('../src/garment-master-plan/master-yarn-type');
+    validate.masterYarnType(new MasterYarnType());
+});
