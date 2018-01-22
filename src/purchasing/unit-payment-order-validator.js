@@ -45,6 +45,9 @@ module.exports = function (data) {
     data.should.have.property('invoceNo');
     data.invoceNo.should.instanceOf(String);
 
+    data.should.have.property('pibNo');
+    data.invoceNo.should.instanceOf(String);
+
     data.should.have.property('invoceDate');
     data.invoceDate.should.instanceOf(Date);
 
