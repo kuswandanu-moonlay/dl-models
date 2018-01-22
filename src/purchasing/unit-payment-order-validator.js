@@ -69,8 +69,8 @@ module.exports = function (data) {
     data.should.have.property('vatDate');
     data.vatDate.should.instanceOf(Date);
 
-    data.should.have.property('dueDate');
-    data.dueDate.should.instanceOf(Date);
+    // data.should.have.property('dueDate');
+    // data.dueDate.should.instanceOf(Date);
 
     data.should.have.property('vatRate');
     data.vatRate.should.instanceOf(Number);
