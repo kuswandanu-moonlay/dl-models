@@ -28,7 +28,7 @@ module.exports = function (data) {
     data.should.have.property('ahTotal');
     data.ahTotal.should.be.instanceOf(Number);
 
-    data.should.have.property('availableAH');
+    data.should.have.property('remainingAH');
     data.availableAH.should.be.instanceOf(Number);
 
     data.should.have.property('usedAH');

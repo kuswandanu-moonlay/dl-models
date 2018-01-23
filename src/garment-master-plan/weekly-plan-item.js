@@ -13,7 +13,7 @@ module.exports = class WeeklyPlanItem extends BaseModel {
         this.operator = 0;
         this.AH = 0;
         this.ahTotal = 0;
-        this.availableAH = 0;
+        this.remainingAH = 0;
         this.usedAH = 0;
         this.copy(source);
     }
