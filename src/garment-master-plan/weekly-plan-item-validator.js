@@ -29,7 +29,7 @@ module.exports = function (data) {
     data.ahTotal.should.be.instanceOf(Number);
 
     data.should.have.property('remainingAH');
-    data.availableAH.should.be.instanceOf(Number);
+    data.remainingAH.should.be.instanceOf(Number);
 
     data.should.have.property('usedAH');
     data.usedAH.should.be.instanceOf(Number);
