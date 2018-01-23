@@ -21,4 +21,16 @@ module.exports = function (data) {
 
     data.should.have.property('operator');
     data.operator.should.be.instanceOf(Number);
+
+    data.should.have.property('AH');
+    data.AH.should.be.instanceOf(Number);
+
+    data.should.have.property('ahTotal');
+    data.ahTotal.should.be.instanceOf(Number);
+
+    data.should.have.property('availableAH');
+    data.availableAH.should.be.instanceOf(Number);
+
+    data.should.have.property('usedAH');
+    data.usedAH.should.be.instanceOf(Number);
 };
