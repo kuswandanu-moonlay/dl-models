@@ -34,3 +34,8 @@ it("#07. Master Plan should valid", function () {
     var MasterPlan = require('../src/garment-master-plan/master-plan');
     validate.masterPlan(new MasterPlan());
 });
+
+it("#08. Garment Section should valid", function () {
+    var GarmentSection = require('../src/garment-master-plan/garment-section');
+    validate.garmentSection(new GarmentSection());
+});
