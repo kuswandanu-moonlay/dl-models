@@ -23,6 +23,15 @@ module.exports = function (data) {
     data.should.have.property('garmentBuyerCode');
     data.garmentBuyerCode.should.be.String();
 
+    data.should.have.property('garmentSectionId');
+    data.garmentSectionId.should.instanceOf(Object);
+    
+    data.should.have.property('garmentSectionName');
+    data.garmentSectionName.should.be.String();
+    
+    data.should.have.property('garmentSectionCode');
+    data.garmentSectionCode.should.be.String();
+
     data.should.have.property('remark');
     data.remark.should.be.String();
 
