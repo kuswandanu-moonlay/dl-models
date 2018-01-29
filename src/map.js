@@ -244,7 +244,8 @@ module.exports = {
             StandardHour: 'standard-hours',
             BookingOrder: 'booking-orders',
             MasterPlanComodity: 'master-plan-comodities',
-            SewingBlockingPlan: 'sewing-blocking-plans'
+            SewingBlockingPlan: 'sewing-blocking-plans',
+            GarmentSection : 'garment-sections',
         }
     }
 }

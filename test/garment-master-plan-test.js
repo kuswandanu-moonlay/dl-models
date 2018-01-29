@@ -34,3 +34,8 @@ it("#07. Sewing Blocking Plan should valid", function () {
     var SewingBlockingPlan = require('../src/garment-master-plan/sewing-blocking-plan');
     validate.sewingBlockingPlan(new SewingBlockingPlan());
 });
+
+it("#08. Garment Section should valid", function () {
+    var GarmentSection = require('../src/garment-master-plan/garment-section');
+    validate.garmentSection(new GarmentSection());
+});
