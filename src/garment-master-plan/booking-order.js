@@ -16,6 +16,10 @@ module.exports = class BookingOrder extends BaseModel {
         this.garmentBuyerName='';
         this.garmentBuyerCode='';
 
+        this.garmentSectionId={};
+        this.garmentSectionName='';
+        this.garmentSectionCode='';
+
         this.orderQuantity=0;
         this.remark = '';
         this.isMasterPlan=false;
