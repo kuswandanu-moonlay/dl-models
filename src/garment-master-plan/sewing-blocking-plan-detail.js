@@ -3,9 +3,9 @@ var BaseModel = require('model-toolkit').BaseModel;
 var Unit = require('../master/unit');
 var Week = require('./weekly-plan-item');
 
-module.exports = class MasterPlanDetail extends BaseModel {
+module.exports = class SewingBlockingPlanDetail extends BaseModel {
     constructor(source, type) {
-        super(type || 'master-plan-detail', '1.0.0');
+        super(type || 'sewing-blocking-plan-detail', '1.0.0');
         this.code='';
         this.shCutting=0;
         this.shSewing=0;
@@ -21,6 +21,9 @@ module.exports = class MasterPlanDetail extends BaseModel {
         this.deliveryDate=new Date();
         this.quantity=0;
         this.remark='';
+
+        this.efficiency=0;
+        this.ehBooking=0;
 
         this.copy(source);
     }

@@ -1,5 +1,5 @@
 require("should");
-var validatorDetails = require('./master-plan-detail-validator');
+var validatorDetails = require('./sewing-blocking-plan-detail-validator');
 var validatorBookingItems = require('./booking-order-item-validator');
 
 module.exports = function (data) {
