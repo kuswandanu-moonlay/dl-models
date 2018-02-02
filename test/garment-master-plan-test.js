@@ -30,9 +30,9 @@ it("#06. Master Plan Comodity should valid", function () {
     validate.masterPlanComodity(new MasterPlanComodity());
 });
 
-it("#07. Master Plan should valid", function () {
-    var MasterPlan = require('../src/garment-master-plan/master-plan');
-    validate.masterPlan(new MasterPlan());
+it("#07. Sewing Blocking Plan should valid", function () {
+    var SewingBlockingPlan = require('../src/garment-master-plan/sewing-blocking-plan');
+    validate.sewingBlockingPlan(new SewingBlockingPlan());
 });
 
 it("#08. Garment Section should valid", function () {
