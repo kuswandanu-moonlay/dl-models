@@ -1,10 +1,10 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var MasterPlanDetail = require('./master-plan-detail');
+var SewingBlockingPlanDetail = require('./sewing-blocking-plan-detail');
 
-module.exports = class MasterPlan extends BaseModel {
+module.exports = class SewingBlockingPlan extends BaseModel {
     constructor(source, type) {
-        super(type || 'master-plan', '1.0.0');
+        super(type || 'sewing-blocking-plan', '1.0.0');
         this.code = '';
         this.bookingOrderNo='';
         this.bookingOrderId={};
@@ -21,6 +21,6 @@ module.exports = class MasterPlan extends BaseModel {
 
         this.copy(source);
 
-        this.details = (this.details || []).map(detail => new MasterPlanDetail(detail));
+        this.details = (this.details || []).map(detail => new SewingBlockingPlanDetail(detail));
     }
 };
