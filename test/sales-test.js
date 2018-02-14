@@ -39,3 +39,8 @@ it("#08. Deal Tracking Activity should valid", function () {
     var DealTrackingActivity = require('../src/sales/deal-tracking-activity');
     validate.dealTrackingActivity(new DealTrackingActivity());
 });
+
+it("#09. Order status History should valid", function () {
+    var OrderStatusHistory = require('../src/sales/order-status-history');
+    validate.orderStatusHistory(new OrderStatusHistory());
+});
