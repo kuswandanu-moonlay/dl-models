@@ -4,8 +4,8 @@ module.exports = function (data) {
     data.should.not.equal(null);
     data.should.instanceOf(Object);
 
-    data.should.have.property('salesContractNo');
-    data.salesContractNo.should.instanceOf(String);
+    data.should.have.property('productionOrderNo');
+    data.productionOrderNo.should.instanceOf(String);
 
     data.should.have.property('deliveryDateCorrection');
     data.deliveryDateCorrection.should.instanceOf(Date);

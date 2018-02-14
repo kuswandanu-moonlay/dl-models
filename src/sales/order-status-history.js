@@ -6,7 +6,7 @@ module.exports = class OrderStatusHistory extends BaseModel {
     constructor(source) {
         super('order-status-history', '1.0.0');
 
-        this.salesContractNo = '';
+        this.productionOrderNo = '';
         this.deliveryDateCorrection = new Date();
         this.reason = '';
         this.copy(source);
