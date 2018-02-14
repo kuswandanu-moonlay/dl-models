@@ -11,5 +11,5 @@ module.exports = function (data) {
     data.deliveryDateCorrection.should.instanceOf(Date);
 
     data.should.have.property('reason');
-    data.name.should.instanceOf(String);
+    data.reason.should.instanceOf(String);
 };
