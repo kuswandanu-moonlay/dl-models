@@ -148,7 +148,8 @@ module.exports = {
         DealTrackingBoard: require("./src/sales/deal-tracking-board"),
         DealTrackingStage: require("./src/sales/deal-tracking-stage"),
         DealTrackingDeal: require("./src/sales/deal-tracking-deal"),
-        DealTrackingActivity: require("./src/sales/deal-tracking-activity")
+        DealTrackingActivity: require("./src/sales/deal-tracking-activity"),
+        OrderStatusHistory: require("./src/sales/order-status-history")
     },
     garmentMasterPlan: {
         WeeklyPlan: require("./src/garment-master-plan/weekly-plan"),

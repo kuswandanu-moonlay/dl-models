@@ -140,7 +140,8 @@ module.exports = {
                 dealTrackingBoard: require("./sales/deal-tracking-board-validator"),
                 dealTrackingStage: require("./sales/deal-tracking-stage-validator"),
                 dealTrackingDeal: require("./sales/deal-tracking-deal-validator"),
-                dealTrackingActivity: require("./sales/deal-tracking-activity-validator")
+                dealTrackingActivity: require("./sales/deal-tracking-activity-validator"),
+                orderStatusHistory: require("./sales/order-status-validator")
         },
         garmentMasterPlan: {
                 weeklyPlan: require("./garment-master-plan/weekly-plan-validator"),
