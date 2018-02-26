@@ -26,8 +26,8 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.isUsed = false;
         this.remark = '';
         this.status = {};
-        this.internal = false;
-        
+        this.internal = false;// falg set internal value
+
         this.items = [];
         this.items = (this.items || []).map(item => new PurchaseRequestItem(item));
         
