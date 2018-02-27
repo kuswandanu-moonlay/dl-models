@@ -26,6 +26,7 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.remark = '';
 
         this.items = [];
+        this.internal = false;
 
         this.status = {};
         

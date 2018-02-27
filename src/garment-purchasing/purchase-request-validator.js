@@ -40,10 +40,7 @@ module.exports = function (data) {
 
     data.should.have.property('remark');
     data.remark.should.instanceof(String);
-
-    data.should.have.property('internal');
-    data.isUsed.should.instanceOf(Boolean);
-
+    
     data.should.have.property('items');
     data.items.should.instanceof(Array); 
 
