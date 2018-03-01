@@ -30,7 +30,7 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.status = {};
         
         this.purchaseOrderIds = []; //simpan Id purchase-order yang memuat pr-item ini;
-        this.internal=false;
+        // this.internal=false;
         
         this.copy(source);
 
