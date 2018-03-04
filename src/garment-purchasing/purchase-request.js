@@ -26,7 +26,7 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.isUsed = false;
         this.remark = '';
         this.status = {};
-        
+
         this.items = [];
         this.items = (this.items || []).map(item => new PurchaseRequestItem(item));
         
