@@ -24,6 +24,9 @@ module.exports = class BookingOrder extends BaseModel {
         this.remark = '';
         this.isMasterPlan=false;
         this.isCanceled=false;
+
+        this.expiredBookingOrder=0;
+
         this.items=[];
         this.canceledItems=[];
 
