@@ -45,14 +45,14 @@ module.exports = function (data) {
     if(data.items){
         data.items.should.instanceOf(Array);
 
-        for (var item of data.items) {
+        for (let item of data.items) {
             validatorItems(item);
         }
     }
     if(data.canceledItems){
         data.canceledItems.should.instanceOf(Array);
 
-        for (var item of data.canceledItems) {
+        for (let item of data.canceledItems) {
             validatorItems(item);
         }
     }
