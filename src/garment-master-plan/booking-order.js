@@ -28,9 +28,11 @@ module.exports = class BookingOrder extends BaseModel {
         this.expiredBookingOrder=0;
 
         this.items=[];
+        this.canceledItems=[];
 
         this.copy(source);
 
         this.items = (this.items || []).map(item => new BookingItem(item));
+        this.canceledItems = (this.canceledItems || []).map(item => new BookingItem(item));
     }
 };
