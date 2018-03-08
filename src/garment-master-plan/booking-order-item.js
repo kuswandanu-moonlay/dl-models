@@ -17,8 +17,6 @@ module.exports = class BookingOrderItem extends BaseModel {
         this.quantity = 0;
         this.remark='';
 
-        this.isCanceled = false;
-
         this.copy(source);
     }
 };

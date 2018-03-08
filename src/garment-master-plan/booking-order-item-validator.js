@@ -28,7 +28,4 @@ module.exports = function (data) {
     // data.should.have.property('isConfirmed');
     // data.isConfirmed.should.instanceOf(Boolean);
 
-    data.should.have.property('isCanceled');
-    data.isConfirmed.should.instanceOf(Boolean);
-
 };
