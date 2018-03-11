@@ -49,4 +49,11 @@ module.exports = function (data) {
             validatorItems(item);
         }
     }
+    if(data.canceledItems){
+        data.canceledItems.should.instanceOf(Array);
+
+        for (var canceledItem of data.canceledItems) {
+            validatorItems(canceledItem);
+        }
+    }
 };
