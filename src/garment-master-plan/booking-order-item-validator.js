@@ -27,4 +27,5 @@ module.exports = function (data) {
     
     // data.should.have.property('isConfirmed');
     // data.isConfirmed.should.instanceOf(Boolean);
+
 };

@@ -223,7 +223,8 @@ module.exports = {
             DealTrackingBoard: 'deal-tracking-board',
             DealTrackingStage: 'deal-tracking-stage',
             DealTrackingDeal: 'deal-tracking-deal',
-            DealTrackingActivity: 'deal-tracking-activity'
+            DealTrackingActivity: 'deal-tracking-activity',
+            OrderStatusHistory: 'order-status-history'
         },
         collection: {
             ProductionOrder: 'production-orders',
@@ -233,7 +234,8 @@ module.exports = {
             DealTrackingBoard: 'deal-tracking-boards',
             DealTrackingStage: 'deal-tracking-stages',
             DealTrackingDeal: 'deal-tracking-deals',
-            DealTrackingActivity: 'deal-tracking-activities'
+            DealTrackingActivity: 'deal-tracking-activities',
+            OrderStatusHistory: 'order-status-histories'
         }
     },
     garmentMasterPlan: {
@@ -244,7 +246,7 @@ module.exports = {
             StandardHour: 'standard-hours',
             BookingOrder: 'booking-orders',
             MasterPlanComodity: 'master-plan-comodities',
-            MasterPlan: 'master-plans',
+            SewingBlockingPlan: 'sewing-blocking-plans',
             GarmentSection : 'garment-sections',
         }
     }

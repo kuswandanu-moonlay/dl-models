@@ -16,14 +16,32 @@ module.exports = class BookingOrder extends BaseModel {
         this.garmentBuyerName='';
         this.garmentBuyerCode='';
 
+        this.garmentSectionId={};
+        this.garmentSectionName='';
+        this.garmentSectionCode='';
+
         this.orderQuantity=0;
         this.remark = '';
         this.isMasterPlan=false;
         this.isCanceled=false;
+
+        this.expiredBookingOrder=0;
+        this.expiredDeletedDate=null;
+        this.canceledDate= null;
+
         this.items=[];
+        this.canceledItems=[];
+
+        this.canceledBookingOrder = 0;
+        this.canceledDate = null;
 
         this.copy(source);
 
         this.items = (this.items || []).map(item => new BookingItem(item));
+        this.canceledItems = (this.canceledItems || []).map((item) => {
+            var bookingItem = new BookingItem(item);
+            bookingItem.canceledDate = item.canceledDate ? new Date(item.canceledDate) : new Date();
+            return bookingItem;
+        });
     }
 };

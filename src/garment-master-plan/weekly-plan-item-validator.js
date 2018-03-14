@@ -22,15 +22,19 @@ module.exports = function (data) {
     data.should.have.property('operator');
     data.operator.should.be.instanceOf(Number);
 
-    data.should.have.property('AH');
-    data.AH.should.be.instanceOf(Number);
+    data.should.have.property('workingHours');
+    data.workingHours.should.be.instanceOf(Number);
 
     data.should.have.property('ahTotal');
     data.ahTotal.should.be.instanceOf(Number);
 
-    data.should.have.property('remainingAH');
-    data.remainingAH.should.be.instanceOf(Number);
+    data.should.have.property('ehTotal');
+    data.ehTotal.should.be.instanceOf(Number);
 
-    data.should.have.property('usedAH');
-    data.usedAH.should.be.instanceOf(Number);
+    data.should.have.property('usedEH');
+    data.usedEH.should.be.instanceOf(Number);
+
+    data.should.have.property('remainingEH');
+    data.remainingEH.should.be.instanceOf(Number);
+
 };

@@ -11,10 +11,11 @@ module.exports = class WeeklyPlanItem extends BaseModel {
         this.month = 0;
         this.efficiency = 0;
         this.operator = 0;
-        this.AH = 0;
+        this.workingHours = 0;
         this.ahTotal = 0;
-        this.remainingAH = 0;
-        this.usedAH = 0;
+        this.ehTotal = 0;
+        this.usedEH = 0;
+        this.remainingEH = 0;
         this.copy(source);
     }
 };

@@ -148,7 +148,8 @@ module.exports = {
         DealTrackingBoard: require("./src/sales/deal-tracking-board"),
         DealTrackingStage: require("./src/sales/deal-tracking-stage"),
         DealTrackingDeal: require("./src/sales/deal-tracking-deal"),
-        DealTrackingActivity: require("./src/sales/deal-tracking-activity")
+        DealTrackingActivity: require("./src/sales/deal-tracking-activity"),
+        OrderStatusHistory: require("./src/sales/order-status-history")
     },
     garmentMasterPlan: {
         WeeklyPlan: require("./src/garment-master-plan/weekly-plan"),
@@ -159,8 +160,8 @@ module.exports = {
         BookingOrder: require('./src/garment-master-plan/booking-order'),
         BookingOrderItem: require('./src/garment-master-plan/booking-order-item'),
         MasterPlanComodity: require('./src/garment-master-plan/master-plan-comodity'),
-        MasterPlan: require('./src/garment-master-plan/master-plan'),
-        MasterPlanDetail: require('./src/garment-master-plan/master-plan-detail'),
+        SewingBlockingPlan: require('./src/garment-master-plan/sewing-blocking-plan'),
+        SewingBlockingPlanDetail: require('./src/garment-master-plan/sewing-blocking-plan-detail'),
         GarmentSection: require('./src/garment-master-plan/garment-section'),
     },
     map: require('./src/map'),
