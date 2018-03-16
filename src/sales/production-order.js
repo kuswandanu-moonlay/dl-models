@@ -82,6 +82,7 @@ module.exports = class ProductionOrder extends BaseModel {
         this.isUsed = false;
         this.isClosed = false;
         this.isRequested = false;
+        this.isCompleted = false;
         this.copy(source);
 
         this.lampStandards = (this.lampStandards || []).map(lampStandard => new ProductionOrderLampStandard(lampStandard));
