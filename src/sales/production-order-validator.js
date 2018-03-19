@@ -143,6 +143,9 @@ module.exports = function (data) {
     data.should.have.property('isCompleted');
     data.isCompleted.should.instanceOf(Boolean);
 
+    data.should.have.property('distributedQuantity');
+    data.distributedQuantity.should.instanceOf(Number);
+
     data.should.have.property('details');
     data.details.should.instanceOf(Array);
     for (var detail of data.details) {
