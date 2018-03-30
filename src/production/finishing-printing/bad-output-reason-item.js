@@ -2,6 +2,7 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 var BadOutputReason = require("../../master/bad-output-reason");
+var Machine = require("../../master/machine");
 
 module.exports = class BadOutputReasonItem extends BaseModel {
     constructor(source) {
@@ -14,6 +15,8 @@ module.exports = class BadOutputReasonItem extends BaseModel {
         this.description = '';
         this.badOutputReasonId = {};
         this.badOutputReason = new BadOutputReason();
+        this.machineId={};
+        this.machine= new Machine();
         this.copy(source);
     }
 };
