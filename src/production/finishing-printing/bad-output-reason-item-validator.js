@@ -1,5 +1,6 @@
 require("should");
 var validateBadOutputReason = require('../../master/bad-output-reason-validator');
+var validateMachine = require("../../master/machine-validator");
 
 module.exports = function (data) {
     data.should.not.equal(null);
@@ -20,4 +21,11 @@ module.exports = function (data) {
     data.should.have.property('badOutputReason');
     data.badOutputReason.should.instanceof(Object);
     validateBadOutputReason(data.badOutputReason);
+
+    data.should.have.property('machineId');
+    data.machineId.should.instanceOf(Object);
+
+    data.should.have.property('machine');
+    data.machine.should.instanceOf(Object);
+    validateMachine(data.machine);
 };
