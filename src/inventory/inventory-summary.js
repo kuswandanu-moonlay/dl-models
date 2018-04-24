@@ -25,7 +25,7 @@ module.exports = class InventorySummary extends BaseModel {
         this.uom = "";
         // this.secondUom = "";
         // this.thirdUom = "";
-
+        this.stockPlanning = 0;
         this.copy(source);
     }
 };
