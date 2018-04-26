@@ -1,8 +1,8 @@
 require("should");
-var validateKanban = require('./kanban-validator');
-var validateStep = require("../../master/step-validator");
-var validateMachine = require("../../master/machine-validator");
-var validateBadOutputReason = require("./bad-output-reason-item-validator");
+// var validateKanban = require('./kanban-validator');
+// var validateStep = require("../../master/step-validator");
+// var validateMachine = require("../../master/machine-validator");
+// var validateBadOutputReason = require("./bad-output-reason-item-validator");
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -16,21 +16,21 @@ module.exports = function(data) {
 
     data.should.have.property('kanban');
     data.kanban.should.instanceOf(Object);
-    validateKanban(data.kanban);
+    // validateKanban(data.kanban);
 
     data.should.have.property('machineId');
     data.machineId.should.instanceOf(Object);
 
     data.should.have.property('machine');
     data.machine.should.instanceOf(Object);
-    validateMachine(data.machine);
+    // validateMachine(data.machine);
 
     data.should.have.property('stepId');
     data.stepId.should.instanceOf(Object);
 
     data.should.have.property('step');
     data.step.should.instanceOf(Object);
-    validateStep(data.step);
+    // validateStep(data.step);
 
     data.should.have.property('shift');
     data.shift.should.be.String();
@@ -65,8 +65,8 @@ module.exports = function(data) {
 
     if(data.badOutputReasons){
         data.badOutputReasons.should.instanceOf(Array);
-        for (var badOutputReason of data.badOutputReasons) {
-            validateBadOutputReason(badOutputReason);
-        }
+        // for (var badOutputReason of data.badOutputReasons) {
+        //     validateBadOutputReason(badOutputReason);
+        // }
     }
 };
