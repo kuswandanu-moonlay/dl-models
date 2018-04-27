@@ -19,7 +19,7 @@ module.exports = class InventoryMovement extends BaseModel {
         this.storageId = {};
         this.storageCode = "";
         this.storageName = "";
-        
+        this.stockPlanning = 0;
         this.before = 0;
         // this.secondBefore = 0;
         // this.thirdBefore = 0;
