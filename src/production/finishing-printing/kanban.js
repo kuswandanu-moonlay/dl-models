@@ -1,10 +1,10 @@
 'use strict';
 
 var BaseModel = require('model-toolkit').BaseModel;
-var ProductionOrder = require('../../sales/production-order');
-var ProductionOrderDetail = require('../../sales/production-order-detail');
-var Cart = require('./cart');
-var Instruction = require('../../master/instruction');
+// var ProductionOrder = require('../../sales/production-order');
+// var ProductionOrderDetail = require('../../sales/production-order-detail');
+// var Cart = require('./cart');
+// var Instruction = require('../../master/instruction');
 
 module.exports = class Kanban extends BaseModel {
     constructor(source) {
@@ -13,11 +13,11 @@ module.exports = class Kanban extends BaseModel {
         // Define properties.  
         this.code = '';
         this.productionOrderId = {};
-        this.productionOrder = new ProductionOrder();
-        this.selectedProductionOrderDetail = new ProductionOrderDetail();
-        this.cart = new Cart();
+        this.productionOrder = {};
+        this.selectedProductionOrderDetail = {};
+        this.cart = {};
         this.instructionId = {};
-        this.instruction = new Instruction();
+        this.instruction = {};
         this.grade = '';
         this.isComplete = false;
         this.currentStepIndex = 0;
