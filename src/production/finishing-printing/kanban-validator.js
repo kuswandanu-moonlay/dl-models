@@ -1,8 +1,8 @@
 require("should");
-var validateProductionOrder = require('../../sales/production-order-validator');
-var validateProductionOrderDetail = require('../../sales/production-order-detail-validator');
-var validateCart = require('./cart-validator');
-var validateInstruction = require('../../master/instruction-validator');
+// var validateProductionOrder = require('../../sales/production-order-validator');
+// var validateProductionOrderDetail = require('../../sales/production-order-detail-validator');
+// var validateCart = require('./cart-validator');
+// var validateInstruction = require('../../master/instruction-validator');
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -16,22 +16,22 @@ module.exports = function(data) {
 
     data.should.have.property('productionOrder');
     data.productionOrder.should.instanceOf(Object);
-    validateProductionOrder(data.productionOrder);
+    // validateProductionOrder(data.productionOrder);
 
     data.should.have.property('selectedProductionOrderDetail');
     data.selectedProductionOrderDetail.should.instanceof(Object);
-    validateProductionOrderDetail(data.selectedProductionOrderDetail);
+    // validateProductionOrderDetail(data.selectedProductionOrderDetail);
 
     data.should.have.property('cart');
     data.cart.should.instanceof(Object);
-    validateCart(data.cart);
+    // validateCart(data.cart);
 
     data.should.have.property('instructionId');
     data.instructionId.should.instanceOf(Object);
 
     data.should.have.property('instruction');
     data.instruction.should.instanceof(Object);
-    validateInstruction(data.instruction);
+    // validateInstruction(data.instruction);
 
     data.should.have.property('grade');
     data.grade.should.instanceof(String);
