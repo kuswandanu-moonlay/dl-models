@@ -68,7 +68,8 @@ module.exports = {
                 },
                 inventorySummary: require("./inventory/inventory-summary-validator"),
                 inventoryMovement: require("./inventory/inventory-movement-validator"),
-                inventoryDocument: require("./inventory/inventory-document-validator")
+                inventoryDocument: require("./inventory/inventory-document-validator"),
+                inventoryDocumentItem: require("./inventory/inventory-document-item-validator")
         },
 
         garmentInventory: {
