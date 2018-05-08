@@ -22,7 +22,7 @@ module.exports = class InventoryMovementItem extends BaseModel {
         // this.secondUom = "";
         // this.thirdUomId = {};
         // this.thirdUom = "";
-        
+        this.stockPlanning = 0;
         this.remark = '';
 
         this.copy(source);
