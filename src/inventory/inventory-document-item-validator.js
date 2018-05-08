@@ -17,6 +17,9 @@ module.exports = function (data) {
     
     data.should.have.property('quantity');
     data.quantity.should.instanceOf(Number);
+
+    data.should.have.property('stockPlanning');
+    data.stockPlanning.should.instanceOf(Number);
     
     // data.should.have.property('secondQuantity');
     // data.secondQuantity.should.instanceOf(Number);
