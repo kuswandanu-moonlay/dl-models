@@ -13,7 +13,7 @@ module.exports = class InventoryDocument extends BaseModel {
 
         this.referenceNo = '';
         this.referenceType = '';
-
+        
         this.type = ''; // IN, OUT, RET-IN, RET-OUT
 
         this.storageId = {};
@@ -27,7 +27,7 @@ module.exports = class InventoryDocument extends BaseModel {
 
         var _items = [];
         for (var item of this.items) {
-            _items.push(new InventoryDocumentItem(InventoryDocumentItem.data));
+            _items.push(new InventoryDocumentItem(item));
         }
         this.items = _items;
     }
