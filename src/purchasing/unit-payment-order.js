@@ -32,6 +32,9 @@ module.exports = class UnitPaymentOrder extends BaseModel {
         //this.dueDate = new Date();
         this.vatRate = 0;
         this.remark = '';
+        this.position = 1;
+        this.isPaid = false;
+        this.dueDate = new Date();
         this.items = [];
         this.copy(source);
 

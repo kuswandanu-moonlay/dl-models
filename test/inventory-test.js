@@ -30,6 +30,11 @@ it("#06. inventory document should valid", function () {
     validate.inventoryDocument(new InventoryDocument());
 });
 
+it("#06.(2) inventory document should valid", function () {
+    var InventoryDocumentItem = require('../src/inventory/inventory-document-item');
+    validate.inventoryDocumentItem(new InventoryDocumentItem());
+});
+
 it("#07. finishing printing shipment document should valid", function () {
     var FinishingPrintingShipmentDocument = require('../src/inventory/finishing-printing/shipment-document/fp-shipment-document');
     validate.finishingPrinting.fpShipmentDocument(new FinishingPrintingShipmentDocument());

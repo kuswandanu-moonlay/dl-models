@@ -78,6 +78,15 @@ module.exports = function (data) {
     data.should.have.property('remark');
     data.remark.should.instanceOf(String);
 
+    data.should.have.property('position');
+    data.position.should.instanceOf(Number);
+
+    data.should.have.property('isPaid');
+    data.isPaid.should.instanceOf(Boolean);
+
+    data.should.have.property('dueDate');
+    data.dueDate.should.instanceOf(Date);
+
     data.should.have.property('items');
     data.items.should.instanceOf(Array);
     for (var item of data.items) {

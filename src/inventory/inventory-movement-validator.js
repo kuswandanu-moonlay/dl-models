@@ -36,6 +36,8 @@ module.exports = function (data) {
     data.should.have.property('before');
     data.before.should.instanceOf(Number);
     
+    data.should.have.property('stockPlanning');
+    data.stockPlanning.should.instanceOf(Number);
     // data.should.have.property('secondBefore');
     // data.secondBefore.should.instanceOf(Number);
 

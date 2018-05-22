@@ -11,11 +11,11 @@ module.exports = class DailyOperation extends BaseModel {
 
         this.code = '';
         this.kanbanId = {};
-        this.kanban = new Kanban();
+        this.kanban = {};
         this.stepId = {};
-        this.step = new Step();
+        this.step = {};
         this.machineId = {};
-        this.machine = new Machine();
+        this.machine = {};
         this.shift = '';
         this.type = '';
         this.dateInput = null;
