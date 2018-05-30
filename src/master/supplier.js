@@ -14,7 +14,8 @@ module.exports = class Supplier extends BaseModel {
         this.import = true;
         this.NPWP='';
         this.serialNumber='';
-
+        this.useIncomeTax = true;
+        
         this.copy(source);
     }
 };

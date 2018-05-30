@@ -28,4 +28,6 @@ module.exports = function (data) {
     data.should.have.property('serialNumber');
     data.serialNumber.should.instanceof(String);
 
+    data.should.have.property('useIncomeTax');
+    data.useIncomeTax.should.be.Boolean();
 };
