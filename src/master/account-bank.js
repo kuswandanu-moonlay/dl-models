@@ -10,6 +10,8 @@ module.exports = class AccountBank extends BaseModel {
         // Define properties.  
         this.code = '';
         this.bankName = '';
+        this.bankCode = '';
+        this.accountCOA = '';
         this.bankAddress = '';
         this.accountName = '';
         this.accountNumber = '';
