@@ -14,6 +14,12 @@ module.exports = function (data) {
     data.should.have.property('bankAddress');
     data.bankAddress.should.instanceOf(String);
 
+    data.should.have.property('bankCode');
+    data.bankCode.should.instanceOf(String);
+
+    data.should.have.property('accountCOA');
+    data.accountCOA.should.instanceOf(String);
+
     data.should.have.property('accountName');
     data.accountName.should.instanceOf(String);
 
