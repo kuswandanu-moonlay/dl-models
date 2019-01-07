@@ -13,6 +13,7 @@ module.exports = class Product extends BaseModel {
         this.code = '';
         this.name = '';
         this.price = 0;
+        this.currencyId = {};
         this.currency = new Currency();
         this.description = '';
         this.uomId = {};
